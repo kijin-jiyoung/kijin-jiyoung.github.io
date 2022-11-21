@@ -65,6 +65,7 @@ p.Time-place {
 
 
 .Main-photo {
+   margin: 0 auto;
    background-repeat: no-repeat;
    background-attachment: scroll;
    background-position: center;
