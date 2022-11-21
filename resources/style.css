@@ -116,30 +116,87 @@ p.invitation  {
 
 
 
-.grid-container {
-  display: grid;
-  column-gap: 5px;
-  row-gap: 5px;
-  grid-template-columns: auto auto auto;
-  padding: 0px;
-  }
 
 
 
 
-img.grid-item {
-   padding: 0;
-   text-align: center;
-   -webkit-filter: grayscale(100%);
+  < !-- 갤러리 영역 -- >
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
    max-width: 100%;
    height: auto;
-   }
+}
 
- 
-.grid-item:hover {
-   -webkit-filter: grayscale(0%);
-    opacity: 1;
-   }
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: semi-bold;
+  font-size: 15px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 11.1%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.5;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+  < !-- 갤러리 영역 -- >
+
+
+
 
 
 
