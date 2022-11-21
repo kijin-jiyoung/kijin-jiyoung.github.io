@@ -127,13 +127,6 @@ p.invitation  {
   position: relative;
 }
 
-/* Hide the images by default */
-.mySlides {
-  display: none;
-   max-width: 100%;
-   height: auto;
-}
-
 /* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
@@ -170,11 +163,6 @@ p.invitation  {
 }
 
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
 /* Six columns side by side */
 .column {
