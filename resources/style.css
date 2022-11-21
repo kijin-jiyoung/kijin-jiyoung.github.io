@@ -128,7 +128,7 @@ p.invitation  {
 
 
 img.grid-item {
-   padding: 2px; 0;
+   padding: 0;
    text-align: center;
    -webkit-filter: grayscale(100%);
    max-width: 100%;
