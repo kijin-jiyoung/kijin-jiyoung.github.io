@@ -2,16 +2,6 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-  :root {
-    scroll-behavior: smooth;
-  }
-}
-
-
-
-
-
 body { 
     margin: 0 auto;
     max-width: 666px;
@@ -66,7 +56,6 @@ p.Time-place {
 
 
 .Main-photo {
-   max-width: 100%
    aspect-ratio: auto 1/1;
    background-repeat: no-repeat;
    background-attachment: scroll;
