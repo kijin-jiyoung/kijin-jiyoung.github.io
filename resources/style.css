@@ -130,9 +130,9 @@ p.invitation  {
   cursor: pointer;
   width: auto;
   border: 20px;
-  padding: 5px;
+  padding: 0px;
   font-weight: normal;
-  font-size: 15px;
+  font-size: 20px;
   user-select: none;
   -webkit-user-select: none;
 }
