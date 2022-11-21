@@ -1,0 +1,253 @@
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
+
+
+
+
+body { 
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FEF7EE; 
+    font-size: 16px;
+    }
+
+
+
+
+
+
+
+.fist-page,
+.second-page {
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    }
+
+
+
+
+p.Title,
+p.sub-Title {
+   margin: auto;
+   font-size: 17px;
+   font-weight: 500;
+   font-family: 'MapoFlowerIsland';
+   text-align: center;
+   letter-spacing: 3px;
+   }
+
+
+
+
+
+p.Date,
+p.Time-place {
+   margin: auto;
+   font-size: 20px;
+   font-weight: 500;
+   font-family: 'MapoFlowerIsland';
+   text-align: center; 
+   letter-spacing: 3px;
+   }
+
+
+
+
+
+
+.Main-photo {
+   background-repeat: no-repeat;
+   background-attachment: scroll;
+   background-position: center;
+   background-size: cover;
+   }
+
+
+
+
+
+p.Name {
+   margin: auto;
+   font-size: 24px;
+   font-weight: 500;
+   font-family: 'MapoFlowerIsland';
+   text-align: center; 
+   letter-spacing: 3px;
+   }	
+
+
+
+
+
+
+
+
+
+hr.hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid;
+ }
+
+
+
+
+
+p.invitation  {
+   margin: auto;
+   font-size: 15px;
+   font-weight: 500;
+   font-family: 'MapoFlowerIsland';
+   text-align: center; 
+   letter-spacing: 3px;
+   }
+
+
+
+
+
+
+.grid-container {
+  display: grid;
+  column-gap: 5px;
+  row-gap: 5px;
+  grid-template-columns: auto auto auto;
+  padding: 0px;
+  }
+
+
+
+
+img.grid-item {
+   padding: 2px; 0;
+   text-align: center;
+   -webkit-filter: grayscale(100%);
+   max-width: 100%;
+   height: auto;
+   }
+
+ 
+hover grid-item {
+   -webkit-filter: grayscale(0%);
+   filter: none;
+   -webkit-transition: .3s ease-in-out;
+   }
+
+
+
+
+
+
+
+
+
+footer.copyright-wrap {
+     font-size: 12px;
+     letter-spacing: 2px;
+     font-family: 'Roboto Slab', serif;
+     line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+<!-- 다크모드 적용 -->
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #222;
+    --text: #dbdbdb;
+    --heading-text: #fff;
+    --anchor-text: #0076d1;
+    --code-background: #161f27;
+    --code-text: #ffbe85;
+  }
+}
+
+body {
+  background: var(--background);
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-text);
+}
+
+p,
+dl {
+  color: var(--text);
+}
+
+a {
+  color: var(--anchor-text);
+  text-decoration: none;
+}
+
+code {
+  color: var(--code-text);
+  background: var(--code-background);
+  border-radius: 6px;
+  padding: 2.5px 5px;
+}
+
+
+
+
+
+<!-- 이미지 라이트모드/다크모드 -->
+{
+<picture>
+    <source srcset="mojave-night.jpg" media="(prefers-color-scheme: dark)">
+    <img src="mojave-day.jpg">
+</picture>
+}
+
+
+
+
+
+
+
+
+
+<!-- 색상관리 -->
+
+:root {
+	color-scheme: light dark;
+	--post-title-color: #333;
+	--header-bg-color: #593a78;
+	--header-txt-color: white;
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--post-title-color: white;
+			--header-bg-color: #513d66;
+			--header-txt-color: #eee;
+		}
+	}
+}
+
+h1 {
+	color: var(--post-title-color);
+}
+
+.header {
+	background-color: var(--header-bg-color);
+	color: var(--header-txt-color);
+}

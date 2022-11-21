@@ -1,0 +1,40 @@
+
+
+
+
+@font-face {
+	font-family: 'Noto Serif Korean';
+	src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Roboto Slab', serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@443&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+._font-main {
+    font-family: Noto Serif Korean;
+}
+
+
+
