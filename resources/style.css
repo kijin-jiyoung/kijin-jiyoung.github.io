@@ -278,9 +278,13 @@ code {
 
 
 
-
-
-
+<!-- 이미지 라이트모드/다크모드 -->
+{
+<picture>
+    <source srcset="mojave-night.jpg" media="(prefers-color-scheme: dark)">
+    <img src="mojave-day.jpg">
+</picture>
+}
 
 
 
