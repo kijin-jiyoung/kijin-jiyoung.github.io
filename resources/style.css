@@ -148,7 +148,7 @@ p.invitation  {
   padding: 16px;
   font-weight: bold;
   font-size: 15px;
-  border-radius: 0 3px 3px 0;
+  border-radius: 0 2px 2px 0;
   user-select: none;
   -webkit-user-select: none;
 }
