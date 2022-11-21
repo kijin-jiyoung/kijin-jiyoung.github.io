@@ -148,6 +148,7 @@ p.invitation  {
   top: 40%;
   width: auto;
   padding: 16px;
+  margin-top: -50px;
   color: white;
   font-weight: semi-bold;
   font-size: 15px;
