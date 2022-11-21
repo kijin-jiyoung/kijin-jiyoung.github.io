@@ -167,6 +167,7 @@ p.invitation  {
 /* Six columns side by side */
 .column {
   float: left;
+  width: 11.2%;	
 }
 
 
