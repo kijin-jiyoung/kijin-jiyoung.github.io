@@ -56,13 +56,8 @@ p.Time-place {
 
 
 .Main-photo {
-   aspect-ratio: auto 1/1;
-   background-repeat: no-repeat;
-   background-attachment: scroll;
-   background-position: center;
+   max-width: 100%;
    }
-
-
 
 
 
@@ -74,8 +69,6 @@ p.Name {
    text-align: center; 
    letter-spacing: 3px;
    }	
-
-
 
 
 
