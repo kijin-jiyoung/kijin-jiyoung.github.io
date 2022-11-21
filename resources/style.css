@@ -167,9 +167,14 @@ p.invitation  {
 /* Six columns side by side */
 .column {
   float: left;
-  width: 11.2%;	
+  width: 11.1%;
 }
 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /* Add a transparency effect for thumnbail images */
 .demo {
