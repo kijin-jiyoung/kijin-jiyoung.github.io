@@ -136,9 +136,9 @@ img.grid-item {
    }
 
  
-hover grid-item {
+.grid-item:hover {
    -webkit-filter: grayscale(0%);
-   -webkit-transition: .3s ease-in-out;
+    opacity: 1;
    }
 
 
