@@ -19,7 +19,9 @@
       <!-- css -->
       <link rel="stylesheet" href="/resources/font.css">
       <link rel="stylesheet" href="/resources/style.css">
-
+      <link rel="stylesheet" href="/resources/light-box.css">
+	  
+	  
       
       
 
@@ -110,16 +112,25 @@
 	 
 	 
       <!-- gallery -->
-   <div class="grid-container">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
-      <img class="grid-item" src="/photo/Main_1.jpg" alt="/photo/Main_1.jpg">
+      <div class="container" id="gallery">
+      <div class="row justify-content-center pb-5 mb-5">
+      <div class="col-12 text-center pt-5 mt-5 pb-5">
+      <p class="sub-Title"><br><br>우리들의 행복한 시간</p>
+      </div>
+      <div class="col-md-12">
+      <div class="row">
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      <a href="/photo/Main_1.jpg" data-toggle="lightbox" data-gallery="gallery" class="col-sm-4 mb-4"> <img src="/photo/Main_1.jpg" class="img-fluid"> </a>
+      </div>
+      </div>
+      </div>
       </div>
      
 
@@ -137,8 +148,15 @@
 
      <footer class="copyright-wrap">Copyright 2023.
      <a href="https://www.instagram.com/4pril.12/" target="_blank">@4pril.12</a>. All rights reserved.</footer> 
-	   
-	 	   
+
+	     
+<script src="js\ekko-lightbox.js"></script>
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+</script>	   
   </body>
   
   
