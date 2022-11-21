@@ -175,6 +175,8 @@ p.invitation  {
 
 
 
+
+
 /* Six columns side by side */
 .column {
   float: left;
@@ -183,9 +185,6 @@ p.invitation  {
 }
 
 
-.row {
-	
-}
 
 
 .row:after {
@@ -200,6 +199,9 @@ p.invitation  {
 .demo {
   opacity: 0.5;
 }
+
+
+
 
 .active,
 .demo:hover {
