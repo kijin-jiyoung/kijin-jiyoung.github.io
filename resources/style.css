@@ -147,7 +147,7 @@ p.invitation  {
   width: auto;
   border: 20px;
   padding: 5px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 15px;
   user-select: none;
   -webkit-user-select: none;
