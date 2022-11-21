@@ -128,8 +128,6 @@ p.invitation  {
 }
 
 
-
-
 /* Hide the images by default */
 .mySlides {
   display: none;
@@ -150,7 +148,6 @@ p.invitation  {
   top: 40%;
   width: auto;
   padding: 16px;
-  margin-top: -50px;
   color: white;
   font-weight: semi-bold;
   font-size: 15px;
@@ -182,11 +179,12 @@ p.invitation  {
 .column {
   float: left;
   width: 11.1%;
+  max-width: 100%
 }
 
 
 .row {
-	max-width: 100%
+	
 }
 
 
