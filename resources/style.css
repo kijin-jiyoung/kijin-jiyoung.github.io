@@ -98,6 +98,13 @@ p.invitation  {
 
 
 
+p.contact {
+    text-align: center; 
+}
+	
+
+
+
 span.telephone {
   icon: url("resources/telephone.png");
     background-repeat: no-repeat;
