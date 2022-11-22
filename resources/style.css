@@ -268,7 +268,31 @@ body {
   background: var(--background);
   line-height: 1.6;
   margin: 0 auto;
+  
 }
+
+img.telephone {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FEF7EE; 
+    display: inline-block;
+    width: 41px;
+    height: 41px;
+    vertical-align: middle;
+}
+
+
+img.kakao {
+    width: 41px;
+    height: 41px;
+    background-color: #FEF7EE;
+    background-position: center;
+    vertical-align: middle;
+}
+
+
+
+
 
 h1,
 h2,
