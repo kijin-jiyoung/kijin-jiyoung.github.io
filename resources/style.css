@@ -107,7 +107,7 @@ p.contact {
 
 
 span.telephone {
-    img: url("/resources/telephone.png");
+    background-img: url("/resources/telephone.png");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
