@@ -3,7 +3,6 @@
   <head>
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width, height=device-height, target-densitydpi=device-dpi">
-      <meta name="apple-mobile-web-app-capable" content="yes">
       <meta name="format-detection" content="telephone=no">
       <meta name="color-scheme" content="dark light">
       
@@ -259,7 +258,7 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
