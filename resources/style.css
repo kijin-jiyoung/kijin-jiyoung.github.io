@@ -137,6 +137,9 @@ img.kakao {
 
 
 
+
+
+
   < !-- 갤러리 영역 -- >
 
 
@@ -240,7 +243,19 @@ img.kakao {
 
 
 
+img.navermap {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 
+
+
+img.kakaomap {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 
 
 
