@@ -124,6 +124,8 @@ p.invitation  {
   cursor: pointer;
 }
 
+
+
 /* Next & previous buttons */
 .prev,
 .next {
@@ -157,8 +159,16 @@ p.invitation  {
 
 
 
+.row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-/* Six columns side by side */
+
+
+
+/* nine columns side by side */
 .column {
   float: left;
   width: 11.1%;
@@ -168,21 +178,10 @@ p.invitation  {
 
 
 
-.row:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
-
 /* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.5;
 }
-
-
-
 
 .active,
 .demo:hover {
