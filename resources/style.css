@@ -167,10 +167,8 @@ p.invitation  {
 
 .row:after {
   content: "";
-
+  display: table;
   clear: both;
-  display: none;
-  float: left;
 }
 
 
@@ -180,7 +178,7 @@ p.invitation  {
 .column {
   float: left;
   width: 11.1%;
-  max-width: 100%
+
 }
 
 
