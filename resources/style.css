@@ -246,6 +246,10 @@ img.kakao {
 
 
 img.navermap {
+    background-img: url("/resources/navermap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
     width: 40px;
     height: 40px;
     vertical-align: middle;
