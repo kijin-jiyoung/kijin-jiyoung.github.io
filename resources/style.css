@@ -101,6 +101,7 @@ p.invitation  {
 p.contact {
     text-align: center;
     font-size: 15px;
+    vertical-align: middle;
 }
 	
 
@@ -111,15 +112,12 @@ span.telephone {
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    text-align: center;
     width: 40px;
     height: 40px;
 }
 
 
 img.kakao {
-    display: inline-block;
-    text-align: center;
     width: 40px;
     height: 40px;
 }
