@@ -106,6 +106,12 @@ p.invitation  {
 
   < !-- 갤러리 영역 -- >
 
+
+* {
+  box-sizing: border-box;
+}
+
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
@@ -192,6 +198,7 @@ p.invitation  {
 .demo:hover {
   opacity: 1;
 }
+
 
   < !-- 갤러리 영역 -- >
 
