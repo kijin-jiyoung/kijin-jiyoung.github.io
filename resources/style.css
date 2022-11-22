@@ -91,10 +91,20 @@ p.invitation  {
    margin: auto;
    font-size: 15px;
    font-weight: 500;
-   font-family: 'MapoFlowerIsland';
    text-align: center; 
    letter-spacing: 3px;
    }
+
+
+
+
+p.name {
+   text-align: center;
+   font-weight: 500;
+   letter-spacing: 3px;
+   padding: 10px;
+}
+
 
 
 
