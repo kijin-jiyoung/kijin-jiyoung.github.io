@@ -62,7 +62,7 @@ p.Time-place {
 
 
 
-p.Name {
+p.Main-name {
    margin: auto;
    font-size: 24px;
    font-weight: 500;
@@ -72,14 +72,7 @@ p.Name {
    }	
 
 
-p.Name_1 {
-   margin: auto;
-   font-size: 18px;
-   font-weight: 500;
-   font-family: 'MapoFlowerIsland';
-   text-align: center; 
-   letter-spacing: 2px;
-   }	
+
 
 
 
@@ -112,6 +105,17 @@ p.name {
    letter-spacing: 3px;
    padding: 10px;
 }
+
+
+p.name2 {
+   margin: auto;
+   font-size: 13px;
+   font-weight: 500;
+   font-family: 'MapoFlowerIsland';
+   text-align: center; 
+   letter-spacing: 2px;
+   }
+
 
 
 
