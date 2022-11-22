@@ -172,6 +172,7 @@ p.invitation  {
   content: "";
   display: table;
   clear: both;
+  float: left;	
 }
 
 
