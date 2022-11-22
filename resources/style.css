@@ -107,7 +107,7 @@ p.contact {
 
 
 span.telephone {
-    background-img: url("/resources/telephone.png");
+    background-img: url("/resources/tel.png");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
@@ -117,7 +117,7 @@ span.telephone {
 }
 
 
-img.kakao {
+img.katalk {
     width: 40px;
     height: 40px;
     vertical-align: middle;
