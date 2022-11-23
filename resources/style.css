@@ -237,7 +237,7 @@ img.kakao {
 .map {
     text-align: center;
     vertical-align: middle;
-    font-size: 12px;
+    font-size: 10px;
     line-height: 30px;
     width: 32%;
     max-width: 100%;
@@ -245,9 +245,10 @@ img.kakao {
 
 
 
-.map2 {
+div.map2 {
     height: 45px;
     display: inline-block;
+    vertical-align: middle;
     padding: 0.5px;
 }
 
