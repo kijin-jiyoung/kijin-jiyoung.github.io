@@ -233,11 +233,11 @@ img.kakao {
 
 
 
-.map {
+div.map {
     text-align: center;
     vertical-align: middle;
-    font-size: 10px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
     width: 32%;
     max-width: 100%;
 }
