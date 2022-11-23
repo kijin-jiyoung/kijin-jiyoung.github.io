@@ -242,6 +242,7 @@
  <p class="sub-Title"><br><br>오시는 길</p><br><br><br>	     
    <div class="Map">    
    <div id="mapcanvas" style="width:100%;height:400px;"></div>
+	   
 	<p>네이버지도&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	   카카오내비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	   티맵</p>
@@ -382,17 +383,18 @@ function showSlides(n) {
 	   
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>
 <script type="text/javascript">	
-  var mapOptions = {
+    var mapOptions = {
         center: new naver.maps.LatLng(37.511742, 126.9948247),
-        draggable: true,
-        zoom: 18
-    };	
-	
-var HOME_PATH = window.HOME_PATH || '.';
-var map = new naver.maps.Map('mapcanvas', {
-        bounds: naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 126.9948247),
-                                              new naver.maps.LatLng(37.511742, 126.9948247)
-    });
+        draggable: false,
+        zoom: 14
+    };
+
+    var map = new naver.maps.Map('mapcanvas', mapOptions);
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.511742, 126.9948247),
+        map: map
+    };
+
 
 var Marker = new naver.maps.Marker({
     position: new naver.maps.LatLng(37.511742, 126.9948247),
