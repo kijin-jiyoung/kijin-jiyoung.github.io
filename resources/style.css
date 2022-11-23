@@ -284,7 +284,7 @@ img.tmap {
 
 .button {
     font-size: 14px;
-    width: 32%;
+    width: 32%; auto;
     height: 45px;
     display: inline-block;
     text-align: center;
