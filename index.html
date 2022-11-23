@@ -247,7 +247,7 @@
 	   카카오내비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	   티맵</p>
     <div class="map2">     
-                <a href="window.open'https://naver.me/GZAsttWP'">
+                <a href="window.open'https://naver.me/GnjokXoV'">
 		<img class="navermap" src="resources/navermap.png" style="hover{background-color: rgba(0, 0, 0, 0.8);cursor:pointer"}></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <a id="start-navigation" href="javascript:startNavigation()">
@@ -389,12 +389,12 @@ var position = new naver.maps.LatLng(37.511742, 126.9948247);
 var map = new naver.maps.Map('mapcanvas', {
     center: position,
     draggable: false,
-    zoom: 14
+    zoom: 16
 });
 
 var markerOptions = {
     position: position.destinationPoint(90, 15),
-    map: map,
+    map: mapcanvas,
     icon: {
         url: HOME_PATH +'/resources/mapmarkers.png',
         size: new naver.maps.Size(38, 58),
