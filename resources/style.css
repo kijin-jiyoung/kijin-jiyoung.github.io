@@ -225,6 +225,7 @@ img.kakao {
 }
 
 .active,
+.active2,
 .demo:hover,
 .demo2:hover {
   opacity: 1;
