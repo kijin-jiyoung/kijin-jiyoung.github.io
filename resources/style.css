@@ -29,7 +29,6 @@ body {
 
 p.Title,
 p.sub-Title,
-p.Date,
 p.Time-place {
    margin: auto;
    font-size: 17px;
@@ -40,7 +39,14 @@ p.Time-place {
    }
 
 
-
+p.Date {
+   margin: auto;
+   font-size: 17px;
+   font-weight: 300;
+   font-family: 'MapoFlowerIsland';
+   text-align: center;
+   letter-spacing: 3px;
+   }
 
 
 
@@ -52,7 +58,7 @@ p.Time-place {
 
 p.Main-name {
    margin: auto;
-   font-size: 20px;
+   font-size: 18px;
    font-weight: 500;
    font-family: 'MapoFlowerIsland';
    text-align: center; 
