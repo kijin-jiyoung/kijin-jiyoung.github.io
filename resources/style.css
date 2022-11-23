@@ -137,14 +137,16 @@ img.kakao {
 
 
 /* Hide the images by default */
-.mySlides {
+.mySlides,
+.mySlides2 {
   display: none;
 }
 
 
 
 /* Add a pointer when hovering over the thumbnail images */
-.cursor {
+.cursor,
+.cursor2 {
   cursor: pointer;
 }
 
@@ -190,7 +192,8 @@ img.kakao {
 
 
 
-.row:after {
+.row:after,
+.row2:after {
   content: "";
   display: table;
   clear: both;
@@ -200,7 +203,8 @@ img.kakao {
 
 
 /* nine columns side by side */
-.column {
+.column,
+.column2 {
   float: left;
   width: 11.1%;
   max-width: 100%;
@@ -210,12 +214,14 @@ img.kakao {
 
 
 /* Add a transparency effect for thumnbail images */
-.demo {
+.demo,
+.demo2 {
   opacity: 0.5;
 }
 
 .active,
-.demo:hover {
+.demo:hover,
+.demo2:hover {
   opacity: 1;
 }
 
