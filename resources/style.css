@@ -283,11 +283,10 @@ img.tmap {
 
 
 .map-button {
-    width: 33%;
+    width: 32%;
     height: 45px;
     display: inline-block;
     text-align: center;
-    line-height: 30px;
     vertical-align: middle;
     paddind: 0.5px
 }
