@@ -231,22 +231,9 @@ img.copy {
 div.map {
     text-align: center;
     vertical-align: middle;
-    line-height: 20px;
     width: 32%;
     max-width: 100%;
 }
-
-
-
-p.map2 {
-    height: 45px;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0.5px;
-}
-
-
-
 
 
 
