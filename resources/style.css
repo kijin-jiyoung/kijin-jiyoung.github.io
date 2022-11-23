@@ -255,7 +255,6 @@ img.kakao {
 
 
 
-
 img.navermap {
     display: inline-block;
     width: 40px;
@@ -265,13 +264,21 @@ img.navermap {
 
 
 
-
-img.kakaomap {
+img.kakaonavi {
+    display: inline-block;
     width: 40px;
     height: 40px;
     vertical-align: middle;
 }
 
+
+
+img.tmap {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+}
 
 
 
@@ -281,6 +288,7 @@ img.kakaomap {
     display: inline-block;
     text-align: center;
     line-height: 30px;
+    vertical-align: middle;
 }
 	
 
