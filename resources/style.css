@@ -275,6 +275,17 @@ img.kakaomap {
 
 
 
+.map-button {
+    width: 30%;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 30px;
+}
+	
+
+
+
 
 
 footer.copyright-wrap {
