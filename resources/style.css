@@ -29,6 +29,7 @@ body {
 
 p.Title,
 p.sub-Title,
+p.Date,
 p.Time-place,
 p.Main-name {
    margin: auto;
@@ -40,21 +41,12 @@ p.Main-name {
    }
 
 
-p.Date {
-   margin: auto;
-   font-size: 17px;
-   font-weight: 300;
-   font-family: 'MapoFlowerIsland';
-   text-align: center;
-   }
 
 
 
 .Main-photo {
    width: 100%;
    }
-
-
 
 
 
