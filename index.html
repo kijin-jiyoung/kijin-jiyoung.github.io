@@ -378,7 +378,11 @@ function showSlides(n) {
 	   
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>
 <script type="text/javascript">	
-	
+  var mapOptions = {
+        center: new naver.maps.LatLng(37.511742, 126.9948247),
+        draggable: true,
+        zoom: 18
+    };	
 	
 var HOME_PATH = window.HOME_PATH || '.';
 var map = new naver.maps.Map('mapcanvas', {
