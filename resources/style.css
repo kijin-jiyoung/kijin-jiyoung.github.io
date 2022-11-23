@@ -86,6 +86,7 @@ p.contact {
     text-align: center;
     vertical-align: middle;
     font-size: 13px;
+    line-height: 15px;
 }
 	
 
@@ -99,7 +100,6 @@ img.telephone {
     width: 40px;
     height: 40px;
     vertical-align: middle;
-    padding: 0.5px;
 }
 
 
@@ -107,7 +107,6 @@ img.kakao {
     width: 40px;
     height: 40px;
     vertical-align: middle;
-    padding: 0.5px;
 }
 
 
