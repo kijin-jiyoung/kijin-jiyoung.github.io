@@ -246,14 +246,14 @@ img.kakao {
 
 
 .map2 {
-    width: 32%;
+    width: 32%; auto;
     max-width: 100%;
     height: 45px;
     font-size:14px;
     display:inline-block;
     text-align:center;
     vertical-align:middle;
-    padding:0.5px
+    padding:0.5px;
 
 }
 
