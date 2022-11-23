@@ -239,12 +239,15 @@ img.kakao {
     vertical-align: middle;
     font-size: 14px;
     line-height: 30px;
+    width: 32%;
+    max-width: 100%;
 }
 
 
 
 .map2 {
-    width: 30%;
+    width: 32%;
+    max-width: 100%;
     height: 45px;
     font-size:14px;
     display:inline-block;
