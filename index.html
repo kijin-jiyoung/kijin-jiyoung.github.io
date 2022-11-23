@@ -227,19 +227,31 @@
 <!-- gallery -->
 
 	     
+
 	     
 	     
-  <!-- 오시는 길 -->
-<br>
-<br>
-<br>
+	     
+	     
+	     
+<!-- 오시는 길 -->
+   <br>
+   <br>
+   <br>
  <p class="sub-Title"><br><br>오시는 길</p><br><br><br>	     
    <div class="Map">    
    <div id="mapcanvas" style="width:100%;height:400px;"></div>
-       <a href="https://naver.me/GZAsttWP" target="_blank">
-       <img class="navermap" src="resources/navermap.png">	
-       <a href="https://m.map.kakao.com/scheme/place?id=24254906" target="_blank">
-       <img class="kakaomap" src="resources/kakaomap.png"></a>
+  
+    <a target="_blank" href="https://naver.me/GZAsttWP">
+    <img class="navermap" src="resources/navermap.png">
+    <button class="map-button">네이버지도 보기</button></a>
+		   
+    <a id="start-navigation" href="javascript:startNavigation()">
+    <img class="kakaonavi" src="resources/kakaonavi.png">
+    <button class="map-button">카카오내비 보기</button></a>
+	   
+    <a class="flex-1" href="tmap://search?name=세빛섬주차장">
+    <img class="tmap" src="resources/tmap.png">
+    <button class="map-button" src="resources/tmap.png">티맵 보기</button></a>
     </div>    
 	     
      
@@ -319,9 +331,50 @@ function showSlides(n) {
             alert("복사되었습니다.");
         });
     }
+
+
+</script>	
 	
+	
+	
+ <!--카카오내비 -->	
+	
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+  integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/" crossorigin="anonymous">
+   
+	   
+  Kakao.init(a1065c1dcc6c5f9c31db033eb0ba55c4);	
+
+	
+  function startNavigation() {
+    Kakao.Navi.start({
+      name: '세빛섬주차장',
+      x: 126.9960627,
+      y: 37.5098918,
+      coordType: 'wgs84',
+    });
+  }	
+
 </script>
 	   
+ <!--카카오내비 -->		
+	
+
+	
+	
+	
+	
+
+
+
+	   
+	   
+	   
+	   
+	   
+	   
+  <!-- 네이버맵 -->	
+	
 	   
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>
 <script type="text/javascript">	   
@@ -336,14 +389,25 @@ function showSlides(n) {
         position: new naver.maps.LatLng(37.511742, 126.9948247),
         map: map
     });
+
+	
 </script>
 	     
 	     
-	     
+  <!-- 네이버맵 -->	
+	   
+	   
+	   
+
+	   
+ 	   
+	   
 	     
      <footer class="copyright-wrap">Copyright 2023.
      <a href="https://www.instagram.com/4pril.12/" target="_blank">@4pril.12</a>. All rights reserved.</footer> 	     
-	     
+
+	   
+	   
   </body>
   
   
