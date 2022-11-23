@@ -233,13 +233,14 @@
 <br>
 <br>
 <br>
-    <p class="Map">
+   <div class="Map">    
+   <div id="mapcanvas" style="width:100%;height:400px;"></div>
        <p class="sub-Title"><br><br>오시는 길</p><br><br><br>
        <a href="https://naver.me/GZAsttWP" target="_blank">
        <img class="navermap" src="resources/navermap.png">	
        <a href="https://m.map.kakao.com/scheme/place?id=24254906" target="_blank">
        <img class="kakaomap" src="resources/kakaomap.png"></a>
-    </p>    
+    </div>    
 	     
      
 	     
@@ -280,6 +281,7 @@
 
 	   
 <script>
+	
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -307,7 +309,38 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+	
+	
+ $(window).load(function () {
+    });
+	
+ function copy_to_clipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
+            alert("복사되었습니다.");
+        });
+    }
+	
+
+type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"
+	   
+  var mapOptions = {
+        center: new naver.maps.LatLng(37.511742, 126.9948247),
+        draggable: false,
+        zoom: 10
+    };
+
+    var map = new naver.maps.Map('mapcanvas', mapOptions);
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.511742, 126.9948247),
+        map: map
+    });
+	
 </script>
+	
+
+	     
+	     
+	     
 	     
      <footer class="copyright-wrap">Copyright 2023.
      <a href="https://www.instagram.com/4pril.12/" target="_blank">@4pril.12</a>. All rights reserved.</footer> 	     
