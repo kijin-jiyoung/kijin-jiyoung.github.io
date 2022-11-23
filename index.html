@@ -255,31 +255,31 @@
 
 <p class="sub-Title"><br><br>하나되어 나란히 걸어갈 두 사람</p><br><br>
   <div class="container2">
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-    <div class="mySlides">
+    <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
-  <div class="mySlides">
+  <div class="mySlides2">
     <img src="/photo/Main_1.jpg" style="width:100%">
   </div>
   
@@ -290,33 +290,33 @@
 
   <div class="caption-container2">  </div>
   
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(1)">
+  <div class="row2">
+    <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(1)">
     </div>
-       <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(2)">
+       <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(2)">
     </div>
-       <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(3)">
+       <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(3)">
     </div>
-      <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(4)">
+      <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(4)">
     </div>
-       <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(5)">
+       <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(5)">
     </div>
-      <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(6)">
+      <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(6)">
     </div>
-          <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(7)">
+          <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(7)">
     </div>
-      <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(8)">
+      <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(8)">
     </div>
-     <div class="column">
-      <img class="demo cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(9)">
+     <div class="column2">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(9)">
     </div>
  
   </div>
@@ -416,8 +416,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
+  let slides = document.getElementsByClassName("mySlides", "mySlides2");
+  let dots = document.getElementsByClassName("demo", "demo2");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
