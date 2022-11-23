@@ -284,39 +284,39 @@
   </div>
   
 
-  <a class="prev2" onclick="plusSlides(-1)">❮</a>
+  <a class="prev2" onclick="plusSlides2(-1)">❮</a>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a class="next2" onclick="plusSlides(1)">❯</a>
+  <a class="next2" onclick="plusSlides2(1)">❯</a>
 
   <div class="caption-container2">  </div>
   
   <div class="row2">
     <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(1)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(1)">
     </div>
        <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(2)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(2)">
     </div>
        <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(3)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(3)">
     </div>
       <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(4)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(4)">
     </div>
        <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(5)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(5)">
     </div>
       <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(6)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(6)">
     </div>
           <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(7)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(7)">
     </div>
       <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(8)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(8)">
     </div>
      <div class="column2">
-      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide(9)">
+      <img class="demo2 cursor" src="/photo/Main_1.jpg" style="width:100%" onclick="currentSlide2(9)">
     </div>
  
   </div>
@@ -417,8 +417,8 @@ function currentSlide(n) {
 
 function showSlides(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides", "mySlides2");
-  let dots = document.getElementsByClassName("demo", "demo2");
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -426,12 +426,58 @@ function showSlides(n) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "active2", "");
+    dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active", "active2";
+  dots[slideIndex-1].className += " active";
 }
 	
+
+
+
+
+
+
+
+
+let slideIndex = 2;
+showSlides(slideIndex2);
+
+function plusSlides2(n) {
+  showSlides(slideIndex2 += n);
+}
+
+function currentSlide2(n) {
+  showSlides(slideIndex2 = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides2");
+  let dots = document.getElementsByClassName("demo2");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 2}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active2", "");
+  }
+  slides[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active2";
+}
+	
+
+
+
+
+
+
+
+
+
+
 	
  $(window).load(function () {
     });
