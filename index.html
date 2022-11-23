@@ -441,14 +441,14 @@ function showSlides(n) {
 
 
 let slideIndex = 2;
-showSlides(slideIndex2);
+showSlides(slideIndex);
 
-function plusSlides2(n) {
-  showSlides(slideIndex2 += n);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
 }
 
-function currentSlide2(n) {
-  showSlides(slideIndex2 = n);
+function currentSlide(n) {
+  showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
@@ -457,15 +457,15 @@ function showSlides(n) {
   let dots = document.getElementsByClassName("demo2");
   let captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 2}
-  if (n < 1) {slideIndex2 = slides.length}
+  if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active2", "");
   }
-  slides[slideIndex2-1].style.display = "block";
-  dots[slideIndex2-1].className += " active2";
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active2";
 }
 	
 
