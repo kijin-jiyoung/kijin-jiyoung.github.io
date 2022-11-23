@@ -130,7 +130,8 @@ img.kakao {
 
 
 /* Position the image container (needed to position the left and right arrows) */
-.container {
+.container,
+.container2 {
   position: relative;
 }
 
@@ -181,7 +182,8 @@ img.kakao {
 
 
 /* Container*/
-.caption-container {
+.caption-container,
+.caption-container2 {
   text-align: center;
   padding: 10px;
 }
