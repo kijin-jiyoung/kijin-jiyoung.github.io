@@ -334,15 +334,15 @@ img.telephone {
     background-position: center;
     background-color: #FEF7EE; 
     display: inline-block;
-    width: 41px;
-    height: 41px;
+    width: 40.5px;
+    height: 40.5px;
     vertical-align: middle;
 }
 
 
 img.kakao {
-    width: 41px;
-    height: 41px;
+    width: 40.5px;
+    height: 40.5px;
     background-color: #FEF7EE;
     background-position: center;
     vertical-align: middle;
