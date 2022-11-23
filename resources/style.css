@@ -57,6 +57,9 @@ hr.hr {
   border: 0;
   height: 0;
   border-top: 1px solid;
+  max-width: 80%;
+  text-align: center; 
+  
  }
 
 
