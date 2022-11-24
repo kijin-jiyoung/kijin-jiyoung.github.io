@@ -505,36 +505,27 @@ function showSlides2(n) {
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>
 <script id="code">
 
-var mapDiv = document.getElementById('mapcanvas');			
-			
-var map = new naver.maps.Map(mapDiv);
 
-var HOME_PATH = window.HOME_PATH || '.';
-var position = new naver.maps.LatLng(37.511742, 126.9948247);		
-			
+var position = new naver.maps.LatLng(37.511742, 126.9948247);	
+
 var map = new naver.maps.Map('mapcanvas', {
     center: position,
-    draggable: false,
+	draggable: false,
     zoom: 16
 });
-	
-
-var marker = new naver.maps.Marker(markerOptions);	
- position: new naver.maps.LatLng(37.511742, 126.9948247);
- map: mapcanvas
-});
-
 
 var markerOptions = {
     position: position.destinationPoint(90, 15),
     map: mapcanvas,
     icon: {
-        url: HOME_PATH +'/resources/mapmarkers.png',
-        size: new naver.maps.Size(38, 58),
+        url: './resources/mapmarkers.png',
+        size: new naver.maps.Size(22, 35),
         origin: new naver.maps.Point(0, 0),
-        anchor: new naver.maps.Point(19, 58)
+        anchor: new naver.maps.Point(11, 35)
     }
 };
+
+var marker = new naver.maps.Marker(markerOptions);
 
 
 	
