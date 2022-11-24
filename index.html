@@ -355,7 +355,7 @@
                 <a class="navmap" href="https://naver.me/GnjokXoV">
 		<img class="navermap" src="resources/navermap.png"></a>
 		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <a id="start-navigation" href="javascript:startNavigation()">
+                <a href="javascript:void(0)" onclick="myKakaoNavi1();">
 		<img src="resources/kakaonavi.png" style="display:inline-block;width:40px;height:40px;vertical-align:middle;"></a>
 	        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 		<a class="flex-1" href="tmap://search?name=세빛섬주차장"> 
@@ -470,22 +470,24 @@ function showSlides2(n) {
         });
     }
 
+	
 </script>
 	
  <!--카카오내비 -->	
-<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>	
-<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
-  integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/" crossorigin="anonymous">
-
+<script type="text/javascript">
+	
   Kakao.init(a1065c1dcc6c5f9c31db033eb0ba55c4); 
-
-  function startNavigation() {
-    Kakao.Navi.start({
-      name: '세빛섬주차장',
+  function myKakaoNavi1() {
+   Kakao.Navi.start({
+      name: "세빛섬주차장",
       x: 126.9960627,
       y: 37.5098918,
-    });
-  }
+      coordType:'wgs84'	   
+    })
+  }	
+   
+ javascript:void(0)" onclick="myKakaoNavi1();
+ 
 	
 </script>
 
