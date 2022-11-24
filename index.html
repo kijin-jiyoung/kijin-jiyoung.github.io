@@ -549,18 +549,10 @@ function showSlides2(n) {
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
-
-var map = new naver.maps.Map('mapcanvas', {
-    center: new naver.maps.LatLng(37.511742, 126.9948247),
-    draggable: false,
-    zoom: 16
-});
-
-	
-var marker = new naver.maps.Marker({
-    position: new naver.maps.LatLng(37.511742, 126.9948247);
+var position = new naver.maps.LatLng(37.511742, 126.9948247);
 var map = new naver.maps.Map('mapcanvas', {
     center: position,
+    draggable: false,
     zoom: 16
 });
 
@@ -579,8 +571,7 @@ var marker = new naver.maps.Marker(markerOptions);
 	
 </script>	   
 
-	
-
+	     
 	     
 	     
   <!-- 네이버맵 -->	
