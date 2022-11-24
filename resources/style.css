@@ -286,6 +286,14 @@ img.tmap {
 }
 
 
+div.pay {
+    text-align: center;
+    vertical-align: middle;
+    max-width: 100%;		
+}
+
+
+
 
 img.kakopay,
 img.tosspay {
@@ -294,6 +302,7 @@ img.tosspay {
     height: 25px;
     vertical-align: middle;
     max-width: 100%;
+    padding: 0.5px;
 }
 
 
