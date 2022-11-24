@@ -502,18 +502,19 @@ function showSlides2(n) {
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
-  var map = new naver.maps.Map('mapcanvas', mapOptions);	
 
-  var position: new naver.maps.LatLng(37.511742, 126.9948247),	
+var map = new naver.maps.Map('mapcanvas', {
+    center: new naver.maps.LatLng(37.511742, 126.9948247),
+    draggable: false,
+    zoom: 14
+});
 
-  var mapOptions = {
-       position: center,
-       draggable: false,
-       zoom: 14
-   };
-	
-	
-	
+var marker = new naver.maps.Marker({
+    position: new naver.maps.LatLng(37.511742, 126.9948247),
+    map: map
+});
+
+
 	   
  var markerOptions = {
        position: position.destinationPoint(0,20),
@@ -525,8 +526,6 @@ function showSlides2(n) {
           anchor: new naver.maps.Point(25, 26),
        }
    };
-   
- var marker = new naver.maps.Marker(mapOptions);
 	
 </script>	   
 
