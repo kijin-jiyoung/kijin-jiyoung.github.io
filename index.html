@@ -437,32 +437,31 @@ function showSlides(n) {
 	
 	
 
-let slide2Index = 1;
-showSlides(slide2Index);
+let slideIndex2 = 1;
+showSlides2(slideIndex2);
 
 function plusSlides2(n) {
-  showSlides(slide2Index += n);
+  showSlides2(slideIndex2 += n);
 }
 
 function currentSlide2(n) {
-  showSlides(slide2Index = n);
+  showSlides2(slideIndex2 = n);
 }
 
-	
 function showSlides2(n) {
   let i;
-  let slides2 = document.getElementsByClassName("mySlides2");
+  let slides = document.getElementsByClassName("mySlides2");
   let dots = document.getElementsByClassName("demo2");
-  if (n > slides2.length) {slide2Index = 1}
-  if (n < 1) {slide2Index = slides2.length}
-  for (i = 0; i < slides2.length; i++) {
+  if (n > slides.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides.length}
+  for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slide2Index-1].style.display = "block";
-  dots[slide2Index-1].className += " active";
+  slides[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active";
 }
 	
 	
