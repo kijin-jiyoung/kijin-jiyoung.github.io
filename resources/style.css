@@ -306,8 +306,7 @@ img.tosspay {
     height: 33px;
     vertical-align: middle;
     max-width: 100%;
-    padding: 1px;
-    border: 1px solid;
+    border: 0.1px solid;
     border-color: #000
 }
 
