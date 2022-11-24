@@ -499,29 +499,30 @@ function showSlides2(n) {
 	   
   <!-- 네이버맵 -->	
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
-<script>			
-var position = new naver.maps.LatLng(37.511742, 126.9948247);	
-
-var map = new naver.maps.Map('mapcanvas', {
-    center: position,
-    draggable: false,
-    zoom: 14
-});
-
-var markerOptions = {
-    position: position,
+<script>
+$(function() {
+   initMap();
+  });
+	
+function initMap() {	
+     var map = new naver.maps.Map('mapcanvas', {
+	 center: new naver.maps.LatLng(37.511742, 126.9948247),
+	 draggable: false,
+         zoom: 14
+});	
+	     
+var marker = new naver.maps.Marker({
     map: mapcanvas,
+    title: "플로팅아일랜드",
+    position: new naver.maps.LatLng(37.511742, 126.9948247),     
     icon: {
-        url: './resources/mapmarkers.png',
+        url: 'img src="/resources/mapmarkers.png"',
         size: new naver.maps.Size(22, 35),
-        origin: new naver.maps.Point(0, 0),
         anchor: new naver.maps.Point(11, 35)
     }
-};
-
-var marker = new naver.maps.Marker(markerOptions);
-
+});
 
 	
 </script>
