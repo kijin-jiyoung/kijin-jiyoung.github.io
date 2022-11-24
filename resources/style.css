@@ -291,9 +291,9 @@ div.pay {
     text-align: center;
     vertical-align: middle;
     max-width: 100%;
-    font-size:13px;
+    font-size: 14px;
     font-weight: 600;
-    line-height:20px;
+    line-height: 20px;
 }
 
 
@@ -306,7 +306,7 @@ img.tosspay {
     height: 27px;
     vertical-align: middle;
     max-width: 100%;
-    padding: 0.5px;
+    padding: 1px;
 }
 
 
