@@ -520,11 +520,14 @@ var map = new naver.maps.Map('mapcanvas', {
 	
 
 var marker = new naver.maps.Marker(markerOptions);	
+ position: new naver.maps.LatLng(37.511742, 126.9948247);
+ map: mapcanvas
+});
 
 
 var markerOptions = {
     position: position.destinationPoint(90, 15),
-    map: map,
+    map: mapcanvas,
     icon: {
         url: HOME_PATH +'/resources/mapmarkers.png',
         size: new naver.maps.Size(38, 58),
