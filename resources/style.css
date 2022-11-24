@@ -137,10 +137,16 @@ img.kakao {
 
 
 /* Hide the images by default */
-.mySlides,
+.mySlides {
+  display: none;
+}
+
+
+
 .mySlides2 {
   display: block;
 }
+
 
 
 
