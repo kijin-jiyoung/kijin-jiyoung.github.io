@@ -287,6 +287,14 @@ img.tmap {
 
 
 
+img.kakopay,
+img.tosspay {
+    display: inline-block;
+    width: 550px;
+    height: 250px;
+    vertical-align: middle;
+}
+
 
 
 
