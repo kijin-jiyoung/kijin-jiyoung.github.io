@@ -245,9 +245,10 @@ img.kakao {
 
 img.copy {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     vertical-align: middle;
+    max-width: 100%;	
 }
 
 
