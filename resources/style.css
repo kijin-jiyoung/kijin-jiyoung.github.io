@@ -200,7 +200,7 @@ img.kakao {
 .row:after,
 .row2:after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 
