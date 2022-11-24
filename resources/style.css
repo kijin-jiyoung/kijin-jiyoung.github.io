@@ -29,7 +29,6 @@ body {
 
 p.Title,
 p.sub-Title,
-p.Date,
 p.Main-name {
    margin: auto;
    font-size: 17px;
@@ -40,6 +39,8 @@ p.Main-name {
    }
 
 
+
+p.Date,
 p.Time-place {
    margin: auto;
    font-size: 13px;
