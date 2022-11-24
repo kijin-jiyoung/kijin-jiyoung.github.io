@@ -414,7 +414,15 @@ function plusSlides(n) {
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
+	
+function plusSlides2(n) {
+  showSlides(slideIndex += n);
+}
 
+function currentSlide2(n) {
+  showSlides(slideIndex = n);
+}
+	
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
