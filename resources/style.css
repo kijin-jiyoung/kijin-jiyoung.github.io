@@ -130,22 +130,25 @@ img.kakao {
 
 
 /* Position the image container (needed to position the left and right arrows) */
-.container,
+.container {
+  position: relative;
+}
+
+
 .container2 {
   position: relative;
 }
 
 
+
+
 /* Hide the images by default */
-.mySlides {
-  display: none;
-}
-
-
-
+.mySlides,
 .mySlides2 {
-  display: block;
+  display: none;
+  width: 100%;	
 }
+
 
 
 
