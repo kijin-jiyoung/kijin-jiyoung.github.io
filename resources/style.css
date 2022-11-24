@@ -289,7 +289,9 @@ img.tmap {
 div.pay {
     text-align: center;
     vertical-align: middle;
-    max-width: 100%;		
+    max-width: 100%;
+    font-size:13px;
+    line-height:10px;
 }
 
 
