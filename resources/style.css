@@ -106,6 +106,8 @@ img.telephone {
     width: 40px;
     height: 40px;
     vertical-align: middle;
+    border: 0.1px; solid;
+    border-color: #000;
 }
 
 
@@ -113,6 +115,8 @@ img.kakao {
     width: 40px;
     height: 40px;
     vertical-align: middle;
+    border: 0.1px; solid;
+    border-color: #000;
 }
 
 
