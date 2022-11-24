@@ -503,7 +503,7 @@ function showSlides2(n) {
 <script>			
 var position = new naver.maps.LatLng(37.511742, 126.9948247);	
 
-var mapcanvas = new naver.maps.Map('map', {
+var map = new naver.maps.Map('mapcanvas', {
     center: position,
     draggable: false,
     zoom: 14
@@ -511,7 +511,7 @@ var mapcanvas = new naver.maps.Map('map', {
 
 var markerOptions = {
     position: position,
-    mapcanvas: mapcanvas,
+    map: mapcanvas,
     icon: {
         url: './resources/mapmarkers.png',
         size: new naver.maps.Size(22, 35),
