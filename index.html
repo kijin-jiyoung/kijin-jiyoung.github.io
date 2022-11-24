@@ -413,6 +413,7 @@
      <img class="kakopay" src="resources/kakopay.png">		
      <a href="" target="_blank">
      <img class="tosspay" src="resources/tosspay.png"></a>
+     <br>
      신랑 이기진
      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;     
      신부 윤지영
@@ -588,50 +589,7 @@ var marker = new naver.maps.Marker(markerOptions);
   <!-- 네이버맵 -->	
 
 			
-			
-  <!-- 카카오페이 -->				
-			
-			
-			
-(function($){
 
-    var redirect = function() {
-        var web2appOptions = {
-            urlScheme: 'kakaotalk://kakaopay/money/to/qr?qr_code=281006011000055439228587',
-            appName: '카카오톡',
-            intentURI: 'intent://kakaopay/money/to/qr?qr_code=281006011000055439228587#Intent;scheme=kakaotalk;package=com.kakao.talk;end;',
-            storeURL: 'itms-apps://itunes.apple.com/app/id362057947',
-            willInvokeApp: function () {
-            },
-            onUnsupportedEnvironment: function () {
-                $("#move_mobile").hide();
-                $("#move_err").show();
-            }
-        };
-        daumtools.web2app(web2appOptions);
-    };
-
-    $("#forceRedirect").click(function(e){
-        e.preventDefault();
-        redirect();
-    });
-
-    if (daumtools.userAgent().platform === 'pc') {
-        $("#move_mobile").hide();
-        $("#move_pc").show();
-    } else {
-        setTimeout(redirect, 500);
-    }
-})(jQuery);			
-			
-			
-			
-			
-			
-  <!-- 카카오페이 -->				
-			
-			
-			
 			
 			
 			
