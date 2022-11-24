@@ -266,6 +266,8 @@ img.navermap {
     width: 40px;
     height: 40px;
     vertical-align: middle;
+    border: 0.1px solid;
+    border-color: #000
 }
 
 
@@ -275,6 +277,8 @@ img.kakaonavi {
     width: 40px;
     height: 40px;
     vertical-align: middle;
+    border: 0.1px solid;
+    border-color: #000
 }
 
 
@@ -284,6 +288,8 @@ img.tmap {
     width: 40px;
     height: 40px;
     vertical-align: middle;
+    border: 0.1px solid;
+    border-color: #000
 }
 
 
