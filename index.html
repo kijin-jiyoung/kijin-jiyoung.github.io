@@ -577,16 +577,16 @@ function showSlides2(n) {
 var boundary = naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 126.9948247), new naver.maps.LatLng(37.511742, 126.9948247));
 var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
 
-var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 13 }, {draggable: false});
-    
+var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 10 }, {draggable: false});
+    map.fitBounds(boundary);
 
 var unarySpotMarker = new naver.maps.Marker({
     position: floatingisland,
     map: map,
     title: '플로팅아일랜드',
     icon: {
-        content: '<img src="./resources/mapmarkers.png">',
-        size: new naver.maps.Size(30, 48),
+        content: '<img src="./resources/mapmarkers.png" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; left: 0px; top: 0px;">',
+        size: new naver.maps.Size(24, 42),
         anchor: new naver.maps.Point(11, 35)
     }	
 
