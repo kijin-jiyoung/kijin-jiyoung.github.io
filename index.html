@@ -574,7 +574,7 @@ function showSlides2(n) {
 var boundary = naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 126.9948247), new naver.maps.LatLng(37.511742, 126.9948247));
 var unarySpot = new naver.maps.LatLng(37.511742, 126.9948247);
 
-var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 14 }, {draggable: false});
+var map = new naver.maps.Map(document.getElementById('mapcanvas'), {zoom: 16}, {draggable: false});
     map.fitBounds(boundary);   
 
 var unarySpotMarker = new naver.maps.Marker({
@@ -582,7 +582,7 @@ var unarySpotMarker = new naver.maps.Marker({
     map: map,
     title: 'Unary Spot!!',
     icon: {
-        content: '<img src="./resourses/mapmarkers.png" alt="플로팅아일랜드" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 22px; height: 35px; left: 0px; top: 0px;">',
+        content: '<img src="./resourses/mapmarkers.png" alt="플로팅아일랜드" style="display: block;-webkit-user-select: none; position: absolute; width: 22px; height: 35px;top: 0px;">',
         size: new naver.maps.Size(22, 35),
         anchor: new naver.maps.Point(11, 35)
     }
