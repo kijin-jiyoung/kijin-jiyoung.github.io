@@ -571,27 +571,30 @@ function showSlides2(n) {
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
-var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
-
 var map = new naver.maps.Map('mapcanvas', {
-    center: position,
+    center: new naver.maps.LatLng(37.511742, 126.9948247),	
     draggable: false,
     zoom: 16
 });
 
+	
+	
+var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
+
+
 var markerOptions = {
     position: floatingisland,
     map: map,
-    title: '플로팅아일랜드',	
+	title: '플로팅아일랜드',	
     icon: {
-        url: './resources/mapmarkers.png',
-        size: new naver.maps.Size(22, 35),
+        url: './resourses/mapmarkers.png',
+        size: new naver.maps.Size(25, 34),
         origin: new naver.maps.Point(0, 0),
-        anchor: new naver.maps.Point(11, 35)
+        anchor: new naver.maps.Point(12, 34)
     }
 };
 
-var marker = new naver.maps.Marker(markerOptions);
+var marker = new naver.maps.Marker(markerOptions);	
 
 	
 	
