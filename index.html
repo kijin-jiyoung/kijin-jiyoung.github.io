@@ -606,17 +606,16 @@ var marker = new naver.maps.Marker(markerOptions);
 
 	 
 	 
-<!-- sms 공유 -->		 
-<script>	
+<!-- sms 공유 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
 
- const userAgent = navigator.userAgent.toLocaleLowerCase()
-
-if (userAgent.search('android') > -1) {
-    this.smsUrl = 'sms: ?body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
-} else if (userAgent.search('iphone') > -1 || uagent.search('ipad') > -1) {
-    this.smsUrl = 'sms: &body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
-}
-
+  var linkString = "sms";
+  linkString += "?body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io";
+  $("#smsUrl").on("click", function () {
+		location.href=linkString;
+   });
 
 
 </script>	 
