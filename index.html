@@ -571,34 +571,44 @@ function showSlides2(n) {
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
-var map = new naver.maps.Map('mapcanvas', {
-    center: new naver.maps.LatLng(37.511742, 126.9948247),	
-    draggable: false,
-    zoom: 16
-});
+var boundary = naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 126.9948247), new naver.maps.LatLng(37.511742, 126.9948247));
+var unarySpot = new naver.maps.LatLng(37.511742, 126.9948247);
 
-	
-	
-var position = new naver.maps.LatLng(37.511742, 126.9948247);
-var map = new naver.maps.Map('mapcanvas', {
-    center: position,
-    draggable: false,
-    zoom: 16
-});
+var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 10 }, {draggable: false});
+    map.fitBounds(boundary);
 
-
-var markerOptions = {
-    position: position,
+var unarySpotMarker = new naver.maps.Marker({
+    position: unarySpot,
     map: map,
+    title: 'Unary Spot!!',
     icon: {
-        url: './resourses/mapmarkers.png',
-        size: new naver.maps.Size(25, 34),
-        origin: new naver.maps.Point(0, 0),
-        anchor: new naver.maps.Point(12, 34)
+        content: '<img src="../resourses/mapmarkers.png" alt="" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; width: 22px; height: 35px; left: 0px; top: 0px;">',
+        size: new naver.maps.Size(22, 35),
+        anchor: new naver.maps.Point(11, 35)
     }
-};
-
-var marker = new naver.maps.Marker(markerOptions);	
+});	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 </script>	   
 
