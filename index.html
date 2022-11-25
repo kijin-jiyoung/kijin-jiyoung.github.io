@@ -658,7 +658,7 @@ function checkMobile(){
 
 function smsSend(idx){ //Android, IOS, 자동분기
     if(idx == 0){
-    location.href = 'sms:' +''+ '?' + 'body='+ encodeURIComponent("Android 수신자 없음\nSMS SEND TEST");
+    location.href = 'sms:' +''+ '?' + 'body='+ encodeURIComponent("");
     } else if(idx == 1){
         location.href = 'sms:' +'01012341234'+ '?' + 'body='+ encodeURIComponent("Android 수신자 있음\nSMS SEND TEST");
     } else if(idx == 2){
