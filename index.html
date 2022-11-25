@@ -575,7 +575,7 @@ var boundary = naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 1
 var unarySpot = new naver.maps.LatLng(37.511742, 126.9948247);
 
 var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 13 }, {draggable: false});
-    map.fitBounds('boundary');
+    map.fitBounds(boundary);
 
 var unarySpotMarker = new naver.maps.Marker({
     position: unarySpot,
