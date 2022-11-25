@@ -658,7 +658,7 @@ function checkMobile(){
 
 function smsSend(idx){ //Android, IOS, 자동분기
     if(idx == 0){
-    location.href = 'sms:' +''+ '?' + 'body='+ encodeURIComponent("");
+    location.href = 'sms:encodeURIComponent("https://kijin-jiyoung.github.io");
     } else if(idx == 1){
         location.href = 'sms:' +'01012341234'+ '?' + 'body='+ encodeURIComponent("Android 수신자 있음\nSMS SEND TEST");
     } else if(idx == 2){
@@ -685,7 +685,7 @@ function smsSend(idx){ //Android, IOS, 자동분기
   Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4');
   Kakao.Share.sendScrap({
     container: '#kakaotalk-share',
-   requestUrl: 'hhttps://kijin-jiyoung.github.io',
+   requestUrl: 'https://kijin-jiyoung.github.io',
 });
 </script>			
 			
