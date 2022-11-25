@@ -462,11 +462,10 @@
  <div class="share" style="font-size:13px;line-height:10px;">	
 	<p>문자 공유하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	   카카오톡 공유하기</p>
-	 <br>
          <br>
          <a href="smsUrl" class="sms"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<a id="kakaotalk-share" href="javascript:;">
+<a id="kakaotalkshare" href="javascript:;">
 <img src="resources/kakaotalk.png" alt="카카오톡 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;border:0.1px;border-color:#F2F2F2">
 </a></div>
 	     <br>
@@ -649,7 +648,7 @@ if (userAgent.search('android') > -1) {
 <script type="text/javascript">
   Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4');
   Kakao.Share.createCustomButton({
-  container: '#kakaotalk-share',
+  container: 'kakaotalkshare',
   templateId: ${85893},
   templateArgs: {
     title: '기진 지영 결혼식에 초대합니다.',
