@@ -333,7 +333,7 @@ img.tosspay {
 
 
 
-img.sms,
+
 img.kakotalk {
     display: inline-block;
     width: 40px;
@@ -348,8 +348,8 @@ img.kakotalk {
 
 #wrap {overflow:hidden; position:relative; width:100%; text-align:center;}
 .title{font-size: 20px;margin-top: 10px;}
-.btn_box{padding:10px;}
-.sms{display: block;width: 100%; line-height: 50px; border:1px solid #000; margin-bottom: 10px; color:#000}
+.sms{display: inline-block;width: 40px;height: 40px;vertical-align: middle;max-width: 100%;border: 0.1px solid;border-color: #F2F2F2;}
+.sms2{display: block;width: 100%; line-height: 50px; border:1px solid #000; margin-bottom: 10px; color:#000}
 
 
 
