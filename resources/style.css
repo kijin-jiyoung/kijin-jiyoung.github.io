@@ -333,6 +333,23 @@ img.tosspay {
 
 
 
+img.sms,
+img.kakotalk {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    max-width: 100%;
+    border: 0.1px solid;
+    border-color: #F2F2F2;
+}
+
+
+
+
+
+
+
 footer.copyright-wrap {
      font-size: 12px;
      letter-spacing: 2px;
