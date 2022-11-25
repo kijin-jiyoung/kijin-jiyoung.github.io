@@ -259,7 +259,8 @@ img.kakao {
     width: 23px;
     height: 36px;
     vertical-align: middle;
-    max-width: 100%;	
+    max-width: 100%;
+    line-height: 40px;
 }
 
 
