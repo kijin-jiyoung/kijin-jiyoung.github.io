@@ -448,7 +448,8 @@
  <div class="share" style="font-size:13px;line-height:10px;">	
 	 &nbsp;&nbsp;문자 공유하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 카카오톡 공유하기</p>
-         <a href="smsUrl" class="sms"></a>
+         <a href="smsUrl" class="sms">
+         <img src="resources/sms.png" alt="문자 공유하기"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="kakaotalk-sharing-btn" href="javascript:;">
 <img src="resources/kakaotalk.png" alt="카카오톡 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;border:0.1px;border-color:#F2F2F2">
@@ -611,9 +612,9 @@ var marker = new naver.maps.Marker(markerOptions);
  const userAgent = navigator.userAgent.toLocaleLowerCase()
 
 if (userAgent.search('android') > -1) {
-    this.smsUrl = 'sms:?body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
+    this.smsUrl = 'sms: ?body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
 } else if (userAgent.search('iphone') > -1 || uagent.search('ipad') > -1) {
-    this.smsUrl = 'sms:&body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
+    this.smsUrl = 'sms: &body=이기진❤️윤지영의 결혼식에 초대합니다. https://kijin-jiyoung.github.io'
 }
 
 
