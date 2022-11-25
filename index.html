@@ -571,30 +571,27 @@ function showSlides2(n) {
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 <script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
-	
-	
-	
-var boundary = naver.maps.LatLngBounds.bounds(new naver.maps.LatLng(37.511742, 126.9948247), new naver.maps.LatLng(37.511742, 126.9948247));
 var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
 
-var map = new naver.maps.Map(document.getElementById('mapcanvas'), { zoom: 10 }, {draggable: false});
-    map.fitBounds(boundary);
+var map = new naver.maps.Map('mapcanvas', {
+    center: position,
+    zoom: 10
+});
 
-var unarySpotMarker = new naver.maps.Marker({
+var markerOptions = {
     position: floatingisland,
     map: map,
-    title: '플로팅아일랜드',
+    title: '플로팅아일랜드',	
     icon: {
-        content: '<img src="./resources/mapmarkers.png" style="margin: 0px; padding: 0px; border: 0px solid transparent; display: block; max-width: none; max-height: none; -webkit-user-select: none; position: absolute; left: 0px; top: 0px;">',
-        size: new naver.maps.Size(24, 42),
+        url: './resources/mapmarkers.png',
+        size: new naver.maps.Size(22, 35),
+        origin: new naver.maps.Point(0, 0),
         anchor: new naver.maps.Point(11, 35)
-    }	
+    }
+};
 
-});	
-	
-	
-	
-	
+var marker = new naver.maps.Marker(markerOptions);
+
 	
 	
 </script>	   
