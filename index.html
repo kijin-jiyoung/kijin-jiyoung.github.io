@@ -459,13 +459,37 @@
 	        <br>
 	        <br>
 <p class="sub-Title"><br><br>공유하기</p><br><br>
-		<br>
-		<br>
-		<br>
-	        <br>					
-	        <br>	
+ <div class="share" style="font-size:13px;line-height:10px;">	
+	<p>문자 공유하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   카카오톡 공유하기</p>
+	 <br>
+         <br>
+ <div id="wrap">
+        <div class="sms">
+            <a href="javascript:;" class="sms2">Android(수신자X)</a>
+            <a href="javascript:;" class="sms2">Android(수신자O)</a>
+            <a href="javascript:;" class="sms2">IOS(수신자X)</a>
+            <a href="javascript:;" class="sms2">IOS(수신자O)</a>
+            <a href="javascript:;" class="sms2">자동분기(수신자O)</a>
+        </div>
+    </div>	 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a id="kakaotalk-share" href="javascript:;">
+<img src="resources/kakaotalk.png" alt="카카오톡 공유하기">
+</a></div>
+	     <br>
+	     <br>					
+	     <br>	
 	     
-	   
+
+
+
+	     
+ <!------------ 스크립트 영역 ------------>		     
+	     
+	     
+ <!-- 갤러리 -->		     
+	     
 <script>
 	
 let slideIndex = 1;
@@ -525,9 +549,12 @@ function showSlides2(n) {
   dots[slideIndex2-1].className += " active";
 }
 	
+ <!-- 갤러리 -->		
+
 	
-
-
+	
+	
+ <!-- 복사 -->	
 	
  $(window).load(function () {
     });
@@ -538,10 +565,14 @@ function showSlides2(n) {
         });
     }
 
-	
 </script>
-	
- <!--카카오내비 -->	
+
+ <!-- 복사 -->		     
+
+	     
+	     
+	     
+ <!-- 카카오내비 -->	
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>			
 <script type="text/javascript">
   Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4'); 
@@ -553,12 +584,9 @@ function showSlides2(n) {
       coordType:'wgs84'	   
     });
   }	
-	
-	
-</script>
-
+</script>  
 	   
- <!--카카오내비 -->		
+ <!-- 카카오내비 -->		
 	
 
 	   
@@ -576,8 +604,6 @@ var map = new naver.maps.Map('mapcanvas', {
     draggable: false,
     zoom: 16
 });
-
-	
 	
 var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
 
@@ -595,37 +621,83 @@ var markerOptions = {
 };
 
 var marker = new naver.maps.Marker(markerOptions);	
-
-	
-	
 </script>	   
 
-	     
-	     
-	     
   <!-- 네이버맵 -->	
 
 			
 
+	 
+	 
+<!-- sms 공유 -->		 
+<script>	  
+$(function(){
+
+    checkMobile(); //디바이스 종류 체크
+
+    $(".sms").on("click",function(){
+        var idx = $(this).index();
+        smsSend(idx);
+    });
+    
+});
+
+function checkMobile(){
+    var UA = navigator.userAgent.toLowerCase(); //userAgent 체크
+    if ( UA.indexOf('android') > -1) {
+        //Android
+        return "android";
+    } else if ( UA.indexOf("iphone") > -1 || UA.indexOf("ipad") > -1 || UA.indexOf("ipod") > -1 ) {
+        //IOS
+        return "ios";
+    } else {
+        //Android, IOS 외
+        return "other";
+    }
+}
+
+function smsSend(idx){ //Android, IOS, 자동분기
+    if(idx == 0){
+    location.href = 'sms:' +''+ '?' + 'body='+ encodeURIComponent("Android 수신자 없음\nSMS SEND TEST");
+    } else if(idx == 1){
+        location.href = 'sms:' +'01012341234'+ '?' + 'body='+ encodeURIComponent("Android 수신자 있음\nSMS SEND TEST");
+    } else if(idx == 2){
+        location.href = 'sms:' +''+ '&' + 'body='+ encodeURIComponent("IOS 수신자 없음\nSMS SEND TEST");
+    } else if(idx == 3){
+        location.href = 'sms:' +'01012341234'+ '&' + 'body='+ encodeURIComponent("IOS 수신자 있음\nSMS SEND TEST");
+    } else if(idx == 4){
+        location.href = 'sms:' +'01012341234'+ (checkMobile() == 'ios' ? '&' : '?') + 'body='+ encodeURIComponent("자동분기 보내기\nSMS SEND TEST");
+    }
+}	 
+</script>	 
+	 
+<!-- sms 공유 -->	 
+	 
+	 
+	 
 			
 			
 			
+<!-- 카카오톡 공유 -->				
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
+  integrity="sha384-eKjgHJ9+vwU/FCSUG3nV1RKFolUXLsc6nLQ2R1tD0t4YFPCvRmkcF8saIfOZNWf/" crossorigin="anonymous"></script>
+<script>
+  Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4');
+  Kakao.Share.createCustomButton({
+    container: '#kakaotalk-share',
+    templateId: 82775,
+    templateArgs: {
+      title: '라이언이 즐겨먹던 바로 그 틴케이스 치즈볼',
+      description: '바라만 봐도 즐거워지는 힐링 패키지에는 시크릿 스토리가 숨어있어요.',
+    },
+  });
+</script>			
 			
 			
 			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
- 	   
+<!-- 카카오톡 공유 -->		
+ 
+
 	   
 	     
      <footer class="copyright-wrap" style="footer.copyright-wrap{font-size:12px;letter-spacing:2px;font-family: 'Roboto Slab', serif;line-height:30px;}">Copyright 2023.
