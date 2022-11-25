@@ -316,8 +316,8 @@ div.pay {
 img.kakopay,
 img.tosspay {
     display: inline-block;
-    width: 63px;
-    height: 33px;
+    width: 55px;
+    height: 25px;
     vertical-align: middle;
     max-width: 100%;
     border: 0.1px solid;
