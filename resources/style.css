@@ -92,9 +92,6 @@ p.contact {
 
 
 img.telephone {
-    background-img: url("/resources/tel.png");
-    background-repeat: no-repeat;
-    background-position: center;
     display: inline-block;
     width: 40px;
     height: 40px;
