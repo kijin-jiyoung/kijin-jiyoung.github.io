@@ -411,15 +411,43 @@
 	     <br>	
 	     
 
+	     
+ <!------------ 스크립트 영역 ------------>
+ <!-- 스와이프 -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<link rel="stylesheet" href="css/superslides.css">
+<script src="js/jquery.superslides.js" type="text/javascript"></script>
+<script type="text/javascript" src="/theme/basic/js/jquery.touchSwipe.min.js"></script> <!--추가-->
+
+<script>
+  $(function() {
+    $('#slides').superslides({
+      hashchange: false,
+      speed: 5000,
+      animation: 'fade'     
+  });
+    	  
+          
+   /*touchSwipe*/       
+   $('#slides').swipe({
+      swipeLeft:function() {
+      $(this).superslides('animate', 'next');
+      },
+      swipeRight:function() {
+      $(this).superslides('animate', 'prev');
+      }
+   });		
+            
+});
+  
+</script>
+ <!-- 스와이프 -->
 
 
 
-	     
- <!------------ 스크립트 영역 ------------>		     
-	     
-	     
+
+
  <!-- 갤러리 -->		     
-	     
 <script>
 	
 let slideIndex = 1;
@@ -448,9 +476,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-	
 
-	
 
 let slideIndex2 = 1;
 showSlides2(slideIndex2);
@@ -477,15 +503,19 @@ function showSlides2(n) {
   }
   slides[slideIndex2-1].style.display = "block";
   dots[slideIndex2-1].className += " active";
-}
-	
- <!-- 갤러리 -->		
-
+}	
+ <!-- 갤러리 -->
 	
 	
 	
- <!-- 복사 -->	
 	
+	
+	
+	
+	
+	
+	
+ <!-- 복사 -->		
  $(window).load(function () {
     });
 	
@@ -496,11 +526,8 @@ function showSlides2(n) {
     }
 
 </script>
-
  <!-- 복사 -->		     
-
-	     
-	     
+      
 	     
  <!-- 카카오내비 -->	
 <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>			
@@ -514,14 +541,8 @@ function showSlides2(n) {
       coordType:'wgs84'	   
     });
   }	
-</script>  
-	   
+</script>  	   
  <!-- 카카오내비 -->		
-	
-
-	   
-			
-	   
 	   
 	   
   <!-- 네이버맵 -->	
@@ -552,11 +573,7 @@ var markerOptions = {
 
 var marker = new naver.maps.Marker(markerOptions);	
 </script>	   
-
   <!-- 네이버맵 -->	
-
-			
-
 	 
 	 
 <!-- sms 공유 -->
@@ -573,17 +590,8 @@ if (userAgent.search('android') > -1) {
 
 }
 
-</script>
-
-
-
-	 
-	 
+</script> 
 <!-- sms 공유 -->	 
-	 
-	 
-	 
-			
 			
 			
 <!-- 카카오톡 공유 -->				
@@ -603,19 +611,10 @@ if (userAgent.search('android') > -1) {
 </script>			
 <!-- 카카오톡 공유 -->		
  
-
 	   
 <script>    
      <footer class="copyright-wrap">Copyright 2023.
      <a href="https://www.instagram.com/4pril.12/" target="_blank">@4pril.12</a>. All rights reserved.</footer> 	     	   
 </script>	   
   </body>
-  
-  
-  
-	 
-
-  
-  
-  
 </html>
