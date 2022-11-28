@@ -257,12 +257,22 @@ img.kakao {
 
 .copy {
     display: inline-block;
-    width: 23px;
-    height: 36px;
+    width: 28px;
+    height: 14px;
     vertical-align: middle;
+    padding:1px;
+    cursor:pointer;
     max-width: 100%;
     line-height: 40px;
 }
+
+
+
+
+
+
+
+
 
 
 
