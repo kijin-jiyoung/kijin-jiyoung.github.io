@@ -364,7 +364,7 @@
  <div class="share" style="font-size:13px;line-height:10px;">	
 	 &nbsp;&nbsp;문자 공유하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 카카오톡 공유하기</p>
-         <a href="javascript:;" onclick="location.href">
+         <a href="javascript:location.href">
          <img src="resources/sms.png" alt="문자 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;"></a>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -511,17 +511,7 @@ var marker = new naver.maps.Marker(markerOptions);
 // checkMobile() "ios" : 아이폰 , "android" : 안드로이드폰
 // 아이폰 : &, 안드로이드 : ?
 location.href = 'sms:' +( checkMobile() == 'ios' ? '&' : '?') + 'body=' + 이기진❤️윤지영 결혼합니다. + https://kijin-jiyoung.github.io;
- 	
-var testMsg = "이기진❤️윤지영 결혼합니다.\n\n"
-var message = testMsg.replace(/(\n|\r\n)/g, "%0a");
- 
-var testURL = "https://kijin-jiyoung.github.io.jsp?param1=abc&param2=def";
-var url = testURL.replace("&", "%2526");
- 
-location.href = 'sms:' +( checkMobile() == 'ios' ? '&' : '?') + 'body=' + 이기진❤️윤지영 결혼합니다. + https://kijin-jiyoung.github.io;
- 
-	
-	
+
 	
 function checkMobile(){
  
