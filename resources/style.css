@@ -188,11 +188,12 @@ img.kakao {
 
 .copy {
     display: inline-block;
-    width: 28px;
-    height: 14px;
-    padding:1px;
+    width: 240px;
+    height: 25px;
+    padding: 2px;
     cursor:pointer;
-    line-height: 40px;
+    text-align:center;
+    vertical-align:middle;
 }
 
 
