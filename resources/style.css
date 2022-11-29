@@ -21,9 +21,15 @@ body {
 
 
 p.Title,
-p.sub-Title,
-p.Main-name {
+p.sub-Title {
    font-size: 17px;
+   font-weight: 100;
+   letter-spacing: 3px;
+   }
+
+
+p.Main-name {
+   font-size: 15px;
    font-weight: 100;
    letter-spacing: 3px;
    }
