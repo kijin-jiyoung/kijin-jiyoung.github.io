@@ -15,8 +15,6 @@ body {
 
 .fist-page,
 .second-page {
-    width: 100%;
-    max-width: 666px;
     margin-left: auto;
     margin-right: auto;
     height: 140px;
@@ -92,19 +90,13 @@ img.kakao {
   < !-- 갤러리 영역 -- >
 * {
   box-sizing: border-box;
-  max-width: 666px;
-  width: 100%;
 }
 
 
 /* Position the image container (needed to position the left and right arrows) */
 .container,
 .container2 {
-  position: relative;
-  max-width: 666px;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;   
+  position: relative; 
 }
 
 
@@ -112,10 +104,6 @@ img.kakao {
 .mySlides,
 .mySlides2 {
   display: none;
-  width: 100%;
-  max-width: 666px;
-  vertical-align: middle;
-  text-align: center;
 }
 
 
@@ -132,8 +120,6 @@ img.kakao {
 .prev2,
 .next2 {
   cursor: pointer;
-  width: 100%;
-  max-width: 666px;
   border: 20px;
   padding: 0px;
   font-weight: normal;
@@ -165,10 +151,6 @@ img.kakao {
 .caption-container2 {
   text-align: center;
   padding: 10px;
-   width: 100%;
-    max-width: 666px;
-  vertical-align: middle;
-  text-align: center;
 }
 
 
@@ -185,7 +167,7 @@ img.kakao {
 .column2 {
   float: left;
   width: 11.1%;
-  max-width: 666px;
+  max-width: 100%;
 }
 
 
