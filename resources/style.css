@@ -10,6 +10,7 @@ body {
     line-height: 1.5;
     text: #000;
     over-flow-x :  hidden;
+    position: fixed;
     }
 
 html {
