@@ -185,8 +185,23 @@ img.kakao {
 }
   < !-- 갤러리 영역 -- >
 
-
 .copy {
+    display: inline-block;
+    width: 28px;
+    height: 14px;
+    padding: 2px;
+    cursor:pointer;
+    text-align:center;
+    vertical-align:middle;
+    background-color: #F2F2F2;
+    font-family: 'MapoFlowerIsland';
+}
+
+
+
+
+
+.buttoncopy {
     display: inline-block;
     width: 60px;
     height: 30px;
