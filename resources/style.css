@@ -133,7 +133,7 @@ img.kakao {
 .next,
 .next2 {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  border-radius: none;
 }
 
 
