@@ -198,6 +198,9 @@ button.copy {
     font-family: 'MapoFlowerIsland';
 }
 
+.btnFade.copy:hover {
+  background: #21825B;
+}
 
 
 img.navermap {
