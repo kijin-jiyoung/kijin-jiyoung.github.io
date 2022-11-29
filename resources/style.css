@@ -186,7 +186,7 @@ img.kakao {
   < !-- 갤러리 영역 -- >
 
 
-button.copy {
+.copy {
     display: inline-block;
     width: 60px;
     height: 30px;
@@ -198,7 +198,7 @@ button.copy {
     font-family: 'MapoFlowerIsland';
 }
 
-.btnFade.copy:hover {
+.buttonFade.copy:hover {
   background: #21825B;
 }
 
