@@ -89,6 +89,7 @@ img.kakao {
   < !-- 갤러리 영역 -- >
 * {
   box-sizing: border-box;
+  max-width: 666px;
 }
 
 
@@ -103,7 +104,8 @@ img.kakao {
 .mySlides,
 .mySlides2 {
   display: none;
-  width: 100%;	
+  width: 100%;
+  max-width: 666px;
 }
 
 
@@ -169,6 +171,7 @@ img.kakao {
   float: left;
   width: 11.1%;
   max-width: 100%;
+  max-width: 666px;
 }
 
 
