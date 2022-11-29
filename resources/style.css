@@ -44,7 +44,7 @@ p.Time-place {
 
 
 .Main-photo {
-    max-width: 100%;
+    width: 100%;
     max-width: 666px;
    }
 
@@ -127,7 +127,8 @@ img.kakao {
 .prev2,
 .next2 {
   cursor: pointer;
-  width: auto;
+  width: 100%;
+  max-width: 666px;
   border: 20px;
   padding: 0px;
   font-weight: normal;
@@ -159,7 +160,8 @@ img.kakao {
 .caption-container2 {
   text-align: center;
   padding: 10px;
-      max-width: 666px;
+   width: 100%;
+    max-width: 666px;
   vertical-align: middle;
   text-align: center;
 }
@@ -178,7 +180,6 @@ img.kakao {
 .column2 {
   float: left;
   width: 11.1%;
-  max-width: 100%;
   max-width: 666px;
 }
 
