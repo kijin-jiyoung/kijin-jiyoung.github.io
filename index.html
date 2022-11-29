@@ -366,8 +366,9 @@
  <div class="share" style="font-size:13px;line-height:10px;">	
 	 &nbsp;&nbsp;문자 공유하기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 	 카카오톡 공유하기</p>
-         <a href="smsUrl">
+         <a href="location.href">
          <img src="resources/sms.png" alt="문자 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;"></a>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="kakaotalk-sharing-btn" href="javascript:;">
 <img src="resources/kakaotalk.png" alt="카카오톡 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;">
@@ -504,25 +505,46 @@ var markerOptions = {
 var marker = new naver.maps.Marker(markerOptions);	
 </script>	   
   <!-- 네이버맵 -->	
-	 
-	 
-<!-- sms 공유 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript">
 
-const userAgent = navigator.userAgent.toLocaleLowerCase()
 
-if (userAgent.search('android') > -1) {
-    this.smsUrl = `sms:?body=https://kijin-jiyoung.github.io/`
-} else if (userAgent.search('iphone') > -1 || uagent.search('ipad') > -1) {
-    this.smsUrl = `sms:&body=https://kijin-jiyoung.github.io/`
-}
-
-}
-
-</script> 
 <!-- sms 공유 -->	 
-			
+<script type="text/javascript">
+	
+// checkMobile() "ios" : 아이폰 , "android" : 안드로이드폰
+// 아이폰 : &, 안드로이드 : ?
+location.href = 'sms:' +(checkMobile() == 'ios' ? '&' : '?') + 'body='+ message;
+ 	
+	
+	
+function checkMobile(){
+ 
+    var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+ 
+    if ( varUA.indexOf('android') > -1) {
+        //안드로이드
+        return "android";
+    } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+        //IOS
+        return "ios";
+    } else {
+        //아이폰, 안드로이드 외
+        return "other";
+    }
+    
+}
+var mobile = (/iphone|ipad|ipod|android/i.test(navigator.userAgent.toLowerCase()));
+ 
+if (mobile) { 
+  //모바일 처리
+}else{
+  //비 모바일 처리
+}
+ 
+	
+</script>	
+<!-- sms 공유 -->
+
+
 			
 <!-- 카카오톡 공유 -->				
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.0.1/kakao.min.js"
