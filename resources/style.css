@@ -311,11 +311,11 @@ textarea {
 
 
 div.firebase {
+    margin: 0 auto;
     width: 100%;
     max-width: 666px;
     text-align: center;
     vertical-align: middle;
-    line-height: 30px;
 }
 
 
