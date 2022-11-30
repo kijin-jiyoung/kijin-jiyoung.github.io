@@ -287,16 +287,10 @@ img.kakotalk {
 
 
 
-input {
-    max-width: 666px;
-    width: 100%;
-    font-family: 'MapoFlowerIsland';
-    font-size: 12px;
-    text: #fff;
-    border-radius: 3px;
-    border: none;
-}
 
+    
+    
+input,
 textarea {
     max-width: 666px;
     width: 100%;
