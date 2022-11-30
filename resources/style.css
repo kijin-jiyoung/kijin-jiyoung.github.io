@@ -292,7 +292,16 @@ input {
     width: 100%;
     font-family: 'MapoFlowerIsland';
     font-size: 12px;
-    button-color: #F2F2F2;
+    text: #fff;
+    border-radius: 3px;
+    border: none;
+}
+
+textarea {
+    max-width: 666px;
+    width: 100%;
+    font-family: 'MapoFlowerIsland';
+    font-size: 12px;
     text: #fff;
     border-radius: 3px;
     border: none;
