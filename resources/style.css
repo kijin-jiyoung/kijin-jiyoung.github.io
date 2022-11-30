@@ -315,7 +315,8 @@ div.firebase {
 
 
 
-input::placeholder {
+input::placeholder,
+textarea::placeholder {
     padding: 10px;
     text-align: center;
     vertical-align: middle;
