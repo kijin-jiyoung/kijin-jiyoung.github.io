@@ -347,11 +347,13 @@
 	        <br>
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:13px;font-family:'MapoFlowerIsland';">두사람을 위한 축하메시지를 남겨주세요.</p><br>	
-
-<div class="firebase" style="width:100%;max-width:666px;">
-<input type="text" style="width:100%;max-width:666px;width:100px;height:20px;placeholder-font:'MapoFlowerIsland';font-family:'MapoFlowerIsland';text-align:center;font-size:12px;border-radius:3px;border:none;" onkeypress="if(event.keycode == 13) {return false;}" id="name" placeholder="이름"></p>
-<textarea rows="50" cols="20" style="width:100%;max-width:666px;height:200px;placeholder-font:'MapoFlowerIsland';font-family:'MapoFlowerIsland';font-size:12px;text:#fff;border-radius:3px;" onkeypress="if(event.keycode == 13) {return false;}" id="content" placeholder="축하메시지를 입력해주세요."></textarea>
+<div id="wrap">
+<form action="" method="post">
+<class="firebase" style="width:100%;max-width:666px;">
+<input type="name" style="width:100%;max-width:666px;width:100px;height:20px;placeholder-font:'MapoFlowerIsland';font-family:'MapoFlowerIsland';text-align:center;font-size:12px;border-radius:3px;border:none;" onkeypress="if(event.keycode == 13) {return false;}" id="name" placeholder="이름"></p>
+<input type="textarea" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;placeholder-font:'MapoFlowerIsland';font-family:'MapoFlowerIsland';font-size:12px;text:#fff;border-radius:3px;resize:none;" onkeypress="if(event.keycode == 13) {return false;}" id="content" placeholder="축하메시지를 입력해주세요.">
 <button type="button" style="max-width:666px;width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;" onclick="write()">등록</button>
+</form>
 </div>
                 <br>	
 	        <br>
