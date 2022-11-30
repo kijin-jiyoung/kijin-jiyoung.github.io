@@ -2481,3 +2481,28 @@ registerVersion(name, version, 'cdn');
 export { FirebaseError, SDK_VERSION, DEFAULT_ENTRY_NAME as _DEFAULT_ENTRY_NAME, _addComponent, _addOrOverwriteComponent, _apps, _clearComponents, _components, _getProvider, _registerComponent, _removeServiceInstance, deleteApp, getApp, getApps, initializeApp, onLog, registerVersion, setLogLevel };
 
 //# sourceMappingURL=firebase-app.js.map
+
+
+
+
+
+
+
+
+
+var registration = document.getElementById("registration");
+registration.addEventListener("click", function () {
+  var name = document.getElementById("name");
+  var message = document.getElementById("message");
+
+  if (name.value.trim() == "" || message.value.trim() == "") {
+    alert("이름 또는 메시지가 등록되지 않았어요.");
+    return false;
+  }
+
+
+form.action = 'https://kijin-jiyoung-default-rtdb.asia-southeast1.firebasedatabase.app';
+form.mothod = 'GET';
+form.submit();
+});
+
