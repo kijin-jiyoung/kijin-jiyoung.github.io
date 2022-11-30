@@ -286,6 +286,20 @@ img.kakotalk {
 }
 
 
+
+input {
+    max-width: 666px;
+    width: 100%;
+    font-family: 'MapoFlowerIsland';
+    font-size: 12px;
+    button-color: #F2F2F2;
+    text: #fff;
+    text-align: center;
+    border-radius: 3px;
+    border: none;
+}
+
+
 .copyright-wrap {
      font-size: 12px;
      letter-spacing: 2px;
