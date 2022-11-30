@@ -347,26 +347,7 @@
 	        <br>
 <p class="sub-Title"><br><br>축하메시지 남기기</p><br>	
 		<br>
-
-
-
-import firebase from "firebase/app";
-import "firebase/database";
-
-// TODO: Replace the following with your app's Firebase project configuration
-// See: https://firebase.google.com/docs/web/learn-more#config-object
-const firebaseConfig = {
-  // ...
-  // The value of `databaseURL` depends on the location of the database
-  databaseURL: "https://kijin-jiyoung.firebaseio.com",
-};
-
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
-
-// Initialize Realtime Database and get a reference to the service
-const database = firebase.database();
+		
 
 
 
@@ -378,8 +359,20 @@ const database = firebase.database();
 		
 이름은?<br>
 축하의 말을 남겨주세요<br>
-	        <br>	
-남기기 버튼<br>
+	        <br>
+
+<input type="text" style="width:30px;height:16px;"font-family:'MapoFlowerIsland';font-size:12px;button-color:#F2F2F2;text:#fff;position:relative;text-align:center;border-radius:3px;border:none;" onkeypress="if(event.keycode == 13) {return false;}" id="name" placeholder="이름"><br>
+<input type="text" style="width:400px;height:400px;"font-family:'MapoFlowerIsland';font-size:12px;button-color:#F2F2F2;text:#fff;position:relative;text-align:center;border-radius:3px;border:none;" onkeypress="if(event.keycode == 13) {return false;}" id="content" placeholder="축하메시지를 입력해주세요"><br>
+<button type="button" style="width:40px;height:16px;font-family:'MapoFlowerIsland';font-size:12px;button-color:#F2F2F2;text:#fff;position:relative;text-align:center;border-radius:3px;border:none;" onclick="write()"> 등록하기 </button>
+
+                <br>	
+	        <br>
+	        <br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
 	        <br>			
 <p class="sub-Title"><br><br>기진이와 지영이는요.</p><br>		
                 <br>	
