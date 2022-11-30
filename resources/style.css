@@ -308,6 +308,15 @@ textarea {
 }
 
 
+div.firebase {
+    width: 100%;
+    max-width: 666px;
+    text-align:center;
+    vertical-align:middle;
+}
+
+
+
 .copyright-wrap {
      font-size: 12px;
      letter-spacing: 2px;
