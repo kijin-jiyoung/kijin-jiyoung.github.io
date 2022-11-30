@@ -304,8 +304,9 @@ textarea {
     font-size: 12px;
     text: #fff;
     border-radius: 3px;
-    border: none;
-    line-height: 30px;
+    line-height: 13px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 
