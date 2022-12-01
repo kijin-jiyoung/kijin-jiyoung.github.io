@@ -23,8 +23,8 @@ router.get('/messageList', function(req, res, next) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
         
-            childData.brdno = childSnapshot.key;
-            childData.brddate = dateFormat(childData.brddate, "yyyy-mm-dd");
+            childData.no = childSnapshot.key;
+            childData.date = dateFormat(childData.date, "yyyy-mm-dd");
             rows.push(childData);
         });
         res.render('message/messageList', {rows: rows});
@@ -35,44 +35,44 @@ router.get('/messageRead', function(req, res, next) {
     firebase.database().ref('message/'+req.query.brdno).once('value', function(snapshot) {
         var childData = snapshot.val();
         
-        childData.brdno = snapshot.key;
-        childData.brddate = dateFormat(childData.brddate, "yyyy-mm-dd");
+        childData.no = snapshot.key;
+        childData.date = dateFormat(childData.date, "yyyy-mm-dd");
         res.render('message/messageRead', {row: childData});
     });
 });
 
 router.get('/messageForm', function(req,res,next){
-    if (!req.query.brdno) {
+    if (!req.query.no) {
         res.render('message/messageForm', {row: ""});
         return;
     }
 
-    firebase.database().ref('message/'+req.query.brdno).once('value', function(snapshot) {
+    firebase.database().ref('message/'+req.query.no).once('value', function(snapshot) {
         var childData = snapshot.val();
         
-        childData.brdno = snapshot.key;
+        childData.no = snapshot.key;
         res.render('message/messageForm', {row: childData});
     });
 });
 
 router.post('/messageSave', function(req,res,next){
     var postData = req.body;
-    if (!postData.brdno) {
-        postData.brdno = firebase.database().ref().child('posts').push().key;
-        postData.brddate = Date.now();
+    if (!postData.no) {
+        postData.no = firebase.database().ref().child('posts').push().key;
+        postData.date = Date.now();
     } else {
-        postData.brddate = Number(postData.brddate); 
+        postData.date = Number(postData.date); 
     }
-    firebase.database().ref('message/' + req.body.brdno).set(req.body);
+    firebase.database().ref('message/' + req.body.no).set(req.body);
     //var updates = {};
-    //updates['/message/' + postData.brdno] = postData;
+    //updates['/message/' + postData.no] = postData;
     //firebase.database().ref().update(updates);
     
     res.redirect('messageList');
 });
 
 router.get('/messageDelete', function(req,res,next){
-    firebase.database().ref('message/' + req.query.brdno).remove();
+    firebase.database().ref('message/' + req.query.no).remove();
     res.redirect('messageList');
 });
 
