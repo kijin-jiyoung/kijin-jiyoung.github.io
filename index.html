@@ -348,7 +348,7 @@
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:13px;font-family:'MapoFlowerIsland';">두사람을 위한 축하메시지를 남겨주세요.</p><br>	
 <div id="wrap">
-<form name="form" action="messageSave" method="post">
+<form name="form" action="messageSave" method="get">
 	<input type="text" name="name" style="width:100px;max-width:666px;height:20px;font-family:'MapoFlowerIsland';text-align:center;" value="<%=row.name%>" placeholder="이름"><p>
 	<textarea name="content" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" placeholder="축하메시지를 입력해주세요."></textarea><p> 
 	<a href="#" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;" onclick="form.submit()">등록</a>
