@@ -2,24 +2,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>message sample for firebase (Realtime Database)</title>
 </head>
 <body>
 	<form name="form" action="messageSave" method="post">
-	<table border="1" style="width:600px">
-			<caption>board sample for firebase (Realtime Database)</caption>
-			<colgroup>
-				<col width='15%' />
-				<col width='*%' />
-			</colgroup>
-			<tbody>
-				<tr>
-					<td>name</td> 
-					<td><input type="text" name="name" style="width:100px;max-width:666px;height:20px;font-family:'MapoFlowerIsland';text-align:center;" value="<%=row.name%>" placeholder="이름"><p>					<td>content</td> 
-					<td><textarea name="content" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" placeholder="축하메시지를 입력해주세요."><%=row.content%></textarea><p> 
-				</tr>
-			</tbody>
-		</table>
+		<input type="text" name="name" style="width:100px;max-width:666px;height:20px;font-family:'MapoFlowerIsland';text-align:center;" value="<%=row.name%>" placeholder="이름"><p>					<td>content</td> 
+		<textarea name="content" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" placeholder="축하메시지를 입력해주세요."><%=row.content%></textarea><p> 
 		<a href="#" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;" onclick="form.submit()">등록</a>
 		<input type="hidden" name="no" value="<%=row.no%>"> 
 		<input type="hidden" name="date" value="<%=row.date%>"> 
