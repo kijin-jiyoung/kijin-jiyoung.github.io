@@ -32,7 +32,7 @@ router.get('/messageList', function(req, res, next) {
 });
 
 router.get('/messageRead', function(req, res, next) {
-    firebase.database().ref('message/'+req.query.brdno).once('value', function(snapshot) {
+    firebase.database().ref('message/'+req.query.no).once('value', function(snapshot) {
         var childData = snapshot.val();
         
         childData.no = snapshot.key;
