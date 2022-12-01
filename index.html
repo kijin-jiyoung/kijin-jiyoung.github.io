@@ -348,13 +348,25 @@
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:13px;font-family:'MapoFlowerIsland';">두사람을 위한 축하메시지를 남겨주세요.</p><br>	
 <div id="wrap">
-<form method="get" id="form" onsubmit="return false;">
-<class="firebase">
-<input type="datetime-local" readonly style="width:150px;max-width:100%;height:20px;max-width:666px;width:100%;font-family:'MapoFlowerIsland';font-size:12px;text:#fff;border-radius:3px;border:none;font-family:'MapoFlowerIsland';text-align:center;" id='currentDatetime'/>&nbsp;
-<input type="name" style="width:100px;max-width:100%;height:20px;font-family:'MapoFlowerIsland';text-align:center;" onkeypress="if(event.keycode == 13) {return false;}" id="name" placeholder="이름"><p>
-<textarea id="message" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" onkeypress="if(event.keycode == 13) {return false;}" id="content" placeholder="축하메시지를 입력해주세요."></textarea><p>
-<button id="registration" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;">등록</button>
-</form>
+<form name="form" action="messageSave" method="post">
+	<table border="1" style="width:600px">
+			<caption>board sample for firebase (Realtime Database)</caption>
+			<colgroup>
+				<col width='15%' />
+				<col width='*%' />
+			</colgroup>
+			<tbody>
+				<tr>
+					<td>name</td> 
+					<td><input type="text" name="name" style="width:100px;max-width:666px;height:20px;font-family:'MapoFlowerIsland';text-align:center;" value="<%=row.name%>" placeholder="이름"><p>					<td>content</td> 
+					<td><textarea name="content" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" placeholder="축하메시지를 입력해주세요."><%=row.content%></textarea><p> 
+				</tr>
+			</tbody>
+		</table>
+		<a href="#" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;" onclick="form.submit()">등록</a>
+		<input type="hidden" name="no" value="<%=row.no%>"> 
+		<input type="hidden" name="date" value="<%=row.date%>"> 
+	</form>	
 </div>
                 <br>	
 	        <br>
