@@ -357,7 +357,7 @@
 	</form>	
 </div>
 <br>
-<table style="width:100%;max-width:600px;">
+<table border="none" style="width:100%;max-width:600px;">
 <colgroup>
 <col width='8%' />
 <col width='*%' />		
@@ -372,9 +372,9 @@
 </thead>
 <tbody>
 			<tr>
-				<td></td>
 				<td><a href='boardRead?name=<%=rows[i].name%>'></a></td>
-				<td></td>
+				<td><a href='boardRead?content=<%=rows[i].content%>'></a></td>
+				<td><a href='boardRead?brddate=<%=rows[i].brddate%>'></a></td>
 			</tr>
 		<%
 			 }
