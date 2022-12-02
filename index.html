@@ -357,7 +357,7 @@
 	</form>	
 </div>
 <br>
-<table border="1" style="width:600px">
+<table style="width:100%;max-width:600px;">
 <colgroup>
 <col width='8%' />
 <col width='*%' />		
@@ -371,13 +371,10 @@
 </tr>
 </thead>
 <tbody>
-		<%
-			 for(var i=0; i<rows.length; i++) {
-		%>
 			<tr>
-				<td><%=rows[i].name%></td>
-				<td><a href='boardRead?name=<%=rows[i].name%>'><%=rows[i].content%></a></td>
-				<td><%=rows[i].brddate%></td>
+				<td></td>
+				<td><a href='boardRead?name=<%=rows[i].name%>'></a></td>
+				<td></td>
 			</tr>
 		<%
 			 }
