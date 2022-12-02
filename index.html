@@ -347,37 +347,34 @@
 	        <br>
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:13px;font-family:'MapoFlowerIsland';">두사람을 위한 축하메시지를 남겨주세요.</p><br>	
-<div id="wrap">
-<form name="form" action="boardSave" method="post">
-	<input type="text" name="name" style="width:100px;max-width:666px;height:20px;font-family:'MapoFlowerIsland';text-align:center;" placeholder="이름"><p>
-	<textarea name="content" rows="50" cols="20" style="width:100%;max-width:666px;height:200px;font-size:12px;text:#fff;resize:none;" placeholder="축하메시지를 입력해주세요."></textarea><p> 
-	<a href="#" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;" onclick="form.submit()">등록</a>
+<ul>
+<li class="name"><input type="text" id="name" maxlength="20" placeholder="이름" class="form-control" style="width:50px;height:30px;font-family:'MapoFlowerIsland';text-align:center;"/></li>	
+<!--<li class="password">
+<input type="password" id="password" maxlength="10" placeholder="비밀번호" class="form-control" style="width:50px;height:30px;font-family:'MapoFlowerIsland';text-align:center;"/>
+</li>-->
+<li class="content"><textarea id="content" class="form-control" rows="9" placeholder="축하메시지를 입력해주세요."></textarea></li>
+</ul>
+<p class="btn btn-lg" id="messagewrite" style="width:40px;height:20px;font-family:'MapoFlowerIsland';font-size:10px;button-color:#F2F2F2;text:#fff;text-align:center;border-radius:3px;border:none;">등록</p>
+</div>
+<div class="message list displaynone" id="message-wrap">
+		<ul class="cont" id="guest-list"></ul>
+	</div>
+
+	<a href="#"  onclick="form.submit()">등록</a>
 	<input type="hidden" name="brdno" value="<%=row.brdno%>"> 
 	<input type="hidden" name="brddate" value="<%=row.brddate%>"> 
 	</form>	
 </div>
 <br>
-<table style="width:100%;max-width:600px;font-size:12px;text-align:center;vertical-align:middle;">
-<colgroup>
-<col width='10%'/>
-<col width='70%'/>		
-<col width='20%'/>
-</colgroup>
-<thead>
-<tr>
-<th>이름</th>
-<th>메세지</th>
-<th>작성일</th>
-</tr>
-</thead>
-<tbody>
-			<tr>
-				<td><a href='boardRead?name=<%=rows[i].name%>'></a></td>
-				<td><a href='boardRead?content=<%=rows[i].content%>'></a></td>
-				<td><a href='boardRead?brddate=<%=rows[i].brddate%>'></a></td>
-			</tr>
-		</tbody>
-</table>  			
+<div class="messagewrap" id="messagewrap" style="display: block;">
+<ul class="messagelist" id="messagelist"><li>
+	<p class="name">'boardRead?name=<%=rows[i].name%>'</p>
+	<p class="date">'boardRead?brddate=<%=rows[i].brddate%>'</p>
+	<p class="content">'boardRead?content=<%=rows[i].content%>'</p>
+</li>
+</ul>
+</div>
+			
 	        <br>
 	        <br>
 		<br>
@@ -543,6 +540,8 @@ var marker = new naver.maps.Marker(markerOptions);
 
 
   <!-- 파이어베이스-->
+<script type="text/javascript" src="/message.js"></script>
+
 <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
