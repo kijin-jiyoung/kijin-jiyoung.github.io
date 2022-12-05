@@ -12,19 +12,13 @@ body {
     }
 
 /* desktop 규격 */
-@media screen and body {
-    min-width: 1024px;
-}
+@media screen and (min-width: 1024px)
 
 /* tablet 규격 */
-@media screen and body {
-    max-width: 1023px;
-}
+@media screen and (max-width: 1023px)
 
 /* mobile 규격 */
-@media screen and body {
-    max-width: 540px;
-}
+@media screen and (max-width: 540px)
 
 
 .fist-page,
