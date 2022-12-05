@@ -8,36 +8,16 @@
   },
   "functions": [
     {
-      "source": "functions",
-      "codebase": "default",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ],
-      "predeploy": [
+    "predeploy": [
         "npm --prefix \"$RESOURCE_DIR\" run lint"
       ]
     },
-    {
-      "source": "java",
-      "codebase": "java",
-      "ignore": [
-        "node_modules",
-        ".git",
-        "firebase-debug.log",
-        "firebase-debug.*.log"
-      ]
-    }
-  ],
   "hosting": {
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ]
   },
   "storage": {
     "rules": "storage.rules"
