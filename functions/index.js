@@ -1,13 +1,14 @@
 const functions = require('firebase-functions');
+const express = require("express")
 
-exports.bigben = functions.https.onRequest((req, res) => {
-  const hours = (new Date().getHours() % 12) + 1  // London is UTC + 1hr;
-  res.status(200).send(`<!doctype html>
-    <head>
-      <title>Time</title>
-    </head>
-    <body>
-      ${'BONG '.repeat(hours)}
-    </body>
-  </html>`);
-});
+const app = express();
+
+app.get("/message", (request, response) => {
+  response.send("Hello from Express on Firebase!")
+})
+
+const api = functions.https.onRequest(app)
+
+module.exports = {
+  api
+}
