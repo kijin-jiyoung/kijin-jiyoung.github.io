@@ -348,17 +348,25 @@
 
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:12px;font-family:'MapoFlowerIsland';">• 두사람을 위한 축하메시지를 남겨주세요.</p><br>
-<form name="form1" action="save" method="post">
+<form name="form1" action="savedata()" method="post">
 <input type="text" id="name" maxlength="20" placeholder="이름" class="form-control" style="width:100px;height:25px;font-family:'MapoFlowerIsland';text-align:center;"/></li>	
 <input type="password" id="password" maxlength="10" placeholder="비밀번호" class="form-control" style="width:100px;height:25px;font-family:'MapoFlowerIsland';text-align:center;"/></p>
 <textarea id="content" class="form-control" rows="5" placeholder="축하메시지를 입력해주세요."></textarea>
-<a href="#" onclick="form1.sumit()">등록</a>
-<input type="hidden" name="postno" value="<%row.postno%>">
-<input type="hidden" name="postdate" value="<%row.postdate%>">
+<button type="button" onclick="save" style="font-size:12px;padding:1px;cursor:pointer;display:inline-block;width:30px;height:16px;vertical-align:middle;font-family:'MapoFlowerIsland';font-color:#fff;text-align:center;border-radius:3px;border:none;">등록</button>
+<input type="hidden" id="postno" value="<%row.postno%>">
+<input type="hidden" id="postdate" value="<%row.postdate%>">
 </form>
 	        <br>
+<p style="font-size:12px;font-family:'MapoFlowerIsland';">축하메시지</p>
 	        <br>
-		<br>
+< rows="2" cols="2" id="result" readonly><p>
+<s_list_rep>
+<li>
+<span class="date">[##_list_rep_regdate_##]</span>
+<span class="name">[##_list_rep_name_##]</span>
+<span class="content">[##_list_rep_content_##]</span>
+</li>
+</s_list_rep><br>
 		<br>
 		<br>
 		<br>
@@ -543,34 +551,66 @@ var marker = new naver.maps.Marker(markerOptions);
   
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+	  
+	  
+    //DOM
+    var messageField = document.getElementById("message");
+    var result = document.getElementById("result");
+	  
+    // Get a reference to the database service
+    var database = firebase.database();	  
+	  
+	  
+//메세지 읽기
+	var messageRef = database.ref("message");
+	messageRef.on('child_added', function(snapshot) {
+	  var data = snapshot.val();
+		var message = data.text;
+		if(message != undefined){
+			result.value += message + "\n";
+		}
+	});
+	  
+	  
+	  
+//메세지 저장
+	function savedata() {
+		var uuid = guid();
+		var name = nameField.value;
+		if (name == "")
+		{
+			alert("이름을 입력하세요");
+			return true;
+		}
+		database.ref('message/' + uuid).set({
+			text: name,
+		});
+		nameField.value = "";
+	},
+		var content = contentField.value;
+		if (content == "")
+		{
+			alert("메시지를 입력하세요");
+			return true;
+		}
+	  		database.ref('message/' + uuid).set({
+			text: content,
+		});
+		contentField.value = "";
+	}, 	
+		var password = passwordField.value;
+		if (password == "")
+		{
+			alert("비밀번호를 입력하세요");
+			return true;
+		}	
+		database.ref('message/' + uuid).set({
+			text: password,
+		});
+		passwordField.value = "";
+	}
+	  
   </script>
-
-
-	
-<script>	
-import { getDatabase, ref, child, push, update } from "firebase/database";
-
-function writeNewPost(name, content) {
-  const db = getDatabase();
-
-  // A post entry.
-  const postData = {
-    name: name,
-    content: content
-  };
-
-  // Get a key for a new Post.
-  const newPostKey = push(child(ref(db), 'posts')).key;
-
-  // Write the new post's data simultaneously in the posts list and the user's post list.
-  const updates = {};
-  updates['/posts/' + newPostKey] = postData;
-  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-
-  return update(ref(db), updates);
-}
-	
-</script>
    <!-- 파이어베이스-->
   
   
