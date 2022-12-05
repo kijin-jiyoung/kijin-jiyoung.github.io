@@ -335,6 +335,8 @@ textarea::placeholder {
 
 
 .copyright-wrap {
+     width: 100%;
+     max-width: 666px;
      font-size: 12px;
      letter-spacing: 2px;
      font-family: 'Roboto Slab', serif;
