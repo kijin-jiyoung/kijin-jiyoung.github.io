@@ -12,6 +12,22 @@ body {
     }
 
 
+/* 데스크탑 우선 개발 */
+
+/* 데스크탑에 최적화된 CSS 코드 */
+@media (max-width: 768px) {
+    /* 모바일에 최적화된 예외 CSS 코드*/
+}
+
+/* 모바일 우선 개발 */
+
+/* 모바일에 최적화된 CSS 코드 */
+@media (min-width: 992px) {
+    /* 데스크탑에 최적화된 예외 CSS 코드*/
+}
+
+
+
 
 .fist-page,
 .second-page {
