@@ -607,6 +607,19 @@ var marker = new naver.maps.Marker(markerOptions);
 		});
 		passwordField.value = "";
 	}
+	var uuid = guid();
+		var name = nameField.value;
+	        var content = contentField.value;
+	        var password = passwordField.value;
+		if (name, content, password == "text")
+		{
+			alert("등록되었습니다.");
+			return true;
+		}
+		database.ref('message/' + uuid).set({
+			text: name, content
+		});
+	},
 	  
   </script>
    <!-- 파이어베이스-->
