@@ -548,23 +548,27 @@ var marker = new naver.maps.Marker(markerOptions);
 
 	
 <script>	
-import { getDatabase, ref } from "firebase/database";
+import { getDatabase, ref, child, push, update } from "firebase/database";
 
-function writeUserData( name, content ) {
+function writeNewPost(name, content) {
   const db = getDatabase();
-}
-const dbRef = ref(getDatabase());
-get(child(dbRef, `users/${userId}`)).then((snapshot) => {
-  if (snapshot.exists()) {
-    console.log(snapshot.val());
-  } else {
-    console.log("No data available");
-  }
-}).catch((error) => {
-  console.error(error);
-});
 
-	
+  // A post entry.
+  const postData = {
+    name: name,
+    content: content
+  };
+
+  // Get a key for a new Post.
+  const newPostKey = push(child(ref(db), 'posts')).key;
+
+  // Write the new post's data simultaneously in the posts list and the user's post list.
+  const updates = {};
+  updates['/posts/' + newPostKey] = postData;
+  updates['/user-posts/' + uid + '/' + newPostKey] = postData;
+
+  return update(ref(db), updates);
+}
 	
 </script>
    <!-- 파이어베이스-->
