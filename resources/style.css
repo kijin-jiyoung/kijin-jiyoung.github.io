@@ -11,7 +11,9 @@ body {
     text: #000;
     }
 
-
+@media (max-width: 600px)
+    
+    
 .fist-page,
 .second-page {
     margin-left: auto;
@@ -291,8 +293,7 @@ img.kakotalk {
     
 input,
 textarea {
-    max-width: 666px;
-    width: 100%;
+    width: 95%;
     font-family: 'MapoFlowerIsland';
     font-size: 12px;
     text: #fff;
@@ -324,8 +325,7 @@ textarea::placeholder {
 }
 
 .textarea {
-    width: 100%;
-    max-width: 666px;
+    width: 95%;
     padding: 10px;
     text-align: center;
     vertical-align: middle;
