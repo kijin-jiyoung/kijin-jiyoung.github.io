@@ -89,102 +89,38 @@ img.kakao {
 
 
   < !-- 갤러리 영역 -- >
-* {
-  box-sizing: border-box;
-}
+   .swiper {
+      width: 100%;
+      height: 100%;
+    }
 
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
 
-/* Position the image container (needed to position the left and right arrows) */
-.container,
-.container2 {
-  position: relative; 
-}
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
 
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-/* Hide the images by default */
-.mySlides,
-.mySlides2 {
-  display: none;
-}
-
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor,
-.cursor2 {
-  cursor: pointer;
-}
-
-
-/* Next & previous buttons */
-.prev,
-.next,
-.prev2,
-.next2 {
-  cursor: pointer;
-  border: 20px;
-  padding: 0px;
-  font-weight: normal;
-  font-size: 20px;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-
-/* Position the "next button" to the right */
-.next,
-.next2 {
-  right: 0;
-  border-radius: none;
-}
-
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover,
-.prev2:hover,
-.next2:hover {
-  background-color: #FCF8F4;
-}
-
-
-/* Container*/
-.caption-container,
-.caption-container2 {
-  text-align: center;
-  padding: 10px;
-}
-
-
-.row:after,
-.row2:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-
-/* nine columns side by side */
-.column,
-.column2 {
-  float: left;
-  width: 11.1%;
-  max-width: 100%;
-}
-
-
-/* Add a transparency effect for thumnbail images */
-.demo,
-.demo2 {
-  opacity: 0.5;
-}
-
-
-.active,
-.active2,
-.demo:hover,
-.demo2:hover {
-  opacity: 1;
-}
   < !-- 갤러리 영역 -- >
 
 .button {
