@@ -279,23 +279,9 @@
 
 <p class="sub-Title"><br><br>축하메시지 남기기</p>
 <p style="font-size:12px;font-family:'MapoFlowerIsland';">• 두사람을 위한 축하메시지를 남겨주세요.</p>
-<form name="form1" action="savedata()" method="post">
-<input type="text" id="name" maxlength="20" placeholder="이름" class="form-control" style="width:100px;height:25px;font-family:'MapoFlowerIsland';text-align:center;"></li>	
-<input type="password" id="password" maxlength="10" placeholder="비밀번호" class="form-control" style="width:100px;height:25px;font-family:'MapoFlowerIsland';text-align:center;"/></p>
-<textarea id="content" class="form-control" rows="5" placeholder="축하메시지를 입력해주세요."></textarea>
-<button type="button" onclick="save" style="font-size:12px;padding:1px;cursor:pointer;display:inline-block;width:30px;height:16px;vertical-align:middle;font-family:'MapoFlowerIsland';font-color:#fff;text-align:center;border-radius:3px;border:none;">등록</button>
-<input type="hidden" id="postno" value="<%row.postno%>">
-<input type="hidden" id="postdate" value="<%row.postdate%>">
-</form>
-	        <br>
-<p style="font-size:12px;font-family:'MapoFlowerIsland';">축하메시지</p>
-<br>
 
-<s_list_rep>
-<span class="date"></span>
-<span class="name"></span>
-<span class="content"></span>
-</s_list_rep><br>
+
+
 		<br>
 		<br>
 		<br>
@@ -444,69 +430,7 @@ var marker = new naver.maps.Marker(markerOptions);
     var database = firebase.database();	  
 	  
 	  
-//메세지 읽기
-	var messageRef = database.ref("message");
-	messageRef.on('child_added', function(snapshot) {
-	  var data = snapshot.val();
-		var message = data.text;
-		if(message != undefined){
-			result.value += message + "\n";
-		}
-	});
-	  
-	  
-	  
-//메세지 저장
-	function savedata() {
-		var uuid = guid();
-		var name = nameField.value;
-		if (name == "")
-		{
-			alert("이름을 입력하세요");
-			return true;
-		}
-		database.ref('message/' + uuid).set({
-			text: name,
-		});
-		nameField.value = "";
-	},
-		var content = contentField.value;
-		if (content == "")
-		{
-			alert("메시지를 입력하세요");
-			return true;
-		}
-	  		database.ref('message/' + uuid).set({
-			text: content,
-		});
-		contentField.value = "";
-	}, 	
-		var password = passwordField.value;
-		if (password == "")
-		{
-			alert("비밀번호를 입력하세요");
-			return true;
-		}	
-		database.ref('message/' + uuid).set({
-			text: password,
-		});
-		passwordField.value = "";
-	}
-	var uuid = guid();
-		var name = nameField.value;
-	        var content = contentField.value;
-	        var password = passwordField.value;
-		if (name, content, password == "text")
-		{
-			alert("등록되었습니다.");
-			return true;
-		}
-		database.ref('message/' + uuid).set({
-			text: name, content
-		});
-	},
-	  
-  </script>
+</script>
    <!-- 파이어베이스-->
   
   
