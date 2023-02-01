@@ -135,7 +135,10 @@ img.kakao {
       object-fit: cover;
     }
 
-  .swiper-button-next,
+  .swiper-button-next {
+  display: none;
+  }
+
   .swiper-button-prev {
     display: none;
   }
