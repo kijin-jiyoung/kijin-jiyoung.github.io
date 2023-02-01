@@ -152,7 +152,9 @@
     <img src="/photo/date10.jpg" style="width:100%">		  
     </div>
 </div>
-  <!-- pagination -->    
+  <!-- pagination -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
     <div class="swiper-pagination"></div>
 </div>     
         <br>
@@ -205,7 +207,9 @@
     <img src="/photo/date5.jpg" style="width:100%">
     </div>	
 	</div>  
-  <!-- pagination -->    
+  <!-- pagination -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
     <div class="swiper-pagination"></div>
     </div>
         <br>
@@ -321,13 +325,17 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
+      loop: true,
       pagination: {
         el: ".swiper-pagination",
         clickable : true,
 	type : 'bullets'
 },
-  loop: true,
-  autoHeight: true,	
+      autoHeight: true,	
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
 });	    
   </script>
  <!-- 갤러리 -->
