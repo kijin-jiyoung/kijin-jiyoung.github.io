@@ -23,8 +23,7 @@
       <!-- css -->
       <link rel="stylesheet" href="/resources/font.css">
       <link rel="stylesheet" href="/resources/style.css">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
- 
+      <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
       <!-- Google Analytics -->
 
 
@@ -120,7 +119,7 @@
 <p class="sub-Title"><br>우리들의 행복한 시간</p>
          <br>
   <!-- Swiper -->
-  <div class="swiper">	
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
   <div class="swiper-slide">
     <img src="/photo/date9.jpg" style="width:100%">
@@ -176,7 +175,7 @@
 
 <p class="sub-Title"><br><br>하나되어 나란히 걸어갈 두 사람</p>
          <br>
-<div class="myswiper">
+  <div class="swiper mySwiper">
     <div class="swiper-wrapper">
   <div class="swiper-slide">
     <img src="/photo/date10.jpg" style="width:100%">
@@ -327,10 +326,9 @@
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-  var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".mySwiper", {
       pagination: {
-        el: ".swiper-pagination"
-      },
+        el: ".swiper-pagination",
   loop: true,
   autoHeight: true,
   slideToClickedSlide: true,
