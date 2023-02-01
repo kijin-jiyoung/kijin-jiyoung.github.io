@@ -135,6 +135,11 @@ img.kakao {
       object-fit: cover;
     }
 
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
   < !-- 갤러리 영역 -- >
 
 .button {
