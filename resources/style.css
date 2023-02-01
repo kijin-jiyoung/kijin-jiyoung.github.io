@@ -116,24 +116,38 @@ img.kakao {
       align-items: center; 
   }  
 
-.swiper-pagination-bullet { 
-      border-radius: 5px;
-   }
-   
- .swiper-pagination-bullet-active { 
-      width: 30px;
-      transition: width .5s;
-      border-radius: 5px;
-      background: Snow;
-      border: 1px solid Snow transparent;
-    }
+.swiper-wrapper {
+  display: flex;
+  position: relative;
+  z-index: 0;
+}
+.swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-wrapper .swiper-slide {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+/* (1) */
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 6px;
+}
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: width .5s;
+  background: Snow;
+  border: 1px solid Snow transparent;
+ }
+
 
   /* (2) */
 .swiper-button-prev,
