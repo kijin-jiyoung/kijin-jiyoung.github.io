@@ -118,11 +118,7 @@ img.kakao {
   }  
 
 .swiper-pagination-bullet { 
-       width: 8px; 
-       height: 8px; 
        background: black transition;
-       border: 1px solid Snow;
-       opacity: .5;
        display: inline-block;
        border-radius: 5px;
    }
@@ -133,7 +129,7 @@ img.kakao {
       border-radius: 5px;
       background: Snow;
       border: 1px solid Snow transparent;
-    }  
+    }
 
     .swiper-slide img {
       display: block;
@@ -141,6 +137,7 @@ img.kakao {
       height: 100%;
       object-fit: cover;
     }
+
   < !-- 갤러리 영역 -- >
 
 .button {
