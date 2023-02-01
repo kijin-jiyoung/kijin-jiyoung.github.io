@@ -112,10 +112,16 @@ img.kakao {
       text-align: center;
       font-size: 18px;
       background: #fff;
-      display: flex; 
       justify-content: center; 
       align-items: center; 
   }  
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    background: Snow;
+}
 
 .swiper-pagination-bullet { 
        background: black transition;
