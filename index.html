@@ -326,16 +326,16 @@
  <!-- 갤러리 -->		     
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
+  var swiper = new Swiper(".Swiper", {
+      pagination: {
+        el: ".swiper-pagination",
+	type: 'bullets',
+      },
   loop: true,
   autoHeight: true,
   slideToClickedSlide: true,
-    pagination: {
-    el: '.swiper-pagination',
-    type: 'bullets',
-  },
    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
