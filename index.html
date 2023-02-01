@@ -328,6 +328,10 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script>
 const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  autoHeight: true,
+  slideToClickedSlide: true,
     pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -335,8 +339,7 @@ const swiper = new Swiper('.swiper', {
    navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
-  },
-  loop : true,		
+  },	
 });	    
   </script>
  <!-- 갤러리 -->
