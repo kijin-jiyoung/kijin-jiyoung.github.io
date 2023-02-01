@@ -117,9 +117,7 @@ img.kakao {
   }  
 
 .swiper-pagination-bullet { 
-       background: black transition;
-       display: inline-block;
-       border-radius: 5px;
+      border-radius: 5px;
    }
    
  .swiper-pagination-bullet-active { 
