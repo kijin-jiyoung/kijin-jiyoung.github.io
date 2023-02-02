@@ -22,7 +22,10 @@ a {
     
 
 .scroll-section {
-.h1 {
+	padding-top: 50vh;
+}
+
+#scroll-section-0 h1 {
   position: relative;
   top: -10vh;
   z-index: 5;
