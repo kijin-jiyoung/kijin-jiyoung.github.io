@@ -25,6 +25,8 @@ p.Title {
    font-size: 80px;
    text-align: center;
    letter-spacing: 3px;
+   padding-top: 30px;
+   padding-bottom: 30px;
    }
 
  p.sub-Title {
