@@ -27,9 +27,9 @@ body {
 
 #scroll-section-0 h1 {
   position: relative;
-  top: -10vh;
+  top: 10vh;
   z-index: 5;
-	font-size: 4rem;
+	font-size: 17px;
 	text-align: center;
 }
 
@@ -37,10 +37,9 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	top: 35vh;
-	margin: 5px 0;
-	height: 3em;
-	font-size: 2.5rem;
+	font-size: 15px;
+	font-weight: 100;
+        letter-spacing: 3px;
 	opacity: 0;
 }
 
