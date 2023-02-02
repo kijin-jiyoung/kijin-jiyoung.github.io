@@ -1,6 +1,6 @@
-* {
-  box-sizing: border-box;
-}
+@charset 'utf-8';
+
+
 
 body {
     font-family: 'MapoFlowerIsland';
@@ -13,12 +13,20 @@ body {
     overflow-x: hidden;
     color: rgb(29, 29, 31);
     letter-spacing: -0.05em;
-    background-color: #fff;
+    background-color: #FFF8EE; 
     line-height: 1.5;
 }
 
-@media (max-width: 600px)
-    
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
 
 /* Scroll section */
 .scroll-section {
@@ -27,9 +35,9 @@ body {
 
 #scroll-section-0 h1 {
   position: relative;
-  top: 10vh;
+  top: -10vh;
   z-index: 5;
-	font-size: 17px;
+	font-size: 4rem;
 	text-align: center;
 }
 
@@ -37,9 +45,10 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 15px;
-	font-weight: 100;
-        letter-spacing: 3px;
+	top: 35vh;
+	margin: 5px 0;
+	height: 3em;
+	font-size: 2.5rem;
 	opacity: 0;
 }
 
@@ -114,6 +123,14 @@ body {
 	padding: 0 1rem;
 	font-size: 1.2rem;
 	color: #888;
+}
+
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 7rem;
+	background-color: darkorange;
 }
 
 .sticky-elem {
