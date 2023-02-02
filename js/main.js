@@ -24,7 +24,7 @@
       values: {
         videoImageCount: 300,
         imageSequence: [0, 299],
-        canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
+        canvas_opacity: [1, 0, { start: 0.8, end: 1 }],
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
         messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
         messageC_opacity_in: [0, 1, { start: 0.5, end: 0.6 }],
@@ -101,18 +101,9 @@
       scrollHeight: 0,
       objs: {
         container: document.querySelector('#scroll-section-3'),
-        canvasCaption: document.querySelector('.canvas-caption'),
-        canvas: document.querySelector('.image-blend-canvas'),
-        context: document.querySelector('.image-blend-canvas').getContext('2d'),
-        imagesPath: [
-          'images/blend-image-1.jpg',
-          'images/blend-image-2.jpg'
-        ],
-        images: []
+        canvasCaption: document.querySelector('.canvas-caption'), 
       },
-      values: {
-
-      }
+      values: {   }
     }
   ];
 
@@ -120,14 +111,14 @@
     let imgElem;
     for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem = new Image();
-      imgElem.src = `video/001/IMG_${6726 + i}.JPG`;
+      imgElem.src = `video/001/IMG_${01 + i}.JPG`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
 
     let imgElem2;
     for (let i = 0; i < sceneInfo[2].values.videoImageCount; i++) {
       imgElem2 = new Image();
-      imgElem2.src = `video/002/IMG_${7027 + i}.JPG`;
+      imgElem2.src = `video/002/IMG_${01 + i}.JPG`;
       sceneInfo[2].objs.videoImages.push(imgElem2);
     }
 
