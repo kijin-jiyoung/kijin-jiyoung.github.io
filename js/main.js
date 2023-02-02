@@ -111,14 +111,14 @@
     let imgElem;
     for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem = new Image();
-      imgElem.src = `video/001/IMG_${01 + i}.JPG`;
+      imgElem.src = `video/001/IMG_${01 + i}.jpg`;
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
 
     let imgElem2;
     for (let i = 0; i < sceneInfo[2].values.videoImageCount; i++) {
       imgElem2 = new Image();
-      imgElem2.src = `video/002/IMG_${01 + i}.JPG`;
+      imgElem2.src = `video/002/IMG_${01 + i}.jpg`;
       sceneInfo[2].objs.videoImages.push(imgElem2);
     }
 
