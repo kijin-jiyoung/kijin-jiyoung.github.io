@@ -13,29 +13,20 @@ body {
 @media (max-width: 600px)
     
     
-
-
-
-
 .fist-page,
 .second-page {
     margin-left: auto;
     margin-right: auto;
     height: 140px;
     }
-
-
 p.Title {
-   font-size: 4rem;
-   z-index: 5;
-   position: relative;
-   text-align: center;
+   font-size: 17px;
+   font-weight: 100;
    letter-spacing: 3px;
    }
 
-
-p.sub-Title {
-   font-size: 17px;
+ p.sub-Title {
+    font-size: 17px;
    font-weight: 600;
    letter-spacing: 3px;
    }
@@ -102,16 +93,24 @@ img.kakao {
     border-color:#F2F2F2;     
 }
 
-
   < !-- 갤러리 영역 -- >
-     * {
-  margin: 0;
-  padding: 0;
-}
+     html,
+    body {
+      position: relative;
+      height: 100%;
+    }
     .swiper {
       width: 100%;
       height: 100%;
     }
+  
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
 
     .swiper-slide {
       text-align: center;
@@ -125,18 +124,6 @@ img.kakao {
   display: flex;
   position: relative;
   z-index: 0;
-}
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.swiper-slide {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 2;
-  transform: translate(-50%, -50%);
 }
 
 /* (1) */
