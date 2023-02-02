@@ -22,7 +22,6 @@ body {
 
 p.Title {
   position: relative;
-   z-index: 5;
    font-size: 4rem;
    text-align: center;
    letter-spacing: 3px;
