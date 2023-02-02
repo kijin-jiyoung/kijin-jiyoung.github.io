@@ -62,7 +62,41 @@ a {
 	
 	
 	
+
+.canvas-caption {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0 1rem;
+	font-size: 1.2rem;
+	color: #888;
+}
+
+
+.sticky-elem {
+	display: none;
+	position: fixed;
+	left: 0;
+	width: 100%;
+}
+
+
+#show-scene-0 #scroll-section-0 .sticky-elem {
+display: block;
+}
+
+.sticky-elem-canvas {
+  top: 0;
+  height: 100%;
+}	
 	
+.sticky-elem-canvas canvas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}	
+	
+
+
 	
 .fist-page,
 .second-page {
