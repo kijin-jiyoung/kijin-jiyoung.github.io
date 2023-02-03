@@ -4,7 +4,7 @@ body {
     max-width: 666px;
     text-align: center;
     vertical-align: middle;
-    background-color: #FFF8EE; 
+    background-color: rgba(255, 255, 255, 0.1);
     font-family: 'MapoFlowerIsland';
     font-size: 16px;
     line-height: 1.5;
