@@ -84,9 +84,7 @@ body {
 }
 
 #show-scene-0 #scroll-section-0 .sticky-elem,
-#show-scene-1 #scroll-section-1 .sticky-elem,
-#show-scene-2 #scroll-section-2 .sticky-elem,
-#show-scene-3 #scroll-section-3 .sticky-elem {
+#show-scene-1 #scroll-section-1 .sticky-elem {
 	display: block;
 }
 
@@ -119,9 +117,6 @@ body {
 		font-size: 6rem;
 	}
 
-	#scroll-section-2 .main-message {
-		font-size: 6vw;
-	}
 	
 	.main-message small {
 		font-size: 1.5vw;
@@ -129,15 +124,6 @@ body {
 
 	.desc-message {
 		width: 20%;
-	}
-
-	#scroll-section-2 .b {
-		top: 20%;
-		left: 53%;
-	}
-
-	#scroll-section-2 .c {
-		left: 55%;
 	}
 
 	.mid-message {
@@ -155,22 +141,12 @@ body {
 
 
     
-    
-.fist-page,
 .second-page {
     margin-left: auto;
     margin-right: auto;
     height: 140px;
     }
 
-p.Title {
-  position: relative;
-   font-size: 60px;
-   text-align: center;
-   letter-spacing: 3px;
-   padding-top: 30px;
-   padding-bottom: 30px;
-   }
 
  p.sub-Title {
     font-size: 17px;
