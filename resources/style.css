@@ -1,3 +1,5 @@
+
+
 body { 
     margin: 0 auto;
     width: 100%;
@@ -13,7 +15,42 @@ body {
 
 @media (max-width: 600px)
     
+.mo-wrap .main-visual .visual { 
+    font-size: 12.8vw;
+}
+
+.mo-wrap .main-visual .text {
+    letter-spacing: -0.04em;
+}
+
+.mo-wrap .main-visual .text .ico { 
+    display: inline-block;
+    position: relative;
+    width: 0.26667vw;
+    height: 13.33333vw;
+    background-color: #000;
+    vertical-align: middle;
+}
+
     
+    
+.main-visual .figure { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    height: 562px;
+    opacity: 0;
+    margin-left: -175px;
+    margin-top: -281px;
+    background: url("../images/common/figure.png") 0 0 no-repeat;
+    -webkit-transform-origin: center 110%;
+    -ms-transform-origin: center 110%;
+    transform-origin: center 110%;
+}
+
+
+
 .fist-page,
 .second-page {
     margin-left: auto;
@@ -61,14 +98,11 @@ p.Time-place {
 
 
 
-
-
 p.invitation  {
    font-size: 14px;
    font-weight: 500;
    letter-spacing: 2px; 
    }
-
 
 
 
