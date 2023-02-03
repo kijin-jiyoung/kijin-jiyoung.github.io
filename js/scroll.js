@@ -22,8 +22,8 @@
         videoImages: []
       },
       values: {
-        videoImageCount: 200,
-        imageSequence: [0, 199],
+        videoImageCount: 300,
+        imageSequence: [0, 299],
         canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
         messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
@@ -85,7 +85,7 @@
     let imgElem;
     for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem = new Image();
-      imgElem.src = 'scroll/01/${01 + i}.JPG';
+      imgElem.src = 'video/001/IMG_${0001_i}.JPG';
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
 
