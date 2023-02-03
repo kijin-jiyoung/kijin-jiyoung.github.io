@@ -69,7 +69,7 @@ body {
 
 .titleCont{position:relative;}
 
-p.Title  {
+.Title  {
     padding: .3em 1em .25em;    
     font-weight: 400;
     font-size: 14px;
