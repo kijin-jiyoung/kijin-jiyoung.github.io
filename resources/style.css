@@ -72,8 +72,8 @@ body {
 p.Title  {
     padding: .3em 1em .25em;    
     font-weight: 400;
-    font-size: 40px;
-    color: white;
+    font-size: 14px;
+    font-color: white;
     font-family: 'MapoFlowerIsland';
     font-family: 'Bellefair', serif
     position:relative;
@@ -120,7 +120,8 @@ p.Title  {
 
 
 
-.fist-page,
+.fist-page
+
 .second-page {
     margin-left: auto;
     margin-right: auto;
