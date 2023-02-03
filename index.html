@@ -447,21 +447,11 @@ function sendKakao(kurl,tittxt, kkimg) {
                             installTalk : true,
                             content : {
                                 title : tittxt,
-                                imageUrl : kkimg,
                                 link: {
-                                    webUrl: kurl,
-                                    mobileWebUrl : kurl
+                                    webUrl: 'https://kijin-jiyoung.github.io/',
+                                    mobileWebUrl : 'https://kijin-jiyoung.github.io/
                                 },
                             },
-                            buttons: [
-                                {
-                                    title: '자세히 보기',
-                                    link: {
-                                        webUrl: kurl,
-                                        mobileWebUrl: kurl
-                                    }
-                                }
-                            ]
                         });
                     } else {
 					    alert('Only available on Mobile.');
