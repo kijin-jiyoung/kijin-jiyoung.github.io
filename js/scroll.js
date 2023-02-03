@@ -9,7 +9,7 @@
     {
       // 0
       type: 'sticky',
-      heightNum: 2,
+      heightNum: 2, // 브라우저 높이의 5배로 scrollHeight 세팅
       scrollHeight: 0,
       objs: {
         container: document.querySelector('#scroll-section-0'),
@@ -22,8 +22,8 @@
         videoImages: []
       },
       values: {
-        videoImageCount: 300,
-        imageSequence: [0, 299],
+        videoImageCount: 200,
+        imageSequence: [0, 199],
         canvas_opacity: [1, 0, { start: 0.9, end: 1 }],
         messageA_opacity_in: [0, 1, { start: 0.1, end: 0.2 }],
         messageB_opacity_in: [0, 1, { start: 0.3, end: 0.4 }],
@@ -54,22 +54,7 @@
       }
     },
     {
-      // 2
-      type: 'sticky',
-      heightNum: 2,
-      scrollHeight: 0,
-      objs: {
-        container: document.querySelector('#scroll-section-2'),
-        messageA: document.querySelector('#scroll-section-2 .a'),
-        messageB: document.querySelector('#scroll-section-2 .b'),
-        messageC: document.querySelector('#scroll-section-2 .c'),
-        pinB: document.querySelector('#scroll-section-2 .b .pin'),
-        pinC: document.querySelector('#scroll-section-2 .c .pin'),
-        canvas: document.querySelector('#video-canvas-1'),
-        context: document.querySelector('#video-canvas-1').getContext('2d'),
-        videoImages: []
-      },
-      values: {
+       values: {
         videoImageCount: 960,
         imageSequence: [0, 959],
         canvas_opacity_in: [0, 1, { start: 0, end: 0.1 }],
@@ -93,23 +78,17 @@
         pinB_opacity_out: [1, 0, { start: 0.58, end: 0.63 }],
         pinC_opacity_out: [1, 0, { start: 0.85, end: 0.9 }]
       }
-    }
+    },
   ];
 
   function setCanvasImages() {
     let imgElem;
     for (let i = 0; i < sceneInfo[0].values.videoImageCount; i++) {
       imgElem = new Image();
-      imgElem.src = `scroll/01/${01 + i}.jpg`;
+      imgElem.src = 'scroll/01/${01 + i}.JPG';
       sceneInfo[0].objs.videoImages.push(imgElem);
     }
 
-    let imgElem2;
-    for (let i = 0; i < sceneInfo[2].values.videoImageCount; i++) {
-      imgElem2 = new Image();
-      imgElem2.src = `scroll/02/${01 + i}.jpg`;
-      sceneInfo[2].objs.videoImages.push(imgElem2);
-    }
 
     let imgElem3;
     for (let i = 0; i < sceneInfo[3].objs.imagesPath.length; i++) {
@@ -119,7 +98,6 @@
     }
   }
   setCanvasImages();
-  }
 
   function setLayout() {
     // 각 스크롤 섹션의 높이 세팅
@@ -143,7 +121,7 @@
     }
     document.body.setAttribute('id', `show-scene-${currentScene}`);
 
-    const heightRatio = window.innerHeight / 1080;
+    const heightRatio = window.innerHeight / 540;
     sceneInfo[0].objs.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`;
     sceneInfo[2].objs.canvas.style.transform = `translate3d(-50%, -50%, 0) scale(${heightRatio})`;
   }
