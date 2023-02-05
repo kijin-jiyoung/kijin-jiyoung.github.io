@@ -35,7 +35,7 @@ body {
   text: white;
   white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 10s steps(5) 1s 1 normal both;
+  animation: typewriter 2s steps(25) 1s 1 normal both;
 }
 
 .typewriter #line-1 {
