@@ -16,7 +16,7 @@ body {
 @media (max-width: 600px)
 
 
-.main {
+p.main {
   MapoFlowerIslandfont-family: 'MapoFlowerIsland', monospace;  
   font-size: 16x;
   font-weight: bold;
