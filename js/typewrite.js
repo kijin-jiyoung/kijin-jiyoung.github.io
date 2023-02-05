@@ -1,3 +1,4 @@
+
 const textes = document.querySelectorAll(".typewriter span")
 let prevText = textes[textes.length-1]
 let i = 0
