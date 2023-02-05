@@ -32,15 +32,17 @@ body {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
+  width: 390px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 2s steps(25) 1s 1 normal both;
 }
 
 .typewriter #line-1 {
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
+  width: 425px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 3s steps(40) 1s 1 normal both;
@@ -48,9 +50,17 @@ body {
 }
 
 #line-2 {
-  border-right: 1px solid black;
+  border-right: 1px solid white;
   white-space: nowrap;
-  overflow: hidden;
+  overflowanimation: typewriter 3s steps(40) 1s 1 normal both;
+  animation-delay: 3.5s;
+}
+
+#line-2 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;: hidden;
+  width: 405px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 3s steps(40) 1s 1 normal both;
