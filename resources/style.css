@@ -16,7 +16,7 @@ body {
 @media (max-width: 600px)
 
 
-p.main {
+.main {
   MapoFlowerIslandfont-family: 'MapoFlowerIsland', monospace;  
   font-size: 16x;
   font-weight: bold;
@@ -25,9 +25,11 @@ p.main {
 }
 
 
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
 /* Animation */
 
-p {
+p.main {
   animation: animated-text 4s steps(29,end) 1s 1 normal both,
              animated-cursor 600ms steps(29,end) infinite;
 }
