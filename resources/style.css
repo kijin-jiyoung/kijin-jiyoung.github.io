@@ -26,38 +26,56 @@ body {
 	overflow:hidden;
 }
 
-*{
-  box-sizing: border-box;
+
+$base-color: #A3E3F9;
+$accent-color: #e05b43;
+$dark-grey: #636F85;
+$light-grey: #D4D7DD;
+$intro: #EEEEEE;
+$white: white;
+
+
+#intro{
+  display: table;
+  height: 100vh;
+  width: 100vw;
+  .intro-description{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
 }
 
-
-.container {
-	min-height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 16px;
+/* DEMO-SPECIFIC STYLES */
+.typewriter{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  h1 {
+  display: inline-block;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid $accent-color; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+  }
 }
 
-.typewriter span {
-	display: none;
-	width: calc(.15rem + (1ch * var(--chars)));
-	overflow: hidden;
-	border-right: .15rem solid ;
-	white-space: nowrap;
-	font-family: 'MapoFlowerIsland';
-	animation: 
-		typing 2.5s steps(var(--chars)),   
-		blink .7s step-end infinite alternate;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-@keyframes typing { 
-from { width: 0% }
- }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: $accent-color; }
+}
 
-@keyframes blink  {	
-50%  { border-color: transparent } 
- }
 
 
 
