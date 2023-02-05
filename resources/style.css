@@ -16,8 +16,8 @@ body {
 @media (max-width: 600px)
 
 
-.typewriter {
-  MapoFlowerIslandfont-family: 'MapoFlowerIsland', monospace;  
+.main {
+  font-family: 'MapoFlowerIsland';  
   font-size: 16x;
   font-weight: bold;
   width: 400px;
@@ -26,58 +26,42 @@ body {
 }
 
 
-.typewriter h1 {
-  border-right: 1px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  height: 200px;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(25) 1s 1 normal both;
-}
-
-.typewriter #line-1 {
-  border-right: 1px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(9) 1s 1 normal both;
-  animation-delay: 1.5s;
-}
-
-#line-2 {
-  border-right: 1px solid white;
-  white-space: nowrap;
-  overflow: hidden;
-  white-space: nowrap;
-  overflow: hidden;
-  animation: typewriter 2s steps(24) 1s 1 normal both;
-  animation-delay: 1.5s;
-}
-
-@keyframes typewriter {
-0% {
-    width: 0;
-    border-right: none;
-  }
-  0.1% {
-    border-right: 1px solid rgb(220,220,220);
-  }
-  99.9% {
-    border-right: 1px solid rgb(220,220,220);
-  }
-  100% {
-    border: none;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
-
-@keyframes fadeIn {
-from {opacity:0;}
-to {opacity:1;}
+.maincontainer {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+        background-color: #111;
+	color: #fff;
+	font-size: 1rem;
 }
+
+.typewriter span {
+	display: none;
+	width: calc(.15rem + (1ch * var(--chars)));
+	overflow: hidden;
+	border-right: .15rem solid ;
+	white-space: nowrap;
+	font-family: 'MapoFlowerIsland';
+	animation: 
+		typing 2.5s steps(var(--chars)),   
+		blink .7s step-end infinite alternate;
+}
+
+@keyframes typing { 
+from { width: 0% }
+ }
+
+@keyframes blink  {	
+50%  { border-color: transparent } 
+ }
 
 
 
