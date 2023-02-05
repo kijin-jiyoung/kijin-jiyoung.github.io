@@ -38,7 +38,7 @@ body {
 }
 
 .typewriter #line-1 {
-  border-right: 1px solid white;
+  border-right: 1px solid black;
   white-space: nowrap;
   overflow: hidden;
   white-space: nowrap;
@@ -48,7 +48,7 @@ body {
 }
 
 #line-2 {
-  border-right: 1px solid white;
+  border-right: 1px solid black;
   white-space: nowrap;
   overflow: hidden;
   white-space: nowrap;
