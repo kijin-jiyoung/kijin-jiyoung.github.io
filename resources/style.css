@@ -47,7 +47,7 @@ animation-delay: 5s;
 
 /* text animation */
 
-/*@keyframes animated-text{
+@keyframes animated-text{
   from{width: 0;}
   to{width: 472px;}
 }
@@ -59,7 +59,7 @@ animation-delay: 5s;
 
 /* cursor animations */
 
-/*@keyframes animated-cursor{
+@keyframes animated-cursor{
   from{border-right-color: rgba(0,255,0,.75);}
   to{border-right-color: transparent;}
 }
