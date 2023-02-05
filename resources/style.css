@@ -16,7 +16,7 @@ body {
 @media (max-width: 600px)
 
 
-.main {
+.typewriter {
   MapoFlowerIslandfont-family: 'MapoFlowerIsland', monospace;  
   font-size: 16x;
   font-weight: bold;
@@ -28,7 +28,7 @@ body {
 }
 
 
-.main h1 {
+.typewriter h1 {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
@@ -38,7 +38,7 @@ body {
   animation: typewriter 2s steps(25) 1s 1 normal both;
 }
 
-.main #line-1 {
+.typewriter #line-1 {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
@@ -60,7 +60,7 @@ body {
   animation-delay: 7s;
 }
 
-@keyframes main {
+@keyframes typewriter {
 0% {
     width: 0;
     border-right: none;
