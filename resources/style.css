@@ -32,7 +32,6 @@ body {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
-  width: 390px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 2s steps(25) 1s 1 normal both;
@@ -42,7 +41,6 @@ body {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
-  width: 425px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 3s steps(40) 1s 1 normal both;
@@ -53,7 +51,6 @@ body {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
-  width: 405px;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 3s steps(40) 1s 1 normal both;
