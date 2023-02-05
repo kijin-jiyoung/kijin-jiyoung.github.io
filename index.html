@@ -35,6 +35,15 @@
 	
 <body>
 	
+
+
+<div id="para1">
+</div>
+<div id="para2">
+</div>
+
+
+
 <div class="container">
 <div class="typewriter">
 <span style="--chars: 22">we're getting married!</span>
@@ -312,78 +321,7 @@
    
  <!------------ 스크립트 영역 ------------ 	  
 
-<script type=javascript>
-//CONTROL VALUES
-var charWidth = 2.5;
-var spaceWidth = 8;
-var animSpeed = 20;
-var fadeSec = 0.5;
-var lineSpace = 25;
-
-var text = "we're getting married!";
-var moreText = "Lee kijin & Yoon jiyoung 23.06.24 Sat 11:30 Banpo Floating Island";
-
-
-function writeChars(p, t, lim) {
-	var zone = document.getElementById(p);
-	var width = 0;
-	var top = 0;
-	console.log(zone);
-	var chars = t.split("");
-	for (var i = 0; i < chars.length; i++) {
-		var s = "<span id ='" + p + "char" + i +
-				"' class='writer' style='top:" + top + "px; left:" + width + 
-				"px;animation:charAnim " + fadeSec + "s linear " + i/animSpeed + "s forwards;'>"
-				+ chars[i] + "</span>";
-		var node = document.createElement("div");
-		node.innerHTML = s;
-		zone.appendChild(node);
-		var blah = document.getElementById(p + "char" + i);
-		if (blah.offsetWidth == 0) {
-			width += spaceWidth;
-		}
-		else {
-			width += blah.offsetWidth+charWidth;
-		}
-		if (width >= lim && blah.offsetWidth == 0) {
-			width = 0;
-			top += lineSpace;
-		}
-		console.log(width);
-	}
-}
-
-writeChars("para1",text, 200);
-setTimeout(function() {
-	writeChars("para2",moreText, 200);
-}, 2000);
-
-
-</script>
-
-
-
-
-
-
-
-<script type=javascript>
-const textes = document.querySelectorAll(".typewriter span")
-let prevText = textes[textes.length-1]
-let i = 0
-
-animate()
-setInterval(_=> animate(), 5000)
-
-function animate(){
-	let index = (i++)%textes.length
-
-	prevText.style.display = "none"
-	textes[index].style.display = "block"
-
-	prevText = textes[index]
-}
-
+<script src="js/typewrite.js">
 </script>
 
 
