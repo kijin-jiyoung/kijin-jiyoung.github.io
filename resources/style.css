@@ -24,7 +24,6 @@ body {
   background: black;
   position: absolute;
   top: 35%;
-  left: 10%;
 }
 
 
@@ -32,6 +31,9 @@ body {
   border-right: 1px solid white;
   white-space: nowrap;
   overflow: hidden;
+  height: 200px;
+  background: black;
+  text: white;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 1s steps(5) 1s 1 normal both;
