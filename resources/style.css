@@ -31,8 +31,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   height: 200px;
-  background: black;
-  text: white;
   white-space: nowrap;
   overflow: hidden;
   animation: typewriter 2s steps(25) 1s 1 normal both;
