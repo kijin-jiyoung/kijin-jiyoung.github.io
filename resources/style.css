@@ -22,46 +22,64 @@ body {
   font-weight: bold;
   width: 400px;
   background: black;
+  position: absolute;
+  top: 35%;
+  left: 10%;
 }
 
 
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
-
-/* Animation */
-
-p.main {
-  animation: animated-text 4s steps(29,end) 1s 1 normal both,
-             animated-cursor 600ms steps(29,end) infinite;
+.main h1 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 390px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(25) 1s 1 normal both;
 }
 
-p: nth-child(2)
-{
-    white-space:nowrap;
-    overflow:hidden;    
-   animation: animated-text2 4s steps(29,end) 1s 1 normal both;
-    -webkit-animation-delay: 5s; 
-animation-delay: 5s;
-    -webkit-animation-fill-mode: forwards;
-    animation-fill-mode: forwards;
+.main #line-1 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 425px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 1 normal both;
+  animation-delay: 3.5s;
 }
 
-/* text animation */
-
-@keyframes animated-text{
-  from{width: 0;}
-  to{width: 472px;}
+#line-2 {
+  border-right: 1px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 405px;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(40) 1s 1 normal both;
+  animation-delay: 7s;
 }
 
-@keyframes animated-text2{
-  from{width: 0;}
-  to{width: 472px;}
+@keyframes main {
+0% {
+    width: 0;
+    border-right: none;
+  }
+  0.1% {
+    border-right: 1px solid rgb(220,220,220);
+  }
+  99.9% {
+    border-right: 1px solid rgb(220,220,220);
+  }
+  100% {
+    border: none;
+  }
 }
 
-/* cursor animations */
 
-@keyframes animated-cursor{
-  from{border-right-color: rgba(0,255,0,.75);}
-  to{border-right-color: transparent;}
+@keyframes fadeIn {
+from {opacity:0;}
+to {opacity:1;}
 }
 
 
