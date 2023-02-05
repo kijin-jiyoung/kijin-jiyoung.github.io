@@ -14,56 +14,28 @@ body {
     }
 
 @media (max-width: 600px)
-   
-    
-    
+
+
 .main {
-      height: calc(100vh - 8em);
-      padding: 4em;
-      color: rgba(255, 255, 255, 0.75);
-      background-color: black;
+  MapoFlowerIslandfont-family: 'MapoFlowerIsland', monospace;  
+  font-size: 16x;
+  font-weight: bold;
+  width: 400px;
+background: black;
 }
 
-.line {
-      position: relative;
-      padding-top: 50%;
-      width: 16em;
-      margin: 0 auto;
-      border-right: 2px solid rgba(255, 255, 255, 0.75);
-      font-size: 16px;
-      text-align: center;
-      white-space: nowrap;
-      overflow: hidden;transform: translateY(-50%);
+/* Animation */
+/*p {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
 }
 
-/*Animation*/
-
-.anim-typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCursor 500ms steps(40) infinite normal;
-}
-
-@keyframes typewriter {
-      from {
-            width: 0;
-      }
-      to {
-            width: 16em;
-      }
-}
-
-@keyframes blinkTextCursor {
-      from {
-            border-right-color: rgba(255, 255, 255, 0.75);
-      }
-      to {
-            border-right-color: transparent;
-      }
-}
-    
-    
-    
-
+p: nth-child(2)
+{
+    white-space:nowrap;
+    overflow:hidden;    
+   animation: animatedh-text2 4s steps(29,end) 1s 1 normal both;
+    -webkit-animation-delay: 5s; 
 
 
 
