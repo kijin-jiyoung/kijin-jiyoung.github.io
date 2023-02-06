@@ -21,7 +21,7 @@ body {
     background-color: #000;
     margin-left: auto;
     margin-right: auto;
-    height: 140px;
+    
     }
 	
 	
@@ -40,7 +40,7 @@ p.main {
   font-family: 'nothing';
   text: #FFF;	
   position: relative;
-  width: 12em;
+  width: text 100%;
   border-right: 2px #FFF;
   font-size: 16px;
   text-align: center;
@@ -58,7 +58,7 @@ p.main {
     width: 0;
   }
   to {
-    width: 12em;
+    width: text 100%;
   }
 }
 @keyframes blinkTextCursor {
