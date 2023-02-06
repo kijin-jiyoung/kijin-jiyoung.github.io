@@ -21,9 +21,9 @@ body {
 	
 
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700,700italic";
-@import https: //fonts.googleapis.com/css?family=Amatic+SC
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 	
- section {
+p.main {
   height-min: 100%;
   overflow: hidden;
   padding: 4px;
@@ -31,8 +31,9 @@ body {
   text: white;
 }
 
+
 .line-1 {
-  font-family: "Amatic SC", serif;
+  font-family: 'Nothing You Could Do', cursive;
   position: relative;
   top: 50%;
   width: 12em;
@@ -68,7 +69,14 @@ body {
 
 
 
+ p.name,
+p.date,
+p.place {
+   font-size: 16px;
+   font-weight: 600;
+   letter-spacing: 3px;
 
+   }
 
 	
 
