@@ -40,7 +40,7 @@ p.main {
   font-family: 'nothing';
   text: #FFF;	
   position: relative;
-  width: text 100%;
+  width: 16em;
   border-right: 2px #FFF;
   font-size: 16px;
   text-align: center;
@@ -58,7 +58,7 @@ p.main {
     width: 0;
   }
   to {
-    width: text 100%;
+    width: 16em;
   }
 }
 @keyframes blinkTextCursor {
