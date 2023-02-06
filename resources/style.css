@@ -18,9 +18,7 @@ body {
 @media (max-width: 600px)
 
 
-	
 
-@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700,700italic";
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 	
 p.main {
@@ -75,7 +73,6 @@ p.place {
    font-size: 16px;
    font-weight: 600;
    letter-spacing: 3px;
-
    }
 
 	
