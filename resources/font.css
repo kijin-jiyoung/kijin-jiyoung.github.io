@@ -27,14 +27,22 @@
 }
 
 
-
-
-
-
-
-._font-main {
-    font-family: Noto Serif Korean;
+@font-face {
+	font-family: 'Noto Serif Korean';
+	src: url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap');
+	font-weight: normal;
+	font-style: normal;
 }
 
+
+
+
+
+@font-face {
+	font-family: 'Nothing You Could Do', cursive;
+	src: url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+	font-weight: normal;
+	font-style: normal;
+}
 
 
