@@ -28,7 +28,6 @@ p.main {
   font-size: 17px;
   font-weight: 100;
   letter-spacing: 3px;
-  height-min: 100%;
   overflow: hidden;
   padding: 4px;
   background-color: black;
@@ -46,7 +45,6 @@ p.main {
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(100%);
 }
 
 /* Animation */
