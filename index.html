@@ -24,27 +24,50 @@
       <link rel="stylesheet" href="/resources/font.css">
       <link rel="stylesheet" href="/resources/style.css">
       <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">  
-      <link href='https://fonts.googleapis.com/css?family=Coming+Soon' rel='stylesheet' type='text/css'>
+
   
       <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript">
-$( window ).ready(function() {
-  
-    var wHeight = $(window).height();
+var controller = new ScrollMagic.Controller({
+  globalSceneOptions: {
+      triggerHook: "onLeave"
+  }
+});
 
-    $('.slide')
-      .height(wHeight)
-      .scrollie({
-        scrollOffset : -50,
-        scrollingInView : function(elem) {
-                   
-          var bgColor = elem.data('background');
-          
-          $('body').css('background-color', bgColor);
-          
-        }
-      });
 
-  });
+var pinani = new TimelineMax()
+    .add(TweenMax.to("#wipe", 1, {transform: "translateY(0)"}))
+    .add(TweenMax.to("#second-wipe", 1, {transform: "translateY(0)"}))
+    .add(TweenMax.to("#slide", 1, {top: "0%", ease: Bounce.easeOut, delay: 0.2}))
+    .add([
+        TweenMax.to("#slide h3:first-child", 0.2, {autoAlpha: 0}),
+        TweenMax.from("#slide h3:last-child", 0.2, {autoAlpha: 0})
+    ])
+    .add([
+        TweenMax.to("#slide", 0.3, {backgroundColor: "#9FE2BF"}),
+        TweenMax.to("#slide h3:last-child", 0.3, {color: "black"})
+    ])
+    .add([
+        TweenMax.to("#slide", 0.3, {backgroundColor: "green"}),
+        TweenMax.to("#slide h3:last-child", 0.3, {color: "red"})
+    ])
+    .add([
+        TweenMax.to("#slide", 0.3, {backgroundColor: "#F8C471"}),
+        TweenMax.to("#slide h3:last-child", 0.3, {color: "white"})
+    ])
+    .add([
+        TweenMax.to("#slide", 0.3, {backgroundColor: "#c7e1ff"}),
+        TweenMax.to("#slide h3:last-child", 0.3, {color: "black"})
+    ])
+    .add(TweenMax.to("#slide-dos", 1, {transform: "translateX(0)"}))
+    .add(TweenMax.from("#unpin", .5, {top: "100%"}));
+
+new ScrollMagic.Scene({
+  triggerElement: "section#pin",
+  duration: '100%'
+})
+.setTween(pinani)
+.setPin("section#pin")
+.addTo(controller);
 </script>
 
 
@@ -57,30 +80,47 @@ $( window ).ready(function() {
 	
 <body>
 
+
 	
-	
-<div class="main-wrapper">
-  <div class="slide slide-one" data-background="black">
-    <div class="inside">
-    <p>We're getting married!</p>
-    </div>
-  </div>
-  <div class="slide slide-two" data-background="#34495e">
-    <div class="inside">
-      <p>Lee kijin & Yoon jiyoung</p>
-    </div>
-  </div>
-    <div class="slide slide-three" data-background="#57837B">
-    <div class="inside">
-      <p>2023.06.24 Sat 11:30</p>
-    </div>
-  </div>  
-  <div class="slide slide-four" data-background="#C9D8B6">
-    <div class="inside">
-      <p>Banpo floating Island</p>
-    </div>
-  </div>
-</div>
+<div id="content-wrapper">
+
+    <section id="pin" class="scroll-magic-section">
+        <h3 id="hlpin">We're getting married!</h3>
+
+        <div id="wipe">
+            <div class="container">
+                <h3>Lee kijin &</h3>
+            </div>
+        </div>
+
+        <div id="second-wipe">
+            <div class="container">
+                <h3>Yoon jiyoung</h3>
+            </div>
+        </div>
+
+        <div id="slide">
+            <div class="container">
+                <h3>2023.06.24 Saturday</h3>
+                <h3>11:30</h3>
+            </div>
+        </div>
+    
+    <div id="slide-dos">
+            <div class="container">
+                <h3>Banpo Sebit Island</h3>
+            </div>
+        </div>
+
+        <div id="unpin">
+            <div class="container">
+                <h3>Floating Island</h3>
+            </div>
+        </div>
+
+    </section>
+</div>	
+
 
 		  
 <br><br><br><br><br><br>
