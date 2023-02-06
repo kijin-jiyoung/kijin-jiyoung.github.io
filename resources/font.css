@@ -30,7 +30,7 @@
 
 
 @font-face {
-	src: url('resources/font/NothingYouCouldDo-Regular.ttf');
+	src: url("/resources/font/NothingYouCouldDo-Regular.ttf");
 	font-family:'nothing';
 }
 
