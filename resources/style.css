@@ -31,15 +31,14 @@ p.main {
   overflow: hidden;
   padding: 4px;
   background-color: #000;
-  text: #FFF;
-	
 }
 
 
 .line-1 {
+  background-color: #000;	
   font-family: 'Nothing You Could Do', cursive;
+  text: #FFF;	
   position: relative;
-  top: 50%;
   width: 12em;
   border-right: 2px #FFF;
   font-size: 16px;
