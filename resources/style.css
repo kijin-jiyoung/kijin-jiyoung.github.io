@@ -17,8 +17,15 @@ body {
 
 @media (max-width: 600px)
 
-.fist-page,
+.fist-page {
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    }
+	
+	
 .second-page {
+	  background-color: #000;
     margin-left: auto;
     margin-right: auto;
     height: 140px;
