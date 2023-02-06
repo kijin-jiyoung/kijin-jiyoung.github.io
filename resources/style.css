@@ -21,148 +21,32 @@ body {
 	
 
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700,700italic";
+@import "https://fonts.googleapis.com/css?family=Source+Amatic+SC
 
-// General Styles
-// ====================================================================
-
-
-body,
-html {
-    height: 100%
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: "Josefin Slab";
-    font-weight: bold;
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-h1 {
-    font-style: italic;
-    font-weight: bold;
-    font-size: 22px;
-}
-
-h2 {
-    font-size: 18px;
-}
-
-.noselect * {
-    user-select: none;
-}
-
-// ScrollMagic Containers
-// ====================================================================
-
-.container {
-    height: 100%;
-    margin: 0 auto;
-    max-width: 900px;
-    position: relative;
-    width: 100%;
-}
-
-#content-wrapper {
-    height: 100%;
-    min-height: 500px;
-    width: 100%;
-}
-
-.scroll-magic-section {
-    height: 100%;
-  background: #FFFCB3;
-  color: black;
-}
-
-// ScrollMagic Pin Panel
-// ====================================================================
-
-#pin {
-    overflow: hidden;
-    width: 100%;
-
-    h3 {
-        margin: -40px 0 0 0;
-        position: relative;
-        top: 50%;
-        font-size: 80px;
-        line-height: 80px;
-        text-align: center;
-    }
-}
-
-
-// ScrollMagic Wipe Panels
-// ====================================================================
-
-#wipe {
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(100%);
-    width: 100%;
-    background: #9DD376;
-
-    h3 {
-        color: white;
-    }
-}
-
-#second-wipe {
-    height: 100%;
-    overflow: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translateY(100%);
-    width: 100%;
-    background: #FA8072;
-    color: white;
-}
-
-
-// ScrollMagic Slide Panels
-// ====================================================================
-
-#slide {
-    height: 100%;
-    position: absolute;
-    top: -100%;
-    width: 100%;
-    background: #CABAE7;
-
-    h3 {
-        position: absolute;
-        width: 100%;
-    }
-}
-
-#slide-dos {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    width: 100%;
-    background: #21618C;
-  color:white;
-}
-
-
-// ScrollMagic Unpin Panel
-// ====================================================================
-
-#unpin {
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    background: maroon;
-  color:white;
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
 }
 
 
