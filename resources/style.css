@@ -30,8 +30,9 @@ p.main {
   letter-spacing: 3px;
   overflow: hidden;
   padding: 4px;
-  background-color: black;
-  text: white;
+  background-color: #000;
+  text: #FFF;
+	
 }
 
 
@@ -40,7 +41,7 @@ p.main {
   position: relative;
   top: 50%;
   width: 12em;
-  border-right: 2px white;
+  border-right: 2px #FFF;
   font-size: 16px;
   text-align: center;
   white-space: nowrap;
@@ -62,7 +63,7 @@ p.main {
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: white;
+    border-right-color: #FFF;
   }
   to {
     border-right-color: transparent;
