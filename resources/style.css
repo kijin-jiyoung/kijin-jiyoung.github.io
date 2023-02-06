@@ -40,7 +40,7 @@ p.main {
   position: relative;
   top: 50%;
   width: 12em;
-  border-right: 2px black;
+  border-right: 2px white;
   font-size: 16px;
   text-align: center;
   white-space: nowrap;
@@ -62,7 +62,7 @@ p.main {
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: black;
+    border-right-color: white;
   }
   to {
     border-right-color: transparent;
@@ -71,7 +71,7 @@ p.main {
 
 
 
-
+p.mainname,
 p.date,
 p.place {
    font-size: 16px;
