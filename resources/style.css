@@ -25,16 +25,9 @@ body {
 
 
 p.main {
-  font-size: 17px;
-  font-weight: 100;
   letter-spacing: 3px;
   overflow: hidden;
   padding: 4px;
-  background-color: #000;
-}
-
-
-.line-1 {
   background-color: #000;	
   font-family: 'Nothing You Could Do', cursive;
   text: #FFF;	
