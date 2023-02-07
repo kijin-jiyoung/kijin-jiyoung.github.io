@@ -122,24 +122,34 @@ ul{list-style:none;}
 
 
 *{margin:0; padding:0;}
-a.button{display:inline-block; padding: 10px 20px; text-decoration:none; color:#fff; background:#000; margin:20px;}
+a.button{   
+  font-size:15px;	
+  background:#484644;
+  color:#FFF; 	
+  font-family: 'MapoFlowerIsland';
+  display:inline-block; 
+  padding: 10px 10px;
+  background:#484644;
+  color:#FFF; 
+  margin:20px;
+  border-radius:80%; 
+}
+
 #modal{
   display:none;
   position:fixed; 
-  width:100%; height:100%;
-  top:0; left:0; 
   background:rgba(0,0,0,0.3);
 }
 .modal-con{
-  font-size:15px;	
+  font-size:15px;
   width:  270px;
   height: 180px;
   display:none;
   position:fixed;
-  background:#484644;
-  color:#FFF; 	
+  vertical-align: middle;	
+  color:#000;
+  text-align:center; 
   font-family: 'MapoFlowerIsland';	
-  border-radius:80%; 
 }
 .modal-con .title{
   font-size:16px; 
