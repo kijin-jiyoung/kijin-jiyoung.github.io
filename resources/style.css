@@ -26,41 +26,33 @@ body {
     height: 140px;
     }
 
-p.main {
+
+.typing-txt{
+  display: none;
   margin: auto auto;
   letter-spacing: 3px;
-  overflow: hidden;
   padding: 4px;
-  font-family: 'CaveatBrush';	
-  position: relative;
-  width: 5em;
-  border-right: 22px #000;
+  font-family: 'CaveatBrush';
   font-size: 70px;
-  text-align: center; 
-  black-space: nowrap;
+  text-align: center;
   line-height: 140px;
 }
+ul{list-style:none;}
+.typing ul li{
+  display:block;
+}
 
-/* Animation */
-.anim-typewriter {
-  animation: typewriter 1s steps(12) 1s 1 normal both,
-    blinkTextCursor 100ms steps(12) infinite normal;
-}
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 5em;
-  }
-}
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: #000;
-  }
-  to {
-    border-right-color: transparent;
-  }
+
+.typing ul li.on {  
+  display: inline-block; 
+  animation-name: cursor; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
+} 
+@keyframes cursor{ 
+  0%{border-right: 1px solid #fff} 
+  50%{border-right: 1px solid #000} 
+  100%{border-right: 1px solid #fff} 
 }
 
 
