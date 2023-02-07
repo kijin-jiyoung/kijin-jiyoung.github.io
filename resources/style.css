@@ -117,7 +117,7 @@ ul{list-style:none;}
   < !------------ 모달 ------------ >
 
 *{margin:0; padding:0;}
-a.button{display:inline-block; padding: 10px 20px; text-decoration:none; color:#fff; font-size:14px; font-family:'MapoFlowerIsland'; width:80px; height:25px; border-radius:30px; background:#484644; margin:20px;}
+a.button{display:inline-block; padding: 10px 20px; text-decoration:none; color:#fff; font-size:14px; font-family:'MapoFlowerIsland'; width:80px; height:25px; border-radius:10px; background:#484644; margin:20px;}
 #modal{
   display:none;
   position:fixed; 
@@ -133,16 +133,18 @@ a.button{display:inline-block; padding: 10px 20px; text-decoration:none; color:#
   max-width: 60%;
   min-height: 30%;
   background:#fff;
-  font-size:15px;
+  font-size:14px;
   width:  270px;
   height: 180px;
+  border-radius:10px; 
   vertical-align: middle;	
   color:#000;
+line-height: 20px;
   text-align:center; 
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .title{
-  font-size:16px; 
+  font-size:14px; 
   padding: 20px;
   color:#000;	
   background : FFF8EE;
