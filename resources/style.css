@@ -145,15 +145,18 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   font-family: 'MapoFlowerIsland';
 }
 .modal-con .close{
-  font-size: 15px;
-  padding: 2px;
-  display:block;
+ display:block;
   position:absolute;
+  width:80px; height:30px;
+  border-radius: 10px;
+  border: 1px solid #000;
   text-align:center; 
-  color:#FFF; 
-  background-color: #000;
+  line-height: 30px;
+  text-decoration:none;
+  background-color:#000;
+  color:#FFF; font-size:14px;
+  right:-1px; top:150px;
   font-family: 'MapoFlowerIsland';
-  vertical-align:middle;
   right:-1px; top:150px;
 }
 
