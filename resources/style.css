@@ -34,17 +34,17 @@ p.main {
   padding: 4px;
   font-family: 'CaveatBrush';	
   position: relative;
-  width: 8em;
+  width: 7em;
   border-right: 22px #000;
-  font-size: 35px;
+  font-size: 40px;
   text-align: center; 
   black-space: nowrap;
-  line-height: 50px;
+  line-height: 60px;
 }
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 2s steps(18) 1s 1 normal both,
+  animation: typewriter 4s steps(18) 1s 1 normal both,
     blinkTextCursor 200ms steps(24) infinite normal;
 }
 @keyframes typewriter {
@@ -52,7 +52,7 @@ p.main {
     width: 0;
   }
   to {
-    width: 8em;
+    width: 7em;
   }
 }
 @keyframes blinkTextCursor {
