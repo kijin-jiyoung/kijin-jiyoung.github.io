@@ -431,6 +431,16 @@ img.tmap {
 }
 
 
+div.parents {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 100%;
+}
+
+
+
+
 div.pay,
 div.share {
     width: 40px;
