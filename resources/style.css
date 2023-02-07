@@ -126,7 +126,7 @@ a.button{display:inline-block; color:#fff; font-size:14px; font-family:'MapoFlow
   background:rgba(0,0,0,0.3);
 }
 .modal-con{
-  display:block;
+  display:none;
   position:fixed;
   background:#fff;
   font-size:14px;
@@ -161,7 +161,6 @@ line-height: 20px;
   background-color: #000;
   font-family: 'MapoFlowerIsland';
   vertical-align:middle;
-  cursor:pointer;
 }
 
 
