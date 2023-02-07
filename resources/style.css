@@ -34,7 +34,7 @@ p.main {
   padding: 4px;
   font-family: 'CaveatBrush';	
   position: relative;
-  width: 14em;
+  width: 12em;
   border-right: 22px #000;
   font-size: 35px;
   text-align: center; 
@@ -52,7 +52,7 @@ p.main {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 12em;
   }
 }
 @keyframes blinkTextCursor {
