@@ -48,7 +48,6 @@ ul{list-style:none;}
   display: inline-block; 
   animation-name: cursor; 
   animation-duration: 0.2s; 
-  animation-iteration-count: 1; 
 } 
 @keyframes cursor{ 
   0%{border-right: 1px solid #fff} 
