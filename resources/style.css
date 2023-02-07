@@ -1,5 +1,4 @@
 
-
 body { 
     margin: 0 auto;
     width: 100%;
@@ -29,7 +28,6 @@ body {
 
 
 .typing-txt{
-height: 140px;
   letter-spacing: 3px;
   display: block;
 }
