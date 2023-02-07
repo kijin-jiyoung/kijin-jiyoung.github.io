@@ -128,13 +128,13 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
   position:fixed;
   background:#fff;
   font-size:14px;
-top:auto; left:auto;
+top:auto; left:auto; right:auto;
   width:  270px;
   height: 180px;
   border-radius:10px; 
   vertical-align: middle;	
   color:#000;
-line-height: 20px;
+line-height: 16px;
   text-align:center; 
   font-family: 'MapoFlowerIsland';	
 }
@@ -147,7 +147,7 @@ line-height: 20px;
 }
 .modal-con .con{
   font-size:15px;
-  line-height:20px;
+  line-height:16px;
   padding: 30px;
 }
 .modal-con .close{
