@@ -165,6 +165,7 @@ a.button{
   padding: 30px;
 }
 .modal-con .close{
+  font-size: 15px;
   width: 80px;
   height: 25px;
   padding: 2px;
