@@ -20,11 +20,12 @@ body {
 
 	
 	
-.second-page {
-    margin-left: auto;
-    margin-right: auto;
-    height: 140px;
-    }
+
+
+
+
+
+  < !------------ 타이핑 ------------ >
 
 
 .typing-txt{
@@ -55,6 +56,80 @@ ul{list-style:none;}
   50%{border-right: 1px solid #000} 
   100%{border-right: 1px solid #fff} 
 }
+
+  < !------------ 타이핑 ------------ >
+
+
+
+
+
+
+
+  < !------------ 카운트다운 ------------ >
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #196F3D;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row;
+  height: 100vh;
+  font-family: Century Gothic, Lucida Grande;
+  margin: 0;
+}
+
+.countdown h1 {
+  font-size: 1vw;
+  color: #F9A2C7;
+}
+
+.countdown {
+  display: flex;
+}
+.countdown span {
+  color: #196F3D;
+}
+.countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
+  padding: 1vw 3vw;
+  text-align: center;
+}
+.countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
+  display: block;
+  font-size: 8vw;
+  line-height: 1em;
+}
+.countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
+  display: block;
+  font-size: 1vw;
+  color: #000;
+}
+
+
+  < !------------ 카운트다운 ------------ >
+
+
+
+
+.second-page {
+    margin-left: auto;
+    margin-right: auto;
+    height: 140px;
+    }
+
+
+
+
 
 
 
