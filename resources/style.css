@@ -115,7 +115,7 @@ ul{list-style:none;}
 
 
   < !------------ 모달 ------------ >
-a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlowerIsland'; width:60px; height:25px; border-radius:10px; background:#484644;}
+a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlowerIsland'; width:60px; height:30px; border-radius:10px; background:#484644;}
 #modal{
   display:none;
   position:fixed; 
@@ -129,7 +129,7 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
   background:#fff;
   font-size:14px;
   top:50%; left:50%;
-max-width: 60%;
+  max-width: 60%;
   min-height: 30%;
   width:  270px;
   height: 180px;
@@ -433,7 +433,7 @@ img.tmap {
 }
 
 
-p.parents {
+.parents {
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;
