@@ -33,6 +33,7 @@ body {
   margin: auto auto;
   letter-spacing: 3px;
   padding: 4px;
+  text-align: center;
 }
 ul{list-style:none;}
 .typing ul li{
