@@ -39,6 +39,7 @@ p.main {
   font-size: 35px;
   text-align: center; 
   black-space: nowrap;
+  line-height: 50px;
 }
 
 /* Animation */
