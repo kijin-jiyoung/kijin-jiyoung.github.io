@@ -129,13 +129,9 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
   background:#fff;
   font-size:14px;
   top:50%; left:50%;
-  transform: translate(-50%,-50%);
-  max-width: 60%;
-  min-height: 30%;
   width:  270px;
   height: 180px;
-  border-radius:10px; 
-  vertical-align: middle;	
+  border-radius:10px; 	
   color:#000;
   line-height: 30px;
   text-align:center; 
@@ -143,14 +139,15 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
 }
 .modal-con .title{
   font-size:14px; 
-  padding: 20px;
+  padding: 10px;
   color:#000;	
   background : FFF8EE;
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
   font-size:15px;
-  line-height:16px;
+  line-height:20px;
+  padding:20px;
 }
 .modal-con .close{
   font-size: 15px;
