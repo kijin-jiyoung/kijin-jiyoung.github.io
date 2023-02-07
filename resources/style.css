@@ -29,14 +29,15 @@ body {
 
 
 .typing-txt{
+height: 140px;
   margin-top:200px;
   letter-spacing: 3px;
-display: block;
+  display: block;
 }
 ul{list-style:none;}
 .typing ul li{
   font-family: 'CaveatBrush';
-  font-size: 70px;
+  font-size: 90px;
   text-align: center;
   line-height: 100px;	
   display:block;
@@ -132,7 +133,7 @@ a.button{
   background:#484644;
   color:#FFF; 
   margin:20px;
-  border-radius:50px; 
+  border-radius:30px; 
 }
 
 #modal{
