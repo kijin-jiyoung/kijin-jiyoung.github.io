@@ -28,24 +28,24 @@ body {
 
 
 .typing-txt{
+  display: none;
+  margin: auto auto;
   letter-spacing: 3px;
-  display: block;
+  padding: 4px;
 }
-ul{list-style:none;}.typing ul li{
- margin-top:100px;
- font-family: 'CaveatBrush';
+ul{list-style:none;}
+.typing ul li{
+  font-family: 'CaveatBrush';
   font-size: 70px;
   text-align: center;
-  line-height: 70px;	
+  line-height: 120px;	
   display:block;
 }
-
-
 .typing ul li.on {  
-  display: block; 
+  display: inline-block; 
   animation-name: cursor; 
-  animation-duration: 0.9s;
-  animation-iteration-count: infinite;
+  animation-duration: 0.2s; 
+  animation-iteration-count: 1; 
 } 
 @keyframes cursor{ 
   0%{border-right: 1px solid #fff} 
