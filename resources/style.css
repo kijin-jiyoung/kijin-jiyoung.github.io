@@ -31,7 +31,7 @@ body {
 .typing-txt{
   margin-top:200px;
   letter-spacing: 3px;
-
+display: block;
 }
 ul{list-style:none;}
 .typing ul li{
