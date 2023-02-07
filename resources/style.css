@@ -32,7 +32,7 @@ body {
   display: block;
 }
 ul{list-style:none;}.typing ul li{
- margin-top:150px;
+ margin-top:100px;
  font-family: 'CaveatBrush';
   font-size: 70px;
   text-align: center;
@@ -42,7 +42,7 @@ ul{list-style:none;}.typing ul li{
 
 
 .typing ul li.on {  
-  display: inline-block; 
+  display: block; 
   animation-name: cursor; 
   animation-duration: 0.9s;
   animation-iteration-count: infinite;
