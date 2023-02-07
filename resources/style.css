@@ -95,13 +95,15 @@ ul{list-style:none;}
 .countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
   padding: 1vw 3vw;
   text-align: center;
-  font-family: Century Gothic, Lucida Grande;	
+  font-family: Century Gothic, Lucida Grande;
+  color: #000;	
 }
 .countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
   display: block;
   font-size: 8vw;
   line-height: 1em;
-  font-family: Century Gothic, Lucida Grande;	
+  font-family: Century Gothic, Lucida Grande;
+  color: #F9A2C7;	
 }
 .countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
   display: block;
