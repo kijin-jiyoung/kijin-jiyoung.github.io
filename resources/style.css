@@ -29,8 +29,9 @@ body {
 
 
 .typing-txt{
-  margin: auto auto;
+  margin-top:200px;
   letter-spacing: 3px;
+
 }
 ul{list-style:none;}
 .typing ul li{
@@ -45,7 +46,8 @@ ul{list-style:none;}
 .typing ul li.on {  
   display: inline-block; 
   animation-name: cursor; 
-  animation-duration: 0.9s; 
+  animation-duration: 0.9s;
+  animation-iteration-count: infinite;
 } 
 @keyframes cursor{ 
   0%{border-right: 1px solid #fff} 
