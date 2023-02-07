@@ -36,15 +36,15 @@ p.main {
   position: relative;
   width: 7em;
   border-right: 22px #000;
-  font-size: 50px;
+  font-size: 70px;
   text-align: center; 
   black-space: nowrap;
-  line-height: 80px;
+  line-height: 140px;
 }
 
 /* Animation */
 .anim-typewriter {
-  animation: typewriter 0.5s steps(12) 1s 1 normal both,
+  animation: typewriter 1s steps(12) 1s 1 normal both,
     blinkTextCursor 100ms steps(12) infinite normal;
 }
 @keyframes typewriter {
