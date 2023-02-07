@@ -115,8 +115,9 @@ ul{list-style:none;}
 
 
   < !------------ 모달 ------------ >
-a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:20px; color:#fff; font-size:13px; font-family:'MapoFlowerIsland'; border-radius:10px; background:#484644;}
+a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlowerIsland'; width:60px; height:25px; border-radius:10px; background:#484644;}
 #modal{
+  display:none;
   position:fixed; 
   width:100%; height:100%;
   top:0; left:0; 
@@ -126,10 +127,17 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   display:none;
   position:fixed;
   background:#fff;
-  width:250px; height:200px;	
+  font-size:14px;
   top:50%; left:50%;
-  transform: translate(-50%,-50%);
-  border-radius:10px;	
+max-width: 60%;
+  min-height: 30%;
+  width:  270px;
+  height: 180px;
+  border-radius:10px; 	
+  color:#000;
+  line-height: 30px;
+  text-align:center; 
+  font-family: 'MapoFlowerIsland';	
 }
 .modal-con .title{
   font-size:14px; 
@@ -139,25 +147,20 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
-  padding: 30px;
-  font-size:14px;
-  color:#000;
-  line-height: 30px;
-  font-family: 'MapoFlowerIsland';
+  font-size:15px;
+  line-height:20px;
+  padding:20px;
 }
 .modal-con .close{
- display:block;
+  font-size: 15px;
+  padding: 2px;
+  display:block;
   position:absolute;
-  width:80px; height:30px;
-  border-radius: 10px;
-  border: 1px solid #000;
   text-align:center; 
-  line-height: 30px;
-  text-decoration:none;
-  background-color:#000;
-  color:#FFF; font-size:14px;
-  right:-1px; top:170px;
+  color:#FFF; 
+  background-color: #000;
   font-family: 'MapoFlowerIsland';
+  vertical-align:middle;
 }
 
 
