@@ -126,6 +126,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   display:none;
   position:fixed;
   background:#fff;
+  width:250px; height:200px;	
   top:50%; left:50%;
   transform: translate(-50%,-50%);
   border-radius:10px;	
@@ -155,7 +156,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   text-decoration:none;
   background-color:#000;
   color:#FFF; font-size:14px;
-  right:-1px; top:150px;
+  right:-1px; top:170px;
   font-family: 'MapoFlowerIsland';
 }
 
