@@ -75,10 +75,6 @@ ul{list-style:none;}
   background-color: #333;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #196F3D;
-}
-
 .countdown h1 {
   font-size: 1vw;
   color: #F9A2C7;
