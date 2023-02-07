@@ -128,13 +128,12 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
   position:fixed;
   background:#fff;
   font-size:14px;
-top:0; left:0;
   width:  270px;
   height: 180px;
   border-radius:10px; 
   vertical-align: middle;	
   color:#000;
-line-height: 16px;
+  line-height: 20px;
   text-align:center; 
   font-family: 'MapoFlowerIsland';	
 }
