@@ -10,18 +10,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     transition: background 1s ease;
-    background-color: #000;	
-  text: #FFF;		
+    text: #000
     }
 
 
 
 @media (max-width: 600px)
 
-.fist-page {
-    background-color: #000;
-    height:300px;
-    }
 	
 	
 .second-page {
@@ -35,13 +30,11 @@ p.main {
   margin-top: 50%;
   letter-spacing: 3px;
   overflow: hidden;
-  padding: 4px;
-  background-color: #000;	
-  font-family: 'nothing';
-  text: #FFF;	
+  padding: 4px;	
+  font-family: 'nothing';	
   position: relative;
   width: 15em;
-  border-right: 2px #FFF;
+  border-right: 2px #000;
   font-size: 16px;
   text-align: center;
   white-space: nowrap;
@@ -63,10 +56,10 @@ p.main {
 }
 @keyframes blinkTextCursor {
   from {
-    border-right-color: #FFF;
+    border-right-color: #000;
   }
   to {
-    border-right-color: #000;
+    border-right-color: transparent;
   }
 }
 
