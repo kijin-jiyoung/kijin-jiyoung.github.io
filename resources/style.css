@@ -129,6 +129,8 @@ a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlow
   background:#fff;
   font-size:14px;
   top:50%; left:50%;
+max-width: 60%;
+  min-height: 30%;
   width:  270px;
   height: 180px;
   border-radius:10px; 	
