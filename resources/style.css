@@ -123,6 +123,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   background:rgba(0,0,0,0.3);
 }
 .modal-con{
+  display:none;
   position:fixed;
   background:#fff;
   top:50%; left:50%;
@@ -137,8 +138,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
-  line-height:20px;
-  padding: 10px;
+  padding: 30px;
   font-size:14px;
   color:#000;
   line-height: 30px;
@@ -157,14 +157,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   color:#FFF; font-size:14px;
   right:-1px; top:150px;
   font-family: 'MapoFlowerIsland';
-  right:-1px; top:150px;
 }
-
-
-
-
-
-
 
 
 
