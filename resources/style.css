@@ -115,8 +115,6 @@ ul{list-style:none;}
 
 
   < !------------ 모달 ------------ >
-
-*{margin:0; padding:0;}
 a.button{display:inline-block; color:#fff; font-size:13px; font-family:'MapoFlowerIsland'; width:60px; height:25px; border-radius:10px; background:#484644;}
 #modal{
   display:none;
