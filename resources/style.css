@@ -52,7 +52,7 @@ p.main {
     width: 0;
   }
   to {
-    width: 14em;
+    width: 100%;
   }
 }
 @keyframes blinkTextCursor {
