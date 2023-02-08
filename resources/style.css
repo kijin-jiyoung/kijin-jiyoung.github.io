@@ -134,6 +134,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   border: 1px solid #FFF;
 }
 .modal-con .title{
+  text-align:center; 
   font-size:14px; 
   padding: 10px;
   color:#000;	
@@ -144,13 +145,15 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   font-size:14px;
   line-height:25px;
   padding:15px;
+  text-align:center;
+  font-family: 'MapoFlowerIsland';	
 }
 .modal-con .close{
   display:block;
   position:absolute;
-  width:120px; height:30px;
-  border-radius: 10px;
-  border: 1px solid #000;
+  width:125px; height:30px;
+  border-radius: 0 0 10px 0px;
+  border: 0.5px solid #000;
   text-align:center; 
   line-height: 30px;
   text-decoration:none;
@@ -163,16 +166,16 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:120px; height:30px;
-  border-radius: 10px;
-  border: 1px solid #000;
+  width:125px; height:30px;
+  border-radius: 0 0 0px 10px;
+  border: 0.5px solid #000;
   text-align:center; 
   line-height: 30px;
   text-decoration:none;
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:10px; top:170px;
+  right:125px; top:170px;
 }
 
 
