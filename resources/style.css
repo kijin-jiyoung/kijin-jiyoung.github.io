@@ -138,14 +138,14 @@ ul{list-style:none;}
 .modal-con .title{
   text-align:center; 
   font-size:14px; 
-  padding: 5px;
+  padding: 10px;
   color:#000;	
   background : #FFF;
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
   font-size:14px;
-  line-height:23px;
+  line-height:25px;
   padding: auto;
   vertical-align: middle;
   text-align:center;
