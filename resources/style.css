@@ -144,7 +144,7 @@ ul{list-style:none;}
 .modal-con .con{
   font-size:14px;
   line-height:23px;
-  padding: 15 15 15 70px;
+  padding: auto;
   vertical-align: middle;
   text-align:center;
   font-family: 'MapoFlowerIsland';	
@@ -168,7 +168,7 @@ ul{list-style:none;}
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:123.5 height:40px;
+  width:123.5px; height:40px;
   border-radius: 0 0 0px 10px;
   border: 0.2px solid #646059;
   text-align: center;
@@ -178,7 +178,7 @@ ul{list-style:none;}
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:124.5px; top:170px;
+  right:124.5px; top:165px;
 }
 
   < !------------ 모달 ------------ >
