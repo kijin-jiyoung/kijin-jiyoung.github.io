@@ -445,7 +445,16 @@ img.tmap {
     width: 100%;
 }
 
-div.pay,
+div.pay {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+}
+
+
+
+
 div.share {
     width: 40px;
     height: 40px;
@@ -456,9 +465,9 @@ div.share {
 }
 
 
+
+
 .payparents {
-    width: 40px;
-    height: 40px;
     text-decoration-line: underline;
     text-underline-offset: 14px;
     font-size: 15px;
