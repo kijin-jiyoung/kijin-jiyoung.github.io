@@ -455,6 +455,8 @@ div.share {
 div.payparents {
     width: 40px;
     height: 40px;
+    text-decoration-line: underline;
+    text-underline-offset: 16px;
     font-size: 15px;
     font-weight: 500;
     line-height: 30px;
