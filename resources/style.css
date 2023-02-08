@@ -141,7 +141,10 @@ ul{list-style:none;}
   padding: 10px;
   color:#000;	
   background : #FFF;
-  font-family: 'MapoFlowerIsland';	
+  font-family: 'MapoFlowerIsland';
+  text-decoration-line: underline;
+  text-underline-offset: 14px;
+  line-height: 30px;	
 }
 .modal-con .con{
   font-size:14px;
