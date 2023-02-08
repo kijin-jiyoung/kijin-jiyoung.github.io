@@ -153,7 +153,7 @@ ul{list-style:none;}
 .modal-con .close{
   display:block;
   position:absolute;
-  width:124px; height:40px;
+  width:125px; height:40px;
   border-radius: 0 0 20px 0px;
   border: 0.2px solid #646059;
   text-align: center;
@@ -163,13 +163,13 @@ ul{list-style:none;}
   background-color:#646059;
   color:#FFF; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:-1px; top:160px;
+  right:-1px; top:163px;
 }
 
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:124px; height:40px;
+  width:125px; height:40px;
   border-radius: 0 0 0px 10px;
   border: 0.2px solid #646059;
   text-align: center;
@@ -179,7 +179,7 @@ ul{list-style:none;}
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:124.5px; top:160px;
+  right:124.5px; top:163px;
 }
 
   < !------------ 모달 ------------ >
