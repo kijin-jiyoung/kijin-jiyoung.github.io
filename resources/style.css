@@ -148,7 +148,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
 .modal-con .close{
   display:block;
   position:absolute;
-  width:150px; height:30px;
+  width:120px; height:30px;
   border-radius: 10px;
   border: 1px solid #000;
   text-align:center; 
@@ -163,7 +163,7 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:150px; height:30px;
+  width:120px; height:30px;
   border-radius: 10px;
   border: 1px solid #000;
   text-align:center; 
