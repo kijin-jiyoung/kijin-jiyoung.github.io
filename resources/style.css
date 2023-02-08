@@ -138,13 +138,13 @@ ul{list-style:none;}
   font-size:14px; 
   padding: 10px;
   color:#000;	
-  background : FFF8EE;
+  background : #FFF8EE;
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
   font-size:14px;
   line-height:25px;
-  padding: 15 15 15 45px;
+  padding: 15 15 15 70px;
   vertical-align: middle;
   text-align:center;
   font-family: 'MapoFlowerIsland';	
@@ -152,7 +152,7 @@ ul{list-style:none;}
 .modal-con .close{
   display:block;
   position:absolute;
-  width:126px; height:35px;
+  width:126px; height:50px;
   border-radius: 0 0 20px 0px;
   border: 0.2px solid #646059;
   text-align: center;
@@ -168,7 +168,7 @@ ul{list-style:none;}
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:126px; height:35px;
+  width:126px; height:50px;
   border-radius: 0 0 0px 10px;
   border: 0.2px solid #646059;
   text-align: center;
