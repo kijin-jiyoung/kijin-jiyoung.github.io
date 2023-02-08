@@ -40,7 +40,10 @@
 	font-family:'CaveatBrush';
 }
 
-
+@font-face {
+	src: url("/resources/font/Apple SD Gothic Neo Bold.ttf");
+	font-family:'AppleSD';
+}
 
 
 
