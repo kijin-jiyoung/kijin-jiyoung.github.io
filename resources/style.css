@@ -437,10 +437,8 @@ img.tmap {
 }
 
 
-
-
-div.pay,
-div.share {
+div.paytable,
+div.sharetable {
     width: 40px;
     height: 40px;
     font-size: 14px;
@@ -448,6 +446,7 @@ div.share {
     line-height: 30px;
     width: 100%;
 }
+
 
 
 img.kakopay,
