@@ -131,7 +131,6 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
     transform: translate(-50%,-50%);
   background:#fff;
   border-radius: 10px;
-  border: 1px solid #FFF;
 }
 .modal-con .title{
   text-align:center; 
