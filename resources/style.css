@@ -440,9 +440,7 @@ img.tmap {
 }
 
 div.pay,
-div.share,
-div.paytable,
-div.sharetable {
+div.share {
     width: 40px;
     height: 40px;
     font-size: 14px;
@@ -450,6 +448,18 @@ div.sharetable {
     line-height: 30px;
     width: 100%;
 }
+
+
+div.payparents {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+}
+
+
 
 
 
