@@ -160,6 +160,21 @@ a.button{display:inline-block; padding: 5px 15px; text-decoration:none; margin:2
   right:-1px; top:170px;
 }
 
+.modal-con .copypay{
+  display:block;
+  position:absolute;
+  width:80px; height:30px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  text-align:center; 
+  line-height: 30px;
+  text-decoration:none;
+  background-color:#000;
+  color:#FFF; font-size:14px;
+  font-family: 'MapoFlowerIsland';
+  right:10px; top:170px;
+}
+
 
 
   < !------------ 모달 ------------ >
