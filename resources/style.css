@@ -436,7 +436,8 @@ img.tmap {
     width: 100%;
 }
 
-
+div.pay,
+div.share,
 div.paytable,
 div.sharetable {
     width: 40px;
