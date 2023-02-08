@@ -132,6 +132,7 @@ ul{list-style:none;}
     transform: translate(-50%,-50%);
   background:#fff;
   border-radius: 10px;
+ text-align: center;	
 }
 .modal-con .title{
   text-align:center; 
