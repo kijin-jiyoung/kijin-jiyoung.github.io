@@ -7,7 +7,7 @@ body {
     vertical-align: middle;
     font-family: 'MapoFlowerIsland';
     font-size: 16px;
-    line-height: 2.5;
+    line-height: 1.5;
     transition: background 1s ease;
     text: #000;
     background-color: #FEF7EE;
@@ -116,7 +116,7 @@ ul{list-style:none;}
 
   < !------------ 모달 ------------ >
 
-.button{display:inline-block; padding: 5px 15px; text-decoration:none; color:#000; background:#646059; font-size:13px; font-family:'MapoFlowerIsland'; border-radius:10px; margin:20px;}
+.button{font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 0px 15px; text-decoration:none; color:#fff; background:#646059; margin:2px;}
 #modal{
   display:none;
   position:fixed; 
@@ -136,14 +136,14 @@ ul{list-style:none;}
 .modal-con .title{
   text-align:center; 
   font-size:14px; 
-  padding: 10px;
+  padding: 5px;
   color:#000;	
   background : #FFF;
   font-family: 'MapoFlowerIsland';	
 }
 .modal-con .con{
   font-size:14px;
-  line-height:25px;
+  line-height:23px;
   padding: 15 15 15 70px;
   vertical-align: middle;
   text-align:center;
@@ -152,33 +152,33 @@ ul{list-style:none;}
 .modal-con .close{
   display:block;
   position:absolute;
-  width:126px; height:40px;
+  width:123.5px; height:40px;
   border-radius: 0 0 20px 0px;
   border: 0.2px solid #646059;
   text-align: center;
   vertical-align: middle;
-  line-height: 14px;
+  line-height: 39px;	
   text-decoration:none;
   background-color:#646059;
   color:#FFF; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:-1px; top:170px;
+  right:-1px; top:165px;
 }
 
 .modal-con .copypay{
   display:block;
   position:absolute;
-  width:126px; height:40px;
+  width:123.5 height:40px;
   border-radius: 0 0 0px 10px;
   border: 0.2px solid #646059;
   text-align: center;
   vertical-align: middle;
-  line-height: 14px;
+  line-height: 39px;
   text-decoration:none;
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:123.5px; top:170px;
+  right:124.5px; top:170px;
 }
 
   < !------------ 모달 ------------ >
