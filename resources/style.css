@@ -37,11 +37,7 @@ ul{list-style:none;}
   line-height: 100px;	
   display:block;
 }
-.typing 
-> ul {
-	display:block;
-}
-> li.on {  
+.typing ul li.on {  
   display: inline-block; 
   animation-name: cursor; 
   animation-duration: 0.2s; 
