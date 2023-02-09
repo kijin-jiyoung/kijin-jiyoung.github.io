@@ -40,7 +40,7 @@ ul{list-style:none;}
 .typing ul li.on {  
   display: inline-block; 
   animation-name: cursor; 
-  animation-duration: 0.7s; 
+  animation-duration: 0.9s; 
   animation-iteration-count: 1; 
 } 
 @keyframes cursor{ 
