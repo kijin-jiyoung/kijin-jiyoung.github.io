@@ -11,25 +11,13 @@ body {
     transition: background 1s ease;
     text: #000;
     background-color: #FEF7EE;
-    }
-
-
-
-@media (max-width: 600px)
-
 	
-	
-
-
-
-
-
-  < !------------ 타이핑 ------------ >
+	< !------------ 타이핑 ------------ >
 
 
 .typing-txt{
 text-align: center;
-  display: none;
+  display: none impor
   margin: auto auto;
   letter-spacing: 3px;
   padding: 4px;
@@ -55,6 +43,20 @@ ul{list-style:none;}
 }
 
   < !------------ 타이핑 ------------ >
+    }
+
+
+
+@media (max-width: 600px)
+
+	
+	
+
+
+
+
+
+  
 
 
 
