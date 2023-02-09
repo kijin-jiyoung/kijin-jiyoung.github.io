@@ -497,17 +497,16 @@
 
  <!------------ 모달 ------------>
  <script type="text/javascript">
+function openModal(modalname){
+  document.get
+  $("#modal").fadeIn(100);
+  $("."+modalname).fadeIn(100);
+}
+$("#modal, .close").on('click',function(){
+  $("#modal").fadeOut(100);
+  $(".modal-con").fadeOut(100);
+});
 
- 
-  	 
- function openModal(){        	 
-   $("#modal").css('display','flex').hide().fadeIn();
-      //팝업을 flex속성으로 바꿔준 후 hide()로 숨기고 다시 fadeIn()으로 효과
-  });
-  function close(){
-      $("#modal").fadeOut();   //페이드아웃 효과		
-  }
-	  
 	  
 </script>
  <!------------ 모달 ------------>
