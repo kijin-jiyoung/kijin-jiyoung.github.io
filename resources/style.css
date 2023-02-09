@@ -349,7 +349,7 @@ img.kakao {
 
  .swiper-pagination-bullet-active {
       color: #CFCFCF !important;
-      background: #E8E8E8;
+      background: #E8E8E8 !important;
 }
 
   /* (2) */
