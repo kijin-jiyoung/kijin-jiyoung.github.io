@@ -21,27 +21,21 @@ body {
 
 	< !------------ 타이핑 ------------ >
 
-
-.typing-txt{
-text-align: center;
-  display: none;
-  margin: auto auto;
-  letter-spacing: 3px;
-  padding: 4px;
-}
+.typing-txt{display: none;}
 ul{list-style:none;}
 .typing ul li{
+  display:block;
   font-family: 'CaveatBrush';
   font-size: 80px;
   text-align: center;
   line-height: 100px;	
-  display:block;
 }
+
 .typing ul li.on {  
   display: inline-block; 
   animation-name: cursor; 
-  animation-duration: 0.9s; 
-  animation-iteration-count: 1; 
+  animation-duration: 0.3s; 
+  animation-iteration-count: infinite; 
 } 
 @keyframes cursor{ 
   0%{border-right: 1px solid #fff} 
