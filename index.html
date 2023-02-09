@@ -512,30 +512,30 @@ $("#modal, .close").on('click',function(){
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.5/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
-      loop: 'true',
+      loop: true,
       spaceBetween: 2,
-      effect: 'fade',
+      effect: "fade",
 	    on: {
     init: function () {
       $('.swiper-slide').addClass('changed');
     },
     slideChangeTransitionStart : function() {
-      $('.swiper-slide').addClass('changing');
-      $('.swiper-slide').removeClass('changed');
+      $(".swiper-slide").addClass("changing");
+      $(".swiper-slide").removeClass("changed");
     },
     slideChangeTransitionEnd : function() {
-      $('.swiper-slide').removeClass('changing');
-      $('.swiper-slide').addClass('changed');
+      $(".swiper-slide").removeClass("changing");
+      $(".swiper-slide").addClass("changed");
     }  
 },
       pagination: {
-        el: '.swiper-pagination',
-	type: 'bullets',      
+        el: ".swiper-pagination",
+	type: "bullets",      
         clickable : true,
 },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
 });	    
   </script>
