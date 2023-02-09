@@ -499,7 +499,8 @@ function openModal(modalname){
   $("#modal").fadeIn(0.9);
   $("."+modalname).fadeIn(0.9);
 }
-
+$("#modal").css('display','flex').hide().fadeIn();
+  });
 $("#modal, .close").on('click',function(){
   $("#modal").fadeOut(0.9);
   $(".modal-con").fadeOut(0.9);
