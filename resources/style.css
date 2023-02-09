@@ -345,6 +345,10 @@ img.kakao {
   border: 1px solid #fffafa transparent;
  }
 
+ .swiper-pagination-bullet-active {
+      color: #DCDCDC;
+      background: rgba(255, 255, 255, 0.5);
+}
 
   /* (2) */
 .swiper-button-prev,
