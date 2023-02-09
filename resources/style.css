@@ -340,8 +340,9 @@ img.kakao {
   width: 30px;
   height: 4px;
   border-radius: 5px;
+  color: #696969;
   background-color: rgba(255, 255, 255, 0.5);
-  transition: width .5s;
+  transition: width .9s;
   border: 1px solid #fffafa transparent;
  }
 
