@@ -12,6 +12,13 @@ body {
     text: #000;
     background-color: #FEF7EE;
 	
+
+    }
+
+
+
+@media (max-width: 600px)
+
 	< !------------ 타이핑 ------------ >
 
 
@@ -42,14 +49,7 @@ ul{list-style:none;}
   100%{border-right: 1px solid #fff} 
 }
 
-  < !------------ 타이핑 ------------ >
-    }
-
-
-
-@media (max-width: 600px)
-
-	
+  < !------------ 타이핑 ------------ >	
 	
 
 
