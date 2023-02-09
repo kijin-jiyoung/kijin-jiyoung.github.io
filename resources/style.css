@@ -23,7 +23,7 @@ body {
 
 
 .typing-txt{
-text-align: center;
+text-align: center; !important;
   display: none;
   margin: auto auto;
   letter-spacing: 3px;
@@ -33,11 +33,15 @@ ul{list-style:none;}
 .typing ul li{
   font-family: 'CaveatBrush';
   font-size: 80px;
-  text-align: center;
+  text-align: center; !important;
   line-height: 100px;	
   display:block;
 }
-.typing ul li.on {  
+.typing 
+> ul {
+	display:block;
+}
+> li.on {  
   display: inline-block; 
   animation-name: cursor; 
   animation-duration: 0.2s; 
