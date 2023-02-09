@@ -515,6 +515,19 @@ $("#modal, .close").on('click',function(){
       loop: 'true',
       spaceBetween: 2,
       effect: 'fade',
+	    on: {
+    init: function () {
+      $('.swiper-slide').addClass('changed');
+    },
+    slideChangeTransitionStart : function() {
+      $('.swiper-slide').addClass('changing');
+      $('.swiper-slide').removeClass('changed');
+    },
+    slideChangeTransitionEnd : function() {
+      $('.swiper-slide').removeClass('changing');
+      $('.swiper-slide').addClass('changed');
+    }  
+},
       pagination: {
         el: '.swiper-pagination',
 	type: 'bullets',      
