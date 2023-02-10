@@ -193,9 +193,9 @@ ul{list-style:none;}
   background:rgba(0,0,0,0.3);
 }
 .surveymodal-con{
-  display:absolute;
+  display:relative;
   position:fixed;
-  width:200px; height:450px;
+  width:250px; height:450px;
     top:50%; left:50%;
     transform: translate(-50%,-50%);
   background:#fff;
@@ -203,7 +203,7 @@ ul{list-style:none;}
  text-align: center;	
 }
 .surveymodal-con .con{
-  font-size:14px;
+  font-size:12px;
   line-height:25px;
   padding: auto;
   vertical-align: middle;
@@ -233,10 +233,10 @@ ul{list-style:none;}
 
 
   < !------------ 참석조사 ------------ >
-#surveytitle{text-align:center;vertical-align: middle;font-family:'AppleSD';}
-#description{text-align:center; margin-bottom:15px;font-size:13px;font-family:'AppleSD';}
+#surveytitle{text-align:center;vertical-align: middle;font-size:13px;}
+#description{text-align:center; margin-bottom:5px; font-size:12px;font-family: 'MapoFlowerIsland';}
 
-.form-box{max-width:200px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
+.form-box{max-width:250px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
 .type-select {
     padding: 3px 5px 5px 5px;
     margin: 1px 0px 0px 0px;
