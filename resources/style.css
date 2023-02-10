@@ -238,14 +238,17 @@ ul{list-style:none;}
 #description{text-align:center; margin-bottom:5px; font-size:12px;font-family: 'MapoFlowerIsland';}
 
 .form-box{max-width:300px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
-.type-select1
+.type-select,
 .type-select1,
 .type-select2,
 .type-select3 {
     padding: 3px 5px 5px 5px;
     margin: 1px 0px 0px 0px;
 }
-.type-select input[type=radio]{
+.type-select input[type=radio],
+.type-select1 input[type=radio],
+.type-select2 input[type=radio],
+.type-select3 input[type=radio]{
     display: none; 
 }
 .type-select input[type=radio]+label,
@@ -263,24 +266,6 @@ ul{list-style:none;}
     font-weight: bold;
     font-size:12px;
     margin: 4px 0px 0px 0px;
-}
-.type-select input[type=radio]+label,
-.type-select1 input[type=radio]+label,
-.type-select2 input[type=radio]+label,
-.type-select3 input[type=radio]+label{
-    background-color: #fff;
-    color: #333;
-}
-.type-select
-input[type=radio]:checked+label,
-.type-select1
-input[type=radio]:checked+label,
-.type-select2
-input[type=radio]:checked+label,
-.type-select3
-input[type=radio]:checked+label{
-    background-color: #333;
-    color: #fff;
 }
 
   .input-ty1 {
