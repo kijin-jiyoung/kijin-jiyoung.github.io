@@ -226,13 +226,82 @@ ul{list-style:none;}
 }
 
 
-
-
-
-
   < !------------ 모달 ------------ >
 
 
+
+
+
+  < !------------ 참석조사 ------------ >
+#surveytitle{text-align:center;vertical-align: middle;font-family:'AppleSD';}
+#description{text-align:center; margin-bottom:15px;font-size:14px;font-family:'AppleSD';}
+
+.form-box{max-width:200px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
+.type-select {
+    padding: 3px 5px 5px 5px;
+    margin: 1px 0px 0px 0px;
+}
+.type-select input[type=radio]{
+    display: none; 
+}
+.type-select input[type=radio]+label{
+    display: inline-block;
+    cursor: pointer;
+    height: 35px;
+    width: 85px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    line-height: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size:12px;
+    margin: 4px 0px 0px 0px;
+}
+.type-select input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+.type-select
+input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
+
+  .input-ty1 {
+      display: inline-block;
+      width: 190px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 5px;
+      box-sizing: border-box;
+      margin: 4px 4px;
+    }
+
+.input-ty2 {
+      display: inline-block;
+      width: 155px;
+      height: 40px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 1px;
+      box-sizing: border-box;
+      margin: 4px 4px;
+    }
+
+.input-ty3 {
+      display: inline-block;
+      width: 190px;
+      height: 90px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 4px 4px;
+  max-width:100%;
+    }
+
+  < !------------ 참석조사 ------------ >
 
 
 
