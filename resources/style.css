@@ -126,8 +126,6 @@ ul{list-style:none;}
   background:#fff;
   border-radius: 10px;
  text-align: center;
- max-height: calc(100vh - 210px);	
-  overflow-y: auto;
 }
 .modal-con .title{
   text-align:center; 
@@ -146,9 +144,7 @@ ul{list-style:none;}
   padding: auto;
   vertical-align: middle;
   text-align:center;
-  font-family: 'MapoFlowerIsland';	
- max-height: calc(100vh - 210px);	
- overflow-y: auto;
+  font-family: 'MapoFlowerIsland';
 }
 .modal-con .close{
   display:block;
@@ -196,13 +192,15 @@ ul{list-style:none;}
 .surveymodal-con{
   display:fixed;
   position:fixed;
-  width:300px; height:450px;
+  width:300px;
     top:50%; left:50%;
     transform: translate(-50%,-50%);
   min-height: 30%;
   background:#fff;
   border-radius: 10px;
- text-align: center;	
+ text-align: center;
+max-height: calc(100vh - 210px);	
+ overflow-y: auto;
 }
 .surveymodal-con .con{
   font-size:12px;
@@ -210,7 +208,9 @@ ul{list-style:none;}
   padding: auto;
   vertical-align: middle;
   text-align:center;
-  font-family: 'MapoFlowerIsland';	
+  font-family: 'MapoFlowerIsland';
+max-height: calc(100vh - 210px);	
+ overflow-y: auto;	
 }
 .surveymodal-con .close{
   display:block;
