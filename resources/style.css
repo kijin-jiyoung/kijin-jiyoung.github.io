@@ -126,6 +126,7 @@ ul{list-style:none;}
   background:#fff;
   border-radius: 10px;
  text-align: center;
+ max-height: calc(100vh - 210px);	
   overflow-y: auto;
 }
 .modal-con .title{
@@ -146,7 +147,8 @@ ul{list-style:none;}
   vertical-align: middle;
   text-align:center;
   font-family: 'MapoFlowerIsland';	
-	  overflow-y: auto;
+ max-height: calc(100vh - 210px);	
+ overflow-y: auto;
 }
 .modal-con .close{
   display:block;
