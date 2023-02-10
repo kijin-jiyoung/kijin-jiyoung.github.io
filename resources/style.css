@@ -245,10 +245,7 @@ ul{list-style:none;}
     padding: 3px 5px 5px 5px;
     margin: 1px 0px 0px 0px;
 }
-.type-select input[type=radio],
-.type-select1 input[type=radio],
-.type-select2 input[type=radio],
-.type-select3 input[type=radio]{
+.type-select input[type=radio]{
     display: none; 
 }
 .type-select input[type=radio]+label,
