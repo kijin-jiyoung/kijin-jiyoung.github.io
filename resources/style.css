@@ -268,6 +268,16 @@ ul{list-style:none;}
     margin: 4px 0px 0px 0px;
 }
 
+.type-select input[type=radio]+label,
+.type-select1 input[type=radio]+label,
+.type-select2 input[type=radio]+label,
+.type-select3 input[type=radio]+label{
+    background-color: #fff;
+    color: #333;
+}
+
+
+
   .input-ty1 {
       display: inline-block;
       width: 190px;
