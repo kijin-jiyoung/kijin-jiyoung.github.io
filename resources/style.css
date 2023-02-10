@@ -125,7 +125,8 @@ ul{list-style:none;}
     transform: translate(-50%,-50%);
   background:#fff;
   border-radius: 10px;
- text-align: center;	
+ text-align: center;
+  overflow-y: auto;
 }
 .modal-con .title{
   text-align:center; 
@@ -145,6 +146,7 @@ ul{list-style:none;}
   vertical-align: middle;
   text-align:center;
   font-family: 'MapoFlowerIsland';	
+	  overflow-y: auto;
 }
 .modal-con .close{
   display:block;
