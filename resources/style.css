@@ -159,7 +159,7 @@ ul{list-style:none;}
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:0px; top:0px;
+  right:-1px; top:163px;
 }
 
 .modal-con .copypay{
