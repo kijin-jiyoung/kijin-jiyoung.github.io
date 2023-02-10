@@ -118,7 +118,7 @@ ul{list-style:none;}
   background:rgba(0,0,0,0.3);
 }
 .modal-con{
-  display:flex;
+  display:block;
   position:absolute;
   width:250px; height:200px;
     top:50%; left:50%;
