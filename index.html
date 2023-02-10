@@ -685,7 +685,14 @@ $("#surveymodal, .close").on('click',function(){
   $(".surveymodal-con").fadeOut(100);
 });
 	
-	
+function openModal(){
+  const surveymodal = document.getElementById('surveymodal');
+  modal.classList.add('s_show');
+}
+function closeModal(){
+  const surveymodal = document.getElementById('surveymodal');
+  modal.classList.remove('s_show');
+}	
 	
 </script>
 <!------------ 모달 ------------>
