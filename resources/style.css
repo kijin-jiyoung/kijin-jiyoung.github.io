@@ -162,7 +162,7 @@ ul{list-style:none;}
   background-color:#FFF;
   color:#000; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:-1px; top:163px;
+  right:0px; top:0px;
 }
 
 .modal-con .copypay{
@@ -222,7 +222,7 @@ ul{list-style:none;}
   background-color:#000;
   color:#fff; font-size:14px;
   font-family: 'MapoFlowerIsland';
-  right:10px; top:0px;
+  right:10px; top:10px;
 }
 
 
@@ -234,7 +234,7 @@ ul{list-style:none;}
 
   < !------------ 참석조사 ------------ >
 #surveytitle{text-align:center;vertical-align: middle;font-family:'AppleSD';}
-#description{text-align:center; margin-bottom:15px;font-size:14px;font-family:'AppleSD';}
+#description{text-align:center; margin-bottom:15px;font-size:13px;font-family:'AppleSD';}
 
 .form-box{max-width:200px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
 .type-select {
