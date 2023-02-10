@@ -190,7 +190,7 @@ ul{list-style:none;}
   background:rgba(0,0,0,0.3);
 }
 .surveymodal-con{
-  display:fixed;
+  display:block;
   position:fixed;
   width:300px;
     top:50%; left:50%;
