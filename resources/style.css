@@ -239,22 +239,22 @@ ul{list-style:none;}
 
 .form-box{max-width:300px; margin: 0 auto;font-size:13px;font-family:'AppleSD';}
 .type-select,
-.type-select1,
-.type-select2,
-.type-select3 {
+.groombride,
+.attend,
+.buffet{
     padding: 3px 5px 5px 5px;
     margin: 1px 0px 0px 0px;
 }
-.type-select input[type=radio],
-.type-select1 input[type=radio],
-.type-select2 input[type=radio],
-.type-select3 input[type=radio]{
+.groombride input[type=radio],
+.attend input[type=radio],
+.buffet input[type=radio],
+.type-select input[type=radio]{
     display: none; 
 }
-.type-select input[type=radio]+label,
-.type-select1 input[type=radio]+label,
-.type-select2 input[type=radio]+label,
-.type-select3 input[type=radio]+label{
+.groombride input[type=radio]+label,
+.attend input[type=radio]+label,
+.buffet input[type=radio]+label,
+.type-select input[type=radio]+label{
     display: inline-block;
     cursor: pointer;
     height: 35px;
@@ -268,14 +268,25 @@ ul{list-style:none;}
     margin: 4px 0px 0px 0px;
 }
 
-.type-select input[type=radio]+label,
-.type-select1 input[type=radio]+label,
-.type-select2 input[type=radio]+label,
-.type-select3 input[type=radio]+label{
+.groombride input[type=radio]+label,
+.attend input[type=radio]+label,
+.buffet input[type=radio]+label,
+.type-select input[type=radio]+label{
     background-color: #fff;
     color: #333;
 }
 
+.groombride
+input[type=radio]:checked+label,
+.attend
+input[type=radio]:checked+label,
+.buffet
+input[type=radio]:checked+label,
+.type-select
+input[type=radio]:checked+label{
+    background-color: #333;
+    color: #fff;
+}
 
 
   .input-ty1 {
