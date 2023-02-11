@@ -190,7 +190,8 @@ ul{list-style:none;}
   min-height: 30%;
   background:#fff;
   border-radius: 10px;
- text-align: center;	
+ text-align: center;
+overflow-y: auto;
 }
 .surveymodal-con .con{
   font-size:12px;
@@ -199,7 +200,6 @@ ul{list-style:none;}
   vertical-align: middle;
   text-align:center;
   font-family: 'MapoFlowerIsland';	
- overflow-y: auto;	
 }
 .surveymodal-con .close{
   display:block;
