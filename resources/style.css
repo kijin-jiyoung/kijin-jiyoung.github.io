@@ -191,12 +191,12 @@ min-height:50%;
     transform: translate(-50%,-50%);
   background:#fff;
   border-radius: 10px;
- text-align: center;
+ 
 overflow:scroll; 
 }
 .surveymodal-con .con{
   font-size:12px;
-  line-height:15px;
+  line-height:20px;
   padding: auto;
   vertical-align: middle;
   text-align:center;
@@ -253,7 +253,6 @@ overflow:scroll;
     border-radius: 10px;
     line-height: 35px;
     text-align: center;
-    font-weight: bold;
     font-size:12px;
     margin: 4px 0px 0px 0px;
 }
@@ -281,7 +280,7 @@ input[type=radio]:checked+label{
 
  .input1 {
       display: inline-block;
-      width: 165px;
+      width: 170px;
       height: 40px;
       border-radius: 10px;
       border: 1px solid #ccc;
@@ -302,7 +301,7 @@ input[type=radio]:checked+label{
 
 .input3 {
       display: inline-block;
-      width: 165px;
+      width: 170px;
       height: 90px;
       border-radius: 10px;
       border: 1px solid #ccc;
