@@ -210,7 +210,7 @@ overflow:scroll;
 border-radius:5px;
   text-align: center;
   vertical-align: middle;
-  padding:1px;
+  padding:auto;
   text-decoration:none;
   background-color:#fff;
   color:#000; font-size:12px;
