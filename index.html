@@ -538,7 +538,7 @@
 
 <div id="modal"></div>	
 <div class="surveymodal-con surveymodal">
-<div class="surveycon">
+<div class="con">
 <a href="javascript:;" class="close">닫기</a>
 <h1 id="surveytitle">참석 조사</h1>
 <p id="description">참석자 및 식사 조사를 위해 작성 부탁드립니다.</p>
@@ -672,8 +672,11 @@ function openModal(modalname){
 $("#modal, .close").on('click',function(){
   $("#modal").fadeOut(100);
   $(".modal-con").fadeOut(100);
+$("#surveymodal").fadeOut(100);
+  $(".surveymodal-con").fadeOut(100);
 });
-	
+
+
 	
 </script>
 <!------------ 모달 ------------>
