@@ -185,13 +185,12 @@ ul{list-style:none;}
   display:block;
   position:absolute;
   width:300px; height:500px;
+min-height:50%;
     top:50%; left:50%;
     transform: translate(-50%,-50%);
-  fit-content: 100%;
   background:#fff;
   border-radius: 10px;
  text-align: center;
-overflow-y: auto;
 }
 .surveymodal-con .con{
   font-size:12px;
@@ -199,7 +198,7 @@ overflow-y: auto;
   padding: auto;
   vertical-align: middle;
   text-align:center;
-  font-family: 'MapoFlowerIsland';	
+  font-family: 'MapoFlowerIsland';
 }
 .surveymodal-con .close{
   display:block;
