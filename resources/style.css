@@ -138,6 +138,7 @@ img.telephone {
     display: inline-block;
     width: 40px;
     height: 40px;
+    border: 0.1px #F2F2F2;
     border-radius: 10px;	
 }
 
