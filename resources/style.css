@@ -103,9 +103,7 @@ p.photodescription {
 
 p.payparents {
    columns : 2;
-   line-height:2.5;
-   text-decoration-line: underline;
-   text-underline-offset: 14px;	
+   line-height:2.5;	
    font-size: 15px;	
    font-weight: 500;
    line-height: 30px;
