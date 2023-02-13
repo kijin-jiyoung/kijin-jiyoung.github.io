@@ -3,18 +3,11 @@ body {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
-    text-align: center;
-    vertical-align: middle;
-    font-family: 'MapoFlowerIsland';
-    font-size: 16px;
-    line-height: 1.5;	
+    line-height: 1.5;
     transition: background 1s ease;
     text: #000;
     background-color: #FEF7EE;
-    letter-spacing: 3px;
    }
-
-
 
 @media (max-width: 600px)
 	
@@ -27,27 +20,25 @@ p.maintitle {
    text-align: center;
    vertical-align: middle;
    display:inline-block;
-   text-weigh:600;
-   text-shadow:1px 1px 5px #bdbdbd;
+   text-weigh: 600;
+   text-shadow:1px 1px 5px #666666;
    }
 
 
 
-
-p.mainname,
-p.date,
-p.place {
+p { 
    font-size: 16px;
-   font-weight: 500;
-   text-align: center;
-   }
+   font-family: 'MapoFlowerIsland';	
+   text-align: center;	
+   vertical-align: middle;
+   letter-spacing: 3px;	
+}
 
 
 .Main-photo {
     width: 100%;
     max-width: 666px;
    }
-
 
 
 .invitation  {
