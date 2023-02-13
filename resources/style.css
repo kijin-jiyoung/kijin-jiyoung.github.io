@@ -46,66 +46,6 @@ ul{list-style:none;}
 
 
 
-  
-
-
-
-
-
-
-  < !------------ 카운트다운 ------------ >
-
-::-webkit-scrollbar {
-  width: 4px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #333;
-}
-
-.countdown h1 {
-  font-size: 1vw;
-  color: #F9A2C7;
-  font-family: Century Gothic, Lucida Grande;	
-}
-
-.countdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: row;
-  height: 100vh;
-  margin: 0;	
-}
-.countdown span {
-  color: #196F3D;
-  font-family: Century Gothic, Lucida Grande;	
-}
-.countdown .day, .countdown .hour, .countdown .min, .countdown .sec {
-  padding: 1vw 3vw;
-  text-align: center;
-  font-family: Century Gothic, Lucida Grande;
-  color: #000;	
-}
-.countdown .day .num, .countdown .hour .num, .countdown .min .num, .countdown .sec .num {
-  display: block;
-  font-size: 8vw;
-  line-height: 1em;
-  font-family: Century Gothic, Lucida Grande;
-  color: #F9A2C7;	
-}
-.countdown .day .word, .countdown .hour .word, .countdown .min .word, .countdown .sec .word {
-  display: block;
-  font-size: 1vw;
-  color: #000;
-  font-family: Century Gothic, Lucida Grande;
-}
-
-
-  < !------------ 카운트다운 ------------ >
-
-
-
   < !------------ 모달 ------------ >
 
 .button{font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 0px 15px; text-decoration:none; color:#fff; background:#646059; margin:2px;}
@@ -348,11 +288,22 @@ p.place {
 	
 
 
-	
-	
-	
+h.sub-Title {
+    font-size: 17px;
+   font-weight: 600;
+   letter-spacing: 3px;
+text-align: center;
+   }	
 
 
+
+.h1 {	
+ font-size: 24px
+}
+
+
+
+	 
  p.sub-Title {
     font-size: 17px;
    font-weight: 600;
