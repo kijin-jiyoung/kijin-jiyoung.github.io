@@ -22,17 +22,18 @@ h3.maintitle {
    text-align: center;
    vertical-align: middle;
    text-shadow: 4px 2px 2px gray;
-   color: #3E3E3E;
+   color: #000;
    }
 
 h3.accordion {
    letter-spacing: 3px;
-   cursor:pointer;	
-   color: #3E3E3E;
+   cursor:pointer;
+   text-shadow: 2px 2px 2px gray;
+   color: #000;
    text-align: center;	
    vertical-align: middle;
    padding: 10px 10px;
-   margin: 20px 20px;	
+   margin: 20px 20px;
    }
 
 .accordioncon{
