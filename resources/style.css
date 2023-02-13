@@ -5,14 +5,14 @@ body {
    text-align: center;	
    vertical-align: middle;
    margin: 0 auto;
-   width: 600px;
+   max-width: 600px;
    line-height: 1.8;
    transition: background 1s ease;
    color: #000;
    background-color: #FEF7EE;
    }
 
-@media (max-width: 600px)
+@media {max-width: 600px}
 	
 	
 	
