@@ -48,7 +48,7 @@ p.invitation  {
 p.name { 
    font-size: 16px;
    text-align: center;
-   letter-spacing: 2px;
+   letter-spacing: 1px;
    margin: 20px 0px 20px 0px;	
 }
 
@@ -67,8 +67,12 @@ p.photodescription {
    margin: 50px 0px 50px 0px;		
 }
 
-
-
+.map {
+   font-size: 13px;
+   line-height: 12px;
+   letter-spacing: 2px;	
+   margin: 10px 0px 40px 0px;
+}
 
 
 
