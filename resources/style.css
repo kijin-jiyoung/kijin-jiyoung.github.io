@@ -8,7 +8,7 @@ body {
    max-width: 600px;
    line-height: 1.5;
    transition: background 1s ease;
-   color: #232527;
+   color: #3E3E3E;
    background-color: #FEF7EE;
    }
 
@@ -22,7 +22,7 @@ h3.maintitle {
    text-align: center;
    vertical-align: middle;
    text-shadow: 4px 2px 2px gray;
-   color: #232527;	
+   color: #3E3E3E;
    }
 
 
@@ -38,7 +38,7 @@ p.invitation  {
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;	
-   color: #444444;
+   color: #3E3E3E;
 }
 
 
@@ -63,7 +63,7 @@ p.photodescription {
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;
-   color: #444444;	
+   color: #3E3E3E;	
 }
 
 .map {
