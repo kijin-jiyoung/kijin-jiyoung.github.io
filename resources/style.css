@@ -1,12 +1,17 @@
 
 body {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 600px;
-    line-height: 1.5;
-    transition: background 1s ease;
-    text: #000;
-    background-color: #FEF7EE;
+   font-size: 16px;
+   font-family: 'MapoFlowerIsland';	
+   text-align: center;	
+   vertical-align: middle;
+   letter-spacing: 3px;	
+   margin: 0 auto;
+   width: 100%;
+   max-width: 600px;
+   line-height: 1.5;
+   transition: background 1s ease;
+   text: #000;
+   background-color: #FEF7EE;
    }
 
 @media (max-width: 600px)
@@ -24,15 +29,6 @@ p.maintitle {
    text-shadow:1px 1px 5px #666666;
    }
 
-
-
-p { 
-   font-size: 16px;
-   font-family: 'MapoFlowerIsland';	
-   text-align: center;	
-   vertical-align: middle;
-   letter-spacing: 3px;	
-}
 
 
 .Main-photo {
@@ -91,11 +87,14 @@ p.contact { padding:0.5px; }
 
 
 
+payparents
+
 .parents {
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;
     width: 100%;
+    line-height:2.5;
 }
 
 div.pay {
