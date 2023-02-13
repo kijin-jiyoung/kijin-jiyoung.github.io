@@ -74,7 +74,22 @@ p.photodescription {
    margin: 10px 0px 80px 0px;
 }
 
+.payparents {
+    text-decoration-line: underline;
+    text-underline-offset: 14px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+}
 
+.parents {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 100%;
+    line-height:1.5;
+}
 
 .copy {
     display: inline-block;
@@ -101,25 +116,7 @@ p.photodescription {
     border-color: #FFF;
 }
 
-p.payparents {
-   columns : 2;
-   line-height:2.5;	
-   font-size: 15px;	
-   font-weight: 500;
-   line-height: 30px;
-   width: 100%;
-   text-align:center;	
- }
 
-
-.parents {
-    columns : 2;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-    width: 100%;
-    line-height:1.5;
-}
 
 div.pay {
     font-size: 14px;
