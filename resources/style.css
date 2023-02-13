@@ -4,7 +4,6 @@ body {
    font-family: 'MapoFlowerIsland';	
    text-align: center;	
    vertical-align: middle;
-   letter-spacing: 3px;	
    margin: 0 auto;
    max-width: 600px;
    line-height: 1.5;
@@ -39,7 +38,6 @@ h3.maintitle {
 p.invitation  {
    font-size: 15px;
    line-height: 25px;
-   letter-spacing: 1px;
    margin: 50px 0px 50px 0px;		
 }
 
