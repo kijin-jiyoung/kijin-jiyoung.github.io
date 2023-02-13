@@ -146,14 +146,14 @@ div.share {
     font-size: 14px;
     line-height: 30px;
     padding: 2px;
-    width: 100%;
+    max-width: 100%;
 }
 
 
 
 
 .copyright-wrap {
-     width: 100%;
+     max-width: 100%;
      font-size: 12px;
      font-family: 'Roboto Slab', serif;
      line-height: 10px;
