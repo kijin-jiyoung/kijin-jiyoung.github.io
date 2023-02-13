@@ -1,11 +1,12 @@
 
 body {
+   width: 100%;
+   max-width: 600px;
    font-size: 16px;
    font-family: 'MapoFlowerIsland';	
    text-align: center;	
    vertical-align: middle;
    margin: 0 auto;
-   max-width: 600px
    line-height: 1.8;
    transition: background 1s ease;
    color: #000;
@@ -153,7 +154,8 @@ div.share {
 
 
 .copyright-wrap {
-     max-width: 100%;
+     width: 100%;
+     max-width: 666px;
      font-size: 12px;
      font-family: 'Roboto Slab', serif;
      line-height: 10px;
@@ -161,7 +163,7 @@ div.share {
 }
 
 
- <!------------ 아이콘 ------------>
+ < ! ------------ 아이콘 ------------ >
 
 img.telephone {
     display: inline-block;
