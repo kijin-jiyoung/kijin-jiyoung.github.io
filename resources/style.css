@@ -101,19 +101,25 @@ p.photodescription {
     border-color: #FFF;
 }
 
-.jb {
-columns : 2;
+.payparents {
+   columns : 2;
+   line-height:2.5;
+   text-decoration-line: underline;
+   text-underline-offset: 14px;	
+   font-size: 15px;	
+   font-weight: 500;
+   line-height: 30px;
+   width: 100%;
+   text-align:center;	
  }
 
-
-payparents
 
 .parents {
     font-size: 14px;
     font-weight: 500;
     line-height: 30px;
     width: 100%;
-    line-height:2.5;
+    line-height:1.5;
 }
 
 div.pay {
@@ -132,14 +138,7 @@ div.share {
     width: 100%;
 }
 
-.payparents {
-    text-decoration-line: underline;
-    text-underline-offset: 14px;
-    font-size: 15px;
-    font-weight: 500;
-    line-height: 30px;
-    width: 100%;
-}
+
 
 
 .copyright-wrap {
