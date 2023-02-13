@@ -101,7 +101,7 @@ p.photodescription {
     border-color: #FFF;
 }
 
-.payparents {
+p.payparents {
    columns : 2;
    line-height:2.5;
    text-decoration-line: underline;
