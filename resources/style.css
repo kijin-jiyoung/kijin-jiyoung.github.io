@@ -8,7 +8,7 @@ body {
    max-width: 600px;
    line-height: 1.5;
    transition: background 1s ease;
-   color: #3E3E3E;
+   color: #000;
    background-color: #FEF7EE;
    }
 
@@ -59,7 +59,7 @@ p.invitation  {
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;	
-   color: #3E3E3E;
+   color: #000;
 }
 
 
@@ -84,7 +84,7 @@ p.photodescription {
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;
-   color: #3E3E3E;	
+   color: #000;	
 }
 
 .map {
