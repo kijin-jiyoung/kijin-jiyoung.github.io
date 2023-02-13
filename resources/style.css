@@ -53,20 +53,20 @@ p.name {
     padding: 2px;
     font-size: 14px;
     line-height: 10px;
-    letter-spacing: 1px;	
+    letter-spacing: 1px;
 }
 
 p.photodescription {
    font-size: 16px;
    line-height: 25px;
    letter-spacing: 1.5px;
-   margin: 50px 0px 50px 0px;		
+   margin: 50px 0px 50px 0px;
 }
 
 .map {
    font-size: 13px;
    line-height: 12px;
-   letter-spacing: 1.5px;	
+   letter-spacing: 1.5;
    margin: 10px 0px 80px 0px;
 }
 
