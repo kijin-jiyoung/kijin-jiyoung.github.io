@@ -54,8 +54,8 @@ h3.accordion {
    }
 
 
-p.invitation  {
-   font-size: 15px;
+.invitation  {
+   font-size: 16px;
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;	
@@ -74,7 +74,7 @@ p.name {
 
 .contact {
     padding: 2px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 10px;
     letter-spacing: 1px;
 }
@@ -138,15 +138,13 @@ p.photodescription {
 
 
 
-
-
 div.share {
     width: 40px;
     height: 40px;
     font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-    width: 100%;
+    line-height: 10px;
+    padding: 2px;
+    letter-spacing: 1px;	
 }
 
 
