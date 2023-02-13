@@ -36,27 +36,29 @@ h3.maintitle {
    }
 
 
-.invitation  {
+p.invitation  {
    font-size: 15px;
    line-height: 25px;
    letter-spacing: 2px;
    margin: 50px 0px 50px 0px;		
 }
 
-.name { 
+
+
+p.name { 
    font-size: 16px;
    text-align: center;
    letter-spacing: 2px;
+   margin: 20px 0px 20px 0px;	
 }
 
 
 .contact {
-    padding:0.5px;
-    font-size: 13px;
+    padding: 2px;
+    font-size: 14px;
     line-height: 10px;
+    letter-spacing: 1px;	
 }
-
-
 
 p.photodescription {
    font-size: 15px;
