@@ -76,19 +76,18 @@ p.photodescription {
     text-decoration-line: underline;
     text-underline-offset: 14px;
     font-size: 15px;
-    font-weight: 500;
-    line-height: 30px;
     width: 100%;
-    margin: 20px 0px 20px 0px;		
+    margin: 20px 0px 20px 0px;	
 }
 
-.parents {
+.parents,
+.pay {
     font-size: 14px;
-    font-weight: 500;
     width: 100%;
     text-align:center;
-    line-height:2.5;
+    line-height: 2.5;	
 }
+
 
 .copy {
     display: inline-block;
@@ -117,12 +116,7 @@ p.photodescription {
 
 
 
-div.pay {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 30px;
-    width: 100%;
-}
+
 
 div.share {
     width: 40px;
