@@ -154,6 +154,7 @@ p.share {
      width: 100%;
      max-width: 600px;
      font-size: 12px;
+     text-align:center;
      font-family: 'Roboto Slab', serif;
      line-height: 10px;
      margin: 20px 20px;
