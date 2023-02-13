@@ -16,8 +16,8 @@ body {
 	
 	
 	
-h3.maintitle {
-   font-size: 18px;
+div.maintitle {
+   font-size: 19px;
    letter-spacing: 3px;
    margin: 20px 20px;
    text-align: center;
@@ -38,6 +38,7 @@ h3.maintitle {
 p.invitation  {
    font-size: 15px;
    line-height: 25px;
+   letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;		
 }
 
@@ -59,7 +60,7 @@ p.name {
 }
 
 p.photodescription {
-   font-size: 15px;
+   font-size: 16px;
    line-height: 25px;
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;		
