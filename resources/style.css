@@ -39,7 +39,7 @@ h3.maintitle {
 p.invitation  {
    font-size: 15px;
    line-height: 25px;
-   letter-spacing: 1.5px;
+   letter-spacing: 1px;
    margin: 50px 0px 50px 0px;		
 }
 
@@ -70,7 +70,7 @@ p.photodescription {
 .map {
    font-size: 13px;
    line-height: 12px;
-   letter-spacing: 2px;	
+   letter-spacing: 1.5px;	
    margin: 10px 0px 80px 0px;
 }
 
