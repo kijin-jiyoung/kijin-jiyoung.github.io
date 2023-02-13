@@ -84,9 +84,9 @@ p.photodescription {
 .parents {
     font-size: 14px;
     font-weight: 500;
-    line-height: 30px;
     width: 100%;
-    line-height:1.5;
+    text-align:center;
+    line-height:2.5;
 }
 
 .copy {
