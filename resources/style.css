@@ -27,6 +27,7 @@ h3.maintitle {
 
 h3.accordion {
    letter-spacing: 3px;
+   cursor:pointer;	
    color: #3E3E3E;
    text-align: center;	
    vertical-align: middle;
@@ -38,8 +39,7 @@ h3.accordion {
   padding: 20px; 
   display:none;
   text-align: center;	
-  vertical-align: middle;
-  cursor:pointer;	
+  vertical-align: middle;	
 }
 
 
