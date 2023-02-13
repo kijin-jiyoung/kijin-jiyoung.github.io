@@ -22,9 +22,7 @@ p.maintitle {
    margin: 20px 20px;
    text-align: center;
    vertical-align: middle;
-   display:inline-block;
-   text-weigh: 700;
-   text-shadow:1px 1px 5px #333333;
+   font-weigh: 700;
    }
 
 
