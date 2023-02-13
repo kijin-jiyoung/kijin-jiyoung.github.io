@@ -255,9 +255,8 @@ input[type=radio]:checked+label{
 
 
 
-.maintitle {
+h1.maintitle {
    font-size: 18px;
-   font-weight: 600;
    letter-spacing: 3px;
    margin-bottom: 20px;
    }
