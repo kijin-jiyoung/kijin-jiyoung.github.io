@@ -57,6 +57,19 @@ p.maintitle {
 }
 
 
+
+p.photodescription {
+   font-size: 15px;
+   line-height: 25px;
+   letter-spacing: 1px;
+   margin: 50px 0px 50px 0px;		
+}
+
+
+
+
+
+
 .copy {
     display: inline-block;
     width: 28px;
