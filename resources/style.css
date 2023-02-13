@@ -43,6 +43,7 @@ h3.accordion {
   display:none;
   text-align: center;	
   vertical-align: middle;
+  cursor:pointer;	
 }
 
 
