@@ -25,6 +25,29 @@ h3.maintitle {
    color: #3E3E3E;
    }
 
+h3.accordion {
+   letter-spacing: 3px;
+   text-shadow: 4px 2px 2px gray;
+   color: #3E3E3E;
+   width: 100%;  
+   line-height: 30px; 
+   text-align: center;	
+   vertical-align: middle;
+   box-sizing: border-box;
+   padding: 10px 10px;
+   margin: 20px 20px;	
+   }
+
+.accordioncon{
+  padding: 20px; 
+  display:none;
+  text-align: center;	
+  vertical-align: middle;
+}
+
+
+
+
 
 
 .Main-photo {
