@@ -101,7 +101,9 @@ p.photodescription {
     border-color: #FFF;
 }
 
-
+.jb {
+columns : 2;
+ }
 
 
 payparents
