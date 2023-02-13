@@ -141,9 +141,7 @@ p.photodescription {
 
 
 
-div.share {
-    width: 40px;
-    height: 40px;
+p.share {
     font-size: 14px;
     line-height: 30px;
     max-width: 100%;
