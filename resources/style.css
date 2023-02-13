@@ -255,11 +255,12 @@ input[type=radio]:checked+label{
 
 
 
-
-
-
-
-
+.maintitle {
+   font-size: 18px;
+   font-weight: 600;
+   letter-spacing: 3px;
+   margin-bottom: 20px;
+   }
 
 
 
@@ -288,29 +289,9 @@ p.place {
 	
 
 
-h.sub-Title {
-    font-size: 17px;
-   font-weight: 600;
-   letter-spacing: 3px;
-text-align: center;
-   }	
 
 
 
-.h1 {	
- font-size: 24px;
- margin-bottom: 20px;
-}
-
-
-
-	 
- p.sub-Title {
-    font-size: 17px;
-   font-weight: 600;
-   letter-spacing: 3px;
-text-align: center;
-   }
 
 
 
