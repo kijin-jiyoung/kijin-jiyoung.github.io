@@ -40,22 +40,21 @@ p.maintitle {
    font-size: 15px;
    line-height:25px;
    letter-spacing: 2px;
-   margin: 20px 20px;	
-p.name { font-size: 16px; text-align: center; letter-spacing: 2px;  }		
-p.contact { padding:0.5px; }
-@img { width: 40px; height: 40px; display: inline-block; border-radius: 10px; }	
-	
+   margin: 20px 20px;
 }
 
-
-
+.name { 
+   font-size: 16px;
+   text-align: center;
+   letter-spacing: 2px;
+}
 
 
 .contact {
+    padding:0.5px;
     font-size: 13px;
     line-height: 10px;
 }
-
 
 
 .copy {
