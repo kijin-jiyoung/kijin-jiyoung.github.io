@@ -6,7 +6,6 @@ body {
    vertical-align: middle;
    letter-spacing: 3px;	
    margin: 0 auto;
-   width: 100%;
    max-width: 600px;
    line-height: 1.5;
    transition: background 1s ease;
