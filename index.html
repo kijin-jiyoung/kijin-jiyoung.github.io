@@ -62,16 +62,16 @@
     
 <div class="type-select">   
 <div id="attend" for="selectbox">참석여부</div> 
-<input type="radio" class="input1" id="select3" name="attend">
+<input type="radio" class="input1" id="select3" name="attend" value="participation">
 <label for="select3">가능해요</label>
-<input type="radio" class="input1" id="select4" name="attend">
+<input type="radio" class="input1" id="select4" name="attend" value="nonattendance">
 <label for="select4">어려워요</label></div>    	
 	
 <div class="type-select">   
 <div id="buffet" for="selectbox">식사여부</div> 
-<input type="radio" class="input1" id="select5" name="buffet">
+<input type="radio" class="input1" id="select5" name="buffet" value="yes">
 <label for="select5">가능해요</label>
-<input type="radio" class="input1" id="select6" name="buffet">
+<input type="radio" class="input1" id="select6" name="buffet" value="no">
 <label for="select6">어려워요</label>
 </div>   
     
@@ -656,14 +656,10 @@ $("h3.accordion").on('click',function(){
        alert('Error!', error.message)
          submitButton.disabled = false  })
    })
+function closed() {
+self.close();
+}
 
-$(function() {
-    $("#submit").click( function() {
-         $('#survey-form').submit(); 
-         setTimeout(function() {    
-             window.close();
-          }, 100);
-      });
 });
 
 </script>
