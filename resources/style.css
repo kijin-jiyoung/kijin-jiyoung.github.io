@@ -57,7 +57,6 @@ p.invitation  {
    letter-spacing: 1px;
    margin: 50px 0px 50px 0px;	
    color: #000;
-   width: 100%;
 }
 
 
@@ -67,7 +66,6 @@ p.name {
    text-align: center;
    letter-spacing: 1px;
    margin: 20px 0px 20px 0px;
-   width: 100%;
 }
 
 
@@ -76,7 +74,6 @@ p.name {
     font-size: 15px;
     line-height: 10px;
     letter-spacing: 1px;
-    width: 100%;
 }
 
 p.photodescription {
@@ -85,7 +82,6 @@ p.photodescription {
    letter-spacing: 1.5px;
    margin: 50px 0px 50px 0px;
    color: #000;
-   width: 100%;
 }
 
 .map {
@@ -98,7 +94,6 @@ p.photodescription {
     text-decoration-line: underline;
     text-underline-offset: 14px;
     font-size: 15px;
-    width: 100%;
     margin: 20px 0px 20px 0px;	
 }
 
@@ -141,7 +136,7 @@ p.photodescription {
 p.share {
     font-size: 14px;
     line-height: 30px;
-    max-width: 600px;
+    width: 100%;
 }
 
 
@@ -149,7 +144,7 @@ p.share {
 
 .copyright-wrap {
      width: 100%;
-     max-width: 600px;
+     max-width: 666px;
      font-size: 12px;
      text-align:center;
      font-family: 'Roboto Slab', serif;
