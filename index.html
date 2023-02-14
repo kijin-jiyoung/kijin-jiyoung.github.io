@@ -650,7 +650,7 @@ $("h3.accordion").on('click',function(){
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('고맙습니다 🙂', response) 
-          $("#surveymodal, .close").setTimeout('closed()',5000);
+          $("#surveymodal").setTimeout('closed()',5000);
           submitButton.disabled = false })
        .catch(error => {
        alert('Error!', error.message)
