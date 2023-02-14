@@ -640,26 +640,20 @@ $("h3.accordion").on('click',function(){
 
 <!------------ 참석조사 구글스프레드시트 ------------>
 <script>
-   const form = document.querySelector("#survey-form")
-   const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbwm532dxTfZLI7erPYwVyz2jqOEIHbJyhnbVIg9o3SICkg5btEddcNSsx0BiMuDhpFY/exec'
-
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('Success!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('Error!', error.message)
-         submitButton.disabled = false
-
-       }
-       )
-   })
+$("#submit").click(function(){
+});
+function submit (){
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbzIHovJvZeUtK7jO4adHrQ3Nbzl3IKRVDuNeiwH_70umjg6I6QdGylt3QL1Mu9a-b7mvw/exec",
+    data: {
+      path: decodeURIComponent(location.pathname)
+    },
+    type: "POST",
+    success:function(){
+      alert("감사합니다!");
+    }
+  });
+}
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
