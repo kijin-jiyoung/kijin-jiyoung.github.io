@@ -104,7 +104,8 @@
 <button id="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;">제출</button>
     
 </form>
-</div>	  
+</div>
+<div id="snackbar"></div>	
 </div>
 </div>	  
 <br>	 
@@ -654,6 +655,63 @@ $("h3.accordion").on('click',function(){
 </script>
 <!------------ 모달 . 아코디언 ------------>
 
+<!------------ 참석조사 구글스프레드시트 ------------>
+<script>
+var inputs = $('input[type="text"]');
+var submitbtn = $('#submit');
+var snackbar = $('#snackbar');
+
+var inputname = $('#name');
+var inputattend = $('#attend');
+var inputbuffet = $('#buffet');
+var inputtype = $('#type');
+var inputname = $('#name');
+var inputcomment = $('#comment');
+
+
+$('#submit').click(function () {
+
+  // 등록중
+  isLoading(true);
+
+  $.ajax({
+    type: "GET",
+    url: "https://script.google.com/macros/s/AKfycbyhXhqmMJCZ0G6rFZxmFDqiJVo3nwproNqrO0BZCxh5ZI6jLkzy1UINhDUpXfTQqNc3/exec",
+    data: {
+    "이름": inputname.val(),
+    "참석여부": inputattend.val(),
+    "식사여부": inputbuffet.val(),
+    "동행인 수": inputtype.val(),	
+    "동행인 이름": inputname.val(),	
+    "전달사항": inputcomment.val()
+    },
+    success: function (response) {
+      isLoading(false);
+
+      snackbar.html('감사합니다!').addClass('show');
+      setTimeout(function () {
+        snackbar.removeClass('show');
+      }, 3000);
+
+      //값 비워주기
+      inputname.val('');
+      inputattend.val('');
+      inputbuffet.val('');
+      inputtype.val('');
+      inputname.val('');
+      inputcomment.val('');
+    },
+    error: function (request, status, error) {
+      isLoading(false);
+      console.log("code:" + request.status + "\n" + "error:" + error);
+      console.log(request.responseText);
+    }
+  });
+});
+
+
+</script>
+<!------------ 참석조사 구글스프레드시트 ------------>
 
 
 
