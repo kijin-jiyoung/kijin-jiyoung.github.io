@@ -88,8 +88,10 @@
 <div class="type-select">     
 <div id="type-select" for="selectbox">전달사항</div>
 <textarea name="comment" class="input3" id="comment"></textarea></div>
-<a href="javascript:postformbox();" class="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;">제출</a>  
+<button id="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;">제출</button>
+<div id="snackbar"></div>
 </form>
+	
 </div>	
 </div>
 </div>	  
@@ -641,28 +643,46 @@ $("h3.accordion").on('click',function(){
 <!------------ 모달 . 아코디언 ------------>
 
 <!------------ 참석조사 구글스프레드시트 ------------>
-<script>
-function postformbox(){
-	var name = document.getElementById("name").value;
-	var attend = document.getElementById("attend").value;	
-	var buffet = document.getElementById("buffet").value;
-	var number = document.getElementById("number").value;
-	var name = document.getElementById("name").value;
-	var comment = document.getElementById("comment").value;	
-$.ajax({
-  url: "https://script.google.com/macros/s/AKfycbxlu89vfKc_HqNM_G-J56J80lERILLcU58m4rUMClABPGUbDQOsduIRVvME1gjzj06y/exec",
-  data: {
-    "name": name+"",
-    "attend": attend+"",
-    "buffet": buffet+"",
-    "number": number+"",
-    "name": name+"",
-    "comment": comment+""
-  },
-  type: "POST",
-  success: function(response){
-   	alert('감사합니다!');
-  }
+<script type="text/javascript">
+var inputs = $('input');
+var submitbtn = $('#submit');
+var snackbar = $('#snackbar');
+var inputname = $('#name');
+var inputattend = $('#attend');
+var inputbuffet = $('#buffet');
+var inputnumber = $('#number');
+var inputname = $('#name');
+var inputcomment = $('#comment');
+
+$('#submit').click(function () {
+  $.ajax({
+    type: "GET",
+    url: "https://script.google.com/macros/s/AKfycbxlu89vfKc_HqNM_G-J56J80lERILLcU58m4rUMClABPGUbDQOsduIRVvME1gjzj06y/exec",
+    data: {
+    "name": inputname.val(),
+    "attend": inputattend.val(),
+    "buffet": inputbuffet.val(),
+    "number": inputnumber.val(),
+    "name": inputname.val(),
+    "comment": inputcomment.val(),
+    },
+    success: function (response) {
+      isLoading(false);
+
+      snackbar.html('감사합니다!').addClass('show');
+      setTimeout(function () {
+        snackbar.removeClass('show');
+      }, 3000);
+
+      //값 비워주기
+      inputname.val('');
+      inputattend.val('');
+      inputbuffet.val('');
+      inputnumber.val('');
+      inputname.val('');
+      inputcomment.val('');
+    },
+  });
 });
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
