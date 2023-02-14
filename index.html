@@ -80,8 +80,8 @@
 <input type="number" class="input2" id="number" name="number" min="0" max="10">명</div>
     
 <div class="type-select">  
-<div id="name-label" for="name">동행인 이름</div>
-<input type="textarea" name="name" id="name" class="input1" placeholder="이름을 모두 적어주세요." required></div>
+<div id="name-label" for="peoplename">동행인 이름</div>
+<input type="textarea" name="peoplename" id="peoplename" class="input1" placeholder="이름을 모두 적어주세요." required></div>
 
 <button id="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;cursor:pointer;">제출</button>
 <div id="snackbar"></div>
@@ -648,6 +648,11 @@ $("h3.accordion").on('click',function(){
      submitButton.disabled = true
      e.preventDefault()
      let requestBody = new FormData(form)
+     formData.get(name);
+     formData.get(attend);
+     formData.get(buffet);
+     formData.get(number);
+     formData.get(peoplename);
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('Success!', response)
