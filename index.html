@@ -34,13 +34,7 @@
 	  
   <!-- 참석조사 -->		  
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-	  $.ajax({
-  url: "https://script.google.com/macros/s/AKfycbzIO1OVmyKgeno2_NBks1NCZ-8o939u4oaVAYbThIrRGc80SsW9jcqmed3cZ4h5Y0uiIA/exec",
-  data: {이름:"", 참석여부:"", 식사여부:"", 본인 외 동행인 수:"", 동행인 이름:"", Timestamp:""},
-  type: "POST"
-});
-</script>
+
 
 <!-- Google Analytics -->
 	  
@@ -645,6 +639,28 @@ $("h3.accordion").on('click',function(){
 
 <!------------ 참석조사 구글스프레드시트 ------------>
 
+<script>
+   const form = document.querySelector("#survey-form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
+
+       }
+       )
+   })
+</script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
 
