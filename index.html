@@ -650,16 +650,12 @@ $("h3.accordion").on('click',function(){
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('고맙습니다 🙂', response)
-
+          $("#surveymodal, .close")
           submitButton.disabled = false })
        .catch(error => {
        alert('Error!', error.message)
          submitButton.disabled = false  })
    })
-function closed() {
-self.close();
-}
-
 });
 
 </script>
