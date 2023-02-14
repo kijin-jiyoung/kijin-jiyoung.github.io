@@ -29,9 +29,22 @@
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
      
 	  
-      <!------------ 모달 . 아코디언 ------------>
+  <!-- 모달 . 아코디언 -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 	  
+  <!-- bootstrap & fontawesome css -->
+  <link href="http://cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/fontawesome/4.1.0/css/font-awesome.min.css" />
+
+  <!-- BootstrapValidator CSS -->
+  <link rel="stylesheet" href="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"/>
+
+  <!-- jQuery and Bootstrap JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  <!-- BootstrapValidator JS -->
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.bootstrapvalidator/0.5.0/js/bootstrapValidator.min.js"></script>  
 	 
 
 
@@ -101,11 +114,9 @@
 <div class="type-select">     
 <div id="type-select" for="selectbox">전달사항</div>
 <textarea name="comment" class="input3" id="comment"></textarea></div>
-<button id="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;">제출</button>
-    
+<input type="button" value="제출" id="submit" onclick="postFormData();" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;">    
 </form>
-</div>
-<div id="snackbar"></div>	
+</div>	
 </div>
 </div>	  
 <br>	 
@@ -657,59 +668,28 @@ $("h3.accordion").on('click',function(){
 
 <!------------ 참석조사 구글스프레드시트 ------------>
 <script>
-var inputs = $('input');
-var submitbtn = $('#submit');
-var snackbar = $('#snackbar');
-
-var inputname = $('#name');
-var inputattend = $('#attend');
-var inputbuffet = $('#buffet');
-var inputtype = $('#type');
-var inputname = $('#name');
-var inputcomment = $('#comment');
-
-
-$('#submit').click(function () {
-
-  // 등록중
-  isLoading(true);
-
-  $.ajax({
-    type: "GET",
-    url: "https://script.google.com/macros/s/AKfycbxcOUrG93l3groZg2DDz6jbmzKD3-jcOeKV_s61giU17uW6K_PmmroamecKWDULgCFV/exec",
-    data: {
-    "이름": inputname.val(),
-    "참석여부": inputattend.val(),
-    "식사여부": inputbuffet.val(),
-    "동행인 수": inputtype.val(),	
-    "동행인 이름": inputname.val(),	
-    "전달사항": inputcomment.val()
-    },
-    success: function (response) {
-      isLoading(false);
-
-      snackbar.html('감사합니다!').addClass('show');
-      setTimeout(function () {
-        snackbar.removeClass('show');
-      }, 3000);
-
-      //값 비워주기
-      inputname.val('');
-      inputattend.val('');
-      inputbuffet.val('');
-      inputtype.val('');
-      inputname.val('');
-      inputcomment.val('');
-    },
-    error: function (request, status, error) {
-      isLoading(false);
-      console.log("code:" + request.status + "\n" + "error:" + error);
-      console.log(request.responseText);
-    }
-  });
+function postFormData(){
+	var name = document.getElementById("name").value;
+	var attend = document.getElementById("attend").value;	
+	var buffet = document.getElementById("buffet").value;
+	var type = document.getElementById("type").value;
+	var name = document.getElementById("name").value;
+	var comment = document.getElementById("comment").value;	
+$.ajax({
+  url: "https://script.google.com/macros/s/AKfycbxcOUrG93l3groZg2DDz6jbmzKD3-jcOeKV_s61giU17uW6K_PmmroamecKWDULgCFV/exec",
+  data: {
+    "name": name+"",
+    "attend": attend+"",
+    "buffet": buffet+"",
+    "type": type+"",
+    "name": name+"",
+    "comment": comment+""
+  },
+  type: "POST",
+  success: function(response){
+   	alert('감사합니다!');
+  }
 });
-
-
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
