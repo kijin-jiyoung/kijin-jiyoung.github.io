@@ -56,8 +56,7 @@
 <p id="description">식사 준비를 위한 사전 조사이니<br>부담없으시길 바랍니다🙏🏻</p><br>
 
 <div class="postformbox">
-<form action="" id="survey-form">
-    
+<form action="" id="survey-form">   
 <div class="type-select">
 <div id="type-select" for="selectbox">이름</div>
 <input type="text" name="name" id="name" class="input1" placeholder="이름" required></div> 
@@ -84,14 +83,11 @@
 <div class="type-select">  
 <div id="name-label" for="name">동행인 이름</div>
 <input type="textarea" name="name" id="name" class="input1" placeholder="이름을 모두 적어주세요." required></div>
-   
-<div class="type-select">     
-<div id="type-select" for="selectbox">전달사항</div>
-<textarea name="comment" class="input3" id="comment"></textarea></div>
+
 <button id="submit" style="width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:10px;display:fixed;margin:10px;cursor:pointer;">제출</button>
 <div id="snackbar"></div>
 </form>
-	
+
 </div>	
 </div>
 </div>	  
@@ -643,47 +639,27 @@ $("h3.accordion").on('click',function(){
 <!------------ 모달 . 아코디언 ------------>
 
 <!------------ 참석조사 구글스프레드시트 ------------>
-<script type="text/javascript">
-var inputs = $('input');
-var submitbtn = $('#submit');
-var snackbar = $('#snackbar');
-var inputname = $('#name');
-var inputattend = $('#attend');
-var inputbuffet = $('#buffet');
-var inputnumber = $('#number');
-var inputname = $('#name');
-var inputcomment = $('#comment');
+<script>
+   const form = document.querySelector("#survey-form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwm532dxTfZLI7erPYwVyz2jqOEIHbJyhnbVIg9o3SICkg5btEddcNSsx0BiMuDhpFY/exec'
 
-$('#submit').click(function () {
-  $.ajax({
-    type: "GET",
-    url: "https://script.google.com/macros/s/AKfycbyw0EYfpFUu6Q34GD0zmXn9ErFObmMnS9AlSFQ3A7ZS2xeI8Xqt5LeYJzjGLP7PwbC-/exec",
-    data: {
-    "name": inputname.val(),
-    "attend": inputattend.val(),
-    "buffet": inputbuffet.val(),
-    "number": inputnumber.val(),
-    "name": inputname.val(),
-    "comment": inputcomment.val(),
-    },
-    success: function (response) {
-      isLoading(false);
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('Success!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('Error!', error.message)
+         submitButton.disabled = false
 
-      snackbar.html('감사합니다!').addClass('show');
-      setTimeout(function () {
-        snackbar.removeClass('show');
-      }, 3000);
-
-      //값 비워주기
-      inputname.val('');
-      inputattend.val('');
-      inputbuffet.val('');
-      inputnumber.val('');
-      inputname.val('');
-      inputcomment.val('');
-    },
-  });
-});
+       }
+       )
+   })
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
