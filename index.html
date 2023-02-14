@@ -649,8 +649,8 @@ $("h3.accordion").on('click',function(){
      let requestBody = new FormData(document.querySelector("#survey-form"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
-          alert('고맙습니다 🙂', response)
-          $("#surveymodal, .close")
+          alert('고맙습니다 🙂', response) 
+          $("#surveymodal, .close").setTimeout('closed()',5000);
           submitButton.disabled = false })
        .catch(error => {
        alert('Error!', error.message)
