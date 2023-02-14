@@ -33,12 +33,17 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 	  
   <!-- 참석조사 -->		  
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
- 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+	  $.ajax({
+  url: "https://script.google.com/macros/s/AKfycbzIO1OVmyKgeno2_NBks1NCZ-8o939u4oaVAYbThIrRGc80SsW9jcqmed3cZ4h5Y0uiIA/exec",
+  data: {이름:"", 참석여부:"", 식사여부:"", 본인 외 동행인 수:"", 동행인 이름:"", Timestamp:""},
+  type: "POST"
+});
+</script>
 
-
-
-      <!-- Google Analytics -->
+<!-- Google Analytics -->
+	  
     
 </head>	
 	
@@ -639,22 +644,7 @@ $("h3.accordion").on('click',function(){
 <!------------ 모달 . 아코디언 ------------>
 
 <!------------ 참석조사 구글스프레드시트 ------------>
-<script>
-$("#submit").click(function(){
-});
-function submit (){
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzIHovJvZeUtK7jO4adHrQ3Nbzl3IKRVDuNeiwH_70umjg6I6QdGylt3QL1Mu9a-b7mvw/exec",
-    data: {
-      path: decodeURIComponent(location.pathname)
-    },
-    type: "POST",
-    success:function(){
-      alert("감사합니다!");
-    }
-  });
-}
-</script>
+
 <!------------ 참석조사 구글스프레드시트 ------------>
 
 
