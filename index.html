@@ -650,15 +650,22 @@ $("h3.accordion").on('click',function(){
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('고맙습니다 🙂', response)
-          submitButton.disabled = false
-         })
+
+          submitButton.disabled = false })
        .catch(error => {
        alert('Error!', error.message)
-         submitButton.disabled = false
-
-       }
-       )
+         submitButton.disabled = false  })
    })
+
+$(function() {
+    $("#submit").click( function() {
+         $('#survey-form').submit(); 
+         setTimeout(function() {    
+             window.close();
+          }, 100);
+      });
+});
+
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
