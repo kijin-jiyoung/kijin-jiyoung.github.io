@@ -20,7 +20,7 @@ h3.maintitle {
    letter-spacing: 1.5px;
    text-align: center;
    vertical-align: middle;
-   margin: 20px 20px;
+   margin: 20px 0 20px;
    color: #000;
    }
 
@@ -30,7 +30,7 @@ h3.accordion {
    color: #000;
    text-align: center;	
    vertical-align: middle;
-   margin: 20px 20px;
+   margin: 20px 0 20px;
    max-width: 600px;
    }
 
@@ -55,7 +55,7 @@ p.invitation  {
    font-size: 16px;
    line-height: 25px;
    letter-spacing: 1px;
-   margin: 50px 0px 50px 0px;	
+   margin: 50px 0 50px;	
    color: #000;
 }
 
@@ -65,7 +65,7 @@ p.name {
    font-size: 16px;
    text-align: center;
    letter-spacing: 1px;
-   margin: 20px 0px 20px 0px;
+   margin: 20px 0 20px;
 }
 
 
@@ -80,21 +80,21 @@ p.photodescription {
    font-size: 16px;
    line-height: 25px;
    letter-spacing: 1.5px;
-   margin: 50px 0px 50px 0px;
+   margin: 50px 0 50px;
    color: #000;
 }
 
 .map {
    font-size: 13px;
    line-height: 12px;
-   margin: 10px 0px 80px 0px;
+   margin: 10px 0 80px;
 }
 
 .payparents {
     text-decoration-line: underline;
     text-underline-offset: 14px;
     font-size: 15px;
-    margin: 20px 0px 20px 0px;	
+    margin: 20px 0 20px;	
 }
 
 .parents,
