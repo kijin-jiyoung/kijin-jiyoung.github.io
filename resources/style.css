@@ -43,6 +43,14 @@ h3.accordion {
 
 
 
+p.mainname,
+p.place,
+p.main {
+letter-spacing: 1.5px;
+line-height: 1.8;
+}
+
+
 
 
 .Main-photo {
