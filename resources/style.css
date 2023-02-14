@@ -63,6 +63,7 @@ p.invitation  {
 
 p.name { 
    font-size: 16px;
+   letter-spacing: 1px;
    text-align: center;
    margin: 20px 0 20px;
 }
