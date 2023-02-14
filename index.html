@@ -646,12 +646,7 @@ $("h3.accordion").on('click',function(){
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      e.preventDefault()
-     let requestBody = new FormData(form);
-     formData.get('name');
-     formData.get('attend');
-     formData.get('buffet');
-     formData.get('number');
-     formData.get('peoplename');
+     let requestBody = new FormData(survey-form);
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('Success!', response)
