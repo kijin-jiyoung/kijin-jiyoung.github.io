@@ -650,7 +650,10 @@ $("h3.accordion").on('click',function(){
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('고맙습니다 🙂', response) 
-          $('#surveymodal').on('hidden.bs.modal', function (e) { // 모달창 닫기 event		
+          $(".surveymodal").modal("hide")
+
+
+$('#surveymodal').on('hidden.bs.modal', function (e) { // 모달창 닫기 event		
           submitButton.disabled = false })
        .catch(error => {
        alert('Error!', error.message)
