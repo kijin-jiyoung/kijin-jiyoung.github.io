@@ -6,7 +6,6 @@ body {
    text-align: center;	
    vertical-align: middle;
    margin: 0 auto;
-   line-height: 1.8;
    transition: background 1s ease;
    color: #000;
    background-color: #FEF7EE;
@@ -359,6 +358,7 @@ ul{list-style:none;}
     color:#000; font-size:11px;
     font-family:'AppleSD';
     right:15px; top:19.5px;
+    line-height: 1.8;	
 }
 
   < !------------ 모달 ------------ >
