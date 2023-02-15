@@ -354,7 +354,7 @@ overflow:scroll;
   position:absolute;
   width:40px; height:20px;
   border: 1px solid #646059;
-border-radius:5px;
+  border-radius:5px;
   text-align: center;
   vertical-align: middle;
   padding:auto;
@@ -365,14 +365,15 @@ border-radius:5px;
   right:10px; top:15px;
 }
 
-a.submit {
-  width:120px;
+button.submit {
+  justify-content:flex-start;
+  width:80px;
   border-radius:10px;
   background-color:#000;
   color:#FFF;
   border:1px solid #ccc;
   padding:10px;
-  display:fixed;
+  cursor:pointer;
   margin:10px;
 }
 
