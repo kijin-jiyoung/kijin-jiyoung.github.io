@@ -31,16 +31,15 @@ h3.accordion {
    color: #000;
    text-align: center;	
    vertical-align: middle;
-   margin: 20px 0 20px;
+   margin: 20px 0 30px;
    max-width: 600px;
    }
 
-.accordioncon{
+.accordioncon {
   display:none;
   text-align: center;	
   vertical-align: middle;	
 }
-
 
 
 
@@ -79,11 +78,13 @@ p.name {
 }
 
 
-.contact {
+.announcement {
     font-size: 14px;
     line-height: 10px;
+    justify-content: center;
     margin: 30px 0 10px;	
 }
+
 
 p.photodescription {
    font-size: 16px;
@@ -140,14 +141,6 @@ p.photodescription {
     border-color: #FFF;
 }
 
-
-
-p.share {
-    font-size: 14px;
-    line-height: 30px;
-    width: 100%;
-    justify-content: center;	
-}
 
 
 
