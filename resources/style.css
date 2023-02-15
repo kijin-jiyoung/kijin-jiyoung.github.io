@@ -113,6 +113,12 @@ p.photodescription {
     line-height: 2.5;	
 }
 
+span.kato {
+margin: 5px 10px 10px 20px;	
+}
+
+
+
 
 .copy {
     display: inline-block;
