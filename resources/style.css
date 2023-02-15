@@ -1,6 +1,5 @@
 
 body {
-   width: 100%;
    max-width: 600px;
    font-size: 16px;
    font-family: 'MapoFlowerIsland';	
@@ -43,6 +42,11 @@ h3.accordion {
    line-height: 1.8;
 }
 
+p.accordiondesc {
+margin:-20px 0px;
+font-size:12px;
+font-family:'MapoFlowerIsland';
+}
 
 p.maincontent {
 letter-spacing: 1.5px;
@@ -114,9 +118,8 @@ p.photodescription {
     line-height: 2.5;	
 }
 
-span.kato {
-margin: 5px 10px 10px 20px;	
-width:100%;
+.kato {
+margin: 5px 10px 10px 20px;
 }
 
 
