@@ -21,7 +21,7 @@ h3.maintitle {
    letter-spacing: 1.5px;
    text-align: center;
    vertical-align: middle;
-   margin: 20px 0 20px;
+   margin: 100px 0 20px;
    color: #000;
    }
 
@@ -74,6 +74,7 @@ p.name {
    font-size: 16px;
    letter-spacing: 1px;
    text-align: center;
+   line-height: 1.8;	
    margin: 20px 0 20px;
 }
 
