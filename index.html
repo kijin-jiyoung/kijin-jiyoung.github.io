@@ -573,7 +573,7 @@ var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text();
 typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
 if(typingBool==false){ // 타이핑이 진행되지 않았다면 
     typingBool=true; 
-    var tyInt = setInterval(typing,100); // 반복동작 
+    var tyInt = setInterval(typing,70); // 반복동작 
 } 
      
 function typing(){ 
@@ -596,8 +596,8 @@ function typing(){
      
          setTimeout(function(){
            //1초후에 다시 타이핑 반복 시작
-           tyInt = setInterval(typing,100);
-         },1000);
+           tyInt = setInterval(typing,70);
+         },700);
         } else if(liIndex==liLength-1){
           
          //마지막 문장까지 써지면 반복종료
