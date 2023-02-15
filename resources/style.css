@@ -391,8 +391,7 @@ button.submit {
 
 .postformbox {max-width:300px;margin: 0 auto;font-size:13px;font-family:'AppleSD';}
 .type-select {
-    padding: 3px 5px 5px 5px;
-    margin: 1px 0px 0px 0px;
+    padding: 2px 5px 10px 5px;
 }
 
 .type-select input[type=radio]{
@@ -403,13 +402,12 @@ button.submit {
     display: inline-block;
     cursor: pointer;
     height: 35px;
-    width: 85px;
+    width: 82px;
     border: 1px solid #ccc;
     border-radius: 10px;
     line-height: 35px;
     text-align: center;
     font-size:12px;
-    margin: 4px 0px 0px 0px;
 }
 
 .type-select input[type=radio]+label{
@@ -429,9 +427,8 @@ input[type=radio]:checked+label{
       height: 40px;
       border-radius: 10px;
       border: 1px solid #ccc;
-      padding: 5px;
       box-sizing: border-box;
-      margin: 4px 4px;
+      font-size: 12px;	 
     }
 
 .input2 {
@@ -440,9 +437,10 @@ input[type=radio]:checked+label{
       height: 40px;
       border-radius: 10px;
       border: 1px solid #ccc;
-      padding: 1px;
+      padding: 5px;
       box-sizing: border-box;
-      margin: 4px 4px;
+      font-size: 12px;
+      margin: 0px 2px 0px 0px;	
     }
 
 .input3 {
