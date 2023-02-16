@@ -58,7 +58,7 @@
 <form action="" id="survey-form">   
 <div class="type-select">
 <div id="type-select" for="name" style="text-align:left;margin:0 37px 0;">이름</div>
-<input type="text" name="name" id="name" value="name" class="input1" placeholder="이름" required></div> 
+<input type="text" name="name" id="name" class="input1" placeholder="이름" required></div> 
     
 <div class="type-select">   
 <div id="type-select" for="attend" style="text-align:left;margin:0 37px 0;">참석여부</div> 
@@ -77,11 +77,11 @@
     
 <div class="type-select">           
 <div id="type-select" for="number" style="text-align:left;margin:0 37px 0;"> 본인 외 동행인 수</div>
-<input type="number" class="input2" id="number" name="number" value="number" min="0" max="10">명</div>
+<input type="number" class="input2" id="number" name="number" min="0" max="10">명</div>
     
 <div class="type-select">  
 <div id="type-select" for="peoplename" style="text-align:left;margin:0 37px 0;">동행인 이름</div>
-<input type="textarea" name="peoplename" id="peoplename" value="peoplename" class="input1" placeholder="이름을 모두 적어주세요." required></div>
+<input type="textarea" name="peoplename" id="peoplename" class="input1" placeholder="이름을 모두 적어주세요." required></div>
 
 <button id="submit" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;margin:10px 0px 10px;cursor:pointer;">제출</button>
 <a href="javascript:;" class="close">닫기</a>
@@ -642,12 +642,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 <script>
 let formData = new FormData(document.getElementById('survey-form')); 
-formData.append(submit,'name'); // key-value (키-값)의 형태로 데이터 추가함
-formData.append(submit,'o');
-formData.append(submit,'o');
-formData.append(submit,'number');
-formData.append(submit,'peoplename');
-
+formData.append("submit,#survey-form"); // key-value (키-값)의 형태로 데이터 추가함
 
 //page 시작할 때 마다, db에 portfolio 데이터 요청
 fetch('https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec', { // url 입력 및 [options] 값 설정
