@@ -642,12 +642,12 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 <script>
 let formData = new FormData(); 
-formData.append(submit,survey-form); // key-value (키-값)의 형태로 데이터 추가함
+formData.append(submit,'survey-form'); // key-value (키-값)의 형태로 데이터 추가함
 
 //page 시작할 때 마다, db에 portfolio 데이터 요청
 fetch('https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec', { // url 입력 및 [options] 값 설정
     method: 'post', 
-    body: '#survey-form'  //전송할 데이터 body에 추가
+    body: 'survey-form'  //전송할 데이터 body에 추가
 	})
     .then(res => res.json()) //응답 결과를 json으로 파싱
     .then(data => {
