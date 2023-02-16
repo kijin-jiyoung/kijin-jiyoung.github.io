@@ -642,25 +642,20 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 <script>
 	
-const submit = document.querySelector("#submit");
-submit.addEventListener("click",function(){
- var formData = new FormData();
- FormData(document.querySelector("#survey-form"));           
- });	
-	
-fetch('https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec', { 
-    method: 'post', 
-    body: 'survey-form'  
-	})
-    .then(res => res.json()) //응답 결과를 json으로 파싱
-    .then(data => {
-            
-            console.log(data); //응답 결과를 console 창에 출력
-              
-    })
-    .catch(err => { // 오류 발생시 오류를 담아서 보여줌
-        console.log('Fetch Error', err);
-    });
+   const form = document.querySelector("#survey-form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(document.querySelector("#survey-form"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          $(".surveymodal").modal("hide")
+
+          submitButton.disabled = false })
+});
 
 
 
