@@ -641,19 +641,19 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 <!------------ 참석조사 구글스프레드시트 ------------>
 
 <script>
-let formData = new FormData(document.getElementById('survey-form')); 
-formData.append("submit,#survey-form"); // key-value (키-값)의 형태로 데이터 추가함
-
-//page 시작할 때 마다, db에 portfolio 데이터 요청
-fetch('https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec', { // url 입력 및 [options] 값 설정
+	
+const submit = document.querySelector("#submit");
+submit.addEventListener("click",function(){
+ var formData = new FormData();
+ FormData(document.querySelector("#survey-form"));           
+ });	
+	
+fetch('https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec', { 
     method: 'post', 
-    body: 'survey-form'  //전송할 데이터 body에 추가
+    body: 'survey-form'  
 	})
     .then(res => res.json()) //응답 결과를 json으로 파싱
     .then(data => {
-    
-    		//***여기서 응답 결과로 실행할 동작을 정의하면 됨***
-            // [ data.키값 ] 이런 형태로 value 추출 가능 
             
             console.log(data); //응답 결과를 console 창에 출력
               
