@@ -652,7 +652,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
      let requestBody = new FormData(document.querySelector("#survey-form"));
 fetch(scriptURL, { method: 'POST', body: requestBody})
 .then(response => {.surveymodal("close")});	   
-
+          submitButton.disabled = false })
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
