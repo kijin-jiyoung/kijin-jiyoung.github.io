@@ -652,7 +652,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
           alert('고맙습니다 🙂', response) 
-          $(".surveymodal").modal("hide")
+          $(".surveymodal").modal(".close")
 
           submitButton.disabled = false })
 });
