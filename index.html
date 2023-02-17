@@ -650,6 +650,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
      submitButton.disabled = true
      e.preventDefault()
      let requestBody = new FormData(document.querySelector("#survey-form"));
+fetch(scriptURL, { method: 'POST', body: requestBody})
 });
 
 </script>
