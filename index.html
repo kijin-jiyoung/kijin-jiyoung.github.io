@@ -646,16 +646,6 @@ $("h3.accordion,.accordiondesc").on('click',function(){
    const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
 
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#survey-form"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          $(".surveymodal").modal("hide")
-
-          submitButton.disabled = false })
-});
 
 
 
