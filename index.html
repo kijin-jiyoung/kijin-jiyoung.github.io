@@ -645,10 +645,12 @@ $("h3.accordion,.accordiondesc").on('click',function(){
    const form = document.querySelector("#survey-form")
    const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
-
-
-
-
+   
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(document.querySelector("#survey-form"));
+});
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
