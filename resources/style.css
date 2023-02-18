@@ -453,14 +453,15 @@ input[type=radio]:checked+label{
 
 select {
   box-sizing: border-box;
-  width: 155px;
-  padding: 0px 2px 0px 0px;
-  size: 90px;
+  width: 170px;
+  padding: 2px;
   font-size: 12px;
   border-radius: 10px;
 }
 
 option {
+  box-sizing: border-box;
+  width: 170px;
   padding: 0px 2px 0px 0px;
   font-size: 12px;
   color: #fff;
