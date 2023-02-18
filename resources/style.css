@@ -453,24 +453,32 @@ input[type=radio]:checked+label{
 
 
 .selectbox {
+  position: relative;
   display: inline-block;
+  float: left;
   width: 170px;
   height: 40px;
   border-radius: 10px;
   border: 1px solid #ccc;
 }
-
+        
 
 
 .selectbox .select {
-  width: inherit;
-  height: inherit;
-  background: transparent;
-  border: 0 none;
-  outline: 0 none;
-  padding: 0 5px;
-  position: relative;
-  z-index: 3; // select가 위로 올라와야 함
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border: 0;
+        border-radius: 0;
+        background: white;
+        color: black;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        font-size: 14px;
+        height: 100%;
 }
 .selectbox .select option {
   color: #fff;
