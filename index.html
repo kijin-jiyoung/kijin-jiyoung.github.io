@@ -660,7 +660,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
      let requestBody = new FormData(document.querySelector("#survey-form"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
        .then(response => {
-	     close('.surveymodal', response)
+	     close('.modal', response)
 	     submitButton.disabled = false })
 });
 
