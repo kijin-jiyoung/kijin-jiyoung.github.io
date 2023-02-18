@@ -451,40 +451,21 @@ input[type=radio]:checked+label{
     }
 
 
-
 select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  
-  font-family: 'AppleSD';
-  font-size: 12px;
-  
-  color: #000;
-  background-color: #fff;
-  
+  box-sizing: border-box;
+  width: 155px;
   padding: 0px 2px 0px 0px;
-  margin: 0;
-  
-  border: 1px solid #ccc;
+  font-size: 12px;
   border-radius: 10px;
 }
 
-select:hover {
-  border-color: #888;
+option {
+  padding: 0px 2px 0px 0px;
+  font-size: 12px;
+  color: #fff;
+  background: #000;
 }
 
-select:focus {
-  border-color: #aaa;
-  box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-  box-shadow: 0 0 0 3px -moz-mac-focusring;
-  color: #222;
-  outline: none;
-}
-
-select:disabled {
-  opacity: 0.5;
-}
 
 
 
