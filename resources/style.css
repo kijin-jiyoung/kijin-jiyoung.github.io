@@ -452,6 +452,16 @@ input[type=radio]:checked+label{
 
 
 
+.selectbox {
+  display: inline-block;
+  width: 170px;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+
+
 .selectbox .select {
   width: inherit;
   height: inherit;
@@ -463,10 +473,9 @@ input[type=radio]:checked+label{
   z-index: 3; // select가 위로 올라와야 함
 }
 .selectbox .select option {
-  background: lightcoral;
   color: #fff;
   padding: 3px 0;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 
