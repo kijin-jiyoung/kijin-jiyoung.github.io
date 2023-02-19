@@ -43,15 +43,16 @@ h3.accordion {
 }
 
 p.accordiondesc {
-margin:-20px 0px;
+margin:20px 0px;
 font-size:12px;
 font-family:'MapoFlowerIsland';
 cursor:pointer;		
 }
 
 p.maincontent {
+letter-spacing: -1px;
 line-height: 1.3;
-font-weight: 600;
+font-weight: 550;
 font-size: 17px;
 }
 
