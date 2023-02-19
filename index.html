@@ -648,12 +648,14 @@ $("h3.accordion,.accordiondesc").on('click',function(){
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      e.preventDefault()
+     $("#surveymodal").fadeOut(100)
+     $(".surveymodal-con").fadeOut(100)
      let requestBody = new FormData(document.querySelector("#survey-form"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
-       then(() => {
-             $("#surveymodal").fadeOut(100)
-             $(".surveymodal-con").fadeOut(100)
-             submitButton.disabled = false });
+         .then(() => {
+             submitButton.disabled = false
+         });
+   })
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
@@ -706,9 +708,6 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 	
 <!-- 복사 -->	 	
 <script>
- $(window).load(function () {
-    });	
-	
  function copy_to_clipboard(text) {
         navigator.clipboard.writeText(text).then(() => {
             alert("복사되었습니다.");
@@ -738,7 +737,6 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 <!-- 네이버맵 -->
 <script	type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=7t6xsnu7ys"></script>				
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-<script src="./wp-includes/js/jquery/jquery-1.9.1.js"></script>
 <script>
 var map = new naver.maps.Map('mapcanvas', {
     center: new naver.maps.LatLng(37.511742, 126.9948247),	
@@ -783,7 +781,7 @@ function sendKakao(kurl,tittxt, kkimg) {
                                 title : tittxt,
                                 link: {
                                     webUrl: 'https://kijin-jiyoung.github.io/',
-                                    mobileWebUrl : 'https://kijin-jiyoung.github.io/
+                                    mobileWebUrl : 'https://kijin-jiyoung.github.io/'
                                 },
                             },
                         });
