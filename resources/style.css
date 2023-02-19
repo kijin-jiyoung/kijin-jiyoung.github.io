@@ -49,6 +49,13 @@ font-family:'MapoFlowerIsland';
 cursor:pointer;		
 }
 
+p.maincontentname {
+letter-spacing: 0.5px;
+line-height: 1.7;
+font-weight: 550;
+font-size: 19px;
+}
+
 p.maincontent {
 letter-spacing: 0.5px;
 line-height: 1.7;
