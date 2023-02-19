@@ -50,10 +50,8 @@ cursor:pointer;
 }
 
 p.maincontentname {
-letter-spacing: 0.5px;
-line-height: 1.7;
-font-weight: 550;
-font-size: 19px;
+font-weight: 500;
+font-size: 29px;
 }
 
 p.maincontent {
