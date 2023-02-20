@@ -510,33 +510,35 @@
 <h3 class="maintitle">축하메시지 남기기</h3>
 <p style="font-size:12px;font-family:'MapoFlowerIsland';">• 두사람을 위한 축하메시지를 남겨주세요.</p>
 
-<div id="wrap">
-<span><a href="javascript:openModal('commentmodal');" class="button modal-open" style="text-decoration:none;vertical-align:middle;font-size:13px;color:#000;margin:5px;">작성하기</a>
-<a href="javascript:openModal('commentlistmodal');" class="button modal-open" style="text-decoration:none;vertical-align:middle;font-size:13px;color:#000;margin:5px;">전체보기</a>
-</span></div>
-
 <div id="modal"></div>	
-<div class="commentmodal-con commentmodal">
+<div class="modal-con commentmodal">
 <div class="con">
 <h2 id="commenttitle">방명록 작성</h2>
 
-<div class="write-form">
-<form action="" id="comment-form" onsubmit="submitWriteForm(this); return false;">   
+<div class="writeform">
+<form action="" id="commentform" onsubmit="submitWriteForm(this); return false;">   
+
+    
 <div class="comment"> 
-<input type="text" name="comment-writer" id="comment-writer" class="comment-writer" placeholder="작성자" maxlength="10" required></div>
+<input type="text" name="commentwriter" id="commentwriter" class="commentwriter" placeholder="작성자" maxlength="10" required>
+<input type="password" name="commentpassword" id="commentpassword" class="commentpassword" placeholder="비밀번호" required></div>
 
 <div class="comment"> 
-<input type="password" name="comment-password" id="comment-password" class="comment-password" placeholder="비밀번호" required></div>
-
-<div class="comment"> 
-<input type="textarea" name="comment-content" id="comment-content" class="comment-content" placeholder="방명록 내용" required></div>
-
-
-<button id="commentsubmit" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;margin:10px 0px 10px;cursor:pointer;">작성</button>
-<a href="javascript:;" class="close">닫기</a>
+<input type="textarea" name="commentcontent" id="commentcontent" class="commentcontent" placeholder="방명록 내용" required></div> 
+<button id="commentsubmit" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;   margin:0 auto; text-align: center;margin:10px 0px 10px;cursor:pointer;vertical-align: middle; ">작성</button>
+<a href="javascript:;" class="close">X</a>
 </form>
 </div>	
 </div>
+</div>
+
+
+<div class="modal-con commentlistmodal">
+<div class="con">
+    <div class="commentlistcontent"></div>
+       <div value="commentlistwriter"></div> 
+       <div value="commentlistdate"></div> 
+    </div>
 </div>
 
 		<br>
@@ -651,7 +653,9 @@ $("#modal, .close").on('click',function(){
 $("#surveymodal").fadeOut(100);
   $(".surveymodal-con").fadeOut(100);
 $("#commentmodal").fadeOut(100);
-  $(".commentmodal-con").fadeOut(100);	
+  $(".commentmodal-con").fadeOut(100);
+$("#commentlistmodal").fadeOut(100);
+  $(".commentlistmodal-con").fadeOut(100);	
 });
 
 	
@@ -686,7 +690,53 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
+	     
+<!------------ 방명록 작성 ------------>		     
+	     
+<script>	     
 
+function submitWriteForm(form) {
+    // 입력양식의 공백제거
+    form.commentwriter.value = form.commentwriter.value.trim();
+    
+    if ( form.commentwriter.value.length == 0 ) {
+        alert('작성자를 입력해주세요.');
+        form.commentwriter.focus();
+        
+        return false;
+    }
+    
+    // 입력양식의 공백제거
+    form.commentpassword.value = form.commentpassword.value.trim();
+    
+    if ( form.commentpassword.value.length == 0 ) {
+        alert('비밀번호를 입력해주세요.');
+        form.commentpassword.focus();
+        
+        return false;
+    }
+    
+    // 입력양식의 공백제거
+    form.commentcontent.value = form.commentcontent.value.trim();
+    
+    if ( form.commentcontent.value.length == 0 ) {
+        alert('내용을 입력해주세요.');
+        form.commentcontent.focus();
+        
+        return false;
+    }
+    
+    addListItem();
+}
+
+function addListItem() {
+    alert('등록되었습니다.');
+}	     
+	     
+</script>	     
+	     
+<!------------ 방명록 작성 ------------>	     
+	     
 
 
 
