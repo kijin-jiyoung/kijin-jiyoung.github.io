@@ -645,6 +645,8 @@ $("h3.accordion,.accordiondesc").on('click',function(){
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      e.preventDefault()
+     $("#modal").fadeOut(100)  
+     $("."+modalname).fadeout(100)
      $("#surveymodal").fadeOut(100)
      $(".surveymodal-con").fadeOut(100)
      let requestBody = new FormData(document.querySelector("#survey-form"));
