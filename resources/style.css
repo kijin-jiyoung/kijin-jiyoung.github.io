@@ -520,9 +520,9 @@ option {
     padding: 0 auto;
     text-decoration: none;
     background-color:#fff;
-    color:#000; font-size:11px;
+    color:#000; font-size:13px;
     font-family:'AppleSD';
-    right:15px; top:5px;	
+    right:15px; top:8px;	
 }
 
 
@@ -581,7 +581,7 @@ h2.commenttitle {font-family: 'MapoFlowerIsland';text-align:center; vertical-ali
     background:#fff;
     border-radius: 10px;
     padding: 10px 5px 0px 5px;
-    overflow:scroll; 
+    overflow: scroll; 
 }
 .commentlistmodal-con .con{
     font-size:12px;
@@ -599,9 +599,9 @@ h2.commenttitle {font-family: 'MapoFlowerIsland';text-align:center; vertical-ali
     padding:auto;
     text-decoration:none;
     background-color:#fff;
-    color:#000; font-size:11px;
+    color:#000; font-size:13px;
     font-family:'AppleSD';
-    right:15px; top:5px;
+    right:15px; top:8px;
     line-height: 1.8;	
 }
 
