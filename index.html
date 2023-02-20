@@ -742,9 +742,7 @@ function addListItem() {
 }	     
 	     
 
-	
-	
-	
+		
 	
 	
 	
@@ -764,6 +762,33 @@ function addListItem() {
              commentsubmitbutton.disabled = false
          });
    })
+	
+ function commentform() {
+        
+        const config = {
+          method: "get"
+        };
+        
+        fetch("https://script.google.com/macros/s/AKfycbz-3sSyes-Qz43da5-fOA2RJjBCb8WvGD0_abDWPfnY77kXw9W_5z3Es9WGXBgYQt7a/exec", config)
+          .then(response => response.json())
+          .then(data => {
+      const commentcontent = document.createElement("div");
+      const commentwriter = document.createElement("div");
+      const timestamp = document.createElement("div");
+      commentcontent.textContent = data.commentcontent;
+      commentwriter.textContent = data.commentwriter;
+      timestamp.textContent = data.timestamp;
+ const commentform = document.getElementById("commentform");
+      commentform.appendChild(commentcontent);
+      commentform.appendChild(commentwriter);
+      commentform.appendChild(timestamp);
+    })
+          .catch(error => console.log(error));
+      }	
+	
+	
+	
+	
 
 </script>	     
 	     
