@@ -510,7 +510,33 @@
 <h3 class="maintitle">축하메시지 남기기</h3>
 <p style="font-size:12px;font-family:'MapoFlowerIsland';">• 두사람을 위한 축하메시지를 남겨주세요.</p>
 
+<div id="wrap">
+<a href="javascript:openModal('commentmodal');" class="button modal-open" style="text-decoration:none;vertical-align:middle;font-size:13px;color:#000;margin:5px;">작성하기</a>
+</div>
 
+<div id="modal"></div>	
+<div class="commentmodal-con commentmodal">
+<div class="con">
+<h2 id="commenttitle">방명록 작성</h2>
+
+<div class="write-form">
+<form action="" id="comment-form" onsubmit="submitWriteForm(this); return false;">   
+<div class="comment"> 
+<input type="text" name="comment-writer" id="comment-writer" class="comment-writer" placeholder="작성자" maxlength="10" required></div>
+
+<div class="comment"> 
+<input type="password" name="comment-password" id="comment-password" class="comment-password" placeholder="비밀번호" required></div>
+
+<div class="comment"> 
+<input type="textarea" name="comment-content" id="comment-content" class="comment-content" placeholder="방명록 내용" required></div>
+
+
+<button id="commentsubmit" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;margin:10px 0px 10px;cursor:pointer;">작성</button>
+<a href="javascript:;" class="close">닫기</a>
+</form>
+</div>	
+</div>
+</div>
 
 		<br>
 		<br>
@@ -623,6 +649,8 @@ $("#modal, .close").on('click',function(){
   $(".modal-con").fadeOut(100);
 $("#surveymodal").fadeOut(100);
   $(".surveymodal-con").fadeOut(100);
+$("#commentmodal").fadeOut(100);
+  $(".commentmodal-con").fadeOut(100);	
 });
 
 	
