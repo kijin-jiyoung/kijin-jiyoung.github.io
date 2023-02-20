@@ -751,7 +751,7 @@ function addListItem() {
    const scriptURL = 'https://script.google.com/macros/s/AKfycbz-3sSyes-Qz43da5-fOA2RJjBCb8WvGD0_abDWPfnY77kXw9W_5z3Es9WGXBgYQt7a/exec'
 
    form.addEventListener('commentsubmit', e => {
-     commentsubmitbutton.disabled = true
+     submitbutton.disabled = true
      e.preventDefault()
      $("#modal").fadeOut(100)  
      $("#commentmodal").fadeOut(100)
@@ -759,7 +759,7 @@ function addListItem() {
      let requestBody = new FormData(document.querySelector("#commentform"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
-             commentsubmitbutton.disabled = false
+             submitbutton.disabled = false
          });
    })
 	
