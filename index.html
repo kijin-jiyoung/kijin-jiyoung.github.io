@@ -524,7 +524,7 @@
 <h2 id="commenttitle">방명록 작성</h2>
 
 <div class="writeform">
-<form action="action.jsp" id="commentform">
+<form method="post" action="https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec" id="commentform">
     
 <div class="comment"> 
 <input type="text" name="commentwriter" id="commentwriter" class="commentwriter" placeholder="작성자" maxlength="10" value="">
@@ -532,7 +532,7 @@
 
 <div class="comment"> 
 <input type="textarea" name="commentcontent" id="commentcontent" class="commentcontent" placeholder="방명록 내용" value=""></div> 
-<a href="#" onclick="return commentform()" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;   margin:0 auto; text-align: center;margin:10px 0px 10px;cursor:pointer;vertical-align: middle; ">작성하기</a>
+<input type="button" name="commentbutton" onclick='return submit2(this.form); value="작성하기" style="text-decoration:none;font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;   margin:0 auto; text-align: center;margin:10px 0px 10px;cursor:pointer;vertical-align: middle; ">작성하기</a>
 <a href="javascript:;" class="close">X</a>
 </form>
 </div>	
@@ -717,11 +717,9 @@ if(document.getElementById("commentpassword").value==''){
 document.getElementById('commentform').submit();
 }
 	
+
 	
- const form = document.querySelector("#commentform")	
- const scriptURL = 'https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec'
-	
-form.addEventListener('commentform()', e => {
+form.addEventListener('submit2()', e => {
      return = true
      e.preventDefault()
      $("#modal").fadeOut(100)  
@@ -732,9 +730,7 @@ form.addEventListener('commentform()', e => {
          .then(() => {
            disabled = false
          });
-   })	
-	
-	
+   })		
 </script>
 	     
 	     
