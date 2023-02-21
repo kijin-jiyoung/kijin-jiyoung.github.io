@@ -524,7 +524,7 @@
 <h2 id="commenttitle">방명록 작성</h2>
 
 <div class="writeform">
-<form method="post" action="https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec" id="commentform">
+<form action="" id="commentform">
     
 <div class="comment"> 
 <input type="text" name="commentwriter" id="commentwriter" class="commentwriter" placeholder="작성자" maxlength="10" value="">
@@ -717,8 +717,12 @@ if(document.getElementById("commentpassword").value==''){
 document.getElementById('commentform').submit();
 }
 	
-
-	
+function submit2(commentform) { 
+    form.action='https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec'; 
+	    form.submit(); 
+    return true; 
+  } 
+																  
 form.addEventListener('submit2()', e => {
      return = true
      e.preventDefault()
