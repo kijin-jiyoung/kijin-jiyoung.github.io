@@ -701,6 +701,26 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 <!------------ 방명록 작성 ------------>		     
 	     
 <script>
+   const form = document.querySelector("#commentform")
+   const onclickButton = document.querySelector("#commentsubmit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwYxV4r96WWtPJpRop81GOkhZAJsLAT6v7lfKrgugwUiybqvwpqqXfWZt2Bsv04w0DE/exec'
+
+   form.addEventListener('onclick', e => {
+     onclickButton.disabled = true
+     e.preventDefault()
+     $("#modal").fadeOut(100)  
+     $("#commentmodal").fadeOut(100)
+     $(".commentmodal-con").fadeOut(100)
+     let requestBody = new FormData(document.querySelector("#commentform"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             onclickButton.disabled = false
+         });
+   })
+
+	
+	
+	
 function commentform() {
 if(document.getElementById("commentwriter").value==''){
 	alert("이름을 입력해주세요.");
@@ -723,44 +743,7 @@ function commentsubmit(commentform) {
     return true; 
   } 
 																  
-form.addEventListener('commentsubmit()', e => {
-     return = true
-     e.preventDefault()
-     $("#modal").fadeOut(100)  
-     $("#commentmodal").fadeOut(100)
-     $(".commentmodal-con").fadeOut(100)
-     let requestBody = new FormData(document.querySelector("#commentform"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-         .then(() => {
-           disabled = false
-         });
-   })		
 
-				      
-				      
-				      
-				      
-				      
-				      
-	     
-	     
-	
-window.onload = function() {
-    document.getElementById('commentsubmit').onclick = function() {
-    document.getElementById('commentform').submit();
-form.action='https://script.google.com/macros/s/AKfycbwYxV4r96WWtPJpRop81GOkhZAJsLAT6v7lfKrgugwUiybqvwpqqXfWZt2Bsv04w0DE/exec';
- form.submit();
- return true;	    
-     e.preventDefault()
-     $("#modal").fadeOut(100)  
-     $("#commentmodal").fadeOut(100)
-     $(".commentmodal-con").fadeOut(100)    
-	 let requestBody = new FormData(document.querySelector("#commentform"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-         .then(() => {    
-  return false;
-    };
-};	
         
  const config = {
     method: "get"
