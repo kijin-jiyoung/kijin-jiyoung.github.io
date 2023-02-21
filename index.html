@@ -532,7 +532,7 @@
 
 <div class="comment"> 
 <input type="textarea" name="commentcontent" id="commentcontent" class="commentcontent" placeholder="방명록 내용" value=""></div> 
-<input type="button" value="작성하기" onclick="commentsubmit" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed; margin:0 auto; text-align: center;margin:10px 0px 10px;cursor:pointer;vertical-align: middle; ">
+<input type="button" value="작성하기" onclick="commentsubmit" style="text-decoration:none;font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed; margin:0 auto; text-align: center;margin:10px 0px 10px;cursor:pointer;vertical-align: middle; ">
 <a href="javascript:;" class="close">X</a>
 </form>
 </div>	
@@ -717,13 +717,13 @@ if(document.getElementById("commentpassword").value==''){
 document.getElementById('commentform').submit();
 }
 	
-function submit2(commentform) { 
+function commentsubmit(commentform) { 
     form.action='https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec'; 
 	    form.submit(); 
     return true; 
   } 
 																  
-form.addEventListener('submit2()', e => {
+form.addEventListener('commentsubmit()', e => {
      return = true
      e.preventDefault()
      $("#modal").fadeOut(100)  
@@ -746,7 +746,7 @@ form.addEventListener('submit2()', e => {
 	     
 	
 window.onload = function() {
-    document.getElementById('commentbutton').onclick = function() {
+    document.getElementById('commentsubmit').onclick = function() {
     document.getElementById('commentform').submit();
 form.action='https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec';
  form.submit();
@@ -766,7 +766,7 @@ form.action='https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu
     method: "get"
         };
         
-        fetch("https://script.google.com/macros/s/AKfycbz-3sSyes-Qz43da5-fOA2RJjBCb8WvGD0_abDWPfnY77kXw9W_5z3Es9WGXBgYQt7a/exec", config)
+        fetch("https://script.google.com/macros/s/AKfycbzHSyg9JlqcwQ9lpQbbnzZ4gvhu9DTtNUXrRdXukkR01s4SBXm0Lrxr72zYoJXnLQ0c/exec", config)
           .then(response => response.json())
           .then(data => {
       const commentcontent = document.createElement("div");
