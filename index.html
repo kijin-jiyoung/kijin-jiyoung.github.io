@@ -575,7 +575,7 @@
 <p class="announcement">	
 문자 공유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 카카오톡 공유&nbsp;&nbsp;</p>
-<a id="sms-sharing-btn" href="javascript:;">
+<a id="sms-sharing-btn" href="sms:;" class="sms">
 <img src="resources/sms.png" alt="문자 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="kakaotalk-sharing-btn" href="javascript:;">
@@ -892,14 +892,45 @@ var marker = new naver.maps.Marker(markerOptions);
 
 <!-- sms 공유 -->
 <script type="text/javascript">
-const userAgent = navigator.userAgent.toLocaleLowerCase()
+$(function(){
 
-if (userAgent.search('android') > -1) {
-    this.'sms-sharing-btn' = `sms:?body=이기진❤️윤지영의 결혼식에 초대합니다.`
-} else if (userAgent.search('iphone') > -1 || uagent.search('ipad') > -1) {
-    this.'sms-sharing-btn' = `sms:&body=이기진❤️윤지영의 결혼식에 초대합니다.`
-}	     
-	     
+    checkMobile(); //디바이스 종류 체크
+
+    $(".sms").on("click",function(){
+        var idx = $(this).index();
+        smsSend(idx);
+    });
+    
+});
+
+function checkMobile(){
+    var UA = navigator.userAgent.toLowerCase(); //userAgent 체크
+    if ( UA.indexOf('android') > -1) {
+        //Android
+        return "android";
+    } else if ( UA.indexOf("iphone") > -1 || UA.indexOf("ipad") > -1 || UA.indexOf("ipod") > -1 ) {
+        //IOS
+        return "ios";
+    } else {
+        //Android, IOS 외
+        return "other";
+    }
+}
+
+function smsSend(idx){ //Android, IOS, 자동분기
+    if(idx == 0){
+    location.href = 'sms:' +''+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("Android 수신자 없음\nSMS SEND TEST");
+    } else if(idx == 1){
+        location.href = 'sms:' +'01012341234'+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("Android 수신자 있음\nSMS SEND TEST");
+    } else if(idx == 2){
+        location.href = 'sms:' +''+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("IOS 수신자 없음\nSMS SEND TEST");
+    } else if(idx == 3){
+        location.href = 'sms:' +'01012341234'+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("IOS 수신자 있음\nSMS SEND TEST");
+    } else if(idx == 4){
+        location.href = 'sms:' +'01012341234'+ (checkMobile() == 'ios' ? '&' : '?') + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("자동분기 보내기\nSMS SEND TEST");
+    }
+}	
+     
 </script>	     
 	    
 
