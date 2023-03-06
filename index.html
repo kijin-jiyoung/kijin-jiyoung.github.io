@@ -919,15 +919,15 @@ function checkMobile(){
 
 function smsSend(idx){ //Android, IOS, 자동분기
     if(idx == 0){
-    location.href = 'sms:' +''+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("Android 수신자 없음\nSMS SEND TEST");
+    location.href = 'sms:' +''+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
     } else if(idx == 1){
-        location.href = 'sms:' +'01012341234'+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("Android 수신자 있음\nSMS SEND TEST");
+        location.href = 'sms:' +'01012341234'+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
     } else if(idx == 2){
-        location.href = 'sms:' +''+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("IOS 수신자 없음\nSMS SEND TEST");
+        location.href = 'sms:' +''+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
     } else if(idx == 3){
-        location.href = 'sms:' +'01012341234'+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("IOS 수신자 있음\nSMS SEND TEST");
+        location.href = 'sms:' +'01012341234'+ '&' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
     } else if(idx == 4){
-        location.href = 'sms:' +'01012341234'+ (checkMobile() == 'ios' ? '&' : '?') + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("자동분기 보내기\nSMS SEND TEST");
+        location.href = 'sms:' +'01012341234'+ (checkMobile() == 'ios' ? '&' : '?') + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
     }
 }	
      
