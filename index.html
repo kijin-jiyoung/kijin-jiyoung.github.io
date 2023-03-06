@@ -575,7 +575,7 @@
 <p class="announcement">	
 문자 공유&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 카카오톡 공유&nbsp;&nbsp;</p>
-<a id="sms-sharing-btn" href="javascript:;">
+<a id="sms-sharing-btn" :href="smsUrl">
 <img src="resources/sms.png" alt="문자 공유하기" style="display:inline-block;width:40px;height:40px;vertical-align:middle;"></a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a id="kakaotalk-sharing-btn" href="javascript:;">
@@ -891,31 +891,18 @@ var marker = new naver.maps.Marker(markerOptions);
 
 
 <!-- sms 공유 -->
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5b4558243cd9e600119c7a15&product=inline-sms-sharing-btn' async='async'></script>
-<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 <script>
- Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4');
-function sendKakao(kurl,tittxt, kkimg) {
- if(navigator.userAgent.match(/android/i) || navigator.userAgent.match(/(iphone)|(ipod)|(ipad)/i)) {
- Kakao.Link.sendDefault({
-                            objectType: 'feed',
-                            installTalk : true,
-                            content : {
-                                title : tittxt,
-                                link: {
-                                    webUrl: 'https://kijin-jiyoung.github.io/',
-                                    mobileWebUrl : 'https://kijin-jiyoung.github.io/'
-                                },
-                            },
-                        });
-                    } else {
-					    alert('Only available on Mobile.');
-					}
-				}
-            </script>
+const userAgent = navigator.userAgent.toLocaleLowerCase()
 
-	
-	
+if (userAgent.search('android') > -1) {
+    this.smsUrl = `sms:?body=이기진❤️윤지영의 결혼식에 초대합니다.`
+} else if (userAgent.search('iphone') > -1 || uagent.search('ipad') > -1) {
+    this.smsUrl = `sms:&body=이기진❤️윤지영의 결혼식에 초대합니다.`
+}	     
+	     
+</script>	     
+	    
+
 <!-- sms 공유 -->	
 		
 
