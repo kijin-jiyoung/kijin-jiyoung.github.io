@@ -35,8 +35,21 @@ body {
 
 
 
+	
+.minititle .mini{transition:2s all; opacity:0;letter-spacing: 0 !important}
+.minititle .mini.r1 {transition-delay:250ms;}
+.minititle .mini.r2 {transition-delay:400ms;}
+.minititle .mini.r3 {transition-delay:550ms;}
+.minititle .mini.r4 {transition-delay:700ms;}
+.minititle .mini.r5 {transition-delay:850ms;}
+.minititle .mini.r6 {transition-delay:1000ms;}
+.minititle .mini.r7 {transition-delay:1150ms;}
+.minititle .mini.r8 {transition-delay:1300ms;}
+.minititle .mini.r9 {transition-delay:1450ms;}
+.minititle .mini.r10 {transition-delay:1600ms;}
 
-
+.atm .minititle .mini{opacity:1;margin: 0px 0 -190px;}	
+	
 
 
 	
@@ -894,19 +907,16 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .locationWrap .addrWrap,
 .infoLoca .inner{max-width: 540px;margin: 0 auto;}
 
-.ranTxt .ran{transition:2s all; opacity:0;letter-spacing: 0 !important}
-.ranTxt .ran.r1 {transition-delay:250ms;}
-.ranTxt .ran.r2 {transition-delay:400ms;}
-.ranTxt .ran.r3 {transition-delay:550ms;}
-.ranTxt .ran.r4 {transition-delay:700ms;}
-.ranTxt .ran.r5 {transition-delay:850ms;}
-.ranTxt .ran.r6 {transition-delay:1000ms;}
-.ranTxt .ran.r7 {transition-delay:1150ms;}
-.ranTxt .ran.r8 {transition-delay:1300ms;}
-.ranTxt .ran.r9 {transition-delay:1450ms;}
-.ranTxt .ran.r10 {transition-delay:1600ms;}
 
-.atm .ranTxt .ran{opacity:1;margin: 0px 0 -190px;}
+	
+	
+	
+	
+	
+	
+	
+	
+	
 .atm .mt,
 .atm .mt2{transform:translate(0,0) !important; opacity:1 !important;}
 .mt{transition:2s all ease; transform:translateY(50px); opacity:0; transition-delay:500ms;}
@@ -1477,7 +1487,7 @@ body.interOpen .interPop .popCont .inner .interCont ul li{transition:2s all;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(1) {transition-delay:300ms;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(2) {transition-delay:500ms;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(3) {transition-delay:700ms;}
-body.interOpen .ranTxt .ran{opacity:1;}
+body.interOpen .minititle .mini{opacity:1;}
 body.interOpen .mt{transform:translate(0,0) !important; opacity:1 !important;}
 
 .interPop{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 500;opacity:0; visibility:hidden;overflow:hidden;overflow-y:auto;background:rgba(56,45,49,.84);background-size: cover}
