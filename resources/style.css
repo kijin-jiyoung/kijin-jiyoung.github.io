@@ -104,21 +104,12 @@ font-size: 17px;
     bottom: -2px;
 }
 
-.scroll {
-    width: 401px;
-    height: 52px;
-    font-size: 12px;
-    color: #000;
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    background: no-repeat 0 50% / cover;
-    padding-top: 15px;
-    box-sizing: border-box;
-}
 
+.galleryWrap .galWrap .inner {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 .galleryWrap .galWrap .galList .col li > a .img {
     background-size: cover !important;
@@ -126,6 +117,42 @@ font-size: 17px;
     padding-bottom: 125.575%;
     display: block;
 }
+
+
+
+.galleryWrap .galWrap.mt {
+    transition-delay: 900ms;
+    transition-duration: 3s;
+    transform: translateY(60px);
+}
+.galleryWrap .galWrap {
+    padding: 0 30px;
+}
+
+.galleryWrap .galWrap .galList:after, .galleryWrap .galWrap .galList ul:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.galleryWrap .galWrap .galList .col {
+    box-sizing: border-box;
+}
+
+.hiddenList {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .visualBox {
     position: relative;
