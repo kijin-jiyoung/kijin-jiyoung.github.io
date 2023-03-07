@@ -1014,17 +1014,17 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .secTitleWrap .ht:before,
 .secTitleWrap .ht:after{display: none;}
 .secTitleWrap .ht{font-family: 'EB Garamond'; font-size:14px;font-weight:400;letter-spacing:.2em;text-indent: .2em;color:#cccccc;text-align: center; margin-bottom: 20px;}
-.secTitleWrap .ht > span:not(.ran){position: relative;padding:0 20px;margin:0 19px;white-space: nowrap}
-.secTitleWrap .ht > span:not(.ran):before,
-.secTitleWrap .ht > span:not(.ran):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;background:#8b6e76;border-radius:50%; display: none;}
-.secTitleWrap .ht > span:not(.ran):after{left: auto;right:0;}
+.secTitleWrap .ht > span:not(.mini){position: relative;padding:0 20px;margin:0 19px;white-space: nowrap}
+.secTitleWrap .ht > span:not(.mini):before,
+.secTitleWrap .ht > span:not(.mini):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;background:#8b6e76;border-radius:50%; display: none;}
+.secTitleWrap .ht > span:not(.mini):after{left: auto;right:0;}
 .secTitleWrap p{font-family: 'AritaBuri';font-size: 27px;color: #000000;text-align: center;margin-top: 13px;line-height: 1.4;letter-spacing:2px; margin-bottom:50px;}
 .secTitleWrap.t1 .ht{font-size: 14px;letter-spacing:.3em;text-indent: .3em;}
 .secTitleWrap.t1 .ht:before,
 .secTitleWrap.t1 .ht:after,
-.secTitleWrap.t1 .ht > span:not(.ran):before,
-.secTitleWrap.t1 .ht > span:not(.ran):after{display: none}
-.secTitleWrap.t1 .ht .ran{letter-spacing:.14em;text-indent: .14em;}
+.secTitleWrap.t1 .ht > span:not(.mini):before,
+.secTitleWrap.t1 .ht > span:not(.mini):after{display: none}
+.secTitleWrap.t1 .ht .mini{letter-spacing:.14em;text-indent: .14em;}
 .secTitleWrap .minititle{transition-delay: 500ms;transform:translateY(30px);}
 
 .inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background:url(../images/mainBottom_bg.jpg) no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
@@ -1047,14 +1047,14 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .greetingWrap .textBox{font-family: 'AritaBuri';font-size: 25px;color: #222222;line-height: 1.55;}
 .greetingWrap .textBox p{margin-bottom: 39px; line-height: 2;}
 
-.greetingWrap .ranBox{position: relative;padding: 37px 0 17px;margin-top: 53px;}
-.greetingWrap .ranBox:before,
-.greetingWrap .ranBox:after{display: block;content:'';position: absolute; left:0; top:0; width: 100%; height:31px;background-position: 50% 0;background-repeat: no-repeat;}
-.greetingWrap .ranBox:before{background-image:url('../images/bg_thx01.png');}
-.greetingWrap .ranBox:after{top:auto;bottom:0;height:1px;background-image:url('../images/bg_thx02.png');}
-.greetingWrap .ranBox .box{padding: 6px 0;font-size: 22px;color: #4f4d4e}
-.greetingWrap .ranBox .box em{font-weight: 600}
-.greetingWrap .ranBox .box strong{font-family: 'AritaBuri';font-size: 25px;color: #222222;font-weight: 400;}
+.greetingWrap .miniBox{position: relative;padding: 37px 0 17px;margin-top: 53px;}
+.greetingWrap .miniBox:before,
+.greetingWrap .miniBox:after{display: block;content:'';position: absolute; left:0; top:0; width: 100%; height:31px;background-position: 50% 0;background-repeat: no-repeat;}
+.greetingWrap .miniBox:before{background-image:url('../images/bg_thx01.png');}
+.greetingWrap .miniBox:after{top:auto;bottom:0;height:1px;background-image:url('../images/bg_thx02.png');}
+.greetingWrap .miniBox .box{padding: 6px 0;font-size: 22px;color: #4f4d4e}
+.greetingWrap .miniBox .box em{font-weight: 600}
+.greetingWrap .miniBox .box strong{font-family: 'AritaBuri';font-size: 25px;color: #222222;font-weight: 400;}
 .greetingWrap .btns.t1{margin-top: 37px}
 
 .btns{box-sizing:border-box;text-align:center;width: 100%;
@@ -1088,7 +1088,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .dayWrap .secTitleWrap .ht span span {margin:0 2px;}
 .dayWrap .dayBox{padding: 0 50px;box-sizing: border-box;margin-bottom: 36px; text-align: center;}
 
-.secTitleWrap .ht > span:not(.ran):before, .secTitleWrap .ht > span:not(.ran):after {background: #e2d3d7;}
+.secTitleWrap .ht > span:not(.mini):before, .secTitleWrap .ht > span:not(.mini):after {background: #e2d3d7;}
 
 .dayWrap .dayBox p{font-family: 'AritaBuri';color: #222222;font-size: 27px;line-height: 1.4; text-align: center;}
 .dayWrap .placeBox{position: relative;padding: 23px 0 22px;margin-bottom: 18px;}
@@ -1681,7 +1681,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
 
 	.secTitleWrap .ht{font-size: 12px;letter-spacing: .1em;text-indent: .1em;}
-	.secTitleWrap .ht span:not(.ran){padding: 0px 12px;margin: 0 12px;}
+	.secTitleWrap .ht span:not(.mini){padding: 0px 12px;margin: 0 12px;}
 	.secTitleWrap p{margin-top: 8px;font-size: 18px; margin-bottom: 30px;}
 	.secTitleWrap.t1 .ht{font-size: 11px;letter-spacing: .2em;}
 	
@@ -1689,14 +1689,14 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.greetingWrap .greetingInner{padding: 0 30px 67px;}
 	.greetingWrap .textBox{font-size: 17px;line-height: 1.5;}
 	.greetingWrap .textBox p {margin-bottom: 27px;}
-	.greetingWrap .ranBox{margin-top: 30px;padding: 20px 0 10px;}
-	.greetingWrap .ranBox:before{background-image: url(../images/bg_thx01_m.png);height: 3px;background-size: 100% 3px} 
-	.greetingWrap .ranBox:after,
+	.greetingWrap .miniBox{margin-top: 30px;padding: 20px 0 10px;}
+	.greetingWrap .miniBox:before{background-image: url(../images/bg_thx01_m.png);height: 3px;background-size: 100% 3px} 
+	.greetingWrap .miniBox:after,
 	.dayWrap .placeBox:before, 
 	.dayWrap .placeBox:after,
 	.addrWrap .box:first-child{background-image: url(../images/bg_thx02_m.png);background-size: auto 1px;background-repeat: repeat-x}
-	.greetingWrap .ranBox .box{font-size: 15px;padding: 4px 0;}
-	.greetingWrap .ranBox .box strong{font-size: 17px}
+	.greetingWrap .miniBox .box{font-size: 15px;padding: 4px 0;}
+	.greetingWrap .miniBox .box strong{font-size: 17px}
 	.greetingWrap .btns.t1{margin-top: 25px;}
 	
 	.btns.t1{font-size: 13px;height: 50px;border-radius: 8px;}
