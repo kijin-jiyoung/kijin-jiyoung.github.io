@@ -62,6 +62,11 @@ font-size: 17px;
 }
 
 
+@media (max-width: 1024px)
+.scroll {
+    bottom: -2px;
+}
+
 .scroll {
     width: 401px;
     height: 52px;
@@ -85,6 +90,12 @@ font-size: 17px;
     display: block;
 }
 
+.visualBox {
+    position: relative;
+    text-align: center;
+    background: url(../images/mainBg.jpg) center no-repeat;
+    background-size: cover;
+}
 
 
 
