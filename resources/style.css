@@ -1006,25 +1006,25 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 
 
 
-.secTitleWrap .hanTit{
+.secTitleWrap .ht{
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;
 }
-.secTitleWrap .hanTit:before,
-.secTitleWrap .hanTit:after{display: none;}
-.secTitleWrap .hanTit{font-family: 'EB Garamond'; font-size:14px;font-weight:400;letter-spacing:.2em;text-indent: .2em;color:#cccccc;text-align: center; margin-bottom: 20px;}
-.secTitleWrap .hanTit > span:not(.ran){position: relative;padding:0 20px;margin:0 19px;white-space: nowrap}
-.secTitleWrap .hanTit > span:not(.ran):before,
-.secTitleWrap .hanTit > span:not(.ran):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;background:#8b6e76;border-radius:50%; display: none;}
-.secTitleWrap .hanTit > span:not(.ran):after{left: auto;right:0;}
+.secTitleWrap .ht:before,
+.secTitleWrap .ht:after{display: none;}
+.secTitleWrap .ht{font-family: 'EB Garamond'; font-size:14px;font-weight:400;letter-spacing:.2em;text-indent: .2em;color:#cccccc;text-align: center; margin-bottom: 20px;}
+.secTitleWrap .ht > span:not(.ran){position: relative;padding:0 20px;margin:0 19px;white-space: nowrap}
+.secTitleWrap .ht > span:not(.ran):before,
+.secTitleWrap .ht > span:not(.ran):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;background:#8b6e76;border-radius:50%; display: none;}
+.secTitleWrap .ht > span:not(.ran):after{left: auto;right:0;}
 .secTitleWrap p{font-family: 'AritaBuri';font-size: 27px;color: #000000;text-align: center;margin-top: 13px;line-height: 1.4;letter-spacing:2px; margin-bottom:50px;}
-.secTitleWrap.t1 .hanTit{font-size: 14px;letter-spacing:.3em;text-indent: .3em;}
-.secTitleWrap.t1 .hanTit:before,
-.secTitleWrap.t1 .hanTit:after,
-.secTitleWrap.t1 .hanTit > span:not(.ran):before,
-.secTitleWrap.t1 .hanTit > span:not(.ran):after{display: none}
-.secTitleWrap.t1 .hanTit .ran{letter-spacing:.14em;text-indent: .14em;}
+.secTitleWrap.t1 .ht{font-size: 14px;letter-spacing:.3em;text-indent: .3em;}
+.secTitleWrap.t1 .ht:before,
+.secTitleWrap.t1 .ht:after,
+.secTitleWrap.t1 .ht > span:not(.ran):before,
+.secTitleWrap.t1 .ht > span:not(.ran):after{display: none}
+.secTitleWrap.t1 .ht .ran{letter-spacing:.14em;text-indent: .14em;}
 .secTitleWrap .minititle{transition-delay: 500ms;transform:translateY(30px);}
 
 .inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background:url(../images/mainBottom_bg.jpg) no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
@@ -1081,14 +1081,14 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .dayWrap{text-align:center;background: url(../images/day_bg.jpg) no-repeat 50% 0 / cover;}
 .dayWrap .dayInner{padding-top: 100px;padding-bottom: 83px;}
 .dayWrap .secTitleWrap{margin-bottom: 50px;}
-.dayWrap .secTitleWrap .hanTit {color:#c8b1b7;}
-.dayWrap .secTitleWrap .hanTit:after{background: #e2d3d7;}
-.dayWrap .secTitleWrap .hanTit:before,
-.dayWrap .secTitleWrap .hanTit:after{background-color: #e2d3d7;}
-.dayWrap .secTitleWrap .hanTit span span {margin:0 2px;}
+.dayWrap .secTitleWrap .ht {color:#c8b1b7;}
+.dayWrap .secTitleWrap .ht:after{background: #e2d3d7;}
+.dayWrap .secTitleWrap .ht:before,
+.dayWrap .secTitleWrap .ht:after{background-color: #e2d3d7;}
+.dayWrap .secTitleWrap .ht span span {margin:0 2px;}
 .dayWrap .dayBox{padding: 0 50px;box-sizing: border-box;margin-bottom: 36px; text-align: center;}
 
-.secTitleWrap .hanTit > span:not(.ran):before, .secTitleWrap .hanTit > span:not(.ran):after {background: #e2d3d7;}
+.secTitleWrap .ht > span:not(.ran):before, .secTitleWrap .ht > span:not(.ran):after {background: #e2d3d7;}
 
 .dayWrap .dayBox p{font-family: 'AritaBuri';color: #222222;font-size: 27px;line-height: 1.4; text-align: center;}
 .dayWrap .placeBox{position: relative;padding: 23px 0 22px;margin-bottom: 18px;}
@@ -1284,7 +1284,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .contactWrap{background:url(../images/contact_bg.jpg) no-repeat 50% 0 / cover;}
 .contactWrap .contactInner{padding-top: 93px;padding-bottom: 101px}
 .contactWrap .secTitleWrap{margin-bottom:42px; text-align: center;}
-.contactWrap .secTitleWrap.t1 .hanTit{color: #a2828b}
+.contactWrap .secTitleWrap.t1 .ht{color: #a2828b}
 .contactWrap .secTitleWrap p{color: #fff;margin-top: 9px;}
 .contactWrap .coupleBox{font-size:0;max-width: 500px;margin: 0 auto;transition:2s all; /*opacity:0; transform:translateY(50px);*/  transition-delay:500ms;text-align: center}
 .contactWrap .coupleBox .box{display: inline-block; vertical-align: top; position: relative; width:50%;padding: 0 30px;box-sizing: border-box}
@@ -1389,7 +1389,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .thanksWrap{background: url(../images/thanks_bg.jpg) no-repeat 50% 0 / cover;}
 .thanksWrap .thanksInner{padding-top: 98px;padding-bottom: 40px;text-align: center}
 .thanksWrap .secTitleWrap{margin-bottom: 40px}
-.thanksWrap .secTitleWrap .hanTit{color: #866f76}
+.thanksWrap .secTitleWrap .ht{color: #866f76}
 .thanksWrap p{font-family: 'AritaBuri';font-size: 22px;color: #fff;line-height: 1.55;margin-bottom: 34px;}
 .thanksWrap p:last-child{margin-bottom: 0}
 
@@ -1491,7 +1491,7 @@ body.interOpen .minititle .mini{opacity:1;}
 body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !important;}
 
 .interPop{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 500;opacity:0; visibility:hidden;overflow:hidden;overflow-y:auto;background:rgba(56,45,49,.84);background-size: cover}
-.interPop .secTitleWrap .hanTit {color:#877277;}
+.interPop .secTitleWrap .ht {color:#877277;}
 .interPop .secTitleWrap p {color:#fff;}
 .interPop .popCont {position: relative; z-index: 10; padding:0 0 0 0; text-align: center;top: 0;bottom: 0;left: 0;right: 0;display: table;width: 100%;height: 100%;table-layout: fixed}
 .interPop .popCont .inner{position: relative; padding:120px 0; max-width:1280px; margin:0 auto;}
@@ -1680,10 +1680,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.inviteBox .secTitleWrap{overflow: hidden}
 
 
-	.secTitleWrap .hanTit{font-size: 12px;letter-spacing: .1em;text-indent: .1em;}
-	.secTitleWrap .hanTit span:not(.ran){padding: 0px 12px;margin: 0 12px;}
+	.secTitleWrap .ht{font-size: 12px;letter-spacing: .1em;text-indent: .1em;}
+	.secTitleWrap .ht span:not(.ran){padding: 0px 12px;margin: 0 12px;}
 	.secTitleWrap p{margin-top: 8px;font-size: 18px; margin-bottom: 30px;}
-	.secTitleWrap.t1 .hanTit{font-size: 11px;letter-spacing: .2em;}
+	.secTitleWrap.t1 .ht{font-size: 11px;letter-spacing: .2em;}
 	
   .greetingWrap {padding-top: 50px;}
 	.greetingWrap .greetingInner{padding: 0 30px 67px;}
@@ -1733,7 +1733,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
   .dayWrap .calWrap table .active:after {top:-5px; width:100%; height: 5px; background-size:auto 5px;}
 
 
-	.dayWrap .secTitleWrap .hanTit span span {margin:0 1px;}
+	.dayWrap .secTitleWrap .ht span span {margin:0 1px;}
 
 
 	.countList .numWrap .countDay .num, 
