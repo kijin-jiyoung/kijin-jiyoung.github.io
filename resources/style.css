@@ -1177,7 +1177,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .dayWrap .calWrap{max-width: 380px;margin: 0 auto}
 .dayWrap .calWrap table{width: 100%;table-layout: fixed}
 .dayWrap .calWrap th,
-.dayWrap .calWrap td{font-family: 'EB Garamond';font-weight: 400;text-align: center;vertical-align: middle}
+.dayWrap .calWrap td{font-weight: 400;text-align: center;vertical-align: middle}
 .dayWrap .calWrap th{font-size: 18px;color: #e2d3d7;height: 80px;}
 .dayWrap .calWrap td{font-size: 22px;color: #c8b1b7;height: 49px;}
 .dayWrap .calWrap table .active{display:block;position: relative;font-weight: 600;color: #222222;}
@@ -1243,7 +1243,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 
 .tabIn{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width:100%;background:url(../images/bg_thx03.png) no-repeat 50% 0}
 .tabIn > a,
-.tabIn > button{position:relative;height:89px;text-align:center;vertical-align: middle;font-family: 'EB Garamond';font-size: 21px;color: #bf9f82;width: 100%;text-align: center;white-space: nowrap;box-sizing: border-box;padding-top: 2px;}
+.tabIn > button{position:relative;height:89px;text-align:center;vertical-align: middle;font-size: 21px;color: #bf9f82;width: 100%;text-align: center;white-space: nowrap;box-sizing: border-box;padding-top: 2px;}
 .tabIn > a:after,
 .tabIn > button:after{display: block;content: '';width: 2px;height: 12px;background:url(../images/tab_semi.png) 50% 100% no-repeat;position: absolute;top:50%;right:0;margin-top: -6px;}
 .tabIn > a:last-child:after,
@@ -1437,7 +1437,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 }
 .addrWrap .box:first-child{height: 92px;background: url(../images/bg_thx02.png) no-repeat 50% 100%;}
 .addrWrap .addr,
-.addrWrap .label{font-family: 'AritaBuri';color: #222222;font-size: 22px;padding-left: 29px;letter-spacing:-.05em;}
+.addrWrap .label{color: #222222;font-size: 22px;padding-left: 29px;letter-spacing:-.05em;}
 .addrWrap .addr{font-weight: 600;background: url(../images/icon_location2.png) no-repeat 0 50%;background-size: 15px auto;}
 .addrWrap .label{padding-left: 29px;background: url(../images/icon_guide.png) no-repeat 0 50%;}
 .addrWrap .hall{font-size: 21px;color: #888888;font-weight: 400}
@@ -1611,7 +1611,7 @@ body.gnbOpen .popGnb{opacity:1; visibility:visible;}
 .popGnb .inner .gnbList:after{display: block;content: '';clear: both}
 .popGnb .inner .gnbList ul li{margin-bottom: 38px;text-align: center;}
 .popGnb .inner .gnbList ul li:last-child {margin-bottom:0;}
-.popGnb .inner .gnbList ul li a {font-family: 'EB Garamond'; display: inline-block; vertical-align: top; font-size:18px;color:#fff;white-space: nowrap; letter-spacing:1px;}
+.popGnb .inner .gnbList ul li a {display: inline-block; vertical-align: top; font-size:18px;color:#fff;white-space: nowrap; letter-spacing:1px;}
 .popGnb .inner .gnbList ul li .ko{position: relative;padding-left: 12px;font-size: 17px;margin-left: 8px;white-space: nowrap;  letter-spacing:0;}
 .popGnb .inner .gnbList ul li .ko:before{display: block;content: '';width: 1px;height: 12px;background-color: #908685;position: absolute;top:50%;left:0;margin-top: -6px;}
 
