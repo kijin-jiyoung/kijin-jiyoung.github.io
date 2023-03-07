@@ -974,7 +974,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .mainVisual .titleWrap .topText .name{position: absolute;bottom: 0;right: 0}
 .mainVisual .titleWrap .topText .name > span{font-size:21px;font-weight: 400;width: 1.15em;}
 
-body.mainLoad .titleWrap .topText  {opacity:1;}
+body.mainLoad .titleWrap .topText  {opacity:1;margin: 0px 0 -190px;}
 body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 
 
@@ -1064,9 +1064,9 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; background:url('../images/stampTree.png') no-repeat; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
 .inviteBox .secTitleWrap{overflow: hidden}
 
-.mainLoad .inviteBox .mainText p {opacity:1;}
-.mainLoad .inviteBox .stamp .text {opacity:1;}
-.mainLoad .inviteBox .stamp .img {opacity:1;}
+.mainLoad .inviteBox .mainText p {opacity:1;margin: 0px 0 -190px;}
+.mainLoad .inviteBox .stamp .text {opacity:1;margin: 0px 0 -190px;}
+.mainLoad .inviteBox .stamp .img {opacity:1;margin: 0px 0 -190px;}
 
 .greetingWrap{text-align:center; padding-top: 100px; background:#fefdfb;}
 .greetingWrap .greetingBox{}
@@ -1514,7 +1514,7 @@ body.interOpen .interPop .popCont .inner .interCont ul li{transition:2s all;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(1) {transition-delay:300ms;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(2) {transition-delay:500ms;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(3) {transition-delay:700ms;}
-body.interOpen .minititle .mini{opacity:1;}
+body.interOpen .minititle .mini{opacity:1;margin: 0px 0 -190px;}
 body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !important;}
 
 .interPop{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 500;opacity:0; visibility:hidden;overflow:hidden;overflow-y:auto;background:rgba(56,45,49,.84);background-size: cover}
