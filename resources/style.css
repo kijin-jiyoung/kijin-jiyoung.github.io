@@ -917,12 +917,12 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 	
 	
 	
-.atm .mt,
-.atm .mt2{transform:translate(0,0) !important; opacity:1 !important;}
-.mt{transition:2s all ease; transform:translateY(50px); opacity:0; transition-delay:500ms;}
-.mt2{transition:3s all; opacity:0; transition-delay:1200ms;}
+.atm .minititle,
+.atm .minititle2{transform:translate(0,0) !important; opacity:1 !important;}
+.minititle{transition:2s all ease; transform:translateY(50px); opacity:0; transition-delay:500ms;}
+.minititle2{transition:3s all; opacity:0; transition-delay:1200ms;}
 
-.visualBox{position: relative; text-align:center;background: url('../images/mainBg.jpg') center no-repeat; background-size:cover; }
+.visualBox{position: relative; text-align:center; background-size:cover; }
 .mainImg{vertical-align: top;position: relative; max-width:540px; margin:0 auto; max-height:100vh;  overflow:hidden;}
 .mainImg .imgBox{position: relative}
 .mainImg .imgBox .img{}
@@ -1025,7 +1025,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .secTitleWrap.t1 .hanTit > span:not(.ran):before,
 .secTitleWrap.t1 .hanTit > span:not(.ran):after{display: none}
 .secTitleWrap.t1 .hanTit .ran{letter-spacing:.14em;text-indent: .14em;}
-.secTitleWrap .mt{transition-delay: 500ms;transform:translateY(30px);}
+.secTitleWrap .minititle{transition-delay: 500ms;transform:translateY(30px);}
 
 .inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background:url(../images/mainBottom_bg.jpg) no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
 .inviteBox:after {display: none; }
@@ -1157,7 +1157,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .galleryWrap .galWrap .galList .col li > a:hover .hover{opacity: 1;}
 .galleryWrap .galWrap .galList .pop{opacity: 0;transition: all 0.5s;position: absolute;top:0;left:0;width: 100%;height:100%;z-index: 1; background:url('../images/gal_hover1.png') center no-repeat; background-size:cover;}
 .galleryWrap .galWrap .galList .hover{opacity: 0;transition: all 0.4s 100ms;width: 106px;height:106px;position: absolute;top:50%;left:50%;margin: -53px 0 0 -53px;z-index: 2;background:url('../images/gal_hover2.png') no-repeat 50% 50%;box-sizing: border-box;border: 2px solid #fff;border-radius: 100%;}
-.galleryWrap .galWrap.mt{transition-delay: 900ms;transition-duration: 3s;transform:translateY(60px);}
+.galleryWrap .galWrap.minititle{transition-delay: 900ms;transition-duration: 3s;transform:translateY(60px);}
 
 .hiddenList {display: none;}
 
@@ -1488,7 +1488,7 @@ body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(1) {transiti
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(2) {transition-delay:500ms;}
 body.interOpen .interPop .popCont .inner .interCont ul li:nth-child(3) {transition-delay:700ms;}
 body.interOpen .minititle .mini{opacity:1;}
-body.interOpen .mt{transform:translate(0,0) !important; opacity:1 !important;}
+body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !important;}
 
 .interPop{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 500;opacity:0; visibility:hidden;overflow:hidden;overflow-y:auto;background:rgba(56,45,49,.84);background-size: cover}
 .interPop .secTitleWrap .hanTit {color:#877277;}
@@ -1625,8 +1625,8 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.popImg .btnClose{background-image: url(../images/icon_close_white_m.png);}
 	.popImg .btnDownload{right: auto;left: 13px;background-image: url(../images/icon_download_m.png);}
 	
-	.mt{transition-delay:100ms;transform:translateY(30px);transition-duration: 1.5s}
-	.mt2{transition-delay:800ms;}
+	.minititle{transition-delay:100ms;transform:translateY(30px);transition-duration: 1.5s}
+	.minititle2{transition-delay:800ms;}
 	
 	.petalObj{transition-duration: 3s;}
 	.petalObj.no1{top: 27%;right: 5%;width: 16px;height: 12px;background-image: url(../images/petal1_m.png);}
@@ -1900,9 +1900,6 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.thanksWrap.none .footer .copy {color:#ccc;}
 
 	
-	.footer .copy{font-size: 10px}
-	.footer .logo{margin-right: 10px}
-	.footer .logo a{width: 64px;height: 20px;background-image:url(../images/logo_m.png)}
 	
 	.head{height: 49px}
 	.head .inner .h1Wrap{top: 14px;left: 25px;}
