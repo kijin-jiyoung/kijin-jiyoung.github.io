@@ -151,7 +151,7 @@
 <br>
 <br>
 <!------------ Main photo ------------>
-<img class="Main-photo" src="photo/Main_1.jpg" style="width:100%;max-width:666px;">
+<img class="Main-photo" src="photo/main.jpg" style="width:100%;max-width:666px;">
 <!------------ Main photo ------------>		
 <p class="maincontentname">Lee Kijin & Yoon Jiyoung</p>
 <p class="maincontent">2023년 6월 24일 토요일 11시 30분<br>반포 세빛섬 플로팅아일랜드</p>	
@@ -1012,16 +1012,180 @@ function commentsubmit(commentform) {
 	     
 	     
 	     
-	     
-	     
-	     
-	     
-	     
+   
 <!------------ 방명록 작성 ------------>	     
+	
 	     
+	     
+<script>
+$(function(){
+    /*$("img").each( function(){
+        $(this).attr({"oncontextmenu":"return false"});
+    });*/
+    // For Android
+    $(document).bind("contextmenu", function (e) {
+        return false;
+    });
+    
+    /*$("img").on("touchstart",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("aa");
+            eventStop = false;
+        }
+        
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchend",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("bb");
+            eventStop = false;
+        }
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchmove",function(e){
+        //e.preventDefault(); 
+    });*/
+    
+    /*$("a").on("click", function(e) {
+        if( !this.attr("href").indexOf("tel") )
+            e.preventDefault();
+    })*/
+    
+    $("a").on("contextmenu", (e) => {
+        e.preventDefault();
+        return false;
+    })
+    
+    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
+    
+    setTimeout(function(){
+        try{
+            var map_level = map.getLevel();
+            map.setLevel(map_level + 1);
+            map.setLevel(map_level);
+        } catch(e){}
+    },1000);
+});
+</script>
+	     
+	     
+	     
+<script>
+$(function() {
+    $('.lazy').lazy();
+    setTimeout( ()=> {
+        $('.popslide img.lazy').each( function() {
+            $(this).attr('src', $(this).data('src'));
+            $(this).removeAttr('data-src');
+            $(this).removeClass('lazy');
+        });
+        //$('.contentSlide.popslide .slideList ul').slick('refresh');
+    },5000);
+});
+</script>
 
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+<script>
+  
+  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
+	$(document).on('click', '.any', function() {
+		if( !g5_url || !site_name || !is_offical){
+		    //alertOpen_skin('미리보기에서는 사용하실 수 없습니다.')
+		    //return false;
+		    site_name = "test";
+		    fingerprint = new Date().getTime();
+		}
+		
+		if( !fingerprint ) {
+		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
+		    return false;
+		}
+		
+		$popupGuestBookName = document.querySelector('#popupGuestBookName');
+		
+		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
+		
+		//$marquee.liMarquee('stop');
+		//$marquee.liMarquee('resetPosition');
 
-
+	});
+	
+	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
+	const $gb_name = document.querySelector('#gb_name');
+	
+	if( $btnGuestBookSubmit ) {
+	    $btnGuestBookSubmit.addEventListener('click', () => {
+	        if( !$gb_name.value ) {
+	            $gb_name.classList.add("gb_name_error");
+	            return false;
+	        }
+	        basePopClose('.basePop')
+	        submitGuestBook();
+	    });
+	}
+	if( $gb_name ) {
+	    $gb_name.addEventListener('input', () => {
+	        $gb_name.classList.remove("gb_name_error");
+	    });
+	}
+	function submitGuestBook() {
+	    if( !document.fguest_book.gb_comment.value ) {
+            alertOpen_skin(__('축하메시지를 작성해 주세요.'))
+		    return false;
+		}
+		var data = $('#fguest_book').serialize();
+		data+="&fingerprint="+fingerprint;
+		
+		$gb_name ? data += "&gb_name="+$gb_name.value : "";
+		$.ajax({
+		    method:'POST',
+		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
+		    data: data,
+		    dataType : 'json',
+		    success: function(data){
+                if(data.error && !data.count) {
+			        alertOpen_skin(data.error)
+                    return false;
+                } else {
+			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
+                    var idx = data.error;//$('.ipText').val();
+                    var selFace = $("input[name='send']:checked").val();
+                    const $marquee =  $('.marqWrap');
+                    if( data.prev_cnt == 0 ) {
+                        $marquee.liMarquee('removeContent');
+                    }
+                    $marquee.liMarquee('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+                    $("#gb_comment").val("");
+                }
+		    },
+		    error: function(req){
+		        console.log('error', req);
+		    }
+		});
+	}
+	function basePopOpen(idx){
+    	$(idx).fadeIn('fast');
+    }
+    function basePopClose(idx){
+    	$(idx).fadeOut('fast');
+    }
+</script>
+	     
+	     
+	     
+	     
+	     
+	     
+	     
 
 <!------------ 갤러리 스와이프 ------------>
   <!-- Swiper JS -->
