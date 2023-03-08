@@ -319,7 +319,32 @@ li {
     object-position: 50% 50%;
 }
 
-
+@media (max-width: 1024px)
+.youtubeBox .btnMovieClose, .popSlide .closeSlide, .popImg .btnClose {
+    background-image: url(../resources/icon_close_m.png);
+}
+@media (max-width: 1024px)
+.btnMenuClose, .popSlide .closeSlide, .interPop .btnInterClose, .youtubeBox .btnMovieClose, .popImg .btnClose, .popImg .btnDownload {
+    right: 13px;
+    top: 14px;
+    background-image: url(../resources/icon_close_m.png);
+    background-size: 18px auto;
+}
+.popSlide .closeSlide {
+    display: block;
+    /* background-image: url(../resources/icon_close_m.png); */
+}
+.btnMenuClose, .popSlide .closeSlide, .interPop .btnInterClose, .youtubeBox .btnMovieClose, .popImg .btnClose, .popImg .btnDownload {
+    display: inline-block;
+    position: fixed;
+    right: 46px;
+    top: 46px;
+    width: 30px;
+    height: 30px;
+    text-indent: -999em;
+    background: url(../resources/icon_close_m.png) 50% 50% no-repeat;
+    z-index: 10;
+}
 
 
 
