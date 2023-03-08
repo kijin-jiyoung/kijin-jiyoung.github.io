@@ -963,21 +963,13 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 
 .inviteBox .mainText,
 .greetingWrap .greetingInner,
-.dayWrap .dayInner{max-width: 542px;margin: 0 auto;}
+.dayWrap .dayInner{max-width: 580px;margin: 0 auto;}
 .infoWrap .tab,
 .mindWrap .mindInner,
 .locationWrap .addrWrap,
-.infoLoca .inner{max-width: 540px;margin: 0 auto;}
+.infoLoca .inner{max-width: 580px;margin: 0 auto;}
 
 
-	
-	
-	
-	
-	
-	
-	
-	
 	
 .atm .minititle,
 .atm .minititle2{transform:translate(0,0) !important; opacity:1 !important;}
@@ -1030,43 +1022,6 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .mainLoad .cor{opacity:1;}
 .mainLoad .box{opacity:1;}
 
-.petalObj{position: absolute;display: block;background-position: 50% 50%;background-repeat: no-repeat;opacity:0;transition:3.9s all ease;background-size: 100% auto;z-index: 1;}
-.petalObj.no1{top:284px;right:25px;width: 25px;height: 18px;background-image: url(../images/petal1.png);transform:translate(150px,-150px) rotate(180deg);}
-.petalObj.no2{top:555px;right:25px;width: 27px;height: 26px;background-image: url(../images/petal2.png);transform:translate(150px,-100px) rotate(-180deg);}
-.petalObj.no3{bottom: 52px;right: 190px;width: 31px;height: 28px;background-image: url(../images/petal3.png);transform:translate(-150px,-150px) rotate(180deg);}
-.petalObj.no4{top:450px;left:15px;width: 23px;height: 28px;background-image: url(../images/petal4.png);transform:translate(-100px,-100px) rotate(-180deg);}
-.petalObj.no5{top: 146px;left:108px;width: 24px;height: 21px;background-image: url(../images/petal5.png);transform: translate(-150px,-50px) rotate(180deg);}
-.mainLoad .petalObj{transform:translate(0,0) rotate(0deg) !important; opacity:1;}
-
-.fixPetalWrap{position: fixed;top:0;width: 100%;max-width: 540px;left:50%;transform: translateX(-50%);z-index: 10}
-.fixPetalWrap .obj{position: absolute;display: block;background-position: 50% 50%;background-repeat: no-repeat;background-size: 100% auto;z-index: 100;}
-.fixPetalWrap .obj.no1{/*top:138px;*/top:-100px;right:25px;width: 25px;height: 18px;background-image: url(../images/petal/f_petal1.png);}
-.fixPetalWrap .obj.no2{/*top:418px;*/top:-50px;right:32px;width: 27px;height: 26px;background-image: url(../images/petal/f_petal2.png);}
-.fixPetalWrap .obj.no3{/*top: 500px;*/top:-30px;left: 88px;width: 31px;height: 28px;background-image: url(../images/petal/f_petal3.png);}
-.fixPetalWrap .obj.no4{/*top: 18px;*/top:-120px;left: 181px;width: 23px;height: 28px;background-image: url(../images/petal/f_petal4.png);}
-.fixPetalWrap .obj.no5{/*top: 296px*/;top:-80px;left: 33px;width: 24px;height: 21px;background-image: url(../images/petal/f_petal5.png);}
-.fixPetalWrap .obj.no6{top:-150px;left: 0; }
-.fixPetalWrap .obj.no7{top:-40px;left: 60px;}
-
-.leafOb{position: fixed;pointer-events: none;top:0;/*visibility: hidden;opacity: 0;*/visibility: visible;opacity: 0;z-index: 50}
-.leafOb .leaf{}
-.fixObWrap .leafOb:nth-child(1){left: 252px;left: 14.5%}
-.fixObWrap .leafOb:nth-child(2){left: 595px;left: 36%}
-.fixObWrap .leafOb:nth-child(3){right: 1054px;right: 17%}
-.fixObWrap .leafOb:nth-child(4){left: 72px;left: 4%}
-.fixObWrap .leafOb:nth-child(5){left: 378px;left: 20.5%}
-.fixObWrap .leafOb:nth-child(6){right: 428px;right: 20.5%}
-
-body.snow .fixObWrap > div * {display: none;}
-body.snow .fixObWrap .no1 {background:url('../images/snow01.png') center no-repeat; width:65px; height:65px; background-size:100% auto;}
-body.snow .fixObWrap .no2 {background:url('../images/snow02.png') center no-repeat; width:83px; height:83px; background-size:100% auto;}
-body.snow .fixObWrap .no3 {background:url('../images/snow03.png') center no-repeat; width:42px; height:42px; background-size:100% auto;}
-body.snow .fixObWrap .no4 {background:url('../images/snow04.png') center no-repeat; width:30px; height:30px; background-size:100% auto;}
-body.snow .fixObWrap .no5 {background:url('../images/snow05.png') center no-repeat; width:30px; height:30px; background-size:100% auto;}
-body.snow .fixObWrap .no6 {background:url('../images/snow06.png') center no-repeat; width:30px; height:30px; background-size:100% auto;}
-body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repeat; width:18px; height:18px; background-size:100% auto;}
-
-
 
 .secTitleWrap .ht{
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
@@ -1078,7 +1033,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .secTitleWrap .ht{font-family: 'EB Garamond'; font-size:14px;font-weight:400;letter-spacing:.2em;text-indent: .2em;color:#cccccc;text-align: center; margin-bottom: 20px;}
 .secTitleWrap .ht > span:not(.mini){position: relative;padding:0 20px;margin:0 19px;white-space: nowrap}
 .secTitleWrap .ht > span:not(.mini):before,
-.secTitleWrap .ht > span:not(.mini):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;background:#8b6e76;border-radius:50%; display: none;}
+.secTitleWrap .ht > span:not(.mini):after{content:''; position: absolute; left:0; top:50%; margin-top:-1px;width:2px; height:2px;border-radius:50%; display: none;}
 .secTitleWrap .ht > span:not(.mini):after{left: auto;right:0;}
 .secTitleWrap p{font-family: 'AritaBuri';font-size: 27px;color: #000000;text-align: center;margin-top: 13px;line-height: 1.4;letter-spacing:2px; margin-bottom:50px;}
 .secTitleWrap.t1 .ht{font-size: 14px;letter-spacing:.3em;text-indent: .3em;}
@@ -1089,14 +1044,14 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .secTitleWrap.t1 .ht .mini{letter-spacing:.14em;text-indent: .14em;}
 .secTitleWrap .minititle{transition-delay: 500ms;transform:translateY(30px);}
 
-.inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background:url(../images/mainBottom_bg.jpg) no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
+.inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/*  */background-size:cover;z-index: 1; height:165px;}
 .inviteBox:after {display: none; }
 .inviteBox .secTitleWrap{position: absolute;top:-10px;left:50%;transform: translateX(-50%);width: 100%;}
 .inviteBox .mainText{position: relative; text-align: center; font-family: 'AritaBuri'; padding-top:65px;;}
 .inviteBox .mainText p { transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
 .inviteBox .stamp {position: absolute; top:-5px;; left:0; width: 100%; text-align: center; z-index:1;  }
 .inviteBox .stamp .text {display: block; height:18px; background:url('../images/stampTit.png') center top no-repeat; margin-bottom:8px;; transition: 3.2s opacity;opacity: 0;transition-delay: 1600ms;}
-.inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; background:url('../images/stampTree.png') no-repeat; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
+.inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
 .inviteBox .secTitleWrap{overflow: hidden}
 
 .mainLoad .inviteBox .mainText p {opacity:1;margin: 0px 0 -190px;}
@@ -1113,7 +1068,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .greetingWrap .miniBox:before,
 .greetingWrap .miniBox:after{display: block;content:'';position: absolute; left:0; top:0; width: 100%; height:31px;background-position: 50% 0;background-repeat: no-repeat;}
 .greetingWrap .miniBox:before{background-image:url('../images/bg_thx01.png');}
-.greetingWrap .miniBox:after{top:auto;bottom:0;height:1px;background-image:url('../images/bg_thx02.png');}
+.greetingWrap .miniBox:after{top:auto;bottom:0;height:1px;}
 .greetingWrap .miniBox .box{padding: 6px 0;font-size: 22px;color: #4f4d4e}
 .greetingWrap .miniBox .box em{font-weight: 600}
 .greetingWrap .miniBox .box strong{font-family: 'AritaBuri';font-size: 25px;color: #222222;font-weight: 400;}
@@ -1129,16 +1084,16 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .btns.t1{height: 75px; font-size: 19px;color: #000}
 .btns.t1.c1{color: #000}
 .btns span{position: relative;padding-left: 28px;}
-.btns span:before{display: block;content: '';width: 20px;height: 16px;background: url(../images/icon_msg_m.png) no-repeat 0 0; background-size:20px 16px;position: absolute;top:50%;left:0;margin-top: -8px;}
+.btns span:before{display: block;content: '';width: 20px;height: 16px; background-size:20px 16px;position: absolute;top:50%;left:0;margin-top: -8px;}
 .btns.t1 span.link{padding-left: 34px;}
-.btns.t1 span.link:before{width: 25px;height: 14px;background-image: url(../images/icon_link.png);margin-top: -7px; background-size:25px 14px;;}
+.btns.t1 span.link:before{width: 25px;height: 14px;margin-top: -7px; background-size:25px 14px;;}
 .btns.t1 span.roughMap{padding-left: 32px;}
-.btns.t1 span.roughMap:before{width: 21px;height: 21px;background-image: url(../images/icon_map.png);margin-top: -10px;}
-.btns.t1 span.img:before{width: 20px;height: 20px;background-image: url(../images/icon_img.png);margin-top: -7px;}
-.btns.t1 span.tel:before{width: 22px;height: 22px;background-image: url(../images/icon_tel2.png);margin-top: -11px;}
+.btns.t1 span.roughMap:before{width: 21px;height: 21px;margin-top: -10px;}
+.btns.t1 span.img:before{width: 20px;height: 20px;margin-top: -7px;}
+.btns.t1 span.tel:before{width: 22px;height: 22px;margin-top: -11px;}
 .btns.t2{height: 75px;background-color: #f9f0e6;color: #000;font-size: 21px;border-radius: 12px;font-weight: 500}
 .btns.t2 span.attend{padding-left: 24px;}
-.btns.t2 span.attend:before{width: 16px;height: 19px;background-image: url(../images/icon_attend.png);margin-top: -8px;}
+.btns.t2 span.attend:before{width: 16px;height: 19px;margin-top: -8px;}
 
 .dayWrap{text-align:center;background: url(../images/day_bg.jpg) no-repeat 50% 0 / cover;}
 .dayWrap .dayInner{padding-top: 100px;padding-bottom: 83px;}
@@ -1155,10 +1110,10 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .dayWrap .dayBox p{font-family: 'AritaBuri';color: #222222;font-size: 27px;line-height: 1.4; text-align: center;}
 .dayWrap .placeBox{position: relative;padding: 23px 0 22px;margin-bottom: 18px;}
 .dayWrap .placeBox:before,
-.dayWrap .placeBox:after{display: block;content: '';width: 100%;height: 1px;background:url('../images/bg_thx02.png') no-repeat 50% 50%;position: absolute;top:0;left:0}
+.dayWrap .placeBox:after{display: block;content: '';width: 100%;height: 1px;position: absolute;top:0;left:0}
 .dayWrap .placeBox:after{top: auto;bottom: 0}
 .dayWrap .placeBox span{font-size: 21px;color: #b27085;padding-left: 25px;position: relative}
-.dayWrap .placeBox span:before{display: block;content: '';width: 16px;height: 19px;background: url(../images/icon_location.png) no-repeat 0 0 / 16px auto;position: absolute;top:50%;left:0;transform: translateY(-50%);}
+.dayWrap .placeBox span:before{display: block;content: '';width: 16px;height: 19px;position: absolute;top:50%;left:0;transform: translateY(-50%);}
 .dayWrap .calWrap{max-width: 380px;margin: 0 auto}
 .dayWrap .calWrap table{width: 100%;table-layout: fixed}
 .dayWrap .calWrap th,
@@ -1166,11 +1121,10 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .dayWrap .calWrap th{font-size: 18px;color: #e2d3d7;height: 80px;}
 .dayWrap .calWrap td{font-size: 22px;color: #c8b1b7;height: 49px;}
 .dayWrap .calWrap table .active{display:block;position: relative;font-weight: 600;color: #222222;}
-.dayWrap .calWrap table .active:after {content:''; position: absolute; left:0; top:-10px; width:100%; height: 9px; background: url(../images/day_point.png) center top no-repeat;}
+.dayWrap .calWrap table .active:after {content:''; position: absolute; left:0; top:-10px; width:100%; height: 9px;}
 .dayWrap .calWrap table .active > span{position: relative;z-index: 1}
 .dayWrap .calWrap table .active:before{position:absolute;bottom:1px;left:50%;margin-left:-18px;display: none;content: '';width: 36px;height: 15px;background: url(../images/day_point.png) no-repeat 0 0;}
 
-.countWrap{background:url(../images/count_bg.jpg) no-repeat 50% 0 / cover;}
 .countWrap .countInner{height: 160px;padding-top: 35px;box-sizing: border-box}
 .countList{text-align: center;font-size: 0}
 .countList .numWrap,
@@ -1193,7 +1147,7 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .countList .numWrap .col{font-size: 45px;width: 40px; background:url('../images/colon.png') center no-repeat; text-indent:-999em;}
 .countList .numWrap .txt{position: absolute;bottom: -22px;left:0;width: 100%;text-align: center;font-size: 11px;color: #a2828b;}
 
-.galleryWrap{background:url(../images/gallery_bg.jpg) no-repeat 50% 0 / cover;}
+
 .galleryWrap .galleryInner{padding-top: 97px;padding-bottom: 99px;}
 .galleryWrap .galWrap{padding: 0 30px;}
 .galleryWrap .galWrap .inner{position: relative;max-width:1280px;margin:0 auto;}
