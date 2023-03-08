@@ -92,7 +92,7 @@ h3.maintitle {
    text-align: center;
    vertical-align: middle;
    justify-content: center;
-   margin: 100px 0 30px;
+   margin: 0px 0 30px;
    color: #000;
    }
 
@@ -1052,9 +1052,9 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
 .inviteBox .secTitleWrap{overflow: hidden}
 
-.mainLoad .inviteBox .mainText p {opacity:1;margin: 0px 0 -190px;}
-.mainLoad .inviteBox .stamp .text {opacity:1;margin: 0px 0 -190px;}
-.mainLoad .inviteBox .stamp .img {opacity:1;margin: 0px 0 -190px;}
+.mainLoad .inviteBox .mainText p {opacity:1;}
+.mainLoad .inviteBox .stamp .text {opacity:1;}
+.mainLoad .inviteBox .stamp .img {opacity:1;}
 
 .greetingWrap{text-align:center; padding-top: 100px;}
 .greetingWrap .greetingBox{}
@@ -1696,7 +1696,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.secTitleWrap .ht{font-size: 12px;letter-spacing: .1em;text-indent: .1em;}
 	.secTitleWrap .ht span:not(.mini){padding: 0px 12px;margin: 0 12px;}
 	.secTitleWrap p{margin-top: 8px;font-size: 18px; margin-bottom: 30px;}
-	.secTitleWrap.t1 .ht{font-size: 11px;letter-spacing: .2em;}
+	.secTitleWrap.t1 .ht{font-size: 11px;letter-spacing: .2em;    margin: 0 0 5px;}
 	
   .greetingWrap {padding-top: 50px;}
 	.greetingWrap .greetingInner{padding: 0 30px 67px;}
