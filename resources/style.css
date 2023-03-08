@@ -191,7 +191,6 @@ font-size: 17px;
 .visualBox {
     position: relative;
     text-align: center;
-    background: url(../images/mainBg.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -1685,12 +1684,12 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
   .scroll {bottom:-2px;}
 
-	.inviteBox {font-size: 15px;line-height: 1.35; height:auto; padding-bottom:30px; background:#f6f7f2; background:url('../images/invite_bg_m.jpg') repeat-x; background-size:cover;}
-	.inviteBox:after {content:''; position: absolute; left:0; top:-24px; width: 100%; height:25px; background:url('../images/mainRound_m.png') center top no-repeat; background-size:auto 25px; }
+	.inviteBox {font-size: 15px;line-height: 1.35; height:auto; padding-bottom:30px; background:#f6f7f2; background-size:cover;}
+	.inviteBox:after {content:''; position: absolute; left:0; top:-24px; width: 100%; height:25px; background-size:auto 25px; }
 	.inviteBox .mainText{padding-top:60px;; }
 	.inviteBox .stamp {position: absolute; top:-5px;; left:0; width: 100%; text-align: center; z-index:10;  }
-	.inviteBox .stamp .text {display: block; height:18px; background:url('../images/stampTit_m.png') center top no-repeat; background-size:auto 17px; margin-bottom:8px;; transition: 3.2s opacity;opacity: 0;transition-delay: 1600ms;}
-	.inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; background:url('../images/stampTree_m.png') no-repeat; background-size:auto 21px; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
+	.inviteBox .stamp .text {display: block; height:18px; background-size:auto 17px; margin-bottom:8px;; transition: 3.2s opacity;opacity: 0;transition-delay: 1600ms;}
+	.inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; background-size:auto 21px; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
 	.inviteBox .secTitleWrap{overflow: hidden}
 
 
@@ -1715,15 +1714,15 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	
 	.btns.t1{font-size: 13px;height: 50px;border-radius: 8px;}
 	.btns.t1 span{padding-left: 22px;}
-	.btns.t1 span:before{width: 15px;height: 12px;margin-top: -6px;background-image: url(../images/icon_msg_m.png);background-size: cover}
+	.btns.t1 span:before{width: 15px;height: 12px;margin-top: -6px;background-size: cover}
 	.btns.t1 span.link{padding-left: 22px;}
-	.btns.t1 span.link:before{width: 16px;height: 9px;background-image: url(../images/icon_link_m.png);margin-top: -5px; background-size:16px 9px;}
+	.btns.t1 span.link:before{width: 16px;height: 9px;margin-top: -5px; background-size:16px 9px;}
 	.btns.t1 span.roughMap,
 	.btns.t1 span.img,
 	.btns.t1 span.tel{padding-left: 20px;}
 	.btns.t1 span.roughMap:before,
 	.btns.t1 span.img:before,
-	.btns.t1 span.tel:before{width: 15px;height: 15px;background-image: url(../images/icon_map_m.png);margin-top: -8px;background-size: auto 15px;}
+	.btns.t1 span.tel:before{width: 15px;height: 15px;margin-top: -8px;background-size: auto 15px;}
 	.btns.t1 span.img:before{background-image: url(../images/icon_img_m.png);}
 	.btns.t1 span.tel:before{background-image: url(../images/icon_tel2_m.png);}
 	.btns.t2{font-size: 14px;height: 50px;border-radius: 8px;}
