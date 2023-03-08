@@ -224,6 +224,30 @@ $(function(){
 		$('body').off('scroll touchmove mousewheel');
 		noScrollClear();
 	});
+
+	
+	
+	
+	
+
+$(function() {
+    $('.lazy').lazy();
+    setTimeout( ()=> {
+        $('.popslide img.lazy').each( function() {
+            $(this).attr('src', $(this).data('src'));
+            $(this).removeAttr('data-src');
+            $(this).removeClass('lazy');
+        });
+        //$('.contentSlide.popslide .slideList ul').slick('refresh');
+    },5000);
+});
+	
+	
+	
+	
+	
+	
+	
 	
 	//갤러리팝업 - 슬라이드
 	var popSlide = new Swiper('.popSlide .swiper-container', {
