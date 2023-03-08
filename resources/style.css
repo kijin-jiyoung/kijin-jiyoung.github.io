@@ -33,8 +33,6 @@ body {
     clear: both;
 }
 
-
-
 	
 .minititle .mini{transition:2s all; opacity:0;letter-spacing: 0 !important}
 .minititle .mini.r1 {transition-delay:250ms;}
@@ -93,7 +91,7 @@ h3.maintitle {
    text-align: center;
    vertical-align: middle;
    justify-content: center;
-   margin: 100px 0 30px;
+   margin: 100px 0 0px;
    color: #000;
    }
 
@@ -1001,7 +999,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .mainVisual .titleWrap .topText .name{position: absolute;bottom: 0;right: 0}
 .mainVisual .titleWrap .topText .name > span{font-size:21px;font-weight: 400;width: 1.15em;}
 
-body.mainLoad .titleWrap .topText  {opacity:1;margin: 0px 0 -190px;}
+body.mainLoad .titleWrap .topText  {opacity:1;}
 body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 
 
