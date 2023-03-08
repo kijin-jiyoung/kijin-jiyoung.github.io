@@ -152,7 +152,20 @@ font-size: 17px;
     display: block;
 }
 
+.galleryWrap .galWrap .galList .col li > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
 
+li {
+    list-style: none;
+}
 
 .galleryWrap .galWrap.mt {
     transition-delay: 900ms;
@@ -176,6 +189,25 @@ font-size: 17px;
 .hiddenList {
     display: none;
 }
+
+@media (max-width: 1024px)
+.galleryWrap .galWrap .galList .col li {
+    width: 50%;
+    padding: 0 3px;
+    margin-bottom: 6px;
+}
+.galleryWrap .galWrap .galList .col li {
+    float: left;
+    padding: 0 10px;
+    width: 25%;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+
 
 
 
