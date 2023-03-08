@@ -52,7 +52,8 @@ body {
 }
 .minititle .mini {
     transition: 2s all;
-    opacity: 0;
+    opacity: 1;
+    margin: 0px 0 -190px;
     letter-spacing: 0 !important;
 }
 .secTitleWrap .ht > span:not(.mini) {
