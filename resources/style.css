@@ -1368,10 +1368,9 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .contacName  a span{position: relative;font-weight: 500;color: #000000;font-size: 16px;padding-left: 27px;}
 .contacName  a span:before{display: block;content: '';width: 17px;height: 17px;background:url('../images/icon_tel.png') no-repeat 0 0;position: absolute;top:50%;left:0;margin-top: -8px;}
 
-.mindWrap{background:#f8f8f8;}
 .mindWrap .mindInner{padding-top: 97px;padding-bottom: 100px}
 .mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px dotted #b7b7b7}
-.mindWrap .text{text-align: center;font-family: 'AritaBuri';font-size: 21px;color: #222222;line-height: 1.81;margin-bottom: 40px}
+.mindWrap .text{text-align: center;font-size: 21px;color: #222222;line-height: 1.81;margin-bottom: 40px}
 .mindWrap .contBox{border:1px solid #e2e4ea;margin-bottom: 15px}
 .mindWrap .contBox .tit{padding:0 0 1px 24px; position: relative; cursor:pointer; height: 74px; background:#edeef1;box-sizing:border-box;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
