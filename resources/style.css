@@ -48,7 +48,42 @@ body {
 .minititle .mini.r9 {transition-delay:1450ms;}
 .minititle .mini.r10 {transition-delay:1600ms;}
 
-.atm .minititle .mini{opacity:1;margin: 0px 0 -190px;}	
+.atm .minititle .mini{opacity:1;margin: 0px 0 -190px;}
+.minititle .mini.r6 {
+    transition-delay: 1000ms;
+}
+.minititle .mini {
+    transition: 2s all;
+    opacity: 0;
+    letter-spacing: 0 !important;
+}
+.secTitleWrap .ht > span:not(.mini) {
+    position: relative;
+    padding: 0 20px;
+    margin: 0 19px;
+    white-space: nowrap;
+}
+@media (max-width: 1024px)
+.secTitleWrap .ht {
+    font-size: 12px;
+    letter-spacing: .1em;
+    text-indent: 0.1em;
+}
+.secTitleWrap .ht {
+    font-family: 'EB Garamond';
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .2em;
+    text-indent: 0.2em;
+    color: #cccccc;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+
+
 	
 
 
