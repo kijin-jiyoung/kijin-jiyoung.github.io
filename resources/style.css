@@ -1103,10 +1103,10 @@ body.snow .fixObWrap .no7 {background:url('../images/snow07.png') center no-repe
 .mainLoad .inviteBox .stamp .text {opacity:1;margin: 0px 0 -190px;}
 .mainLoad .inviteBox .stamp .img {opacity:1;margin: 0px 0 -190px;}
 
-.greetingWrap{text-align:center; padding-top: 100px; background:#fefdfb;}
+.greetingWrap{text-align:center; padding-top: 100px;}
 .greetingWrap .greetingBox{}
 .greetingWrap .greetingInner{padding-top: 45px;padding-bottom: 100px;}
-.greetingWrap .textBox{font-family: 'AritaBuri';font-size: 25px;color: #222222;line-height: 1.55;}
+.greetingWrap .textBox{font-size: 25px;color: #222222;line-height: 1.55;}
 .greetingWrap .textBox p{margin-bottom: 39px; line-height: 2;}
 
 .greetingWrap .miniBox{position: relative;padding: 37px 0 17px;margin-top: 53px;}
