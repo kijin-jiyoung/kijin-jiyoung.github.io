@@ -229,6 +229,80 @@ $(function(){
 	
 	
 	
+	
+
+	
+	
+
+$(function(){
+    /*$("img").each( function(){
+        $(this).attr({"oncontextmenu":"return false"});
+    });*/
+    // For Android
+    $(document).bind("contextmenu", function (e) {
+        return false;
+    });
+    
+    /*$("img").on("touchstart",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("aa");
+            eventStop = false;
+        }
+        
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchend",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("bb");
+            eventStop = false;
+        }
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchmove",function(e){
+        //e.preventDefault(); 
+    });*/
+    
+    /*$("a").on("click", function(e) {
+        if( !this.attr("href").indexOf("tel") )
+            e.preventDefault();
+    })*/
+    
+    $("a").on("contextmenu", (e) => {
+        e.preventDefault();
+        return false;
+    })
+    
+    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
+    
+    setTimeout(function(){
+        try{
+            var map_level = map.getLevel();
+            map.setLevel(map_level + 1);
+            map.setLevel(map_level);
+        } catch(e){}
+    },1000);
+});	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 $(function() {
     $('.lazy').lazy();
