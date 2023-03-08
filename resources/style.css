@@ -367,6 +367,54 @@ body.showSlide .popSlide {
 }
 
 
+@media (max-width: 1024px)
+.popImg .in {
+    padding: 45px 0;
+}
+.popImg .in {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    transform: translate(-50%,-50%);
+    padding: 0 20px;
+}
+
+@media (max-width: 1024px)
+.popImg .imageContainer {
+    height: 100%;
+}
+.popImg .imageContainer {
+    position: relative;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 1024px)
+.popImg .btnDownload {
+    right: auto;
+    left: 13px;
+    background-image: url(../resources/icon_download_m.png);
+}
+
+
+.popImg .btnDownload {
+    background-image: url(../resources/icon_download_m.png);
+    right: 110px;
+}
+
+
+
+
 
 
 
