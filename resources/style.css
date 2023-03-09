@@ -160,7 +160,6 @@ font-size: 17px;
 .galleryWrap .galWrap .galList .col li > a .img {
     background-size: cover !important;
     background-position: center center !important;
-    padding-bottom: 125.575%;
     display: block;
 }
 
@@ -1481,7 +1480,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .galleryWrap .galWrap .galList .col li:first-child {margin-left:0;;}
 .galleryWrap .galWrap .videoImg + .gallery .galList .col li:first-child {margin-left:50%;}
 .galleryWrap .galWrap .galList .col li > a{display: block; position: relative; overflow: hidden;  border-radius:20px;}
-.galleryWrap .galWrap .galList .col li > a .img {background-size:cover !important; background-position:center center !important; padding-bottom:125.575%; display: block;}
+.galleryWrap .galWrap .galList .col li > a .img {background-size:cover !important; background-position:center center !important; display: block;}
 .galleryWrap .galWrap .galList.hiddenList .col li:first-child {margin-left:0;;}
 .galleryWrap .galWrap .videoImg + .gallery .galList.hiddenList .col li:first-child {margin-left:0;;}
 .galleryWrap .galWrap .more{margin-top:15px;}
