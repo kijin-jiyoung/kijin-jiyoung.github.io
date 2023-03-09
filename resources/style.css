@@ -167,6 +167,12 @@ li {
     list-style: none;
 }
 
+.lazy {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .galleryWrap .galWrap.mt {
     transition-delay: 900ms;
     transition-duration: 3s;
