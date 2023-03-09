@@ -1471,7 +1471,6 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .galleryWrap .galWrap .videoImg img{pointer-events:none;max-width: none;width: 100%}
 .galleryWrap .galWrap .videoImg a{position: relative; display: block;}
 .galleryWrap .galWrap .videoImg .btnPlay{position: absolute;left:50%;top:50%;margin:-35px 0 0 -28px;width:56px;height:70px;background:url(../images/btn_play.png) no-repeat 50% 50%}
-.galleryWrap .galWrap .galList .col ul{margin: 0 -10px;}
 .galleryWrap .galWrap .galList:after,
 .galleryWrap .galWrap .galList ul:after{display: block;content: '';clear: both;}
 .galleryWrap .galWrap .galList .col{box-sizing: border-box;}
@@ -2084,7 +2083,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.galleryWrap .galWrap .videoImg{position: relative;width: 100%;margin-bottom: 6px;max-width: 100%;}
 	.galleryWrap .galWrap .videoImg .btnPlay{width: 80px;height: 80px;background-size: cover;margin:-40px 0 0 -40px;}
 	.galleryWrap .galWrap .videoImg + .gallery .galList .col li:first-child{margin-left: 0}
-	.galleryWrap .galWrap .galList .col ul{margin: 0 -3px}
+	.galleryWrap .galWrap .galList .col ul{margin: 0 -3px;padding: inherit;}
 	.galleryWrap .galWrap .galList .col li{width: 50%;padding: 0 3px;margin-bottom: 6px}
 	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(../images/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
