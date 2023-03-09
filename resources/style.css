@@ -180,11 +180,6 @@ li {
     list-style: none;
 }
 
-.lazy {
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 
 .galleryWrap .galWrap.mt {
     transition-delay: 900ms;
@@ -222,7 +217,6 @@ li {
 
 @media (max-width: 1024px)
 .galleryWrap .galWrap .galList .col li {
-    width: 50%;
     padding: 0 3px;
     margin-bottom: 6px;
 }
