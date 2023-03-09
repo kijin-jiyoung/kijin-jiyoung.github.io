@@ -1486,7 +1486,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .hiddenList {display: none;}
 
 .more{text-align: center;}
-.more span{display: inline-block; vertical-align: top; font-size:19px; color:#646059; font-weight:500; padding-bottom:55px; background:url('../images/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
+.more span{display: inline-block; vertical-align: top; font-size:19px; color:#646059; font-weight:500; padding-bottom:55px; background:50% 100% no-repeat; cursor:pointer;}
 
 .tabIn{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width:100%;background:url(../images/bg_thx03.png) no-repeat 50% 0}
 .tabIn > a,
