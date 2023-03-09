@@ -141,7 +141,11 @@ font-size: 17px;
 
 
 
-
+.msg_sound_only, .sound_only {display:inline-block !important;position:absolute;top:0;left:0;width:0;height:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
+.lazy {
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
