@@ -396,7 +396,7 @@ li {
 
 @media (max-width: 1024px)
 .popSlide .slideList .swiper-slide .slide img {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 .popSlide .slideList .swiper-slide .slide img {
