@@ -135,6 +135,202 @@ font-size: 17px;
 }
 
 
+
+.Main-photo {
+    width: 100%;
+    max-width: 666px;
+   }
+
+
+p.invitation  {
+   font-size: 16px;
+   line-height: 35px;
+   letter-spacing: 1px;
+   margin: 50px 0 50px;	
+   color: #000;
+}
+
+
+
+p.name { 
+   font-size: 16px;
+   letter-spacing: 1px;
+   text-align: center;
+   line-height: 1.8;	
+   margin: 20px 0 20px;
+}
+
+
+.announcement {
+    font-size: 14px;
+    line-height: 10px;
+    justify-content: center;
+    margin: 30px 0 10px;	
+}
+
+
+p.photodescription {
+   font-size: 16px;
+   line-height: 35px;
+   letter-spacing: 1.5px;
+   margin: 50px 0 50px;
+   color: #000;
+}
+
+.map {
+   font-size: 13px;
+   line-height: 12px;
+   margin: 10px 0 80px;
+}
+
+.payparents {
+    text-decoration-line: underline;
+    text-underline-offset: 14px;
+    font-size: 15px;
+    margin: 20px 0 20px;	
+}
+
+.parents,
+.pay {
+    font-size: 15px;
+    width: 100%;
+    text-align:center;
+    line-height: 2.5;	
+}
+
+.kato {
+margin: 5px 10px 10px 20px;
+}
+
+
+
+
+.copy {
+    display: inline-block;
+    width: 28px;
+    height: 14px;
+    padding: 2px;
+    cursor:pointer;
+    text-align:center;
+    vertical-align:middle;
+    background-color: #F2F2F2;
+    font-family: 'MapoFlowerIsland';
+}
+
+
+.buttoncopy {
+    display: inline-block;
+    width: 80px;
+    height: 25px;
+    padding: 2px;
+    cursor:pointer;
+    text-align:center;
+    vertical-align:middle;
+    border: 1px solid;
+    border-color: #FFF;
+}
+
+
+
+
+
+.copyright-wrap {
+     width: 100%;
+     max-width: 666px;
+     font-size: 12px;
+     text-align:center;
+     font-family: 'Roboto Slab', serif;
+     line-height: 10px;
+}
+
+
+ < ! - - 아이콘 - - >
+
+
+img.telephone {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 0.1px #F2F2F2;
+    border-radius: 10px;	
+}
+
+img.kakao {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 0.1px #F2F2F2;
+    border-radius: 10px;	
+}
+
+
+img.navermap {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:10px;
+    border: 0.1px solid;
+    border-color: #F2F2F2;
+}
+
+
+img.kakaonavi {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:10px;
+    border: 0.1px solid;
+    border-color: #F2F2F2;
+}
+
+
+img.tmap {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius:10px;
+    border: 0.1px solid;
+    border-color: #F2F2F2;
+}
+	
+
+img.kakopay,
+img.tosspay {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: 0.1px solid;
+    border-color: #F2F2F2;
+}
+
+
+img.sms,
+img.kakotalk {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}	
+
+ <!------------ 아이콘 ------------>	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1024px)
 .scroll {
     bottom: -2px;
@@ -520,182 +716,7 @@ body.showSlide .popSlide {
 
 
 
-.Main-photo {
-    width: 100%;
-    max-width: 666px;
-   }
 
-
-p.invitation  {
-   font-size: 16px;
-   line-height: 35px;
-   letter-spacing: 1px;
-   margin: 50px 0 50px;	
-   color: #000;
-}
-
-
-
-p.name { 
-   font-size: 16px;
-   letter-spacing: 1px;
-   text-align: center;
-   line-height: 1.8;	
-   margin: 20px 0 20px;
-}
-
-
-.announcement {
-    font-size: 14px;
-    line-height: 10px;
-    justify-content: center;
-    margin: 30px 0 10px;	
-}
-
-
-p.photodescription {
-   font-size: 16px;
-   line-height: 35px;
-   letter-spacing: 1.5px;
-   margin: 50px 0 50px;
-   color: #000;
-}
-
-.map {
-   font-size: 13px;
-   line-height: 12px;
-   margin: 10px 0 80px;
-}
-
-.payparents {
-    text-decoration-line: underline;
-    text-underline-offset: 14px;
-    font-size: 15px;
-    margin: 20px 0 20px;	
-}
-
-.parents,
-.pay {
-    font-size: 15px;
-    width: 100%;
-    text-align:center;
-    line-height: 2.5;	
-}
-
-.kato {
-margin: 5px 10px 10px 20px;
-}
-
-
-
-
-.copy {
-    display: inline-block;
-    width: 28px;
-    height: 14px;
-    padding: 2px;
-    cursor:pointer;
-    text-align:center;
-    vertical-align:middle;
-    background-color: #F2F2F2;
-    font-family: 'MapoFlowerIsland';
-}
-
-
-.buttoncopy {
-    display: inline-block;
-    width: 80px;
-    height: 25px;
-    padding: 2px;
-    cursor:pointer;
-    text-align:center;
-    vertical-align:middle;
-    border: 1px solid;
-    border-color: #FFF;
-}
-
-
-
-
-
-.copyright-wrap {
-     width: 100%;
-     max-width: 666px;
-     font-size: 12px;
-     text-align:center;
-     font-family: 'Roboto Slab', serif;
-     line-height: 10px;
-}
-
-
- < ! - - 아이콘 - - >
-
-
-img.telephone {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 0.1px #F2F2F2;
-    border-radius: 10px;	
-}
-
-img.kakao {
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-    border: 0.1px #F2F2F2;
-    border-radius: 10px;	
-}
-
-
-img.navermap {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius:10px;
-    border: 0.1px solid;
-    border-color: #F2F2F2;
-}
-
-
-img.kakaonavi {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius:10px;
-    border: 0.1px solid;
-    border-color: #F2F2F2;
-}
-
-
-img.tmap {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border-radius:10px;
-    border: 0.1px solid;
-    border-color: #F2F2F2;
-}
-	
-
-img.kakopay,
-img.tosspay {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    border: 0.1px solid;
-    border-color: #F2F2F2;
-}
-
-
-img.sms,
-img.kakotalk {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-}	
-
- <!------------ 아이콘 ------------>	
 
 	
 
