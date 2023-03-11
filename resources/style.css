@@ -836,7 +836,7 @@ ul{list-style:none;}
 .surveymodal-con .close{
     display:block;
     position:absolute;
-    width:40px; height:20px;
+    width:50px; height:30px;
     border: 1px solid #646059;
     border-radius:5px;
     text-align: center;
@@ -846,8 +846,8 @@ ul{list-style:none;}
     background-color:#fff;
     color:#000; font-size:11px;
     font-family:'AppleSD';
-    right:15px; top:25px;
-    line-height: 1.8;	
+    right:15px; top:18px;
+    line-height: 2.2;	
 }
 
   < !------------ 모달 ------------ >
