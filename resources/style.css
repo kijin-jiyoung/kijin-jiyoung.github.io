@@ -427,13 +427,6 @@ li {
     box-sizing: border-box;
 }
 
-.galleryWrap .galWrap .galList .col li > a {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    border-radius: 20px;
-}
-
 
 .galleryWrap .galWrap .galList .pop {
     opacity: 0;
