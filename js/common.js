@@ -84,23 +84,131 @@ JT.smoothscroll = {
 };
 JT.smoothscroll.init();
 
+//얼럿
+function alertOpen_skin(idx){
+	$('.alertPop .title').html(idx);
+	$('.alertPop').fadeIn('fast');
+}
+function alertClose_skin(){
+	$('.alertPop').fadeOut('fast');
+}
+
+// 카운트다운
+var today = new Date();
+function CountDownTimer(dt, id){
+	showRemaining();
+
+	var end = moment(dt).toDate();
+	var _second = 1000;
+	var _minute = _second * 60;
+	var _hour = _minute * 60;
+	var _day = _hour * 24;
+	var timer;
+
+	function showRemaining() {
+		var now = moment(new Date()).toDate();
+
+		var distance = end - now;
+		var t1 = moment(new Date());
+		var t2 = moment(dt);
+		
+		if (distance < 0) {
+			 clearInterval(timer);
+
+			$('.dayFull').text(0);
+			$('.day1').text(0);
+			$('.day2').text(0);
+			$('.hour1').text(0);
+			$('.hour2').text(0);
+			$('.minutes1').text(0);
+			$('.minutes2').text(0);
+			$('.seconds1').text(0);
+			$('.seconds2').text(0);
+			 return;
+        }
+
+    	var days = Math.floor(distance / _day);
+    	var hours = Math.floor((distance % _day) / _hour);
+    	var minutes = Math.floor((distance % _hour) / _minute);
+    	var seconds = Math.floor((distance % _minute) / _second);
+	    var dayfull = days;
+
+        if(parseInt(days) < 10){ 
+		    days = "0" + days; 
+        } 
+        if(parseInt(hours) < 10){ 
+            hours = '0' + hours; 
+        }
+        if(parseInt(minutes) < 10){ 
+            minutes = '0' + minutes; 
+        }
+        if(parseInt(seconds) < 10){ 
+            seconds = '0' + seconds; 
+        } 
+	
+        var day1 = String(days).substring(0, 1);
+        var day2 = String(days).substring(1, 2);
+        var day3 = String(days).substring(2, 3);
+        var hour1 = String(hours).substring(0, 1);
+        var hour2 = String(hours).substring(1, 2);
+        var minutes1 = String(minutes).substring(0, 1);
+        var minutes2 = String(minutes).substring(1, 2);
+        var seconds1 = String(seconds).substring(0, 1);
+        var seconds2 = String(seconds).substring(1, 2);
+
+		$('.day1').text(day1);
+		$('.day2').text(day2);
+		if( dayfull.toString().length > 2 ) {
+		    $('.day3').text(day3);
+		} else {
+		    $('.day3').text("");
+		}
+		$('.hour1').text(hour1);
+		$('.hour2').text(hour2);
+		$('.minutes1').text(minutes1);
+		$('.minutes2').text(minutes2);
+		$('.seconds1').text(seconds1);
+		$('.seconds2').text(seconds2);
+	}
+
+	timer = setInterval(showRemaining, 1000);
+}
+
+$(window).on('beforeunload', function() {
+	$(window).scrollTop(0); 
+});
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+var maxDuration = 2000;
+var maxDelay = 500;
+var minDuration = maxDuration - maxDelay;
+$(document).ready(function(){
+    DADIDAN.init();
+    
+    hauntedText($('.mainVisual .tit01 .blast'), 2000);
+    hauntedText($('.mainVisual .tit02 .blast'), 2000);
+    hauntedText($('.mainVisual .name .blast'), 3800);
+    
+});
+var getRandomValue = function (min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
+var hauntedText = function (obj, time) {
+	setTimeout(function () {
+		obj.each(function (i, el) {
+	    	var $el = $(el);
+	    	var duration = getRandomValue(minDuration, maxDuration);
+	    	var delay = maxDuration - duration;
+	    	var blur = getRandomValue(2, 10);
+	
+		    // From
+		    $el.animate({opacity: 0, blur: blur}, {duration: 0});
+	
+		    // To
+		    $el.delay(delay).animate({opacity: 1, blur: 0}, {duration: duration,ease: [250, 0] });
+	  	});
+	}, time);
+};
 
 
 
@@ -190,19 +298,74 @@ $(function(){
 	   }
     });
 	
+	// 예식장정보1
+	var infoList1 = new Swiper('.infoList .swiper-container', {
+    //effect: "fade",
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    autoHeight: true,
+    //allowTouchMove : false,
+    centeredSlides: true,
+    speed: 200,
+      loop: true,
+      navigation: {
+        nextEl: ".infoList .swiper-button-next",
+        prevEl: ".infoList .swiper-button-prev"
+    }
+  });
+
+
+
+	$(".infoList .tab button").click(function(){
+		$(".infoList .tab button").removeClass('active');
+		$(this).addClass('active');
+		infoList1.slideTo($(this).index());
+		infoImgChg($(this).index());
+	});
+
+	$(".infoList .btnInfo").on('click', function(){ 
+		var activeIndex = infoList1.activeIndex+1;
+		if($(".infoList .tab button").eq(activeIndex).length <= 0) activeIndex = 0;
+		$(".infoList .tab button").removeClass('active');
+		$(".infoList .tab button").eq(activeIndex).addClass('active');
+		infoList1.slideTo(activeIndex);
+		infoImgChg(activeIndex);
+	});
+
+	infoImgChg(0);
+	function infoImgChg(i){
+		var imgSrc = '';
+		imgSrc = $(".infoList .tab button").eq(i).data('img');
+		$('.infoList .leftBg img, .infoList .rightBg img').attr('src', imgSrc);
+	}
 	
+	//계좌번호 보기
+	$('.mindWrap .contBox .tit').on('click',function(){
+		$(this).parents('.contBox').toggleClass('active');
+	});
 	
+	//링크복사
+	var url = document.location.href;
+	var clipboard = new ClipboardJS('.link', {
+		text: function() {
+			return url;
+		}
+	});
+	clipboard.on('success', function(e) {
+	   alertOpen_skin('URL이 복사되었습니다.');
+	});
+		
+	var clipboard4 = new ClipboardJS('.copy03');
+	clipboard4.on('success', function(e) {
+		alertOpen_skin('주소가 복사되었습니다.');
+	});
+		
+	var bankCopy = new ClipboardJS('.bankCopy');
+	bankCopy.on('success', function(e) {
+		alertOpen_skin('계좌번호가 복사되었습니다.');
+	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-//인터뷰 더보기
+	//인터뷰 더보기
 	$('.interPop .popCont .inner .more span').click(function(){
 		$('.interPop .popCont .inner .hidden').fadeIn('slow');
 		$(this).parents('.more').hide();
@@ -217,111 +380,75 @@ $(function(){
 		}
 	});
 	
+	//로고 클릭
+	$('.h1Wrap a').on('click',function(){
+		$('html,body').stop().animate({scrollTop:0},1000);
+	});
 	
-//인터뷰 닫기
-	$('.btnInterClose').click(function(){
-		$('body').removeClass('interOpen');
+	//메뉴 열기
+	$('.btnMenu').click(function(){
+		$('body').addClass('gnbOpen');
+		$('body').on('scroll touchmove mousewheel', function(event) { 
+			event.preventDefault();     
+			event.stopPropagation();     
+			return false; 
+		});
+		noScrollRun();
+	});
+	//메뉴 닫기
+	$('.btnMenuClose').click(function(){
+		$('body').removeClass('gnbOpen');
 		$('body').off('scroll touchmove mousewheel');
 		noScrollClear();
 	});
 
 	
+	var playBgm = document.getElementById("bgmAudio");
+	//playBgm.play();
+	//playBgm ? playBgm.pause() : "";
+	$('.btnControl a').on('click', function(e){
+		e.preventDefault();
+		$('.btnControl').toggleClass('on');
+		if($('.btnControl').hasClass('on')){
+			playBgm.play();
+			$('.btnControl .pop a').text('BGM on');
+		} else {
+			playBgm.pause();
+			playBgm.currentTime = 0;
+			$('.btnControl .pop a').text('BGM off');
+		}
+	});
 	
+	var UserAgent = navigator.userAgent;
+	var UADevice = UserAgent.match(/iPhone|iPod|iPad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i);
+	var UAVendor = UserAgent.match(/LG|SAMSUNG|Samsung/);
+	if ( UADevice !== null || UAVendor!== null){
+		$('html').addClass('mobile');
+	}
+	var agent = navigator.userAgent.toLowerCase(); 
 	
-	
-	
+	if (agent.indexOf("chrome") != -1 && !$('html').hasClass('mobile')) {
+		var weaList = '<iframe class="silence" style="width:1px; height:1px;" src="https://dddproject.com/html/images/silence.mp3" allow="autoplay"></iframe>';
+		$('.wrap').append(weaList);
+	}else{
 
-	
-	
+	}
 
-$(function(){
-    /*$("img").each( function(){
-        $(this).attr({"oncontextmenu":"return false"});
-    });*/
-    // For Android
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    });
-    
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
-    
-    $("a").on("contextmenu", (e) => {
-        e.preventDefault();
-        return false;
-    })
-    
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
-    
-    setTimeout(function(){
-        try{
-            var map_level = map.getLevel();
-            map.setLevel(map_level + 1);
-            map.setLevel(map_level);
-        } catch(e){}
-    },1000);
-});	
+	// 위로가기
+	$('.btnTop').on('click',function(){
+		$('html,body').stop().animate({scrollTop:0},1000);
+	});
+	// 아래로
+	$('.btnDown').on('click',function(){
+		$('html,body').stop().animate({scrollTop:$(document).height()},1000);
+	});
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
-$(function() {
-    $('.lazy').lazy();
-    setTimeout( ()=> {
-        $('.popslide img.lazy').each( function() {
-            $(this).attr('src', $(this).data('src'));
-            $(this).removeAttr('data-src');
-            $(this).removeClass('lazy');
-        });
-        //$('.contentSlide.popslide .slideList ul').slick('refresh');
-    },5000);
-});
-	
-	
-	
-	
-	
-	
-	
+	//인터뷰 닫기
+	$('.btnInterClose').click(function(){
+		$('body').removeClass('interOpen');
+		$('body').off('scroll touchmove mousewheel');
+		noScrollClear();
+	});
 	
 	//갤러리팝업 - 슬라이드
 	var popSlide = new Swiper('.popSlide .swiper-container', {
@@ -357,10 +484,41 @@ $(function() {
 		$('body').removeClass('showSlide');
 		$('body').off('scroll touchmove mousewheel');
 	});
-		
-
 	
-	// 갤러리 더보기
+	//위치접근
+	$('.greetingWrap').waypoint(function (direction) {
+        $('.greetingWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.dayWrap').waypoint(function (direction) {
+        $('.dayWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.galleryWrap').waypoint(function (direction) {
+        $('.galleryWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.infoWrap').waypoint(function (direction) {
+        $('.infoWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.guestBookWrap').waypoint(function (direction) {
+        $('.guestBookWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.contactWrap').waypoint(function (direction) {
+        $('.contactWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.mindWrap').waypoint(function (direction) {
+        $('.mindWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.locationWrap').waypoint(function (direction) {
+        $('.locationWrap').addClass('atm');
+    }, {offset: '50%'});
+    $('.thanksWrap').waypoint(function (direction) {
+        $('.thanksWrap').addClass('atm');
+    }, {offset: '60%'});
+    
+    DADIDAN.init();
+	
+});
+
+// 갤러리 더보기
 function morePic(){
 	$('.hiddenList').show();
 	$('.galleryWrap .more').hide();
@@ -377,14 +535,186 @@ function openInterview(){
 	});
 	noScrollRun();
 }
-	
-	
-	
-	
 
-	
-	
-	
-	
-	
+//유투브 영상
+function youtubeOpen(src){
+	var playBgm = document.getElementById("bgmAudio");
+	var youtubeSrc = '<div class="videoBox"><iframe width="100%" src="https://www.youtube-nocookie.com/embed/'+src+'?autoplay=1&rel=0&vq=hd1080&playlist='+src+'" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen frameborder="0"  allowfullscreen></iframe></div>';
+	$('.inFrame').append(youtubeSrc);
+	if( playBgm ) {
+	    playBgm.pause();
+	    playBgm.currentTime = 0;
+	}
+	$('.btnControl .pop a').text('BGM off');
+	$('.btnControl').removeClass('on');
+	$('.videoGal .videoWrap .btnMovieClose').fadeIn(200);
+	noScrollRun();
+	$('body').addClass('showYoutube');
+}
+//유투브 영상 닫기
+function videoClose(src){
+	$('.inFrame').empty();
+	$('.btnControl').removeClass('on');
+    $('.videoGal .videoWrap .btnMovieClose').hide();
+	noScrollClear();
+	$('body').removeClass('showYoutube');
+}
 
+var posY;
+function noScrollRun() {
+	posY = $(window).scrollTop();
+    $('body').addClass('noScroll');
+    $(".wrap").css("top",-posY);
+}
+function noScrollClear() {
+	$('body').removeClass('noScroll');
+    posY = $(window).scrollTop(posY);
+    $(".wrap").attr("style","");
+}
+
+// 다디단
+var DADIDAN = (function(){
+  var $wrap = $('.wrap'),
+      controller,
+      moveFlag = false;
+
+  var posx;
+  var posy;
+  var pos_val1= 0, pos_val2= 0, pos_val3= 0,
+       wH = $(window).height();
+
+  var random = function random(min, max){
+      return Math.round(min + Math.random()*(max-min));
+  };
+  var posXArr=[],
+       posYArr=[];
+  var myTimer;
+
+  function init(){
+      setTimerMot(pos_val1,0,1.2,10600);
+      setTimerMot(pos_val2,1,1.5,20600);
+      setTimerMot(pos_val3,2,0.9,200);
+  }
+  
+  function setTimerMot(pos_val,i,time1,time2){
+  myTimer = setTimeout(function() {
+      randomPos();
+        posXArr.push(posx);
+        posYArr.push(posy);
+        var ranNum = random(0,5);
+         $('.leafOb').eq(i).css({'top':posy});
+        TweenMax.fromTo($('.leafOb').eq(i).find('.leaf'),10,{x:-50,rotation:-6*ranNum},{x:50,delay:0.2*i,rotation:6*ranNum,repeat: -1,yoyo: true,ease: Power2.easeInOut},{delay:220*i});
+        TweenMax.to($('.leafOb').eq(i),0.8,{autoAlpha:1,delay:0.4*i});
+        
+        setIntervalMot(pos_val,i,time1);
+        clearTimeout(myTimer);
+  }, time2);
+  }
+
+  function setIntervalMot(_val,_idx,time){
+      $('.leafOb').eq(_idx).hide();
+      setInterval(function(){
+          _val += 1;
+          $('.leafOb').eq(_idx).show();
+          if (_val >= wH){
+              _val = 0;
+
+              $('.leafOb').eq(_idx).hide();
+              randomPos();
+          }
+
+          $('.leafOb').eq(_idx).css({top:_val});
+      },time*100);
+  }
+
+  function randomPos(){
+      var divsize = (Math.random()*50).toFixed();
+
+      posx = Number((Math.random() * ($(window).width() - divsize)).toFixed());
+      posy = Number((Math.random() * ($(window).height() - divsize)).toFixed());
+  }
+
+  return {
+     init : init
+  }
+
+}());
+
+
+// var DADIDAN = (function(){
+//     var $wrap = $('.wrap'),
+//         controller,
+//         moveFlag = false;
+
+//     var posx;
+//     var posy;
+//     var pos_val1= 0, pos_val2= 0, pos_val3= 0, pos_val4= 0, pos_val5= 0,
+//          wH = $(window).height();
+
+//     var random = function random(min, max){
+//         return Math.round(min + Math.random()*(max-min));
+//     };
+//     var posXArr=[],
+//          posYArr=[];
+//     var myTimer;
+
+//     function init(){
+//         setTimerMot(pos_val1,0,1.1,40000);
+//         setTimerMot(pos_val2,1,1.1,15000);
+//         setTimerMot(pos_val3,2,1.1,5000);
+//         setTimerMot(pos_val4,3,1.1,60000);
+//         setTimerMot(pos_val5,4,1.1,25000);
+//         /*
+//          setTimerMot(pos_val1,0,1.8,15000);
+//         setTimerMot(pos_val2,1,1.1,8600);
+//         setTimerMot(pos_val3,2,0.9,600);
+//         setTimerMot(pos_val4,3,3,10000);
+//         setTimerMot(pos_val5,4,1.9,900);
+//          * */
+//     }
+    
+//     function setTimerMot(pos_val,i,time1,time2){
+// 		myTimer = setTimeout(function() {
+// 		  	randomPos();
+// 	        posXArr.push(posx);
+// 	        posYArr.push(posy);
+// 	        var ranNum = random(0,5);
+// 	       	$('.fixPetalWrap .obj').eq(i).css({'top':posy});
+// 	        TweenMax.fromTo($('.fixPetalWrap .obj').eq(i),10,{x:-20,rotation:-7*ranNum},{x:20,delay:0.2*i,rotation:7*ranNum,repeat: -1,yoyo: true,ease: Power2.easeInOut},{delay:220*i});
+// 	        TweenMax.to($('.fixPetalWrap .obj').eq(i),0.8,{autoAlpha:1,delay:0.4*i});
+	        
+// 	        setIntervalMot(pos_val,i,time1);
+// 	        //clearTimeout(myTimer);
+// 		}, time2);
+//     }
+
+//     function setIntervalMot(_val,_idx,time){
+//         $('.fixPetalWrap .obj').eq(_idx).hide();
+//         setInterval(function(){
+//             _val += 1;
+//             $('.fixPetalWrap .obj').eq(_idx).show();
+//             if (_val >= wH){
+//                 _val = 0;
+
+//                 $('.fixPetalWrap .obj').eq(_idx).hide();
+//                 randomPos();
+//             }
+
+//             $('.fixPetalWrap .obj').eq(_idx).css({top:_val});
+//         },time*100);
+//     }
+
+//     function randomPos(){
+//         var divsize = (Math.random()*50).toFixed();
+
+//         posx = Number((Math.random() * ($(window).width() - divsize)).toFixed());
+//         posy = Number((Math.random() * ($(window).height() - divsize)).toFixed());
+//     }
+
+//     return {
+//        init : init
+//     }
+
+// }());
+
+// 이미지팝업 열기/닫기 hammer.zoom.js
