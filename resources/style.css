@@ -1792,6 +1792,8 @@ body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current{color: #fff;font-weight: 700;margin-right: 5px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{margin-left: 8px}
 .popSlide .closeSlide{display: block; background-image:url(/resources/icon_close_m.png);}
+.popSlide .swiper-button-next,
+.popSlide .swiper-button-prev {display: none;}
 
 	
 /* youtubeBox */
