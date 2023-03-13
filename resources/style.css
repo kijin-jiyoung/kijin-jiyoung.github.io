@@ -693,7 +693,10 @@ body.showSlide .popSlide {
     background-size: 30px auto;
 }
 
-
+@media (max-width: 1024px)
+.galleryWrap .galWrap .more {
+    margin-top: 17px;
+}
 
 
 
