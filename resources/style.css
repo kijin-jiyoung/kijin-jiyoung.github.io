@@ -439,7 +439,7 @@ li {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background: url(../images/gal_hover1.png) center no-repeat;
+    background: url(/resources/gal_hover2_m.png) center no-repeat;
     background-size: cover;
 }
 
@@ -1461,7 +1461,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .infoWrap .infoList .slideList ul li.swiper-slide-active a {display: flex;}
 .infoWrap .infoList .swiper-button-next, 
 .infoWrap .infoList .swiper-button-prev{z-index:50; position: absolute; left:50%; top:47px; margin-top: 0; margin-left:-250px; width:64px; height:64px; background:url('../images/btnSlidePrev.png') no-repeat; }
-.infoWrap .infoList .swiper-button-next{margin-left:190px;  background:url('../images/btnSlideNext.png') no-repeat; }
+.infoWrap .infoList .swiper-button-next{margin-left:190px;  background:url('/resources/btnSlideNext.png') no-repeat; }
 .infoWrap .secTitleWrap p {color:#000}
 
 
@@ -1764,7 +1764,7 @@ body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !import
 .interPop .btnInterClose,
 .youtubeBox .btnMovieClose,
 .popImg .btnClose,
-.popImg .btnDownload{display: inline-block;position: fixed; right:46px; top:46px; width: 30px; height: 30px;text-indent:-999em; background:url('../images/icon_close.png') 50% 50% no-repeat;z-index: 10}
+.popImg .btnDownload{display: inline-block;position: fixed; right:46px; top:46px; width: 30px; height: 30px;text-indent:-999em; background:url('/resources/icon_close_m.png') 50% 50% no-repeat;z-index: 10}
 
 /* popGnb */
 body.gnbOpen .popGnb{opacity:1; visibility:visible;}
@@ -1796,7 +1796,7 @@ body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{font-family: 'EB Garamond';font-size: 28px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top:1px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current{color: #fff;font-weight: 700;margin-right: 5px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{margin-left: 8px}
-.popSlide .closeSlide{display: block; background-image:url(/resources/icon_close_white.png);}
+.popSlide .closeSlide{display: block; background-image:url(/resources/icon_close_m.png);}
 
 	
 /* youtubeBox */
@@ -1814,8 +1814,8 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .popImg .in{position: absolute; left:50%; top:50%; width: 100%;height: 100%; max-width:1280px; transform:translate(-50%,-50%);padding:0 20px;}
 .popImg .imageContainer{position: relative;height: 100%;text-align: center;overflow: hidden;display: flex;flex-direction: column;align-items: center;justify-content: center;}
 .popImg img{max-width:100%;max-height: 100%;object-fit: cover;object-position: 50% 50%;cursor: move;touch-action: none;}
-.popImg .btnClose{background-image:url(../images/icon_close_white.png);}
-.popImg .btnDownload{background-image:url(../images/icon_download.png);right: 110px}
+.popImg .btnClose{background-image:url(/resources/icon_close_m.png);}
+.popImg .btnDownload{background-image:url(/resources/icon_download_m.png);right: 110px}
 
 .alertPop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;}
 .alertPop .bg{ position: fixed; left:0; top:0; width: 100%; height: 100%;  z-index: 1;}
@@ -1870,7 +1870,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.popImg .btnDownload{right:13px; top:14px;background-image:url('/resources/icon_close_m.png'); background-size:18px auto;}
 	.youtubeBox .btnMovieClose,
 	.popSlide .closeSlide,
-	.popImg .btnClose{background-image: url(/resources/icon_close_white_m.png);}
+	.popImg .btnClose{background-image: url(/resources/icon_close_m.png);}
 	.popImg .btnDownload{right: auto;left: 13px;background-image: url(/resources/icon_download_m.png);}
 	
 	.minititle{transition-delay:100ms;transform:translateY(30px);transition-duration: 1.5s}
@@ -2003,7 +2003,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.galleryWrap .galWrap .videoImg + .gallery .galList .col li:first-child{margin-left: 0}
 	.galleryWrap .galWrap .galList .col ul{margin: 0 -3px;padding: inherit;}
 	.galleryWrap .galWrap .galList .col li{width: 50%;padding: 0 3px;margin-bottom: 6px}
-	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(../images/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
+	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(/resources/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
 	
 	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(../images/icon_more_m.png);background-size: 30px auto;}
