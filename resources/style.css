@@ -1485,7 +1485,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .galleryWrap .galWrap .galList ul:after{display: block;content: '';clear: both;}
 .galleryWrap .galWrap .galList .col{box-sizing: border-box;}
 .galleryWrap .galWrap .galList .img img{width: 100%}
-.galleryWrap .galWrap .galList .col li{float: left;padding: 0 10px;width: 25%;position: relative;margin-bottom:20px;overflow: hidden;z-index: 1;box-sizing: border-box; }
+.galleryWrap .galWrap .galList .col li{float: left;padding: 0 10px;width: 50%;position: relative;margin-bottom:20px;overflow: hidden;z-index: 1;box-sizing: border-box; }
 .galleryWrap .galWrap .galList .col li:first-child {margin-left:0;;}
 .galleryWrap .galWrap .videoImg + .gallery .galList .col li:first-child {margin-left:50%;}
 .galleryWrap .galWrap .galList .col li > a{display: block; position: relative; overflow: hidden;  border-radius:20px;}
