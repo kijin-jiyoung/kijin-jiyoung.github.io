@@ -686,6 +686,12 @@ body.showSlide .popSlide {
 }
 
 
+@media (max-width: 1024px)
+.more span {
+    padding-bottom: 37px;
+    font-size: 13px;
+    background-size: 30px auto;
+}
 
 
 
