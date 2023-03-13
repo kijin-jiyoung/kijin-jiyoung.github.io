@@ -445,6 +445,7 @@ li {
 .galleryWrap .galWrap .galList .hover {
     margin: -25px 0 0 -25px;
     border-width: 1px;
+    background-image: url(/resources/gal_hover2_m.png);	
     background: no-repeat 50% 50%;
     background-size: 12px 12px;
     width: 50px;
@@ -460,7 +461,7 @@ li {
     left: 50%;
     margin: -53px 0 0 -53px;
     z-index: 2;
-    background: no-repeat 50% 50%;
+    background: url(/resources/gal_hover2_m.png) no-repeat 50% 50%;
     box-sizing: border-box;
     border: 2px solid #fff;
     border-radius: 100%;
