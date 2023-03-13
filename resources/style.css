@@ -480,6 +480,10 @@ li {
 
 
 
+body.showSlide .popSlide {
+    opacity: 1;
+    visibility: visible;
+}
 
 .popSlide {
     position: fixed;
