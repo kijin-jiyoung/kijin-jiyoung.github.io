@@ -500,6 +500,9 @@ body.showSlide .popSlide {
     transition: 1.5s opacity;
 }
 
+
+
+
 .popSlide .slideList {
     height: 100vh;
 }
@@ -586,7 +589,7 @@ body.showSlide .popSlide {
 
 @media (max-width: 1024px)
 .popSlide .slideList .swiper-slide .slide img {
-    height: 100%;
+    height: auto;
     width: 100%;
 }
 .popSlide .slideList .swiper-slide .slide img {
@@ -597,20 +600,37 @@ body.showSlide .popSlide {
     object-position: 50% 50%;
 }
 
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+img, fieldset, iframe {
+    border: 0 none;
+}
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 1024px)
 .youtubeBox .btnMovieClose, .popSlide .closeSlide, .popImg .btnClose {
-    background-image: url(../resources/icon_close_m.png);
+    background-image: url(/resources/icon_close_m.png);
 }
 @media (max-width: 1024px)
 .btnMenuClose, .popSlide .closeSlide, .interPop .btnInterClose, .youtubeBox .btnMovieClose, .popImg .btnClose, .popImg .btnDownload {
     right: 13px;
     top: 14px;
-    background-image: url(../resources/icon_close_m.png);
+    background-image: url(/resources/icon_close_m.png);
     background-size: 18px auto;
 }
 .popSlide .closeSlide {
     display: block;
-    /* background-image: url(../resources/icon_close_m.png); */
+    /* background-image: url(/resources/icon_close_m.png); */
 }
 .btnMenuClose, .popSlide .closeSlide, .interPop .btnInterClose, .youtubeBox .btnMovieClose, .popImg .btnClose, .popImg .btnDownload {
     display: inline-block;
@@ -620,7 +640,7 @@ body.showSlide .popSlide {
     width: 30px;
     height: 30px;
     text-indent: -999em;
-    background: url(../resources/icon_close_m.png) 50% 50% no-repeat;
+    background: url(/resources/icon_close_m.png) 50% 50% no-repeat;
     z-index: 10;
 }
 
@@ -631,12 +651,6 @@ body.showSlide .popSlide {
     top: 0;
     width: 100%;
     height: 100%;
-}
-.popSlide .slideList .swiper-slide {
-    height: 100vh;
-    text-align: center;
-    font-size: 0;
-    margin: 0;
 }
 
 body.showSlide .popSlide {
@@ -681,12 +695,12 @@ body.showSlide .popSlide {
 .popImg .btnDownload {
     right: auto;
     left: 13px;
-    background-image: url(../resources/icon_download_m.png);
+    background-image: url(/resources/icon_download_m.png);
 }
 
 
 .popImg .btnDownload {
-    background-image: url(../resources/icon_download_m.png);
+    background-image: url(/resources/icon_download_m.png);
     right: 110px;
 }
 
