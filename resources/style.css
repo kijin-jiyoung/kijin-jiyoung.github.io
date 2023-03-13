@@ -1990,11 +1990,11 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.interPop .btnInterClose,
 	.youtubeBox .btnMovieClose,
 	.popImg .btnClose,
-	.popImg .btnDownload{right:13px; top:14px;background-image:url('../images/icon_close_m.png'); background-size:18px auto;}
+	.popImg .btnDownload{right:13px; top:14px;background-image:url('/resources/icon_close_m.png'); background-size:18px auto;}
 	.youtubeBox .btnMovieClose,
 	.popSlide .closeSlide,
-	.popImg .btnClose{background-image: url(../images/icon_close_white_m.png);}
-	.popImg .btnDownload{right: auto;left: 13px;background-image: url(../images/icon_download_m.png);}
+	.popImg .btnClose{background-image: url(/resources/icon_close_white_m.png);}
+	.popImg .btnDownload{right: auto;left: 13px;background-image: url(/resources/icon_download_m.png);}
 	
 	.minititle{transition-delay:100ms;transform:translateY(30px);transition-duration: 1.5s}
 	.minititle2{transition-delay:800ms;}
