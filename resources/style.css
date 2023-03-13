@@ -358,6 +358,7 @@ img.kakotalk {
 .galleryWrap .galWrap .galList .col li > a .img {
     background-size: cover !important;
     background-position: center center !important;
+    padding-bottom: 125.575%;	
     display: block;
 }
 
