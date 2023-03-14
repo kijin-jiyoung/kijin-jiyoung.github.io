@@ -1822,7 +1822,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .alertPop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#e9dbde; font-size: 16px;font-weight: 500;color:#000; border-radius:12px;}
 
 
-.guestName {font-family: 'Pretendard', serif; display: inline-block; vertical-align: middle; font-weight:500; margin-left: 14px; font-size:16px; line-height:16px; color:#2f1f12; padding-left:23px; background:url('/html/images/tpl/ico_mHeart.png') left center no-repeat; background-size:18px auto;}
+.guestName {font-family: 'Pretendard', serif; display: inline-block; vertical-align: middle; font-weight:500; margin-left: 14px; font-size:16px; line-height:16px; color:#2f1f12; padding-left:23px; background:url('/resources/ico_mHeart.png') left center no-repeat; background-size:18px auto;}
 
 .basePop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;  }
 .basePop * {font-family: 'Pretendard', serif;}
