@@ -846,7 +846,20 @@
         </div>
     </div>
 <!------------ 갤러리 슬라이드 ------------>
-
+	
+	
+<div id="popupGuestBookName" class="basePop">
+	<div class="bg" onclick="basePopClose('.basePop')"></div>
+	<div class="in">
+		<div class="title">한 줄 메세지 전송하기</div>
+		<div class="input">
+			<input type="text" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
+		</div>
+		<div class="btn"><button type="button" id="btnGuestBookSubmit">전송</button></div>
+	</div>
+</div>
+	
+	
 
 <!------------ 스크립트 영역 ------------>
 
@@ -1037,87 +1050,8 @@ function commentsubmit(commentform) {
 <!------------ 방명록 작성 ------------>	     
 	
 	     
-	     
-<script>
-$(function(){
-    /*$("img").each( function(){
-        $(this).attr({"oncontextmenu":"return false"});
-    });*/
-    // For Android
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    });
-    
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
-    
-    $("a").on("contextmenu", (e) => {
-        e.preventDefault();
-        return false;
-    })
-    
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
-    
-    setTimeout(function(){
-        try{
-            var map_level = map.getLevel();
-            map.setLevel(map_level + 1);
-            map.setLevel(map_level);
-        } catch(e){}
-    },1000);
-});
-</script>
-	     
-	     
-	     
-<script>
-$(function() {
-    $('.lazy').lazy();
-    setTimeout( ()=> {
-        $('.popslide img.lazy').each( function() {
-            $(this).attr('src', $(this).data('src'));
-            $(this).removeAttr('data-src');
-            $(this).removeClass('lazy');
-        });
-        //$('.contentSlide.popslide .slideList ul').slick('refresh');
-    },5000);
-});
-</script>
-
-	     
-	     
-	     
-	     
-	     
-	     
-	     
-	     
-<script>
-  
-  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
+<script>	     
+//메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !g5_url || !site_name || !is_offical){
 		    //alertOpen_skin('미리보기에서는 사용하실 수 없습니다.')
