@@ -926,171 +926,7 @@ option {
    < ! - - 참석조사 - - >
 
 
-   < ! - - 방명록 - - >
-
-#modal{
-    display:none;
-    position:fixed; 
-    width:100%; height:100%;
-    top:0; left:0; 
-    background:rgba(0,0,0,0.3);
-}
-
-.commentmodal-con {
-    display:none;
-    position:fixed;
-    z-index: 20;
-    width:200px; height:320px;
-    min-height:50%;
-    top:50%; left:50%;
-    transform: translate(-50%,-50%);
-    background:#fff;
-    border-radius: 10px;
-    padding: 0px 10px 0px 10px;
-}
-.commentmodal-con .con{
-    font-size:12px;
-    padding: 0 auto;
-    vertical-align: middle;
-    text-align:center;
-    font-family: 'MapoFlowerIsland';
-}
-.commentmodal-con .close{
-    display:block;
-    position:absolute;
-    width:20px; height:20px;
-    text-align: center;
-    vertical-align: middle;
-    padding: 0 auto;
-    text-decoration: none;
-    background-color:#fff;
-    color:#000; font-size:15px;
-    font-family:'AppleSD';
-    right:15px; top:13px;	
-}
-
-
-h2.commenttitle {font-family: 'MapoFlowerIsland';text-align:center; vertical-align:middle;font-size:13px;margin:10px 0px 10px;}
-
-.writeform {max-width:300px;font-size:13px;font-family:'AppleSD';}
-.comment {
-    padding: 5px 5px 5px 5px;
-}
-
- .commentwriter {
-      display: inline-block;
-      width: 83px;
-      height: 40px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-      font-size: 12px;
-      padding: 5px;	
-    }
-
-.commentpassword {
-      display: inline-block;
-      width: 83px;
-      height: 40px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      padding: 5px;
-      box-sizing: border-box;
-      font-size: 12px;
-
-    }
-
-.commentcontent {
-      display: inline-block;
-      width: 170px;
-      height: 170px;
-      border-radius: 10px;
-      border: 1px solid #ccc;
-      padding: 5px;
-      box-sizing: border-box;
-      max-width:100%;
-    }
-
-
-
-
-.commentlistmodal-con{
-    display:none;
-    position:fixed;
-    z-index: 20;
-    width:200px; height:320px;
-    min-height:50%;
-    top:50%; left:50%;
-    transform: translate(-50%,-50%);
-    background:#fff;
-    border-radius: 10px;
-    padding: 10px 5px 0px 5px;
-    overflow: scroll; 
-}
-.commentlistmodal-con .con{
-    font-size:12px;
-    padding: auto;
-    vertical-align: middle;
-    text-align:center;
-    font-family: 'MapoFlowerIsland';
-}
-.commentlistmodal-con .close{
-    display:block;
-    position:absolute;
-    width:20px; height:20px;
-    text-align: center;
-    vertical-align: middle;
-    padding:auto;
-    text-decoration:none;
-    background-color:#fff;
-    color:#000; font-size:13px;
-    font-family:'AppleSD';
-    right:15px; top:8px;
-    line-height: 1.8;	
-}
-
-.commentdate {
-    margin: 0;
-    font-size: 10px;
-    font-family: Pretendard-Regular,cursive;
-    color: #999;
-}
-
-.commentlistcontent {
-    margin: 0;
-    padding-top: 0;
-    font-size: 17px;
-    line-height: 23px;
-    height: 160px;
-    background-image: url(/underline.png);
-    background-size: 184px;
-    background-position: -11px -2px;
-    font-family: Nanum Pen Script,cursive;
-    max-height: 170px;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    vertical-align: top;
-    text-overflow: ellipsis;
-    word-break: break-all;
-    -webkit-line-clamp: 3;
-}
-
-   < ! - - 방명록 - - >
-
-
-
-
-
-
-
-
-
-
-
-
  
-
 .changing,
 .changed {  
   transform:translateX(-80px);
@@ -1352,28 +1188,6 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .dayWrap .calWrap table .active:after {content:''; position: absolute; left:0; top:-10px; width:100%; height: 9px;}
 .dayWrap .calWrap table .active > span{position: relative;z-index: 1}
 .dayWrap .calWrap table .active:before{position:absolute;bottom:1px;left:50%;margin-left:-18px;display: none;content: '';width: 36px;height: 15px;background: url(../images/day_point.png) no-repeat 0 0;}
-
-.countWrap .countInner{height: 160px;padding-top: 35px;box-sizing: border-box}
-.countList{text-align: center;font-size: 0}
-.countList .numWrap,
-.countList .numWrap .countDay,
-.countList .numWrap .countDay .num,
-.countList .numWrap .wr,
-.countList .numWrap .col{position:relative;display: inline-block;vertical-align: middle;font-size: 0;font-family: 'EB Garamond';}
-.countList .numWrap .countDay{margin-right: 40px}
-.countList .numWrap .countDay .num em {position: relative; top:-3px;}
-.countList .numWrap .wr p span {position: relative; top:-3px;}
-.countList .numWrap .countDay,
-.countList .numWrap .wr{min-width: 84px;height: 74px;background: url(../images/bgCount.png?v1) center no-repeat;box-sizing:border-box;padding: 0 10px;
-	display: -webkit-inline-box;display: -moz-inline-box;display: -ms-inline-flexbox;display: -webkit-inline-flex;display: inline-flex;
-  	-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
-  	-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;
-}
-.countList .numWrap .countDay .num,
-.countList .numWrap .wr p span,
-.countList .numWrap .col{font-size: 48px;color: #f3e9eb}
-.countList .numWrap .col{font-size: 45px;width: 40px; background:url('../images/colon.png') center no-repeat; text-indent:-999em;}
-.countList .numWrap .txt{position: absolute;bottom: -22px;left:0;width: 100%;text-align: center;font-size: 11px;color: #a2828b;}
 
 
 .galleryWrap .galleryInner{padding-top: 97px;padding-bottom: 99px;}
@@ -1759,7 +1573,7 @@ body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !import
 .interPop .btnInterClose,
 .youtubeBox .btnMovieClose,
 .popImg .btnClose,
-.popImg .btnDownload{display: inline-block;position: fixed; right:46px; top:46px; width: 30px; height: 30px;text-indent:-999em; background:url('/resources/icon_close_m.png') 50% 50% no-repeat;z-index: 10}
+.popImg .btnDownload{display: inline-block; position: fixed; right:46px; top:46px; width: 30px; height: 30px;text-indent:-999em; background:url('/resources/icon_close_m.png') 50% 50% no-repeat;z-index: 10}
 
 /* popGnb */
 body.gnbOpen .popGnb{opacity:1; visibility:visible;}
