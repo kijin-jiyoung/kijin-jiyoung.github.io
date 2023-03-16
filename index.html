@@ -869,30 +869,6 @@
 	
 <!------------ 메시지 팝업 ------------>
 	
-<div class="fixObWrap">
-    <div class="leafOb no3" style="top: 669px; display: block; visibility: inherit; opacity: 1;">
-      <div class="leaf" style="transform: matrix3d(0.998875, 0.0474263, 0, 0, -0.0474263, 0.998875, 0, 0, 0, 0, 1, 0, 22.6529, 0, 0, 1);"><img src="https://www.dddproject.com/skin/tpl/wedding03-new/images/ob/leaf_ob01.png" alt=""></div>
-    </div>
-    <div class="leafOb no2" style="top: 627px; display: block; visibility: inherit; opacity: 1;">
-      <div class="leaf" style="transform: matrix3d(0.998459, -0.0554916, 0, 0, 0.0554916, 0.998459, 0, 0, 0, 0, 1, 0, -26.5089, 0, 0, 1);"><img src="https://www.dddproject.com/skin/tpl/wedding03-new/images/ob/leaf_ob02.png" alt=""></div>
-    </div>
-    <div class="leafOb no1" style="top: 704px; display: block; visibility: inherit; opacity: 1;">
-      <div class="leaf" style="transform: matrix3d(0.998742, -0.050152, 0, 0, 0.050152, 0.998742, 0, 0, 0, 0, 1, 0, -23.9559, 0, 0, 1);"><img src="https://www.dddproject.com/skin/tpl/wedding03-new/images/ob/leaf_ob03.png" alt=""></div>
-    </div>
-   <div class="leafOb no4">
-      <div class="leaf"></div>
-    </div>
-    <div class="leafOb no5">
-      <div class="leaf"></div>
-    </div>
-    <div class="leafOb no6">
-      <div class="leaf"></div>
-    </div>
-    <div class="leafOb no7">
-      <div class="leaf"></div>
-    </div>
-  </div>
-
 	
     <!-- fixPetalWrap 
     <div class="fixPetalWrap">
@@ -1123,10 +1099,6 @@ $(function(){
 </style>	
 	
 	
-	
-	
-	
-
 <script>
   
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
@@ -1181,7 +1153,7 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: 'https://script.google.com/macros/s/AKfycbzc3exKS7YPOFvjO9tivhYR53EcVWwD6jh74Pv7N3dKOkYP5fHFqX-BMfBloHZ0mErZ/exec',
+		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
@@ -1211,7 +1183,7 @@ $(function(){
     function basePopClose(idx){
     	$(idx).fadeOut('fast');
     }
-</script>	
+</script>
 	
 	
 	
