@@ -739,7 +739,7 @@
                         <!-- inputWrap -->
                         <div class="inputWrap">
                             <form name="fguest_book" id="fguest_book" onsubmit="return false">
-<input type="hidden" name="gb_to" id="gb_to" value="tpl_maleface"><input type="hidden" name="ca_name" value="청첩장"><input type="hidden" name="site_name" value="boyoung_1123">
+<input type="hidden" name="gb_to" id="gb_to" value="tpl_maleface"><input type="hidden" name="ca_name" value="청첩장"><input type="hidden" name="site_name" value="kjjy_0624">
                                 
                                 <div class="in">
                                     <div class="user">
@@ -757,7 +757,7 @@
                                         </div>
                                     </div>
                                     <div class="inputBox" style="margin: 5px 5px;">
-                                        <input type="text" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하 메시지를 입력해주세요. (최대 40자)" maxlength="40">
+                                        <input type="text" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요. (최대 40자)" maxlength="40">
                                         <div class="btnComment">
                                             <a href="javascript:;" class="any">전송</a>
                                         </div>
@@ -852,11 +852,10 @@
     </div>
 <!------------ 갤러리 슬라이드 ------------>
 	
-	
-<div id="popupGuestBookName" class="basePop">
+<div id="popupGuestBookName" class="basePop" style="display: block;">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
 	<div class="in">
-		<div class="title">한 줄 메세지 전송하기</div>
+		<div class="title">한 줄 메시지 전송하기</div>
 		<div class="input">
 			<input type="text" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
 		</div>
@@ -865,6 +864,7 @@
 </div>
 	
 	
+<script src="https://www.dddproject.com/skin/tpl/wedding03-new/js/hammer.zoom.js"></script>	
 
 <!------------ 스크립트 영역 ------------>
 
@@ -1567,19 +1567,6 @@ owa_cmds.push(['trackDomStream']);
         <div class="obj no5"></div>
     </div>
     //fixPetalWrap -->
-	 
-	 
-	 
-<div id="popupGuestBookName" class="basePop">
-	<div class="bg" onclick="basePopClose('.basePop')"></div>
-	<div class="in">
-		<div class="title">한 줄 메세지 전송하기</div>
-		<div class="input">
-			<input type="text" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
-		</div>
-		<div class="btn"><button type="button" id="btnGuestBookSubmit">전송</button></div>
-	</div>
-</div>
 
 
 
@@ -1731,7 +1718,7 @@ $(function(){
 			        alertOpen_skin(data.error)
                     return false;
                 } else {
-			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
+			        alertOpen_skin(__('등록되었습니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
                     const $marquee =  $('.marqWrap');
