@@ -29,70 +29,87 @@
 	  
       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+      <link rel="stylesheet" type="text/css" href="https://kijin-jiyoung.github.io/resources/visit.css?t=1650403481" media="all">  
 	  
 	  
-	  
-  <!-- 모달 . 아코디언 -->
+      <!-- 모달 . 아코디언 -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 	  
-  <!-- 참석조사 -->		  
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <!-- 참석조사 -->		  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-  <!-- 스크롤 -->
+      <!-- 참고 -->
+      <script src="/plugin/moment-develop/moment.js"></script>
+      <script src="https://kijin-jiyoung.github.io/resources/swiper.min.css"></script>
+      <script src="https://kijin-jiyoung.github.io/js/common.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/fingerprint.js?ver=210618"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/murmurhash3.js?ver=210618"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/visit.js?t=1650403481"></script>
 
-<script src="https://kijin-jiyoung.github.io/js/common.js"></script>
-<script src="https://kijin-jiyoung.github.io/js/jquery.mCustomScrollbar.min.js"></script>  
-<script src="https://kijin-jiyoung.github.io/js/jquery-ui.min.js"></script>
-<script src="https://kijin-jiyoung.github.io/js/slick.min.js"></script>
-<script src="https://kijin-jiyoung.github.io/js/hammer.js"></script>	  
-<script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	  
-<script src="https://kijin-jiyoung.github.io/js/imagesloaded.pkgd.min.js"></script>
+	  
+      <script src="https://kijin-jiyoung.github.io/js/swiper.js"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/jquery.mCustomScrollbar.min.js"></script>  
+      <script src="https://kijin-jiyoung.github.io/js/jquery-ui.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/slick.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/hammer.js"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/imagesloaded.pkgd.min.js"></script>
 	  
 	  
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 	  
 	  
 	
 
-  <script>
-  // 자바스크립트에서 사용하는 전역변수 선언
-  var g5_url       = "https://kijin-jiyoung.github.io";
-  var g5_bbs_url   = "https://kijin-jiyoung.github.io/bbs";
-  var g5_site_name = "kjjy_0624";
-  var g5_is_member = "";
-  var g5_is_admin  = "";
-  var g5_is_mobile = "";
-  var g5_bo_table  = "";
-  var g5_sca       = "";
-  var g5_editor    = "";
-  var g5_cookie_domain = "";
-    </script>
-
-
+   <script>
+      const locale = 'ko-KR';
+      // 자바스크립트에서 사용하는 전역변수 선언
+      var g5_url       = 'https://kijin-jiyoung.github.io';
+      var g5_bbs_url   = 'https://kijin-jiyoung.github.io/bbs';
+      var g5_is_member = '';
+      var g5_is_admin  = '';
+      var g5_is_mobile = '';
+      var g5_is_admin  = '';
+      var g5_is_admin  = '';
+      var g5_editor    = '';
+      var g5_cookie_domain = '.github.io';
+      var site_name = 'kjjy_0624';
+      var is_offical = '';
+      var withCanvasDrawing = new Fingerprint({canvas: true});
+      var withoutCanvasDrawing = new Fingerprint({canvas: false});
+      var fingerprint = withCanvasDrawing.get()+''+withoutCanvasDrawing.get();
+   </script>
+    <style>
+      .msg_sound_only, .sound_only {display:inline-block !important;position:absolute;top:0;left:0;width:0;height:0;margin:0 !important;padding:0 !important;font-size:0;line-height:0;border:0 !important;overflow:hidden !important}
+      .lazy {
+      background-repeat: no-repeat;
+      background-position: center;
+      }
+    </style>
 
   
 	  
 	  
 	  
 	  
-<!-- Google Analytics -->
+      <!-- Google Analytics -->
 	  
     
 
 </head>	
 	
 <body>
-<br>
-<div id="wrap">
-<a href="javascript:openModal('surveymodal');" class="button modal-open" style="text-decoration:none;text-align:center;vertical-align:middle;border-radius:10px;font-size:13px;display:inline-block; padding: 3px 15px;color:#fff; background:#646059; margin:5px;">참석조사</a>
-</div>
+      <br>
+      <div id="wrap">
+      <a href="javascript:openModal('surveymodal');" class="button modal-open" style="text-decoration:none;text-align:center;vertical-align:middle;border-radius:10px;font-size:13px;display:inline-block; padding: 3px 15px;color:#fff; background:#646059; margin:5px;">참석조사</a>
+      </div>
 
-<div id="modal"></div>	
-<div class="surveymodal-con surveymodal">
-<div class="con">
-<h2 id="surveytitle">참석조사</h2>
-<p id="description">식사 준비를 위한 사전 조사이니<br>부담없으시길 바랍니다🙏🏻</p>
+      <div id="modal"></div>	
+      <div class="surveymodal-con surveymodal">
+      <div class="con">
+      <h2 id="surveytitle">참석조사</h2>
+      <p id="description">식사 준비를 위한 사전 조사이니<br>부담없으시길 바랍니다🙏🏻</p>
 
 <div class="postformbox">
 <form action="" id="survey-form">   
@@ -270,101 +287,101 @@
 <div class="galWrap mt">
 <div class="inner">
 
-                <!-- gallery -->
-                            <div class="gallery">
-                                <div class="galList">
-                                    <div class="col">
-                                        <ul>
-                                            <li slide-num="1">
-                                                <a href="javascript:;">
-	                                            <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma1.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="2">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma2.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="3">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma3.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                            <li slide-num="4">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma4.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="5">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma5.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="6">
-                                                <a href="javascript:;">
-                                                    	<span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma6.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="7">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma7.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                           <li slide-num="8">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma8.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                       </ul>
-                                    </div>
-                                </div>
+        <!-- gallery -->
+       <div class="gallery">
+        <div class="galList">
+         <div class="col">
+        <ul>
+        <li slide-num="1">
+        <a href="javascript:;">
+	 <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma1.jpg&quot;);"></span>
+          <div class="pop"><span class="hover"></span></div>
+         </a>
+         </li>
+        <li slide-num="2">
+          <a href="javascript:;">
+          <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma2.jpg&quot;);"></span>
+          <div class="pop"><span class="hover"></span></div>
+           </a>
+            </li>
+              <li slide-num="3">
+           <a href="javascript:;">
+           <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma3.jpg&quot;);"></span>
+         <div class="pop"><span class="hover"></span></div>
+              </a>
+             </li>
+            <li slide-num="4">
+              <a href="javascript:;">
+          <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma4.jpg&quot;);"></span>
+               <div class="pop"><span class="hover"></span></div>
+               </a>
+               </li>
+            <li slide-num="5">
+             <a href="javascript:;">
+            <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma5.jpg&quot;);"></span>
+           <div class="pop"><span class="hover"></span></div>
+            </a>
+           </li>
+          <li slide-num="6">
+              <a href="javascript:;">
+         <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma6.jpg&quot;);"></span>
+            <div class="pop"><span class="hover"></span></div>
+         </a>
+           </li>
+     <li slide-num="7">
+         <a href="javascript:;">
+           <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma7.jpg&quot;);"></span>
+         <div class="pop"><span class="hover"></span></div>
+          </a>
+        </li>
+       <li slide-num="8">
+       <a href="javascript:;">
+       <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma8.jpg&quot;);"></span>
+        <div class="pop"><span class="hover"></span></div>
+       </a>
+     </li>
+        </ul>
+       </div>
+          </div>
 				    
 				    
 				    
-                                <div class="galList hiddenList">
-                                    <div class="col">
-                                        <ul>
-                                               <li slide-num="9">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma9.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                                <li slide-num="10">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma10.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                                  <li slide-num="11">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma11.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                                <li slide-num="12">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma1.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                                                                                                                    <li slide-num="13">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma2.jpg&quot;);"></span>
-                                                    <div class="pop"><span class="hover"></span></div>
-                                                </a>
-                                            </li>
-                                                                                                                                    <li slide-num="14">
-                                                <a href="javascript:;">
-                                                    <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma3.jpg&quot;);"></span>
+    <div class="galList hiddenList">
+        <div class="col">
+          <ul>
+            <li slide-num="9">
+              <a href="javascript:;">
+               <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma9.jpg&quot;);"></span>
+                 <div class="pop"><span class="hover"></span></div>
+                  </a>
+              </li>
+              <li slide-num="10">
+               <a href="javascript:;">
+                <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma10.jpg&quot;);"></span>
+                 <div class="pop"><span class="hover"></span></div>
+                  </a>
+               </li>
+               <li slide-num="11">
+                <a href="javascript:;">
+                 <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma11.jpg&quot;);"></span>
+                  <div class="pop"><span class="hover"></span></div>
+                   </a>
+                </li>
+                <li slide-num="12">
+                 <a href="javascript:;">
+                  <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma1.jpg&quot;);"></span>
+                   <div class="pop"><span class="hover"></span></div>
+                    </a>
+                     </li>
+                     <li slide-num="13">
+                      <a href="javascript:;">
+                       <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma2.jpg&quot;);"></span>
+                         <div class="pop"><span class="hover"></span></div>
+                           </a>
+                       </li>
+                       <li slide-num="14">
+                        <a href="javascript:;">
+                         <span class="img lazy" style="display: block; background-image: url(&quot;https://kijin-jiyoung.github.io/photo/noma3.jpg&quot;);"></span>
                                                     <div class="pop"><span class="hover"></span></div>
                                                 </a>
                                             </li>
