@@ -1482,7 +1482,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .count .total{padding-bottom: 3px}
 .quickWrap .count .today:after{content:''; position: absolute; left:50%; bottom:-1px;  width: 2px; height: 2px; border-radius:50%; background:#aaaaaa;}
 .quickWrap .count:after{content:''; position: absolute; left:50%; bottom:0;  width:25px; margin-left:-12px; height: 1px;  background:#f3ebe3;}
-.quickWrap .linkList{margin-bottom: 5px;}
+.quickWrap .linkList{margin-bottom: 0px;}
 .quickWrap .linkList ul li {position: relative;}
 .quickWrap .linkList ul li:last-child {border-bottom:none;}
 .quickWrap .linkList ul li .ico{display: block;height: 50px;text-indent:-999em;font-size: 0;color: transparent}
@@ -1967,7 +1967,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.head .inner .btnMenu{top: 13px;right: 16px}
 	.head .inner .btnMenu a{background-size: 20px auto}
 	
-	.quickWrap {top:auto; bottom:0; width:100%; height: 70px; font-size:13px; display: -webkit-box;display: -ms-flexbox;}
+	.quickWrap {top:auto; bottom:0; width:100%; display: -webkit-box;display: -ms-flexbox;}
 	.quickWrap .count,
 	.quickWrap .linkList{/*float:left; width: 25%;width:50%;*/width:100%;padding:0;margin-bottom: 0; }
 	.quickWrap .count .today, 
