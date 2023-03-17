@@ -1486,7 +1486,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .linkList ul li {position: relative;}
 .quickWrap .linkList ul li:last-child {border-bottom:none;}
 .quickWrap .linkList ul li .ico{display: block;height: 50px;text-indent:-999em;font-size: 0;color: transparent}
-.quickWrap .linkList ul li.survey .ico {background-image: url('/resources/ico_survey.png') 50% 50% no-repeat;background-size: 17px auto;}	
+.quickWrap .linkList ul li.survey .ico {background-image: url('/resources/ico_surveymodal-con.png') 50% 50% no-repeat;background-size: 17px auto;}	
 .quickWrap .linkList ul li.sound .ico {background:url('/resources/btnSoundOff.png') 50% 55% no-repeat;background-size: 20px auto}
 .quickWrap .linkList ul li.sound.on .ico {background-image: url('/resources/btnSoundOn.png');}
 .quickWrap .linkList ul li.tel{display: none;}
