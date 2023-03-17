@@ -1495,7 +1495,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .linkList ul li.mail{display: none;}
 .quickWrap .linkList ul li.mail .ico {background:url('/resources/btnMail.png') 50% 50% no-repeat;}
 .quickWrap .linkList ul li.mail .ico:hover {background:url('/resources/btnMail_hover.png') 50% 50% no-repeat;}
-.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #e9dbde;background-size: 24px auto;}
+.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-size: 24px auto;}
 .quickWrap .linkList ul li .pop {position: absolute; right:65px; top:50%; transform:translate(-10px,-50%); transition:.3s all; white-space:nowrap; background:#fff; opacity:0; visibility:hidden;}
 .quickWrap .linkList ul li .pop a {display: block; color:#222222; padding:9px 15px;}
 .quickWrap .linkList ul li .pop:after {content:''; position: absolute; right:-5px; top:50%; width: 5px; height:10px; margin-top:-5px; background:url('/resources/ico_hover.png') center center no-repeat;}
@@ -1976,7 +1976,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.quickWrap .count .total{text-align: left}
 	.quickWrap .count br,
 	.quickWrap .control{display: none}
-	.quickWrap .linkList ul{
+	.quickWrap .linkList ul{ margin-left: -40px;
 		display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     	-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     	-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
