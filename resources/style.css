@@ -1486,6 +1486,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .linkList ul li {position: relative;}
 .quickWrap .linkList ul li:last-child {border-bottom:none;}
 .quickWrap .linkList ul li .ico{display: block;height: 50px;text-indent:-999em;font-size: 0;color: transparent}
+.quickWrap .linkList ul li.survey .ico {background-image: url('/resources/survey.png') 50% 50% no-repeat;}	
 .quickWrap .linkList ul li.sound .ico {background:url('/resources/btnSoundOff.png') 50% 55% no-repeat;background-size: 20px auto}
 .quickWrap .linkList ul li.sound.on .ico {background-image: url('/resources/btnSoundOn.png');}
 .quickWrap .linkList ul li.tel{display: none;}
@@ -1494,7 +1495,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .linkList ul li.mail{display: none;}
 .quickWrap .linkList ul li.mail .ico {background:url('/resources/btnMail.png') 50% 50% no-repeat;}
 .quickWrap .linkList ul li.mail .ico:hover {background:url('/resources/btnMail_hover.png') 50% 50% no-repeat;}
-.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #e9dbde;background-size: 24px auto}
+.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;}
 .quickWrap .linkList ul li .pop {position: absolute; right:65px; top:50%; transform:translate(-10px,-50%); transition:.3s all; white-space:nowrap; background:#fff; opacity:0; visibility:hidden;}
 .quickWrap .linkList ul li .pop a {display: block; color:#222222; padding:9px 15px;}
 .quickWrap .linkList ul li .pop:after {content:''; position: absolute; right:-5px; top:50%; width: 5px; height:10px; margin-top:-5px; background:url('/resources/ico_hover.png') center center no-repeat;}
