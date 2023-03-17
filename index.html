@@ -165,9 +165,10 @@
     <!-- linkList -->
             <div class="linkList">
                 <ul>
-                   <li class="survey">
-		    <a class="ico" href="javascript:;">참석조사</a>
-			   <div class="pop"><a href="javascript:;" onclick="openModal('surveymodal')">survey</a></div>   
+                   <li class="surveymodal-com surveymodal">
+		    <a class="ico" href="javascript:;" onclick="openModal('surveymodal')">참석조사</a>
+			   <div class="pop"><a href="javascript:;">survey</a></div>    
+ 
 
 			         <div id="modal"></div>	
       <div class="surveymodal-con surveymodal">
@@ -233,7 +234,7 @@
                         </div>
                     </li>
                     <li class="link">
-                        <a class="ico" href="javascript:;">링크</a>
+                        <a class="ico" href="javascript:;" onclick="copy_to_clipboard('https://kijin-jiyoung.github.io')">링크</a>
                         <div class="pop"><a href="javascript:;">홈페이지 주소 복사</a></div>
                     </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
