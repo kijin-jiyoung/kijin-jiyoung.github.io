@@ -1987,7 +1987,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.quickWrap .count .today:after{bottom: auto;top:50%;margin-top: -1px;left:auto;right:-1px}
 	.quickWrap .count:after{width: 1px;}
 	.quickWrap .linkList ul > li{position: relative}
-	.quickWrap .linkList ul > li:before{position: absolute;display: block;content: '';width: 1px;height: 18px;background-color: #f3ebe3;top:50%;left:50%;margin-top: -9px;}
+	.quickWrap .linkList ul > li:before{position: absolute;display: block;content: '';width: 1px;height: 18px;background-color: #f3ebe3;top:50%;margin-top: -9px;}
 	.quickWrap .linkList ul > li:last-child:before{display: none}
 	.quickWrap .count .today, 
 	.quickWrap .count .total,
