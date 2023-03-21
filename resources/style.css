@@ -1022,7 +1022,7 @@ option {
 					
 				
 @media (max-width: 1024px)
-.quickWrap {top:auto; bottom:0; width:100%; display: -webkit-box;display: -ms-flexbox;}}			
+.quickWrap {top:auto; bottom:0; width:100%; display: -webkit-box;display: -ms-flexbox;}			
 	
 	
 body.noScroll .wrap{position: relative;}
