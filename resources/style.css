@@ -648,33 +648,20 @@ option {
 					
 					
 /* Reset */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, form, fieldset, p, button {/* margin: 0; */padding: 0;}
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
-img{vertical-align:top; max-width:100%}
 label,button{cursor:pointer}
-a{color:#000;text-decoration:none}
 a:hover{}
 hr{display:none}
 legend{*width:0}
-table{border-collapse:collapse;border-spacing:0}
-caption{font-size:0; line-height:0; height:0}
 button{outline: none;border: 0;background: none;}
 
-/* Mobile Form Default */
-input[type='text'],input[type='password'],input[type='image'],input[type='search']{-webkit-appearance:none;-webkit-border-radius:0}
-
-/* Skip */
-#skipnavigation{z-index:9999;position:absolute;left:0;top:0;width:100%;text-align:center}
-#skipnavigation *{list-style:none;margin:0;padding:0;}
-#skipnavigation a{display:block;width:100%;height:0;overflow:hidden;white-space:nowrap;}
-#skipnavigation a:focus,
-#skipnavigation a:active{display:block;width:100%;height:36px;color:#fff;background:#000;line-height:36px;text-decoration:underline !important;font-size:14px;}
-
-::-webkit-input-placeholder {color: #a9a298; font-weight: normal; font-size: 18px;font-weight: 400;}
-:-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 18px;font-weight: 400;}
-::-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 18px;font-weight: 400;}
-:-ms-input-placeholder {color: #a9a298; font-weight: normal;font-size: 18px; font-weight: 400}
+::-webkit-input-placeholder {color: #a9a298; font-weight: normal; font-size: 14px;font-weight: 400;}
+:-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 14px;font-weight: 400;}
+::-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 14px;font-weight: 400;}
+:-ms-input-placeholder {color: #a9a298; font-weight: normal;font-size: 14px; font-weight: 400}
 
 * {box-sizing:border-box;}
 body {overflow-x:hidden;}
@@ -684,7 +671,6 @@ body {overflow-x:hidden;}
 .m{display: none;}
 .t{display: none;}
 .w{display: block;}
-
 
 body.noScroll .wrap{position: relative;}
 body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
