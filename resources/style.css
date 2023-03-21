@@ -591,7 +591,7 @@ img, fieldset, iframe {
 
 .btnMenuClose, .popSlide .closeSlide, .interPop .btnInterClose, .youtubeBox .btnMovieClose, .popImg .btnClose, .popImg .btnDownload {
     display: inline-block;
-    position: fixed;
+    position: relative;
     right: 46px;
     top: 46px;
     width: 30px;
@@ -1472,7 +1472,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .head .inner .btnMenu a{display: inline-block; vertical-align: top; width:25px; height:22px; background:url('/resources/icon_menu.png') center no-repeat; text-indent:-999em;}
 
 /* QUICK */
-.quickWrap {position: fixed; right:0; top:0px;height: 49px; width: 60px; z-index: 91; text-align: center;  color:#000; font-weight:500 ;font-size:12px;background:#fff;}
+.quickWrap {position: fixed; right:0; top:250px;width: 60px; z-index: 91; text-align: center;  color:#000; font-weight:500 ;font-size:12px;background:#fff;}
 .quickWrap .count {width: 100%;position: relative;}
 .quickWrap .count .today,
 .quickWrap .count .total{height: 57px;line-height: 1.15;position:relative;box-sizing:border-box;
@@ -1507,7 +1507,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .linkList ul li:hover .pop {opacity:1; visibility:visible; transform:translate(0,-50%); }
 .quickWrap .audioWrap {position: absolute; visibility:hidden; opacity:0;}
 .quickWrap .control a {display: block;height: 50px; text-indent:-999em;font-size: 0;color: transparent}
-.quickWrap .control a.btnTop {position: relative;background:url('../images/btnTop.png') 50% 50% no-repeat;}
+.quickWrap .control a.btnTop {position: relative;background:url('/resources/btnTop.png') 50% 50% no-repeat;}
 .quickWrap .control a.btnTop:after {content:''; position: absolute; left:50%; bottom:0; margin-left:-12px; width: 25px; height: 1px; background:#f3ebe3;}
 .quickWrap .control a.btnDown {background:url('/resources/btnBottom.png') 50% 50% no-repeat;}
 
