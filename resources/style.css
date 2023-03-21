@@ -1486,7 +1486,7 @@ body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 .quickWrap .count .today:after{content:''; position: absolute; left:50%; bottom:-1px;  width: 2px; height: 2px; border-radius:50%; background:#aaaaaa;}
 .quickWrap .count:after{content:''; position: absolute; left:50%; bottom:0;  width:25px; margin-left:-12px; height: 1px;  background:#f3ebe3;}
 .quickWrap .linkList{margin-bottom: 10px;}
-.quickWrap .linkList ul li {position: relative;}
+.quickWrap .linkList ul li {position: relative;margin-left: -40px;}
 .quickWrap .linkList ul li:last-child {border-bottom:none;}
 .quickWrap .linkList ul li .ico{display: block;height: 50px;text-indent:-999em;font-size: 0;color: transparent}
 .quickWrap .linkList ul li.survey .ico{height:60px;background: url('/resources/ico_survey.png') 50% 50% no-repeat;background-color:#646059;background-size: 24px auto;}	
@@ -1924,6 +1924,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.head .inner .h1Wrap h1 > a{font-size: 12px}
 	.head .inner .btnMenu{top: 13px;right: 16px}
 	.head .inner .btnMenu a{background-size: 20px auto}	
+	
+	
+	
 	.quickWrap {top:auto; bottom:0; width:100%; display: -webkit-box;display: -ms-flexbox;}
 	.quickWrap .count,
 	.quickWrap .linkList{/*float:left; width: 25%;width:50%;*/width:100%;padding:0;margin-bottom: 0; }
@@ -1936,7 +1939,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.quickWrap .linkList ul{ margin-left: -40px;
 		display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     	-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
-    	-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-block-end: 0px;margin-block-start: 0px;}
+    	-webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;margin-block-end: 0px;margin-block-start: 0px;
+	}
+	
 	.quickWrap .linkList ul > li{width: 100%}
 	.quickWrap .count .today:after{bottom: auto;top:50%;margin-top: -1px;left:auto;right:-1px}
 	.quickWrap .count:after{width: 1px;}
@@ -1951,6 +1956,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.quickWrap .linkList ul li.sound .ico,
 	.quickWrap .linkList ul li.link .ico{background-position: 50% 50%}
 	.quickWrap .linkList .pop{display: none;}
+	
 	.interPop .popCont .inner{padding: 63px 0}
 	.interPop .secTitleWrap p{margin-top: 6px;}
 	.interPop .popCont .inner .interCont{padding-top: 0;}
