@@ -884,7 +884,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .hiddenList {display: none;}
 
 .more{text-align: center;}
-.more span{display: inline-block; vertical-align: top; font-size:19px; color:#c4b2b7; font-weight:500; padding-bottom:55px; background:url('/resources/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
+.more span{display: inline-block; vertical-align: top; font-size:19px; color:#646059; font-weight:500; padding-bottom:55px; background:url('/resources/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
 
 .tabIn{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width:100%;background:url(../images/bg_thx03.png) no-repeat 50% 0}
 .tabIn > a,
@@ -1124,7 +1124,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .quickWrap .linkList ul li.mail{display: none;}
 .quickWrap .linkList ul li.mail .ico {background:url('/resources/btnMail.png') 50% 50% no-repeat;}
 .quickWrap .linkList ul li.mail .ico:hover {background:url('/resources/btnMail_hover.png') 50% 50% no-repeat;}
-.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #e9dbde;background-size: 24px auto}
+.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #fae100;background-size: 24px auto}
 .quickWrap .linkList ul li .pop {position: absolute; right:65px; top:50%; transform:translate(-10px,-50%); transition:.3s all; white-space:nowrap; background:#fff; opacity:0; visibility:hidden;}
 .quickWrap .linkList ul li .pop a {display: block; color:#222222; padding:9px 15px;}
 .quickWrap .linkList ul li .pop:after {content:''; position: absolute; right:-5px; top:50%; width: 5px; height:10px; margin-top:-5px; background:url('/resources/ico_hover.png') center center no-repeat;}
@@ -1255,13 +1255,13 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .alertPop .in {position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);text-align: center;width:90%; max-width: 365px;  z-index: 100;border-radius:20px;background:#fff;padding-top: 47px;padding-bottom:36px; }
 .alertPop .in .title{font-size: 19px;color:#000;line-height: 1.3;margin-bottom: 20px;}
 .alertPop .in .btn a,
-.alertPop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#e9dbde; font-size: 16px;font-weight: 500;color:#000; border-radius:12px;}
+.alertPop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#646059; font-size: 16px;font-weight: 500;color:#000; border-radius:12px;}
 
 
 .guestName {font-family: 'Pretendard', serif; display: inline-block; vertical-align: middle; font-weight:500; margin-left: 14px; font-size:16px; line-height:16px; color:#2f1f12; padding-left:23px; background:url('/html/images/tpl/ico_mHeart.png') left center no-repeat; background-size:18px auto;}
 
 .basePop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;  }
-.basePop * {font-family: 'Pretendard', serif;}
+.basePop * {font-family: 'AppleSD';}
 .basePop .bg{ position: fixed; left:0; top:0; width: 100%; height: 100%;  z-index: 1;}
 .basePop .in {position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);text-align: center;width:90%; max-width: 365px;  z-index: 100;background:#fff;padding-top: 43px;padding-bottom:33px; }
 .basePop .in .title{font-size: 19px;color:#000000;line-height: 1.3;}
@@ -1563,16 +1563,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
 
 	.thanksWrap.none {background:#fff; padding:30px 0 50px 0;}
-	.thanksWrap.none .footer {transform:none; opacity:1; border-bottom:1px solid #fafafa; padding-bottom:30px;}
-	.thanksWrap.none .footer .logo a {width:70px; height:22px; background:url('../images/thxNone.png') center no-repeat; background-size:70px auto; }
-	.thanksWrap.none .footer .logo img{display:none;}
-	.thanksWrap.none .footer .copy {color:#ccc;}
 
-	
-	.footer .copy{font-size: 10px}
-	.footer .logo{margin-right: 10px}
-	.footer .logo a{width: 64px;height: 20px;background-image:url(../images/logo_m.png)}
-	
 	.head{height: 49px}
 	.head .inner .h1Wrap{top: 14px;left: 25px;}
 	.head .inner .h1Wrap h1 > a{font-size: 12px}
