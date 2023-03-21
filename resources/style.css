@@ -1680,8 +1680,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.popImg .btnClose,
 	.popImg .btnDownload{right:13px; top:14px;background-image:url('/resources/icon_close_m.png'); background-size:18px auto;}
 	.youtubeBox .btnMovieClose,
-	.popSlide .closeSlide,
-	.popImg .btnClose{background-image: url(/resources/icon_close_m.png);}
+	.popSlide .closeSlide{background-image: url(/resources/icon_close_m.png);}
 	.popImg .btnDownload{right: auto;left: 13px;background-image: url(/resources/icon_download_m.png);}	
 	.minititle{transition-delay:100ms;transform:translateY(30px);transition-duration: 1.5s}
 	.minititle2{transition-delay:800ms;}	
@@ -2000,24 +1999,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.fixObWrap .leafOb:nth-child(6) img{width: 19px}
 }
 
-
-	
-	
 	
 /* @media all and (min-width:2300px) {
 	.visualBox{min-width:2560px;min-height:1440px;height:auto; width:auto;margin: 0 auto}
 } */	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
