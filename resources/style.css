@@ -666,8 +666,6 @@ body{-webkit-touch-callout: none !important;}
 #skipnavigation{z-index:9999;position:absolute;left:0;top:0;width:100%;text-align:center}
 #skipnavigation *{list-style:none;margin:0;padding:0;}
 #skipnavigation a{display:block;width:100%;height:0;overflow:hidden;white-space:nowrap;}
-#skipnavigation a:focus,
-#skipnavigation a:active{display:block;width:100%;height:36px;color:#fff;background:#000;line-height:36px;text-decoration:underline !important;font-size:14px;}
 
 	
 ::-webkit-input-placeholder {color: #a9a298; font-weight: normal; font-size: 14px;font-weight: 400;}
