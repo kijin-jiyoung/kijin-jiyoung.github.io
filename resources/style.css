@@ -788,7 +788,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .secTitleWrap.t1 .ht .mini{letter-spacing:.14em;text-indent: .14em;}
 .secTitleWrap .minititle{transition-delay: 500ms;transform:translateY(30px);}
 
-.inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background:url(../images/mainBottom_bg.jpg) no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
+.inviteBox{position:relative;font-size: 20px;color: #1f4913;line-height: 1.45;/* background: no-repeat;  */ background:#f8f9f5;background-size:cover;z-index: 1; height:165px;}
 .inviteBox:after {display: none; }
 .inviteBox .secTitleWrap{position: absolute;top:-10px;left:50%;transform: translateX(-50%);width: 100%;}
 .inviteBox .mainText{position: relative; text-align: center; font-family: 'AritaBuri'; padding-top:65px;;}
@@ -802,7 +802,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mainLoad .inviteBox .stamp .text {opacity:1;}
 .mainLoad .inviteBox .stamp .img {opacity:1;}
 
-.greetingWrap{text-align:center; padding-top: 100px; background:#fefdfb;}
+.greetingWrap{text-align:center; padding-top: 100px;}
 .greetingWrap .greetingBox{}
 .greetingWrap .greetingInner{padding-top: 45px;padding-bottom: 100px;}
 .greetingWrap .textBox{font-family: 'AritaBuri';font-size: 25px;color: #222222;line-height: 1.55;}
@@ -841,7 +841,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 
 .secTitleWrap .ht > span:not(.mini):before, .secTitleWrap .ht > span:not(.mini):after {background: #e2d3d7;}
 
-.dayWrap .dayBox p{font-family: 'AritaBuri';color: #222222;font-size: 27px;line-height: 1.4; text-align: center;}
+.dayWrap .dayBox p{font-family: 'AritaBuri';font-size: 27px;line-height: 1.4; text-align: center;}
 .dayWrap .placeBox{position: relative;padding: 23px 0 22px;margin-bottom: 18px;}
 .dayWrap .placeBox:before,
 .dayWrap .placeBox:after{display: block;content: '';width: 100%;height: 1px;background:url('/resources/bg_thx02.png') no-repeat 50% 50%;position: absolute;top:0;left:0}
@@ -908,7 +908,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .tabIn > a span,
 .tabIn > button span{transition: padding-left .3s}
 
-.infoWrap{background:#fff;  position: relative;text-align: center; padding:100px 0;}
+.infoWrap{position: relative;text-align: center; padding:100px 0;}
 .infoWrap .infoList {position: relative;  z-index: 10; max-width:1280px; margin:0 auto;}
 .infoWrap .infoList .slideList:after {content:''; position: absolute; left:50%; top:0; z-index: 10; margin-left:-960px; width:1920px; height:159px; background:url('../images/slideBg.png') center top no-repeat;}
 .infoWrap .infoList .slideList ul li{ max-width:433px; margin:0 auto; padding:0 10px; position: relative;  text-align: left; opacity:.5;}
@@ -941,10 +941,10 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoWrap .infoList .slideList ul li.swiper-slide-active a {display: flex;}
 .infoWrap .infoList .swiper-button-next, 
 .infoWrap .infoList .swiper-button-prev{z-index:50; position: absolute; left:50%; top:47px; margin-top: 0; margin-left:-250px; width:64px; height:64px; background:url('../images/btnSlidePrev.png') no-repeat; }
-.infoWrap .infoList .swiper-button-next{margin-left:190px;  background:url('../images/btnSlideNext.png') no-repeat; }
+.infoWrap .infoList .swiper-button-next{margin-left:190px;  background:url('/resources/btnSlideNext.png') no-repeat; }
 .infoWrap .secTitleWrap p {color:#000}	
 	
-.guestBookWrap{background:url('/resources/guestbook_bg.jpg') center no-repeat; background-size:cover;}
+.guestBookWrap{background: center no-repeat; background-size:cover;}
 .guestBookWrap .guestBookInner{padding-top: 97px;padding-bottom: 100px}
 .guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #e2d3d7 ;}
 .guestBookWrap .secTitleWrap p {letter-spacing:0;}
@@ -1008,7 +1008,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 }
 .comWrap .partyCheck .thxBox{color:#c4b2b7;background:#fff;}
 
-.contactWrap{background:url(../images/contact_bg.jpg) no-repeat 50% 0 / cover;}
+.contactWrap{background: no-repeat 50% 0 / cover;}
 .contactWrap .contactInner{padding-top: 93px;padding-bottom: 101px}
 .contactWrap .secTitleWrap{margin-bottom:42px; text-align: center;}
 .contactWrap .secTitleWrap.t1 .ht{color: #a2828b}
@@ -1025,15 +1025,15 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .contactWrap .coupleBox .box .imgTxt .img img {position: absolute; left:0; top:50%; transform:translateY(-50%); width:100%; height:100%; pointer-events:none; }
 
 
-.contacName a{height: 50px;box-sizing:border-box;border-radius: 12px; background:#f6f2f3;
+.contacName a{height: 50px;box-sizing:border-box;border-radius: 12px;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;
 }
-.contacName  a span{position: relative;font-weight: 500;color: #000000;font-size: 16px;padding-left: 27px;}
+.contacName  a span{position: relative;font-weight: 500;color: #000000;padding-left: 27px;}
 .contacName  a span:before{display: block;content: '';width: 17px;height: 17px;background:url('../images/icon_tel.png') no-repeat 0 0;position: absolute;top:50%;left:0;margin-top: -8px;}
 
-.mindWrap{background:#f8f8f8;}
+
 .mindWrap .mindInner{padding-top: 97px;padding-bottom: 100px}
 .mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px dotted #b7b7b7}
 .mindWrap .text{text-align: center;font-family: 'AritaBuri';font-size: 21px;color: #222222;line-height: 1.81;margin-bottom: 40px}
@@ -1085,7 +1085,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between;
 }
-.addrWrap .box:first-child{height: 92px;background: url(/resources/bg_thx02.png) no-repeat 50% 100%;}
+.addrWrap .box:first-child{height: 92px;background: no-repeat 50% 100%;}
 .addrWrap .addr,
 .addrWrap .label{font-family: 'AritaBuri';color: #222222;font-size: 22px;padding-left: 29px;letter-spacing:-.05em;}
 .addrWrap .addr{font-weight: 600;background: url(../images/icon_location2.png) no-repeat 0 50%;background-size: 15px auto;}
@@ -1094,7 +1094,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .addrWrap .addr + .btn{-webkit-flex-shrink: 0;-ms-flex-negative: 0;flex-shrink: 0;}
 .addrWrap .clipboard{width: 20px}
 
-.infoLoca{background-color: #f9f9f9;padding-bottom: 95px;}
+.infoLoca{padding-bottom: 95px;}
 .infoLoca .box{border-bottom: 1px solid #e0e0e0;padding-top: 37px;padding-bottom: 35px}
 .infoLoca .box:nth-child(1){padding-bottom: 40px}
 .infoLoca .box:last-child{border-bottom: 0;padding-bottom: 0}
@@ -1113,7 +1113,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoLoca .btnLoca .btns.no2 span:before{background-image: url(/resources/ico_nav02.png)}
 .infoLoca .btnLoca .btns.no3 span:before{background-image: url(/resources/ico_nav03.png)}
 
-.thanksWrap{background: url(/resources/thanks_bg.jpg) no-repeat 50% 0 / cover;}
+.thanksWrap{background:no-repeat 50% 0 / cover;}
 .thanksWrap .thanksInner{padding-top: 98px;padding-bottom: 40px;text-align: center}
 .thanksWrap .secTitleWrap{margin-bottom: 40px}
 .thanksWrap .secTitleWrap .ht{color: #866f76}
