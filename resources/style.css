@@ -1612,7 +1612,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.head .inner .btnMenu{top: 13px;right: 16px}
 	.head .inner .btnMenu a{background-size: 20px auto}
 	
-	.quickWrap {top:auto; bottom:0; width:100%;  font-size:13px; display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;}
+	.quickWrap {top:auto; bottom:0; width:100%;  font-size:13px; display: flex;}
 	.quickWrap .count,
 	.quickWrap .linkList{/*float:left; width: 25%;width:50%;*/width:100%;padding:0;margin-bottom: 0; }
 	.quickWrap .count .today, 
