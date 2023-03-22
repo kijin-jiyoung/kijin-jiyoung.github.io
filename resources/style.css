@@ -849,7 +849,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .dayWrap .calWrap table .active > span{position: relative;z-index: 1}
 .dayWrap .calWrap table .active:before{position:absolute;bottom:1px;left:50%;margin-left:-18px;display: none;content: '';width: 36px;height: 15px;background: url(../images/day_point.png) no-repeat 0 0;}
 
-.galleryWrap{background:url(/resources/gallery_bg.jpg) no-repeat 50% 0 / cover;}
+.galleryWrap{background:no-repeat 50% 0 / cover;}
 .galleryWrap .galleryInner{padding-top: 97px;padding-bottom: 99px;}
 .galleryWrap .galWrap{padding: 0 30px;}
 .galleryWrap .galWrap .inner{position: relative;max-width:1280px;margin:0 auto;}
