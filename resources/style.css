@@ -947,7 +947,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 	
 .guestBookWrap{background: center no-repeat; background-size:cover;}
 .guestBookWrap .guestBookInner{padding-top: 97px;padding-bottom: 100px}
-.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #e2d3d7 ;}
+.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px dotted #b7b7b7;}
 .guestBookWrap .secTitleWrap p {letter-spacing:0;}
 
 .guestBookWrap .marqWrap{overflow:hidden;height: 63px; }
@@ -1012,7 +1012,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .contactWrap{background: no-repeat 50% 0 / cover;}
 .contactWrap .contactInner{padding-top: 93px;padding-bottom: 101px}
 .contactWrap .secTitleWrap{margin-bottom:42px; text-align: center;}
-.contactWrap .secTitleWrap.t1 .ht{color: #a2828b}
+.contactWrap .secTitleWrap.t1 .ht{color: #b7b7b7;}
 .contactWrap .secTitleWrap p{color: #fff;margin-top: 9px;}
 .contactWrap .coupleBox{font-size:0;max-width: 500px;margin: 0 auto;transition:2s all; /*opacity:0; transform:translateY(50px);*/  transition-delay:500ms;text-align: center}
 .contactWrap .coupleBox .box{display: inline-block; vertical-align: top; position: relative; width:50%;padding: 0 30px;box-sizing: border-box}
@@ -1592,9 +1592,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.infoLoca .btnLoca{margin-top: 12px}
 	.infoLoca .btnLoca .btns{height: 40px;border-radius: 8px;}
 	.infoLoca .btnLoca .btns span{font-size: 12px;padding-left: 22px;}
-	.infoLoca .btnLoca .btns span:before{width: 17px;height: 17px;background-image: url(../images/ico_nav01_m.png);background-size: 17px auto;margin-top: -8.5px;}
-	.infoLoca .btnLoca .btns.no2 span:before{background-image: url(../images/ico_nav02_m.png);}
-	.infoLoca .btnLoca .btns.no3 span:before{background-image: url(../images/ico_nav03_m.png);}
+	.infoLoca .btnLoca .btns span:before{width: 17px;height: 17px;background-image: url(/resources/ico_nav01_m.png);background-size: 17px auto;margin-top: -8.5px;}
+	.infoLoca .btnLoca .btns.no2 span:before{background-image: url(/resources/ico_nav02_m.png);}
+	.infoLoca .btnLoca .btns.no3 span:before{background-image: url(/resources/ico_nav03_m.png);}
 	.infoLoca dd{padding-left: 10px;}
 	.infoLoca dd + dt {margin-top: 19px;}
 	
