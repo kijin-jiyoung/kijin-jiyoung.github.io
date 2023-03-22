@@ -654,6 +654,7 @@ li{list-style:none}
 input,select,button{vertical-align:middle}
 img{vertical-align:top; max-width:100%}	
 label,button{cursor:pointer}
+a{color:#000;text-decoration:none}
 a:hover{}
 hr{display:none}
 legend{*width:0}	
