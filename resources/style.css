@@ -735,10 +735,9 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 body.mainLoad .titleWrap .topText  {opacity:1;}
 body.mainLoad .titleWrap .topText .tit01:before{height: 100%;}
 
-
-.scroll{width:401px;height:52px;font-size: 12px;color: #000; font-family: 'EB Garamond';position: absolute;bottom: -1px;left:50%;transform: translateX(-50%);text-align: center;background: no-repeat 0 50% / cover;padding-top:15px;box-sizing: border-box}
+.scroll{width:401px;height:52px;font-size: 12px;color: #000; font-family: 'EB Garamond';position: absolute;bottom: -1px;left:50%;transform: translateX(-50%);text-align: center;background: url(../images/scroll_bg.png) no-repeat 0 50% / cover;padding-top:15px;box-sizing: border-box}
 .scroll span.bar {position:relative;display: block;width: 1px;height:16px;background-color: #aaaaaa;content: '';margin: 0 auto 3px auto;}
-.scroll span.bar:before{content:'';width:4px; height: 4px; border-radius:50%; position: absolute;top:0;left:50%; transform:translateX(-50%);margin: 0;background: no-repeat 50% 50%; background-size:3px 3px;
+.scroll span.bar:before{content:'';width:4px; height: 4px; border-radius:50%; position: absolute;top:0;left:50%; transform:translateX(-50%);margin: 0;background: url(../images/circle.png) no-repeat 50% 50%; background-size:3px 3px;
 	-webkit-animation: scrollMot 1.3s infinite ease-in-out;
     -o-animation: scrollMot 1.3s infinite ease-in-out;
     animation: scrollMot 1.3s infinite ease-in-out;
