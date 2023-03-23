@@ -167,7 +167,7 @@
 </div>
 </div>	
  </li>		
-  <li class="sound btnControl on">
+  <li class="sound btnControl on" id="playBgm">
     <a class="ico" href="javascript:;" onclick="btnControl(.on)">사운드</a>
        <div class="pop"><a href="javascript:;" onclick="btnControl(.on)">BGM on</a></div>
          <div class="audioWrap">
@@ -176,9 +176,9 @@
             </audio>
                </div>
                     </li>
-                   <li class="link">
+                   <li class="link" id="clipboard">
                         <a class="ico" href="javascript:;">링크</a>
-                        <div class="pop"><a href="javascript:;" onclick="ClipboardJS('.link')">홈페이지 주소 복사</a></div>
+                        <div class="pop"><a href="javascript:;" onclick="alertOpen_skin('.copy03')">홈페이지 주소 복사</a></div>
                     </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
                         <a class="ico" href="javascript:;">카카오</a>
