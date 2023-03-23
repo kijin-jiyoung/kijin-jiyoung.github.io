@@ -1495,6 +1495,16 @@ function openInterview(){
             alert("복사되었습니다.");
         });
     }
+	
+ function copy_to_clipboard(link) {
+        navigator.clipboard.writeText(link).then(() => {
+            alertOpen_skin("URL이 복사되었습니다.");
+        });
+    }
+		
+	
+	
+	
 </script>
 <!-- 복사 -->	     
       
