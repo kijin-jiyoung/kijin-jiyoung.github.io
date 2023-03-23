@@ -38,7 +38,7 @@
 
       <!-- 참고 -->
       <script src="https://kijin-jiyoung.github.io/plugin/moment-develop/moment.js"></script>
-      <script src="https://kijin-jiyoung.github.io/js/common.js"></script>
+
       <script src="https://kijin-jiyoung.github.io/js/fingerprint.jsver=210618"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/murmurhash3.jsver=210618"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/visit.jst=1650403481"></script>
@@ -51,9 +51,11 @@
       <script src="https://kijin-jiyoung.github.io/js/hammer.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/imagesloaded.pkgd.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/TweenMax.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/ScrollMagic.min.js"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/common.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/wrest.jsver=210618"></script>
-      <script src="https://kijin-jiyoung.github.io/js/callWeb2App.jst=1678952979"></script>	  
-	  
+      <script src="https://kijin-jiyoung.github.io/js/callWeb2App.jst=1678952979"></script>	  	  
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 	  
@@ -61,6 +63,7 @@
 	
 
    <script>
+      const locale = 'ko-KR';	   
       // 자바스크립트에서 사용하는 전역변수 선언
       var g5_url       = 'https://kijin-jiyoung.github.io';
       var g5_bbs_url   = 'https://kijin-jiyoung.github.io/bbs';
@@ -70,6 +73,7 @@
       var g5_is_admin  = '';
       var g5_is_admin  = '';
       var g5_editor    = '';
+      var g5_cookie_domain = '.github.io/';
       var site_name = 'kjjy_0624';
       var is_offical = '';
       var withCanvasDrawing = new Fingerprint({canvas: true});
@@ -173,8 +177,8 @@
                         <div class="pop"><a href="javascript:;">홈페이지 주소 복사</a></div>
                     </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
-                        <a class="ico" href="javascript:;" onclick="kakaotalk-sharing()">카카오</a>
-                        <div class="pop"><a href="javascript:;" onclick="kakaotalk-sharing()">카카오톡로 보내기</a></div>
+                        <a class="ico" href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오</a>
+                        <div class="pop"><a href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
                     </li>
                 </ul>
             </div>
