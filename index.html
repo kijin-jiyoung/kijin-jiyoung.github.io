@@ -814,7 +814,7 @@
 </div></div>
 </div>	
 
-<script>
+                    <script>
             $(".marqWrap").liMarquee({
                   removeContentFadeDuration:0,
                   scrollAmount: 6,
@@ -1144,7 +1144,7 @@ $(function(){
 	
 <script>	
 
-//갤러리팝업 - 슬라이드
+
 	var popSlide = new Swiper('.popSlide .swiper-container', {
 	  slidesPerView: 1,
 	  spaceBetween: 0,
@@ -1159,7 +1159,7 @@ $(function(){
       	prevEl: ".popSlide .swiper-button-prev",
      }
 	});
-	// 갤러리팝업 - 열기
+
 	$(".galWrap .galList li").on('click', function(e){
 		noScrollRun();
 		$('body').addClass('showSlide');
@@ -1172,7 +1172,7 @@ $(function(){
 		popSlide.update();
 		popSlide.slideTo(slideActive, 0);
 	});
-	// 갤러리팝업 -  닫기
+
 	$(".popSlide .closeSlide").click(function(){
 		noScrollClear();
 		$('body').removeClass('showSlide');
@@ -1180,7 +1180,7 @@ $(function(){
 	});	     
 
 
-// 갤러리 더보기
+
 function morePic(){
 	$('.hiddenList').show();
 	$('.galleryWrap .more').hide();
