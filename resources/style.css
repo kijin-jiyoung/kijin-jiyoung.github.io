@@ -1063,7 +1063,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mindWrap .contBox.bride .toggle {background:#f2f0f0;border-bottom-color: #ddd6cd}
 .mindWrap .contBox.bride.active .tit{border-bottom:1px dashed #ddd6cd;}
 
-
+ /* locationWrap */
 .locationWrap .locationInner{padding-top:97px;}
 .locationWrap .secTitleWrap{margin-bottom:44px;}
 .locationWrap .secTitleWrap p{margin-top: 8px;}
@@ -1200,7 +1200,7 @@ body.showImg .rbWrap{
 	transition:0.3s filter;
 }
 
-
+/* interPop */
 body.interOpen {overflow-y:hidden;}
 body.interOpen .interPop{ opacity:1; visibility:visible; transform:translate(0,0);transition:opacity 1s;}
 body.interOpen .interPop .interCont ul li:not(.hidden) {opacity:1 !important;}
@@ -1236,7 +1236,7 @@ body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !import
 .popImg .btnClose,
 .popImg .btnDownload{display: inline-block;position: fixed; right:46px; top:46px; width: 30px; height: 30px;text-indent:-999em; background:url('/resources/icon_close_m.png') 50% 50% no-repeat;z-index: 10}
 
-
+/* popGnb */
 body.gnbOpen .popGnb{opacity:1; visibility:visible;}
 .popGnb{position: fixed; left:0; top:0; width: 100%; height:100%; z-index:999;background:rgba(56,44,48,.84);background-size:cover;opacity:0; visibility:hidden;transition:.3s all;}
 .popGnb .inner {text-align: center; position: absolute; top:50%; transform:translateY(-50%); width: 100%;padding: 0 50px;box-sizing: border-box}
@@ -1249,7 +1249,7 @@ body.gnbOpen .popGnb{opacity:1; visibility:visible;}
 .popGnb .inner .gnbList ul li .ko:before{display: block;content: '';width: 1px;height: 12px;background-color: #908685;position: absolute;top:50%;left:0;margin-top: -6px;}
 
 
-
+/* popSlide */
 body.showSlide{overflow-y:hidden;}
 body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 999;background:rgba(51,39,42,.6);border:none; margin:0;opacity:0; visibility:hidden;transition:1.5s opacity;}
@@ -1581,9 +1581,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.infoLoca .btnLoca{margin-top: 12px}
 	.infoLoca .btnLoca .btns{height: 40px;border-radius: 8px;}
 	.infoLoca .btnLoca .btns span{font-size: 12px;padding-left: 22px;}
-	.infoLoca .btnLoca .btns span:before{width: 17px;height: 17px;background-image: url(/resources/ico_nav01_m.png);background-size: 17px auto;margin-top: -8.5px;}
-	.infoLoca .btnLoca .btns.no2 span:before{background-image: url(/resources/ico_nav02_m.png);}
-	.infoLoca .btnLoca .btns.no3 span:before{background-image: url(/resources/ico_nav03_m.png);}
+	.infoLoca .btnLoca .btns span:before{width: 17px;height: 17px;background-image: url(/resources/ico_nav01.png);background-size: 17px auto;margin-top: -8.5px;}
+	.infoLoca .btnLoca .btns.no2 span:before{background-image: url(/resources/ico_nav02.png);}
+	.infoLoca .btnLoca .btns.no3 span:before{background-image: url(/resources/ico_nav03.png);}
 	.infoLoca dd{padding-left: 10px;}
 	.infoLoca dd + dt {margin-top: 19px;}
 	
