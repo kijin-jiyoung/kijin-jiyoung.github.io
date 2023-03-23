@@ -1450,8 +1450,8 @@ function openInterview(){
     }
 	
 	
- function copy_to_clipboard(url) {
-        navigator.clipboard.writeText(url).then(() => {
+ function copy_to_clipboard(text) {
+        navigator.clipboard.writeText(text).then(() => {
             alertOpen_skin("URL이 복사되었습니다.");
         });
     }
