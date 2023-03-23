@@ -1089,12 +1089,6 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
-
-	
-<style>
-// For IOS
-body { -webkit-touch-callout:none;}
-</style>
 <script>
 $(function(){
     /*$("img").each( function(){
@@ -1104,7 +1098,7 @@ $(function(){
     $(document).bind("contextmenu", function (e) {
         return false;
     });
-    
+
     /*$("img").on("touchstart",function(e){
         let eventStop = true;
         if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
@@ -1125,23 +1119,30 @@ $(function(){
     }).on("touchmove",function(e){
         //e.preventDefault(); 
     });*/
-    
+
     /*$("a").on("click", function(e) {
         if( !this.attr("href").indexOf("tel") )
             e.preventDefault();
-    })*/	
-	
+    })*/
+
     $("a").on("contextmenu", (e) => {
         e.preventDefault();
         return false;
     })
-    
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");	
-	
-	
-</script>	
-	
 
+    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
+
+    setTimeout(function(){
+        try{
+            var map_level = map.getLevel();
+            map.setLevel(map_level + 1);
+            map.setLevel(map_level);
+        } catch(e){}
+    },1000);
+});
+</script>
+	
+	
 	
 	
 	
