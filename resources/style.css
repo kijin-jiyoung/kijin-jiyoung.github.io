@@ -1397,11 +1397,25 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .basePop .in .input ::-webkit-input-placeholder {font-size:16px; color:#888888; font-weight:300;}
 .basePop .in .btn a,
 .basePop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#eadbde; font-size: 16px;font-weight: 500;color:#000; border-radius:10px;}
+
+	    
+
 /***************************************************************************************
  Media Query
 ***************************************************************************************/
 @media all and (max-width:1024px) {
+
 .guestName {font-size:13px; line-height:13px;}
+
+    
+          
+            
+    
+
+          
+    
+    
+  
 	html {-webkit-text-size-adjust: none;}
 	.mob {display: inline-block;}
 	.m{display: none;}
@@ -1478,20 +1492,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.greetingWrap .miniBox:after,
 	.dayWrap .placeBox:before, 
 	.dayWrap .placeBox:after,
-	.addrWrap .box:first-child{background-image: url(/resources/bg_thx02_m.png);background-size: auto 1px;background-repeat: repeat-x}
+	.addrWrap .box:first-child{background-image: url(../images/bg_thx02_m.png);background-size: auto 1px;background-repeat: repeat-x}
 	.greetingWrap .miniBox .box{font-size: 15px;padding: 4px 0;}
 	.greetingWrap .miniBox .box strong{font-size: 17px}
 	.greetingWrap .btns.t1{margin-top: 25px;}
-
-    
-        
-          
-    
-
-        
-    
-    @@ -1412,9 +1412,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
 	
 	.btns.t1{font-size: 13px;height: 50px;border-radius: 8px;}
 	.btns.t1 span{padding-left: 22px;}
@@ -1503,27 +1507,12 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.btns.t1 span.tel{padding-left: 20px;}
 	.btns.t1 span.roughMap:before,
 	.btns.t1 span.img:before,
-	.btns.t1 span.tel:before{width: 15px;height: 15px;background-image: url(/resources/icon_map_m.png);margin-top: -8px;background-size: auto 15px;}
-	.btns.t1 span.img:before{background-image: url(/resources/icon_img_m.png);}
-	.btns.t1 span.tel:before{background-image: url(/resources/icon_tel2_m.png);}
+	.btns.t1 span.tel:before{width: 15px;height: 15px;background-image: url(../images/icon_map_m.png);margin-top: -8px;background-size: auto 15px;}
+	.btns.t1 span.img:before{background-image: url(../images/icon_img_m.png);}
+	.btns.t1 span.tel:before{background-image: url(../images/icon_tel2_m.png);}
 	.btns.t2{font-size: 14px;height: 50px;border-radius: 8px;}
 	.btns.t2 span.attend{padding-left: 17px}
 	.btns.t2 span.attend:before{width: 12px;height: 15px;background-image: url(../images/icon_attend_m.png);margin-top: -7px;background-size: 12px auto}
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -1461,9 +1461,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
 	
 	.dayWrap .secTitleWrap{margin-bottom: 30px;}
 	.dayWrap .dayInner{padding:50px 30px 54px;}
@@ -1561,28 +1550,13 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.galleryWrap .galWrap .galList .col li{width: 50%;padding: 0 3px;margin-bottom: 6px}
 	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(/resources/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
-
-	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(/resources/icon_more_m.png);background-size: 30px auto;}
-
-	.tabIn{background-size: auto 1px}
+	
+	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(../images/icon_more_m.png);background-size: 30px auto;}
+	
+	.tabIn{background-image: url(../images/bg_thx03_m.png);background-size: auto 1px}
 	.tabIn > a, 
 	.tabIn > button{font-size: 14px;height: 60px;}
-
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -1523,7 +1523,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
+	
 	.infoWrap {padding:75px 0 65px 0; position: relative; overflow:hidden;}
 	.infoWrap .title {font-size: 20px; line-height: 20px; padding-bottom: 50px; }
 	.infoWrap .infoList {position: relative; padding:0; z-index: 10;}
@@ -1635,21 +1609,11 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.comWrap .inputWrap .btnComment a{font-size: 13px;width: 62px}
 	.comWrap .partyCheck .btn a,
 	.comWrap .partyCheck .thxBox{font-size: 14px;}
-
-	.contactWrap{background-image: url(/resources/contact_bg_m.jpg);}
+	
+	.contactWrap{background-image: url(../images/contact_bg_m.jpg);}
 	.contactWrap .contactInner{padding: 62px 13px 67px;}
 	.contactWrap .secTitleWrap p{margin-top: 5px;}
 	.contactWrap .coupleBox .box{padding: 0 20px}
-
-    
-        
-          
-    
-
-        
-    
-    @@ -1534,7 +1534,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
 	.contactWrap .coupleBox .box .imgTxt .img{border-radius: 100%;}
 	.contactWrap .coupleBox .box .name{font-size: 17px;margin-bottom: 14px;}
 	.contactWrap .coupleBox .box .imgTxt .img,
@@ -1657,20 +1621,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.contactWrap .coupleBox .box.no1 .img:after {right:-24px;}
 	.contacName a{height: 36px;border-radius: 8px;}
 	.contacName a span{font-size: 11px;padding-left: 18px;}
-	.contacName a span:before{width: 12px;height: 12px;margin-top: -7px;background-image: url(/resources/icon_tel_m.png);background-size: cover}
-
+	.contacName a span:before{width: 12px;height: 12px;margin-top: -7px;background-image: url(../images/icon_tel_m.png);background-size: cover}
+	
 	.mindWrap .mindInner{padding: 64px 33px 66px;}
 	.mindWrap .secTitleWrap {padding-bottom: 0;margin-bottom: 28px;}
-
-    
-        
-          
-    
-
-        
-    
-    @@ -1552,7 +1552,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
 	.mindWrap .text{font-size: 14px}
 	.mindWrap .contBox{margin-bottom: 10px}
 	.mindWrap .contBox .toggle{padding: 16px 16px}
@@ -1685,20 +1639,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.mindWrap .contBox .toggle .btn button{font-size: 11px;height: 34px;border-radius: 8px;}
 	.mindWrap .contBox .toggle .btn button span{display: inline-block;line-height: 1.4}
 	.mindWrap .contBox .toggle .btn button.no1 span{padding-left: 38px;}
-	.mindWrap .contBox .toggle .btn button.no2 span{padding-left: 18px;background-image: url(/resources/mind/mind04_m.png);background-size: auto 15px}
-
+	.mindWrap .contBox .toggle .btn button.no2 span{padding-left: 18px;background-image: url(../images/mind/mind04_m.png);background-size: auto 15px}
+	
 	.locationWrap .locationInner{padding-top: 64px;}
 	.locationWrap .secTitleWrap{margin-bottom: 28px;}
-
-    
-        
-          
-    
-
-        
-    
-    @@ -1570,7 +1570,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
-  
 	.locationWrap .secTitleWrap p{margin-top: 5px;}
 	.locationWrap .mapWrap .root_daum_roughmap {width: 100% !important; height:300px !important;}
 	.locationWrap .mapWrap .root_daum_roughmap .wrap_map {height:300px !important; }
@@ -1713,20 +1657,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.addrWrap .box{height: 64px;}
 	.addrWrap .box:first-child{height: 65px}
 	.addrWrap .clipboard{width: 15px}
-	.addrWrap .label{padding-left: 20px;background-image: url(/resources/icon_guide_m.png);background-size: 14px auto; min-width:90px;}
-
+	.addrWrap .label{padding-left: 20px;background-image: url(../images/icon_guide_m.png);background-size: 14px auto; min-width:90px;}
+	
 	.infoLoca {padding-bottom: 62px;}
 	.infoLoca .inner{padding: 0 33px;box-sizing: content-box}
-
-    
-          
-            
-    
-
-          
-    
-    
-  
 	.infoLoca .tit01{font-size: 15px}
 	.infoLoca .tit02, 
 	.infoLoca dl{font-size: 14px}
@@ -1834,4 +1768,8 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 /* @media all and (min-width:2300px) {
 	.visualBox{min-width:2560px;min-height:1440px;height:auto; width:auto;margin: 0 auto}
 } */
+	
+	
+	
+	
 	
