@@ -1089,6 +1089,62 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
+
+	
+<style>
+// For IOS
+body { -webkit-touch-callout:none;}
+</style>
+<script>
+$(function(){
+    /*$("img").each( function(){
+        $(this).attr({"oncontextmenu":"return false"});
+    });*/
+    // For Android
+    $(document).bind("contextmenu", function (e) {
+        return false;
+    });
+    
+    /*$("img").on("touchstart",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("aa");
+            eventStop = false;
+        }
+        
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchend",function(e){
+        let eventStop = true;
+        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
+            console.log("bb");
+            eventStop = false;
+        }
+        
+        eventStop ? e.preventDefault() : ""
+    }).on("touchmove",function(e){
+        //e.preventDefault(); 
+    });*/
+    
+    /*$("a").on("click", function(e) {
+        if( !this.attr("href").indexOf("tel") )
+            e.preventDefault();
+    })*/	
+	
+    $("a").on("contextmenu", (e) => {
+        e.preventDefault();
+        return false;
+    })
+    
+    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");	
+	
+	
+</script>	
+	
+
+	
+	
+	
 	
 <script>
     //사람 바꾸기
@@ -1228,7 +1284,8 @@ owa_cmds.push(['trackDomStream']);
     var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
 }());
 //]]>
-</script>	
+</script>
+	
 <script>
 $(function() {
     $('.lazy').lazy();
@@ -1242,111 +1299,8 @@ $(function() {
     },5000);
 });
 </script>
-	
-	
-	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-
-<!-- Start Open Web Analytics Tracker -->
-<script type="text/javascript">
-//<![CDATA[
-var owa_baseUrl = 'https://kijin-jiyoung.github.io/plugin/OpenWebAnalytics/';
-var owa_cmds = owa_cmds || [];
-owa_cmds.push(['setSiteId', '1ae3a006327da1db61937c27e69cbcee']);
-owa_cmds.push(['trackPageView']);
-owa_cmds.push(['trackClicks']);
-owa_cmds.push(['trackDomStream']);
-
-(function() {
-    var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
-    owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
-    _owa.src = owa_baseUrl + 'modules/base/js/owa.tracker-combined-min.js';
-    var _owa_s = document.getElementsByTagName('script')[0]; _owa_s.parentNode.insertBefore(_owa, _owa_s);
-}());
-//]]>
-</script>	 
-	 
-	 
 
 
-
-
-<script>
-$(function(){
-    /*$("img").each( function(){
-        $(this).attr({"oncontextmenu":"return false"});
-    });*/
-    // For Android
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    });
-    
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
-    
-    $("a").on("contextmenu", (e) => {
-        e.preventDefault();
-        return false;
-    })
-    
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
-    
-    setTimeout(function(){
-        try{
-            var map_level = map.getLevel();
-            map.setLevel(map_level + 1);
-            map.setLevel(map_level);
-        } catch(e){}
-    },1000);
-});
-</script>
-
-
-   
-
-
-	
-	
-	
-	 
-	     
-	     
-	     
-	     
 	     
 	     
 	     
