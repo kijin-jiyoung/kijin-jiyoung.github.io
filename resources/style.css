@@ -705,7 +705,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .minititle{transition:2s all ease; transform:translateY(50px); opacity:0; transition-delay:500ms;}
 .minititle2{transition:3s all; opacity:0; transition-delay:1200ms;}
 
-.visualBox{position: relative; text-align:center;background: center no-repeat; background-size:cover; }
+.visualBox{position: relative; text-align:center;background: url('../images/mainBg.jpg') center no-repeat; background-size:cover; }
 .mainImg{vertical-align: top;position: relative; max-width:540px; margin:0 auto; max-height:100vh;  overflow:hidden;}
 .mainImg .imgBox{position: relative}
 .mainImg .imgBox .img{}
@@ -1443,7 +1443,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
 	.countList .numWrap .countDay .num, 
 	.countList .numWrap .wr p span{font-size: 34px;}
-	.countList .numWrap .col{font-size: 32px;width: 27px; margin-bottom: 0; background:url('/resources/colon.png') center no-repeat; background-size:3px auto;}
+	.countList .numWrap .col{font-size: 32px;width: 27px; margin-bottom: 0; background:url('../images/colon_m.png') center no-repeat; background-size:3px auto;}
 	.countList .numWrap .countDay, 
 	.countList .numWrap .wr{height: 50px;min-width: 54px;border-radius: 12px;}
 	.countList .numWrap .txt{font-size: 10px;bottom: -15px;}
@@ -1463,7 +1463,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(/resources/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
 	
-	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(/resources/icon_more_m.png);background-size: 30px auto;}
+	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(../images/icon_more_m.png);background-size: 30px auto;}
+	
+	.tabIn{background-image: url(../images/bg_thx03_m.png);background-size: auto 1px}
+	.tabIn > a, background-size: 30px auto;}
 	
 	.tabIn{background-size: auto 1px}
 	.tabIn > a, 
@@ -1525,7 +1528,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.comWrap .partyCheck .btn a,
 	.comWrap .partyCheck .thxBox{font-size: 14px;}
 	
-	.contactWrap{background-image: url(/resources/contact_bg.jpg);}
+	.contactWrap{background-image: url(../images/contact_bg_m.jpg);}
 	.contactWrap .contactInner{padding: 62px 13px 67px;}
 	.contactWrap .secTitleWrap p{margin-top: 5px;}
 	.contactWrap .coupleBox .box{padding: 0 20px}
@@ -1572,7 +1575,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.addrWrap .box{height: 64px;}
 	.addrWrap .box:first-child{height: 65px}
 	.addrWrap .clipboard{width: 15px}
-	.addrWrap .label{padding-left: 20px;background-image: url(/resources/icon_guide.png);background-size: 14px auto; min-width:90px;}
+	.addrWrap .label{padding-left: 20px;background-image: url(../images/icon_guide_m.png);background-size: 14px auto; min-width:90px;}
 	
 	.infoLoca {padding-bottom: 62px;}
 	.infoLoca .inner{padding: 0 33px;box-sizing: content-box}
