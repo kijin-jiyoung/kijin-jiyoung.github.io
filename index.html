@@ -168,7 +168,7 @@
 </div>	
  </li>		
   <li class="sound btnControl on">
-    <a class="ico" href="javascript:;" onclick="btnControl()">사운드</a>
+    <a class="ico" href="javascript:;" onclick="sound()">사운드</a>
        <div class="pop"><a href="javascript:;" onclick="btnControl()">BGM on</a></div>
          <div class="audioWrap">
            <audio id="bgmAudio" autoplay="" loop="" preload="auto">
@@ -177,20 +177,20 @@
                </div>
                     </li>
                    <li class="link">
-                        <a class="ico" href="javascript:;" onclick="Clipboard('https://kijin-jiyoung.github.io/')">링크</a>
+                        <a class="ico" href="javascript:;">링크</a>
                         <div class="pop"><a href="javascript:;" onclick="Clipboard('https://kijin-jiyoung.github.io/')">홈페이지 주소 복사</a></div>
                     </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
-                        <a class="ico" href="javascript:;" onclick="kakaotalk-sharing(' 기진♥지영 결혼식에 초대합니다. ','6월 24일 토요일 11시30분 \n반포 세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오</a>
-                        <div class="pop"><a href="javascript:;" onclick="kakaotalk-sharing(' 기진♥지영 결혼식에 초대합니다. ','6월 24일 토요일 11시30분 \n반포 세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
+                        <a class="ico" href="javascript:;">카카오</a>
+                        <div class="pop"><a href="javascript:;"id="kakaotalk-sharing-btn">카카오톡로 보내기</a></div>
                     </li>
                 </ul>
             </div>
       <!-- //linkList -->
 	 <!-- //control -->
 <div class="control">
-        <a href="javascript:;"  onclick="btnTop" class="btnTop">위로가기</a>
-        <a href="javascript:;"  onclick="btnDown" class="btnDown">아래로가기</a>
+        <a href="javascript:;"  onclick="scrolltop()" class="btnTop">위로가기</a>
+        <a href="javascript:;"  onclick="scrollbottom()" class="btnDown">아래로가기</a>
 </div>	
       <!-- //control -->
 	
