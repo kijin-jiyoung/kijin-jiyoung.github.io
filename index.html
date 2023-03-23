@@ -165,30 +165,30 @@
 </div>
 </div>	
  </li>		
-  <li class="sound btnControl">
+  <li class="sound btnControl" id="playBgm">
     <a class="ico" href="javascript:;" onclick="playBgm.play()">사운드</a>
-       <div class="pop"><a href="javascript:;" onclick="alertOpen_skin('BGM on')">BGM on</a></div>
+       <div class="pop"><a href="javascript:;">BGM on</a></div>
          <div class="audioWrap">
            <audio id="bgmAudio" autoplay="" loop="" preload="auto">
              <source src="https://kijin-jiyoung.github.io/resouces/bgm.mp3" type="audio/mp3">
             </audio>
                </div>
                     </li>
-                   <li class="link">
-                        <a class="ico" href="javascript:;" onclick="clipboard('url')">링크</a>
-                        <div class="pop"><a href="javascript:;" onclick="alertOpen_skin('URL이 복사되었습니다.')">홈페이지 주소 복사</a></div>
+                   <li class="link" id="ClipboardJS">
+                        <a class="ico" href="javascript:;">링크</a>
+                        <div class="pop"><a href="javascript:;">홈페이지 주소 복사</a></div>
                     </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
-                        <a class="ico" href="javascript:;" onclick="kakaotalk-sharing-btn">카카오</a>
-                        <div class="pop"><a href="javascript:;" onclick="kakaotalk-sharing-btn">카카오톡로 보내기</a></div>
+                        <a class="ico" href="javascript:;">카카오</a>
+                        <div class="pop"><a href="javascript:;">카카오톡로 보내기</a></div>
                     </li>
                 </ul>
             </div>
       <!-- //linkList -->
 	 <!-- //control -->
 <div class="control">
-        <a href="javascript:;" onclick="btnTop()" class="btnTop">위로가기</a>
-        <a href="javascript:;" onclick="btnDown()" class="btnDown">아래로가기</a>
+        <a href="javascript:;" id="btnTop" class="btnTop">위로가기</a>
+        <a href="javascript:;" id="btnDown" class="btnDown">아래로가기</a>
 </div>	
       <!-- //control -->
 	
