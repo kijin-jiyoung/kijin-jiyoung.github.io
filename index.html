@@ -977,7 +977,8 @@
 	
 <script type="text/javascript" src="https://kijin-jiyoung.github.io/js/utils.js?t=1678952979"></script>	
 <script type="text/javascript" src="https://kijin-jiyoung.github.io/js/common.js"></script> 	
-<script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	
+<script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>
+	
 <!------------ 타이핑 ------------>														     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script type="text/javascript">
@@ -1082,64 +1083,6 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
-
-<script>
-$(function(){
-    /*$("img").each( function(){
-        $(this).attr({"oncontextmenu":"return false"});
-    });*/
-    // For Android
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    });
-    
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
-    
-    $("a").on("contextmenu", (e) => {
-        e.preventDefault();
-        return false;
-    })
-    
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
-    
-    setTimeout(function(){
-        try{
-            var map_level = map.getLevel();
-            map.setLevel(map_level + 1);
-            map.setLevel(map_level);
-        } catch(e){}
-    },1000);
-});
-</script>
-	
-	
-
-	
-	
 	
 <script>
     //사람 바꾸기
@@ -1261,13 +1204,7 @@ $(function(){
     }
 </script>
 	
-	
-	
-	
-	
 
-	
-	
 	
 <script type="text/javascript">
 //<![CDATA[
@@ -1286,13 +1223,6 @@ owa_cmds.push(['trackDomStream']);
 }());
 //]]>
 </script>	
-	
-
-	
-	
-	
-	
-	
 <script>
 $(function() {
     $('.lazy').lazy();
