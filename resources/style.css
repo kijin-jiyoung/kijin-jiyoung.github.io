@@ -603,16 +603,6 @@ option {
 
 
 
-@media screen and (max-width: 768px) {
-  .swiper-container::after,
-  .swiper-container::before {
-    display: none;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
-    display: none;
-  }
-
  <!------------ 스와이프 ------------>
 
 
@@ -669,10 +659,10 @@ body{-webkit-touch-callout: none !important;}
 #skipnavigation a{display:block;width:100%;height:0;overflow:hidden;white-space:nowrap;}
 
 	
-::-webkit-input-placeholder {color: #a9a298; font-weight: normal; font-size: 14px;font-weight: 400;}
-:-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 14px;font-weight: 400;}
-::-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 14px;font-weight: 400;}
-:-ms-input-placeholder {color: #a9a298; font-weight: normal;font-size: 14px; font-weight: 400}
+::-webkit-input-placeholder {color: #a9a298; font-weight: normal; font-size: 12px;font-weight: 400;}
+:-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 12px;font-weight: 400;}
+::-moz-placeholder {color: #a9a298; opacity: 1; font-weight: normal; font-size: 12px;font-weight: 400;}
+:-ms-input-placeholder {color: #a9a298; font-weight: normal;font-size: 12px; font-weight: 400}
 
 * {box-sizing:border-box;}
 body {overflow-x:hidden;}
@@ -712,7 +702,7 @@ body.noScroll {overflow: hidden;position: fixed;width: 100%;height: 100%;}
 .minititle{transition:2s all ease; transform:translateY(50px); opacity:0; transition-delay:500ms;}
 .minititle2{transition:3s all; opacity:0; transition-delay:1200ms;}
 
-.visualBox{position: relative; text-align:center;background: url('/resources/mainBg.jpg') center no-repeat; background-size:cover; }
+.visualBox{position: relative; text-align:center;background: center no-repeat; background-size:cover; }
 .mainImg{vertical-align: top;position: relative; max-width:540px; margin:0 auto; max-height:100vh;  overflow:hidden;}
 .mainImg .imgBox{position: relative}
 .mainImg .imgBox .img{}
@@ -947,7 +937,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 	
 .guestBookWrap{background: center no-repeat; background-size:cover;}
 .guestBookWrap .guestBookInner{padding-top: 97px;padding-bottom: 100px}
-.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px dotted #b7b7b7;}
+.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #e0e0e0;}
 .guestBookWrap .secTitleWrap p {letter-spacing:0;}
 
 .guestBookWrap .marqWrap{overflow:hidden;height: 63px; }
@@ -986,7 +976,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .comWrap .inputWrap .in .user .selBox .list li .img{display: inline-block; vertical-align: middle;width:42px;border-radius:50%; margin-right:12px;}
 .comWrap .inputWrap .in .user .selBox .list li .img img {width:42px; height:42px;}
 .comWrap .inputWrap .in .user .selBox .list li input:checked + label {background:#fff; color:#222222;font-weight:500; border:1px solid #222}
-.comWrap .inputWrap .in .inputBox {position: relative; background:#fff;padding-right:75px;height: 75px; border:1px solid #e2d3d7; overflow:hidden; vertical-align: top;border-radius: 15px; }
+.comWrap .inputWrap .in .inputBox {position: relative; background:#fff;padding-right:75px;height: 75px; border:1px solid #e0e0e0; overflow:hidden; vertical-align: top;border-radius: 15px; }
 .comWrap .inputWrap .in .inputBox input {width: 100%;vertical-align: top; height: 100%; border:none; padding:0 0 0 26px; background:none; outline:none; font-size:19px; color:#000; font-weight: 300;}
 .comWrap .inputWrap .in .inputBox input::-webkit-input-placeholder{color:#222222;}
 .comWrap .inputWrap .in .inputBox input::-moz-placeholder{color:#222222;}
@@ -1036,7 +1026,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 
 
 .mindWrap .mindInner{padding-top: 97px;padding-bottom: 100px}
-.mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px dotted #b7b7b7}
+.mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #e0e0e0;}
 .mindWrap .text{text-align: center;font-family: 'AritaBuri';font-size: 21px;color: #222222;line-height: 1.81;margin-bottom: 40px}
 .mindWrap .contBox{border:1px solid #e2e4ea;margin-bottom: 15px}
 .mindWrap .contBox .tit{padding:0 0 1px 24px; position: relative; cursor:pointer; height: 74px; background:#edeef1;box-sizing:border-box;
@@ -1227,7 +1217,7 @@ body.interOpen .minititle{transform:translate(0,0) !important; opacity:1 !import
 .interPop .popCont .inner{position: relative; padding:120px 0; max-width:1280px; margin:0 auto;}
 .interPop .popCont .inner .interCont {padding-top:55px; text-align: left;}
 .interPop .popCont .inner .interCont ul{background:url('../images/bg_thx04.png') 50% 0 no-repeat;}
-.interPop .popCont .inner .interCont ul li{padding: 48px 50px 43px; transform:translate(0,0);opacity:0; border-top:1px dotted #a89390}
+.interPop .popCont .inner .interCont ul li{padding: 48px 50px 43px; transform:translate(0,0);opacity:0; border-top:1px solid #e0e0e0;}
 .interPop .popCont .inner .interCont ul li .tit{font-size:22px;color:#c4b2b7;font-weight:600;margin-bottom:13px;}
 .interPop .popCont .inner .interCont ul li .tit span{font-family: 'EB Garamond';font-weight:600;position: relative; top:-3px;margin-right:5px;}
 .interPop .popCont .inner .interCont ul li .text{font-size:21px;color:#ffffff;font-weight:400;letter-spacing: -0.055em;line-height: 1.55;margin-bottom: 31px}
