@@ -1306,7 +1306,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .basePop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#eadbde; font-size: 16px;font-weight: 500;color:#000; border-radius:10px;}
 
 
-
+/***************************************************************************************
+ Media Query
+***************************************************************************************/
 @media all and (max-width:1024px) {
 
 .guestName {font-size:13px; line-height:13px;}
