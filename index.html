@@ -16,6 +16,7 @@
       <meta property="og:type" content="website">
       <meta property="og:image:width" content="800">
       <meta property="og:image:height" content="1200">
+
  
 	 
 	  
@@ -25,22 +26,25 @@
       <!-- css -->
       <link rel="stylesheet" href="/resources/font.css">
       <link rel="stylesheet" href="/resources/style.css">
-	  
-      <!-- Link Swiper's CSS -->
-      <link rel="stylesheet" href="https://kijin-jiyoung.github.io/resources/swiper.min.css" />
+
+       <!-- Link Swiper's CSS -->
       <link rel="stylesheet" type="text/css" href="https://kijin-jiyoung.github.io/resources/visit.csst=1650403481" media="all">  
+      <link rel="stylesheet" href="https://kijin-jiyoung.github.io/resources/swiper.min.css" />
+	  
 	  
       <!-- 모달 . 아코디언 -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>    
 	  
       <!-- 참석조사 -->		  
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
       <!-- 참고 -->
       <script src="/plugin/moment-develop/moment.js"></script>
-      <script src="https://kijin-jiyoung.github.io/js/common.js"></script>
+
       <script src="https://kijin-jiyoung.github.io/js/fingerprint.jsver=210618"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/murmurhash3.jsver=210618"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/visit.jst=1650403481"></script>
+
 	  
       <script src="https://kijin-jiyoung.github.io/js/swiper.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/jquery.mCustomScrollbar.min.js"></script>  
@@ -49,16 +53,19 @@
       <script src="https://kijin-jiyoung.github.io/js/hammer.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/imagesloaded.pkgd.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/TweenMax.min.js"></script>
+      <script src="https://kijin-jiyoung.github.io/js/ScrollMagic.min.js"></script>	  
+      <script src="https://kijin-jiyoung.github.io/js/common.js"></script>	  
       <script src="https://kijin-jiyoung.github.io/js/wrest.jsver=210618"></script>
-      <script src="https://kijin-jiyoung.github.io/js/callWeb2App.jst=1678952979"></script>	  
-	  
+      <script src="https://kijin-jiyoung.github.io/js/callWeb2App.jst=1678952979"></script>	  	  
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 	  
 	  
 	
+
    <script>
-      const locale = 'ko-KR';
+      const locale = 'ko-KR';	   
       // 자바스크립트에서 사용하는 전역변수 선언
       var g5_url       = 'https://kijin-jiyoung.github.io';
       var g5_bbs_url   = 'https://kijin-jiyoung.github.io/bbs';
@@ -68,7 +75,7 @@
       var g5_is_admin  = '';
       var g5_is_admin  = '';
       var g5_editor    = '';
-      var g5_cookie_domain = '.github.io';
+      var g5_cookie_domain = '.github.io/';
       var site_name = 'kjjy_0624';
       var is_offical = '';
       var withCanvasDrawing = new Fingerprint({canvas: true});
@@ -84,18 +91,17 @@
     </style>
   
 	  
-	  
-	  
-	  
       <!-- Google Analytics -->
 	  
     
+
 </head>	
 	
 <body>
 <br>
 <br>
 	
+
 <div class="wrap">
 <div class="container" id="container">	
 <!-- quickWrap - 우측 퀵메뉴 -->	
@@ -112,6 +118,7 @@
       <div class="con">
       <h2 id="surveytitle">참석조사</h2>
       <p id="description">식사 준비를 위한 사전 조사이니<br>부담없으시길 바랍니다🙏🏻</p>
+
 <div class="postformbox">
 <form action="" id="survey-form">   
 <div class="type-select">
@@ -144,33 +151,37 @@
 <option value="5명">5명</option>
 </select>
 </div>
+
+
 <div class="type-select">  
 <div id="type-select" for="peoplename" style="text-align:left;margin:0 37px 0;">동행인 이름</div>
 <input type="textarea" name="peoplename" id="peoplename" class="input1" placeholder="이름을 모두 적어주세요." required></div>
+
 <button id="submit" value="send1" style="font-size:13px;width:120px;border-radius:10px;background-color:#000;color:#FFF;border:1px solid #ccc;padding:8px;display:fixed;margin:10px 0px 10px;cursor:pointer;">제출</button>
 <a href="javascript:;" class="close">닫기</a>
 </form>
+
 </div>	
 </div>
 </div>	
  </li>		
-  <li class="sound btnControl on">
+  <li class="sound btnControl">
     <a class="ico" href="javascript:;">사운드</a>
        <div class="pop"><a href="javascript:;">BGM on</a></div>
          <div class="audioWrap">
            <audio id="bgmAudio" autoplay="" loop="" preload="auto">
              <source src="https://kijin-jiyoung.github.io/resouces/bgm.mp3" type="audio/mp3">
-                 </audio>
+            </audio>
                </div>
                     </li>
-                  <li class="link">
+                   <li class="link">
                         <a class="ico" href="javascript:;" onclick="copy_to_clipboard('https://kijin-jiyoung.github.io')">링크</a>
                         <div class="pop"><a href="javascript:;" onclick="copy_to_clipboard('https://kijin-jiyoung.github.io')">홈페이지 주소 복사</a></div>
-                     </li>
+                    </li>
                     <li class="kakao" id="kakaotalk-sharing-btn">
                         <a class="ico" href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오</a>
                         <div class="pop"><a href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
-                      </li>
+                    </li>
                 </ul>
             </div>
       <!-- //linkList -->
@@ -182,7 +193,9 @@
       <!-- //control -->
 	
 </div>	
+
      
+
 <br>
 <br>
 <br>
@@ -204,6 +217,7 @@
    </ul>
  </div>
  <!------------ 타이핑 ------------>	
+
 <br>
 <br>
 <br>
@@ -234,9 +248,11 @@
 <br>
 <br>
 <br>
+
 	
 	
 	
+
 <section class="greetingWrap atm" id="greetingWrap">
 <div class="secTitleWrap t1">
 <h2 class="ht minititle"><span><span class="mini r6">I</span><span class="mini r4">N</span><span class="mini r1">V</span><span class="mini r9">I</span><span class="mini r3">T</span><span class="mini r2">A</span><span class="mini r8">T</span><span class="mini r3">I</span><span class="mini r5">O</span><span class="mini r4">N</span></span></h2>
@@ -254,6 +270,8 @@
 당신이 그랬다면 그럴 만한 이유가 있었겠지요.<br>
 <br>
 </p>
+
+
 	
 	
 	
@@ -265,6 +283,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <font size="2px">딸</font> <b>지영</b>&nbsp;&nbsp;&nbsp;</p>
 	
+
+
 <p class="announcement">
 신랑에게 연락하기
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -274,6 +294,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="tel:01090481512" target="_blank"><img class="telephone" src="resources/tel.png" style="width:40px;height:40px;border:0.1px #F2F2F2;border-radius:10px;"></a>&nbsp;
 <a href="http://qr.kakao.com/talk/rcJBt5tBJP9eeSADLhKFAqGKLGU-" target="_blank" ><img class="kakao" src="resources/katalk.png"></a>
+
 </section>
 	
 	
@@ -285,6 +306,7 @@
 		<br>
 		<br>
 		<br>	
+
 	
 	
 	
@@ -300,6 +322,7 @@
 <!-- galWrap -->
 <div class="galWrap mt">
 <div class="inner">
+
         <!-- gallery -->
        <div class="gallery">
         <div class="galList">
@@ -484,8 +507,11 @@
 	 
 	 
 	 
+
+
 		     
 	     
+
         <br>
 <p class="accordiondesc">(기진이와 지영이가 궁금하다면 여기를 꾸욱 눌러주세요)</p>
 <div class="accordioncon">
@@ -548,33 +574,26 @@
 <br>
 </div>
 <br>	
+
 	<br>
 	<br>	
 	<br>		
 <!-- gallery -->
+
+
+
+
+
 <!-- 오시는 길 -->
 <br>	
 <section class="locationWrap" id="locationWrap">
 <div class="secTitleWrap t1">	
 <h2 class="ht minititle"><span><span class="mini r6">L</span><span class="mini r4">O</span><span class="mini r1">C</span><span class="mini r9">A</span><span class="mini r3">T</span><span class="mini r2">I</span><span class="mini r8">O</span><span class="mini r3">N</span></span></h2>
 <h3 class="maintitle">오시는 길</h3>
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -638,7 +634,6 @@ <h3 class="tit01">지하철</h3>
-  
 </div>
+
 <p style="font-size:15px;line-height: 1.8;">서울 서초구 올림픽대로 2085-14<br>세빛섬 플로팅아일랜드 <button class="copy" onclick="copy_to_clipboard('서울 서초구 올림픽대로 2085-14 세빛섬 플로팅아일랜드');" style="font-size:10px;padding:1px;cursor:pointer;display:inline-block;width:37.5px;height:16px;vertical-align:middle;font-family:'MapoFlowerIsland';font-color:#666666;text-align:center;border-radius:3px;border:none;">복사</button><br></p>
+
 <!-- mapWrap -->	    
 <div id="mapcanvas" style="width:100%;height:400px;"></div> 
 <!-- //mapWrap -->
@@ -615,26 +634,20 @@
 </section>	
 
 
+<br>
+<br>
+<br>
+<br>
+   <br>
+   <br>
+   <br>
 
-    
-          
-            
-    
 
-          
-    
-    
-  
-<br>
-<br>
-<br>
-<br>
-   <br>
-   <br>
-   <br>
 	
 	
 	
+
+
 <!-- 마음 전하실 곳 -->
 <section class="mindWrap" id="mindWrap">
 <div class="mindInner">
@@ -654,6 +667,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="javascript:openModal('modal2');" class="button modal-open" style="line-height: 1.8;font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 3px 15px; text-decoration:none; color:#fff; background:#646059; margin:3px;">계좌번호</a>	    
 </div>
+
 <div id="modal"></div>	
   <div class="modal-con modal1">
     <p class="title">신랑측 아버지</p>
@@ -677,6 +691,7 @@
 </div>
   </div>
 <br>
+
 <div class="parents" style="font-family:'MapoFlowerIsland';text-align:center;line-height:2.5;">어머니 <b>이숙현</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 어머니 <b>이윤희</b></div>
@@ -685,6 +700,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="javascript:openModal('modal4');" class="button modal-open" style="line-height: 1.8;font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 3px 15px; text-decoration:none; color:#fff; background:#646059; margin:3px;">계좌번호</a>
 </div>
+
 <div id="modal"></div>
   <div class="modal-con modal3">
     <p class="title">신랑측 어머니</p>
@@ -707,6 +723,8 @@
 <a href="javascript:;" class="close">닫기</a>
 </div>
   </div>
+
+
 	    
 <br>
 <div class="pay" style="font-family:'MapoFlowerIsland';text-align:center;line-height:2.5;">신랑 <b>이기진</b>
@@ -717,6 +735,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="javascript:openModal('modal6');" class="button modal-open" style="line-height: 1.8;font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 3px 15px; text-decoration:none; color:#fff; background:#646059; margin:3px;">계좌번호</a>
 </div>
+
 <div id="modal"></div>
   <div class="modal-con modal5">
     <p class="title">신랑 이기진</p>
@@ -756,6 +775,7 @@
 <br>
 <br>
 <br>
+
 		
 	
 	
@@ -768,6 +788,7 @@
 <h3 class="maintitle">축하메시지 남기기</h3>
 </div>	
 <p style="font-size:12px;font-family:'MapoFlowerIsland';">• 두사람을 위한 축하메시지를 남겨주세요.</p>
+
 <div class="mt">
 <!-- waveText -->
 <div class="waveText">
@@ -792,7 +813,8 @@
 </div>
 </div></div>
 </div>	
-<script>
+
+                    <script>
             $(".marqWrap").liMarquee({
                   removeContentFadeDuration:0,
                   scrollAmount: 6,
@@ -941,18 +963,6 @@
 <!------------ 메시지 팝업 ------------>
 	
 	
-    <!-- fixPetalWrap 
-    <div class="fixPetalWrap">
-        <div class="obj no1"></div>
-        <div class="obj no2"></div>
-        <div class="obj no3"></div>
-        <div class="obj no4"></div>
-        <div class="obj no5"></div>
-    </div>
-    //fixPetalWrap -->
-	
-	
-	
 	
 <div id="popupGuestBookName" class="basePop" style="display: none;">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
@@ -966,9 +976,10 @@
 </div>
 	
 	
-<!------------ 메시지 팝업 ------------>		
-<!------------ 스크립트 영역 ------------>
+<!------------ 메시지 팝업 ------------>
 	
+<!------------ 스크립트 영역 ------------>
+
 	
 <script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	
 <!------------ 타이핑 ------------>														     
