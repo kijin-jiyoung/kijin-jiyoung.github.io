@@ -1451,7 +1451,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.countList .numWrap .countDay{margin-right: 27px;}
 	.countList .numWrap .countDay .num em { top:-2px;}
 	.countList .numWrap .wr p span { top:-2px;}
-	.countList .numWrap .countDay, .countList .numWrap .wr {background:url('../images/bgCount_m.png') center no-repeat; background-size:54px 50px;}
+	.countList .numWrap .countDay, .countList .numWrap .wr {background:url('../images/bgCount_m.png?v1') center no-repeat; background-size:54px 50px;}
 
 	
 	.galleryWrap .galleryInner{padding-top: 65px;padding-bottom: 65px;}
@@ -1463,7 +1463,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(/resources/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
 	
-	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(/resources/icon_more.png);background-size: 30px auto;}
+	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(/resources/icon_more_m.png);background-size: 30px auto;}
 	
 	.tabIn{background-size: auto 1px}
 	.tabIn > a, 
