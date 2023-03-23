@@ -361,10 +361,14 @@ ul{list-style:none;}
     width:250px; height:200px;
     top:50%; left:50%;
     transform: translate(-50%,-50%);
+    z-index: 20;
+    min-height:50%;	
     background:#fff;
     border-radius: 10px;
     text-align: center;
 }
+
+
 .modal-con .title{
     text-align:center; 
     font-size:14px; 
