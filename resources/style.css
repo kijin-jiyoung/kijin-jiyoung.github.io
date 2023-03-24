@@ -65,7 +65,7 @@ font-size: 17px;
 
 
 p.invitation  {
-   font-size: 16px;
+   font-size: 18px;
    line-height: 35px;
    letter-spacing: 1px;
    margin: 50px 0 50px;	
@@ -647,7 +647,7 @@ a:hover{}
 hr{display:none}
 legend{*width:0}	
 button{outline: none;border: 0;background: none;}
-table{border-collapse:collapse;border-spacing:0}
+table{border-collapse:collapse;border-spacing:0;border-radius: 20px;}
 caption{font-size:0; line-height:0; height:0}
 body{-webkit-touch-callout: none !important;}	
 	
@@ -1251,8 +1251,8 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
     
 h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}             
-    
-
+p.invitation  {font-size:14px;padding: 0px 33px 0px;}
+.swiper-slide{padding: 0px 33px 0px;}
           
     
     
