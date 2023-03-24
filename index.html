@@ -587,6 +587,10 @@
 <!-- 오시는 길 -->
 <br>	
 <section class="locationWrap" id="locationWrap">
+<div class="locationInner">
+
+
+
 <div class="secTitleWrap t1">	
 <h2 class="ht minititle"><span><span class="mini r6">L</span><span class="mini r4">O</span><span class="mini r1">C</span><span class="mini r9">A</span><span class="mini r3">T</span><span class="mini r2">I</span><span class="mini r8">O</span><span class="mini r3">N</span></span></h2>
 <h3 class="maintitle">오시는 길</h3>
@@ -597,6 +601,26 @@
 <!-- mapWrap -->	    
 <div id="mapcanvas" style="width:100%;height:400px;"></div> 
 <!-- //mapWrap -->
+
+	
+
+<p class="announcement">네이버지도&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   카카오내비&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	   티맵길안내</p>
+        <a href="https://naver.me/G8tSCpMb" target="_blank"><img class="navermap" src="resources/navermap.png" style="display:inline-block;width:40px;height:40px;"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="javascript:startNavigation()" id="start-navigation"><img class="kakaonavi" src="resources/kakaonavi.png" style="display:inline-block;width:40px;height:40px;"></a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="tmap://search?name=세빛섬주차장" class="flex-1"><img class="tmap" src="resources/tmap.png" style="display:inline-block;width:40px;height:40px;"></a>
+	
+	
+
+	
+	
+	
+	
+	
+	
 <!-- infoLoca -->
 <div class="infoLoca">
 <div class="inner">
@@ -631,6 +655,7 @@
 </div>
 </div>
 <!-- //infoLoca -->
+</div>
 </section>	
 
 
@@ -814,7 +839,7 @@
 </div></div>
 </div>	
 
-                    <script>
+<script>
             $(".marqWrap").liMarquee({
                   removeContentFadeDuration:0,
                   scrollAmount: 6,
@@ -850,27 +875,30 @@
                       </div>
 				
 				
-<div class="inputBox" style="margin: 5px 5px;">
-   <input type="text" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요. (최대 40자)" maxlength="40">
-     <div class="btnComment">
-       <a href="javascript:;" class="any">전송</a>
-        </div>
-          </div>
-    </div>
-  </form>
-</div>
-<!-- //inputWrap -->
-</div>
-<!-- //comWrap -->
-</div>
-</div>
- </section>	
+                  <div class="inputBox" style="margin: 5px 5px;">
+             <input type="text" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요. (최대 40자)" maxlength="40">
+                                        <div class="btnComment">
+                                            <a href="javascript:;" class="any">전송</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- //inputWrap -->
+                        <!-- partyCheck -->
+                        
+                        <!-- //partyCheck -->
+                    </div>
+                    <!-- //comWrap -->
+                    </div>
+	</div>
+            </section>	
  <!-- //guestBookWrap -->				
 				
-</div>
-<!-- //container -->
+
+        <!-- //container -->
     <iframe class="silence" style="width:1px; height:1px;" src="https://dddproject.com/html/images/silence.mp3" allow="autoplay"></iframe></div>
-<!-- //wrap -->	
+    <!-- //wrap -->
 <br>
 <br>
 <br>
@@ -934,6 +962,7 @@
         </div>
     </div>
 <!------------ 갤러리 슬라이드 ------------>
+
 	
 	
  <!-- popImg - 이미지 팝업 -->
@@ -963,6 +992,18 @@
 <!------------ 메시지 팝업 ------------>
 	
 	
+    <!-- fixPetalWrap 
+    <div class="fixPetalWrap">
+        <div class="obj no1"></div>
+        <div class="obj no2"></div>
+        <div class="obj no3"></div>
+        <div class="obj no4"></div>
+        <div class="obj no5"></div>
+    </div>
+    //fixPetalWrap -->
+	
+	
+	
 	
 <div id="popupGuestBookName" class="basePop" style="display: none;">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
@@ -976,10 +1017,11 @@
 </div>
 	
 	
-<!------------ 메시지 팝업 ------------>
-	
-<!------------ 스크립트 영역 ------------>
+<!------------ 메시지 팝업 ------------>		
 
+
+<!------------ 스크립트 영역 ------------>
+	
 	
 <script src="https://kijin-jiyoung.github.io/js/hammer.zoom.js"></script>	
 <!------------ 타이핑 ------------>														     
@@ -989,6 +1031,7 @@ var typingBool = false;
 var typingIdx=0; 
 var liIndex = 0;
 var liLength = $(".typing-txt>ul>li").length;
+
 // 타이핑될 텍스트를 가져온다 
 var typingTxt = $(".typing-txt>ul>li").eq(liIndex).text(); 
 typingTxt=typingTxt.split(""); // 한글자씩 자른다. 
@@ -1027,13 +1070,21 @@ function typing(){
     } 
 }  	
 </script>     
+
+
+
+
 <!------------ 모달 ------------>
+
 <script type="text/javascript">
+
 function openModal(modalname){
   document.get
   $("#modal").fadeIn(100);
   $("."+modalname).fadeIn(100);
 }
+
+
 $("#modal, .close").on('click',function(){
   $("#modal").fadeOut(100);
   $(".modal-con").fadeOut(100);
@@ -1044,19 +1095,24 @@ $("#commentmodal").fadeOut(100);
 $("#commentlistmodal").fadeOut(100);
   $(".commentlistmodal-con").fadeOut(100);	
 });
+
 	
 	
+
 $("h3.accordion,.accordiondesc").on('click',function(){
   $(this).next(".accordioncon").slideToggle(100);
 });
 	
 </script>
 <!------------ 모달 . 아코디언 ------------>
+
 <!------------ 참석조사 구글스프레드시트 ------------>
+
 <script>
    const form = document.querySelector("#survey-form")
    const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
+
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      e.preventDefault()
@@ -1069,8 +1125,10 @@ $("h3.accordion,.accordiondesc").on('click',function(){
              submitButton.disabled = false
          });
    })
+
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
+
 <script>
 $(function(){
     /*$("img").each( function(){
@@ -1125,6 +1183,7 @@ $(function(){
 </script>
 	
 	
+
 	
 	
 	
@@ -1184,6 +1243,7 @@ $(function(){
 		
 		//$marquee.liMarquee('stop');
 		//$marquee.liMarquee('resetPosition');
+
 	});
 	
 	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
@@ -1261,6 +1321,7 @@ owa_cmds.push(['setSiteId', '']);
 owa_cmds.push(['trackPageView']);
 owa_cmds.push(['trackClicks']);
 owa_cmds.push(['trackDomStream']);
+
 (function() {
     var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
     owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
@@ -1270,6 +1331,7 @@ owa_cmds.push(['trackDomStream']);
 //]]>
 </script>	
 	
+
 	
 	
 	
@@ -1295,6 +1357,7 @@ $(function() {
 	
 	
 	
+
 	
 	
 	
@@ -1302,6 +1365,7 @@ $(function() {
 	
 	
 	
+
 <!-- Start Open Web Analytics Tracker -->
 <script type="text/javascript">
 //<![CDATA[
@@ -1311,6 +1375,7 @@ owa_cmds.push(['setSiteId', '1ae3a006327da1db61937c27e69cbcee']);
 owa_cmds.push(['trackPageView']);
 owa_cmds.push(['trackClicks']);
 owa_cmds.push(['trackDomStream']);
+
 (function() {
     var _owa = document.createElement('script'); _owa.type = 'text/javascript'; _owa.async = true;
     owa_baseUrl = ('https:' == document.location.protocol ? window.owa_baseSecUrl || owa_baseUrl.replace(/http:/, 'https:') : owa_baseUrl );
@@ -1322,6 +1387,9 @@ owa_cmds.push(['trackDomStream']);
 	 
 	 
  
+
+
+
 <script>
 $(function(){
     /*$("img").each( function(){
@@ -1384,8 +1452,6 @@ $(function(){
 	     
 	     
 	     
-	     
-	     
 <!------------ 갤러리 스와이프 ------------>
   <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -1418,9 +1484,12 @@ $(function(){
       },
 });	    
   </script>
+
+
 <!------------ 갤러리 스와이프 ------------>
 	
 <script>	
+
 //갤러리팝업 - 슬라이드
 	var popSlide = new Swiper('.popSlide .swiper-container', {
 	  slidesPerView: 1,
@@ -1462,6 +1531,7 @@ function morePic(){
 	$('.hiddenList').show();
 	$('.galleryWrap .more').hide();
 }
+
 //인터뷰 열기
 function openInterview(){
 	$('.interPop').scrollTop(0);
@@ -1505,16 +1575,7 @@ function openInterview(){
             alert("복사되었습니다.");
         });
     }
-	
- function copy_to_clipboard(link) {
-        navigator.clipboard.writeText(link).then(() => {
-            alertOpen_skin("URL이 복사되었습니다.");
-        });
-    }
-		
-	
-	
-	
+
 </script>
 <!-- 복사 -->	     
       
@@ -1546,6 +1607,8 @@ var map = new naver.maps.Map('mapcanvas', {
 });
 	
 var floatingisland = new naver.maps.LatLng(37.511742, 126.9948247);
+
+
 var markerOptions = {
     position: floatingisland,
     map: map,
@@ -1557,19 +1620,28 @@ var markerOptions = {
         anchor: new naver.maps.Point(12, 34)
     }
 };
+
 var marker = new naver.maps.Marker(markerOptions);	
 </script>	   
+
 <!-- 네이버맵 -->
+
+
+
+
 <!-- sms 공유 -->
 <script type="text/javascript">
 $(function(){
+
     checkMobile(); //디바이스 종류 체크
+
     $(".sms").on("click",function(){
         var idx = $(this).index();
         smsSend(idx);
     });
     
 });
+
 function checkMobile(){
     var UA = navigator.userAgent.toLowerCase(); //userAgent 체크
     if ( UA.indexOf('android') > -1) {
@@ -1583,6 +1655,7 @@ function checkMobile(){
         return "other";
     }
 }
+
 function smsSend(idx){ //Android, IOS, 자동분기
     if(idx == 0){
     location.href = 'sms:' +''+ '?' + 'body=이기진❤️윤지영의 결혼식에 초대합니다.'+ encodeURIComponent("https://kijin-jiyoung.github.io");
@@ -1599,8 +1672,10 @@ function smsSend(idx){ //Android, IOS, 자동분기
      
 </script>	     
 	    
+
 <!-- sms 공유 -->	
 		
+
 	
 	
 	
@@ -1621,6 +1696,7 @@ function smsSend(idx){ //Android, IOS, 자동분기
 		
 </script>			
 <!-- 카카오톡 공유 -->	
+
 <footer class="copyright-wrap" style="font-family:'Noto Serif Tamil', serif;">Copyright 2023.
 <a href="https://www.instagram.com/4pril.12/" target="_blank" text-decoration: underline;">@4pril.12</a>. All rights reserved.
 </footer>
