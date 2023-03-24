@@ -1029,6 +1029,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mindWrap .contBox.bride .toggle {background:#f2f0f0;border-bottom-color: #ddd6cd}
 .mindWrap .contBox.bride.active .tit{border-bottom:1px solid #646059;}
 .locationWrap .locationInner{padding-top:97px;}
+.locationInner .tit02 {margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
 .locationWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #646059;}
 .locationWrap .secTitleWrap p{margin-top: 8px;}
 .locationWrap .mapWrap {position: relative;}
@@ -1264,8 +1265,8 @@ p.maincontent{font-size: 15px;}
 .payparents{font-size: 16px;}    
 .parents{font-size: 14px;}  
 p.accordiondesc {font-size: 12px;}	
+.locationInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
 
-	
 	
 	
 	html {-webkit-text-size-adjust: none;}
