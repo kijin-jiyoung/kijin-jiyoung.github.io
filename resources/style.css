@@ -775,7 +775,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mainLoad .inviteBox .stamp .img {opacity:1;}
 .greetingWrap{text-align:center; padding-top: 100px;}
 .greetingWrap .greetingBox{}
-.greetingWrap .greetingInner{padding-top: 45px;padding-bottom: 100px;}
+.greetingWrap .greetingInner{padding-top: 45px;}
 .greetingWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #646059;}
 .greetingWrap .textBox{font-family: 'AritaBuri';font-size: 25px;color: #222222;line-height: 1.55;}
 .greetingWrap .textBox p{margin-bottom: 39px; line-height: 2;}
@@ -1052,13 +1052,13 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoLoca .tit02{margin-bottom: 28px;}
 .infoLoca .tit02:last-child{margin-bottom: 0}
 .infoLoca .tit02,
-.infoLoca dl{font-size: 21px;color: #555;line-height: 1.4;}
+.infoLoca dl{font-size: 17px;color: #555;line-height: 1.4;}
 .infoLoca dd{padding-left: 16px}
 .infoLoca dd + dt{margin-top: 28px}
 .infoLoca .sym{position: relative;top:3px;}
 .infoLoca .btnLoca{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;margin: 0 -3px;margin-top: 17px;}
 .infoLoca .btnLoca .btns{margin: 0 3px;border: 1px solid #eaeaea;height: 57px;width: 33.333%;background: #fff;border-radius: 12px}
-.infoLoca .btnLoca .btns span{font-size: 18px;font-weight: 500;color: #000;padding-left: 32px;position: relative}
+.infoLoca .btnLoca .btns span{font-size: 15px;font-weight: 500;color: #000;padding-left: 32px;position: relative}
 .infoLoca .btnLoca .btns span:before{display: block;content: '';width: 24px;height: 24px;position: absolute;top:50%;left:0;margin-top: -12px;background: url(/resources/ico_nav01.png) no-repeat 0 0;}
 .infoLoca .btnLoca .btns.no2 span:before{background-image: url(/resources/ico_nav02.png)}
 .infoLoca .btnLoca .btns.no3 span:before{background-image: url(/resources/ico_nav03.png)}
@@ -1250,14 +1250,19 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .guestName {font-size:13px; line-height:13px;}
 
     
-h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}             
+h3.maintitle {font-size:18px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}             
 p.invitation  {font-size:14px;padding: 0px 33px 0px;}
 .swiper-slide{padding: 0px 33px 0px;}
 p.maincontentname{font-size: 25px;}	
 p.maincontent{font-size: 15px;}     
 .Main-photo {padding: 0px 33px 0px;}    
-    
-  
+.payparents{font-size: 17px;}    
+.parents{font-size: 14px;}  
+	
+	
+	
+	
+	
 	html {-webkit-text-size-adjust: none;}
 	.mob {display: inline-block;}
 	.m{display: none;}
@@ -1506,9 +1511,9 @@ p.maincontent{font-size: 15px;}
 	
 	.infoLoca {padding-bottom: 62px;}
 	.infoLoca .inner{padding: 0 33px;box-sizing: content-box}
-	.infoLoca .tit01{font-size: 15px}
+	.infoLoca .tit01{font-size: 17px}
 	.infoLoca .tit02, 
-	.infoLoca dl{font-size: 14px}
+	.infoLoca dl{font-size: 14px;line-height: 1.5;}
 	.infoLoca .box{padding-top: 24px;padding-bottom: 21px;}
 	.infoLoca .box:nth-child(1){padding-bottom: 25px;}
 	.infoLoca .box:nth-child(1) .tit02 {margin-bottom: 12px;}
