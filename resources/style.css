@@ -1384,7 +1384,7 @@ h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-a
 	.countList .numWrap .wr p span { top:-2px;}
 	.countList .numWrap .countDay, .countList .numWrap .wr {background:url('../images/bgCount_m.png?v1') center no-repeat; background-size:54px 50px;}
 	
-	.galleryWrap .galleryInner{padding-top: 65px;padding-bottom: 65px;}
+	.galleryWrap .galleryInner{padding: 0px 33px 0px;}
 	.galleryWrap .secTitleWrap {padding-bottom: 0;margin-bottom: 28px;}
 	.galleryWrap .galWrap .videoImg{position: relative;width: 100%;margin-bottom: 6px;max-width: 100%;}
 	.galleryWrap .galWrap .videoImg .btnPlay{width: 80px;height: 80px;background-size: cover;margin:-40px 0 0 -40px;}
@@ -1485,7 +1485,7 @@ h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-a
 	.mindWrap .contBox .toggle .btn button.no1 span{padding-left: 38px;}
 	.mindWrap .contBox .toggle .btn button.no2 span{padding-left: 18px;background-image: url(../images/mind/mind04_m.png);background-size: auto 15px}
 	
-	.locationWrap .locationInner{padding-top: 65px;padding-bottom: 65px;}
+	.locationWrap .locationInner{padding: 0px 33px 0px;}
 	.locationWrap .secTitleWrap {padding-bottom: 0;margin-bottom: 28px;}
 	.locationWrap .secTitleWrap p{margin-top: 5px;}
 	.locationWrap .mapWrap .root_daum_roughmap {width: 100% !important; height:300px !important;}
