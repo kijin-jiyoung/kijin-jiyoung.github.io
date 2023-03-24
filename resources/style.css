@@ -405,7 +405,7 @@ ul{list-style:none;}
     right:-1px; top:163px;
 }
 
-.modal-con .copypay{
+.modal-con .bankCopy{
     display:block;
     position:absolute;
     width:125.5px; height:40px;
