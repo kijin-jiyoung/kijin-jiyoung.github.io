@@ -1392,6 +1392,7 @@ h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-a
 	.galleryWrap .galWrap .galList .col li{width: 50%;padding: 0 3px;margin-bottom: 6px}
 	.galleryWrap .galWrap .galList .hover{margin: -25px 0 0 -25px;border-width:1px;background-image: url(/resources/gal_hover2_m.png);background-size: 12px 12px;width: 50px;height: 50px;}
 	.galleryWrap .galWrap .more{margin-top: 17px;}
+	.galleryWrap .secTitleWrap { padding-bottom: 0; margin-bottom: 28px;}
 	
 	.more span{padding-bottom: 37px;font-size: 13px;background-image: url(/resources/icon_more.png);background-size: 30px auto;}
 	
