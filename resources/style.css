@@ -17,7 +17,7 @@ body {
 
 	
 h3.maintitle {font-size:22px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}
-.maintitle.box{ border-bottom: 1px solid #646059; padding-top: 37px;padding-bottom: 35px;}
+.maintitlebox{ border-bottom: 1px solid #646059; padding-top: 37px;padding-bottom: 35px;}
 
 h3.accordion {
    letter-spacing: 1.5px;
@@ -1250,7 +1250,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
     
 h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}          
-maintitle.box{padding-top: 24px;padding-bottom: 21px;}            
+.maintitlebox{padding-top: 24px;padding-bottom: 21px;}            
     
 
           
