@@ -951,13 +951,13 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .comWrap .inputWrap .in .user .selBox .list li .img img {width:42px; height:42px;}
 .comWrap .inputWrap .in .user .selBox .list li input:checked + label {background:#fff; color:#222222;font-weight:500; border:1px solid #222}
 .comWrap .inputWrap .in .inputBox {position: relative; background:#fff;padding-right:75px;height: 75px; border:1px solid #e0e0e0; overflow:hidden; vertical-align: top;border-radius: 15px; }
-.comWrap .inputWrap .in .inputBox input {width: 100%;vertical-align: top; height: 100%; border:none; padding:0 0 0 26px; background:none; outline:none; font-size:19px; color:#000; font-weight: 300;}
+.comWrap .inputWrap .in .inputBox input {width: 100%;vertical-align: top; height: 100%; border:none; padding:0 0 0 26px; background:none; outline:none; font-size:17px; color:#000; font-weight: 300;}
 .comWrap .inputWrap .in .inputBox input::-webkit-input-placeholder{color:#222222;}
 .comWrap .inputWrap .in .inputBox input::-moz-placeholder{color:#222222;}
 .comWrap .inputWrap .in .inputBox input:-ms-input-placeholder{color:#222222;}
 .comWrap .inputWrap .in .inputBox input:-moz-placeholder{color:#222222;}
 .comWrap .inputWrap .btnComment{position: absolute; right:0;top:0;bottom:0; border-left:1px solid #eceee2;}
-.comWrap .inputWrap .btnComment a{font-size: 19px; font-weight: 500; color:#222222;background:#fff;width:75px;height: 100%;text-align: center;
+.comWrap .inputWrap .btnComment a{font-size: 16px; font-weight: 500; color:#222222;background:#fff;width:75px;height: 100%;text-align: center;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;
