@@ -16,14 +16,7 @@ body {
 
 
 	
-h3.maintitle {
-   letter-spacing: 1.5px;
-   text-align: center;
-   vertical-align: middle;
-   justify-content: center;
-   margin: 0px 0 30px;
-   color: #000;
-   }
+h3.maintitle {font-size:22px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}
 
 
 
@@ -1050,7 +1043,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoLoca .box{border-bottom: 1px solid #e0e0e0;padding-top: 37px;padding-bottom: 35px}
 .infoLoca .box:nth-child(1){padding-bottom: 40px}
 .infoLoca .box:last-child{border-bottom: 0;padding-bottom: 0}
-.infoLoca .tit01{font-size: 22px;font-weight: 600;color: #000;margin-bottom: 12px;letter-spacing:-.03em;} 
+.infoLoca .tit01{font-size: 19px;font-weight: 600;color: #000;margin-bottom: 12px;letter-spacing:-.03em;} 
 .infoLoca .tit02{margin-bottom: 28px;}
 .infoLoca .tit02:last-child{margin-bottom: 0}
 .infoLoca .tit02,
@@ -1252,7 +1245,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .guestName {font-size:13px; line-height:13px;}
 
     
-          
+h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}          
             
     
 
