@@ -126,10 +126,6 @@ p.tit02{margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
 }
 
 
-button.modal-open{line-height: 2;font-family: 'AppleSD';border-radius: 40px;font-size: 12px;display: inline-block;padding: 3px 15px;text-decoration: none;color: #fff;
-	background: #646059;margin: 3px;}
-
-
 
 
 
@@ -965,7 +961,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .comWrap .inputWrap .in .inputBox input:-ms-input-placeholder{color:#222222;}
 .comWrap .inputWrap .in .inputBox input:-moz-placeholder{color:#222222;}
 .comWrap .inputWrap .btnComment{position: absolute; right:0;top:0;bottom:0; border-left:1px solid #eceee2;}
-.comWrap .inputWrap .btnComment a{font-size: 16px; font-weight: 500; color:#222222;background:#fff;width:75px;height: 100%;text-align: center;
+.comWrap .inputWrap .btnComment a{font-size: 14px; font-weight: 500; color:#222222;background:#fff;width:75px;height: 100%;text-align: center;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
     -webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;
@@ -1249,10 +1245,10 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .basePop * {font-family: 'AppleSD';}
 .basePop .bg{ position: fixed; left:0; top:0; width: 100%; height: 100%;  z-index: 1;}
 .basePop .in {position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);text-align: center;width:90%; max-width: 365px;  z-index: 100;background:#fff;padding-top: 43px;padding-bottom:33px; }
-.basePop .in .title{font-size: 19px;color:#000000;line-height: 1.3;}
+.basePop .in .title{font-size: 15px;color:#000000;line-height: 1.3;}
 .basePop .in .input {text-align: center; margin:25px 0;}
-.basePop .in .input input {width:270px; height:48px; text-align: center; border:1px solid #eaeaea; font-size: 16px; color:#000000;}
-.basePop .in .input ::-webkit-input-placeholder {font-size:16px; color:#888888; font-weight:300;}
+.basePop .in .input input {width:270px; height:48px; text-align: center; border:1px solid #eaeaea; font-size: 14px; color:#000000;}
+.basePop .in .input ::-webkit-input-placeholder {font-size:14px; color:#888888; font-weight:300;}
 .basePop .in .btn a,
 .basePop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#eadbde; font-size: 16px;font-weight: 500;color:#000; border-radius:10px;}
 
