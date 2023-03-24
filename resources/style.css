@@ -46,14 +46,14 @@ cursor:pointer;
 
 p.maincontentname {
 font-weight: 500;
-font-size: 29px;
+font-size: 35px;
 }
 
 p.maincontent {
 letter-spacing: 0.5px;
 line-height: 1.7;
 font-weight: 550;
-font-size: 17px;
+font-size: 20px;
 }
 
 
@@ -640,7 +640,7 @@ dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, fieldset, p, button {/* margin: 0; *
 img,fieldset,iframe{border:0 none}
 li{list-style:none}
 input,select,button{vertical-align:middle}
-img{vertical-align:top; max-width:100%}	
+img{vertical-align:top; max-width:100%;border-radius:20px; }	
 label,button{cursor:pointer}
 a{color:#000;text-decoration:none}
 a:hover{}
@@ -1253,8 +1253,9 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}             
 p.invitation  {font-size:14px;padding: 0px 33px 0px;}
 .swiper-slide{padding: 0px 33px 0px;}
-          
-    
+.maincontentname{font-size: 25px;}	
+.maincontent{font-size: 15px;}     
+.Main-photo {padding: 0px 33px 0px;}    
     
   
 	html {-webkit-text-size-adjust: none;}
@@ -1325,7 +1326,7 @@ p.invitation  {font-size:14px;padding: 0px 33px 0px;}
 	.secTitleWrap.t1 .ht{font-size: 11px;letter-spacing: .2em;}
 	
   .greetingWrap {padding-top: 50px;}
-	.greetingWrap .greetingInner{padding: 0 30px 67px;}
+	.greetingWrap .greetingInner{padding: 0 30px 0;}
 	.greetingWrap .secTitleWrap {padding-bottom: 0;margin-bottom: 28px;}
 	.greetingWrap .textBox{font-size: 17px;line-height: 1.5;}
 	.greetingWrap .textBox p {margin-bottom: 27px;}
