@@ -107,8 +107,8 @@ p.photodescription {
 }
 
 .payparents {
-    text-decoration-line: underline;
-    text-underline-offset: 14px;
+    border-bottom: 1px double #cccccc;
+    border-spacing: 40px 0;	
     font-size: 15px;
     margin: 20px 0 20px;	
 }
