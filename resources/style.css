@@ -125,6 +125,14 @@ p.tit02{margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
     line-height: 2.5;	
 }
 
+
+button.modal-open{line-height: 2;font-family: 'AppleSD';border-radius: 40px;font-size: 12px;display: inline-block;padding: 3px 15px;text-decoration: none;color: #fff;
+	background: #646059;margin: 3px;}
+
+
+
+
+
 .kato {
 margin: 5px 10px 10px 20px;
 }
