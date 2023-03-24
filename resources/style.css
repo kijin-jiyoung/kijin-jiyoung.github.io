@@ -913,6 +913,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 	
 .guestBookWrap{background: center no-repeat; background-size:cover;}
 .guestBookWrap .guestBookInner{padding-top: 97px;padding-bottom: 100px}
+.guestBookInner .tit02 {margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
 .guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
 .guestBookWrap .secTitleWrap p {letter-spacing:0;}
 .guestBookWrap .marqWrap{overflow:hidden;height: 63px; }
@@ -1266,7 +1267,7 @@ p.maincontent{font-size: 15px;}
 .parents{font-size: 14px;}  
 p.accordiondesc {font-size: 12px;}	
 .locationInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
-
+.guestBookInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
 	
 	
 	html {-webkit-text-size-adjust: none;}
