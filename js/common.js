@@ -18,6 +18,7 @@ JT.smoothscroll = {
 		var scrollTime = 1;
 		var distance_offset = 2.5;
 		var scrollDistance = $window.height() / distance_offset;
+
 		if(this.passive()){
 			 console.log('passive');
 		    window.addEventListener("wheel",this.scrolling,{passive: false});
@@ -39,17 +40,21 @@ JT.smoothscroll = {
 	},
 	scrolling : function(event){
 		event.preventDefault();
+
 		var $window = $(window);
 		var scrollTime = 1;
 		var distance_offset = 2.5;
+
 		// debug custom param for intro page
 		// TODO : make options
 		if($('#introduce-menu').length > 0){
 			scrollTime = 1;
 		    distance_offset = 4.5;
 		}
+
 		var scrollDistance = $window.height() / distance_offset;
 		var delta = 0;
+
 		if(JT.smoothscroll.passive()){
 			//console.log('----111------');
 		    //console.log(event);
@@ -66,8 +71,10 @@ JT.smoothscroll = {
 			    delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
 			}
 		}
+
 		var scrollTop = $window.scrollTop();
 		var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+
 		TweenMax.to($window, scrollTime, {
 			scrollTo : { y: finalScroll, autoKill:true },
 			ease: Power3.easeOut,
@@ -76,6 +83,7 @@ JT.smoothscroll = {
 	}
 };
 JT.smoothscroll.init();
+
 //얼럿
 function alertOpen_skin(idx){
 	$('.alertPop .title').html(idx);
@@ -103,7 +111,7 @@ function CountDownTimer(dt, id){
 		var distance = end - now;
 		var t1 = moment(new Date());
 		var t2 = moment(dt);
-
+		
 		if (distance < 0) {
 			 clearInterval(timer);
 
@@ -137,7 +145,7 @@ function CountDownTimer(dt, id){
         if(parseInt(seconds) < 10){ 
             seconds = '0' + seconds; 
         } 
-
+	
         var day1 = String(days).substring(0, 1);
         var day2 = String(days).substring(1, 2);
         var day3 = String(days).substring(2, 3);
@@ -176,11 +184,11 @@ var maxDelay = 500;
 var minDuration = maxDuration - maxDelay;
 $(document).ready(function(){
     DADIDAN.init();
-
+    
     hauntedText($('.mainVisual .tit01 .blast'), 2000);
     hauntedText($('.mainVisual .tit02 .blast'), 2000);
     hauntedText($('.mainVisual .name .blast'), 3800);
-
+    
 });
 var getRandomValue = function (min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -192,10 +200,10 @@ var hauntedText = function (obj, time) {
 	    	var duration = getRandomValue(minDuration, maxDuration);
 	    	var delay = maxDuration - duration;
 	    	var blur = getRandomValue(2, 10);
-
+	
 		    // From
 		    $el.animate({opacity: 0, blur: blur}, {duration: 0});
-
+	
 		    // To
 		    $el.delay(delay).animate({opacity: 1, blur: 0}, {duration: duration,ease: [250, 0] });
 	  	});
@@ -204,16 +212,6 @@ var hauntedText = function (obj, time) {
 
 
 
-
-    
-        
-          
-    
-
-        
-    
-    @@ -234,12 +118,7 @@ $(function(){
-  
 $(function(){
 	$(window).scrollTop(0);
 	
@@ -242,24 +240,9 @@ $(function(){
 		$('body').removeClass('gnbOpen');
 		noScrollClear();
 	   	moveGnb = true;
-
+	   
 	   if(!$('.wrap').hasClass('iframe')){
 			   var idx = $(this).parent().index();
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -380,27 +259,7 @@ $(function(){
-  
 	   		switch(idx){
 	   			case 0 : winScTop = $('.greetingWrap').offset().top;
 	   			break;
@@ -330,12 +313,16 @@ $(function(){
         prevEl: ".infoList .swiper-button-prev"
     }
   });
+
+
+
 	$(".infoList .tab button").click(function(){
 		$(".infoList .tab button").removeClass('active');
 		$(this).addClass('active');
 		infoList1.slideTo($(this).index());
 		infoImgChg($(this).index());
 	});
+
 	$(".infoList .btnInfo").on('click', function(){ 
 		var activeIndex = infoList1.activeIndex+1;
 		if($(".infoList .tab button").eq(activeIndex).length <= 0) activeIndex = 0;
@@ -344,6 +331,7 @@ $(function(){
 		infoList1.slideTo(activeIndex);
 		infoImgChg(activeIndex);
 	});
+
 	infoImgChg(0);
 	function infoImgChg(i){
 		var imgSrc = '';
@@ -391,12 +379,12 @@ $(function(){
 			$('.head').removeClass('on');
 		}
 	});
-
+	
 	//로고 클릭
 	$('.h1Wrap a').on('click',function(){
 		$('html,body').stop().animate({scrollTop:0},1000);
 	});
-
+	
 	//메뉴 열기
 	$('.btnMenu').click(function(){
 		$('body').addClass('gnbOpen');
@@ -414,23 +402,8 @@ $(function(){
 		noScrollClear();
 	});
 
-
+	
 	var playBgm = document.getElementById("bgmAudio");
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -485,38 +344,7 @@ $(function(){
-  
 	//playBgm.play();
 	//playBgm ? playBgm.pause() : "";
 	$('.btnControl a').on('click', function(e){
@@ -458,7 +431,9 @@ $(function(){
 		var weaList = '<iframe class="silence" style="width:1px; height:1px;" src="https://dddproject.com/html/images/silence.mp3" allow="autoplay"></iframe>';
 		$('.wrap').append(weaList);
 	}else{
+
 	}
+
 	// 위로가기
 	$('.btnTop').on('click',function(){
 		$('html,body').stop().animate({scrollTop:0},1000);
@@ -509,7 +484,7 @@ $(function(){
 		$('body').removeClass('showSlide');
 		$('body').off('scroll touchmove mousewheel');
 	});
-
+	
 	//위치접근
 	$('.greetingWrap').waypoint(function (direction) {
         $('.greetingWrap').addClass('atm');
@@ -538,31 +513,17 @@ $(function(){
     $('.thanksWrap').waypoint(function (direction) {
         $('.thanksWrap').addClass('atm');
     }, {offset: '60%'});
-
+    
     DADIDAN.init();
-
+	
 });
 
 // 갤러리 더보기
 function morePic(){
-
-    
-          
-            
-    
-
-          
-          
-            
-    
-
-          
-    
-    @@ -574,80 +402,4 @@ function noScrollClear() {
-  
 	$('.hiddenList').show();
 	$('.galleryWrap .more').hide();
 }
+
 //인터뷰 열기
 function openInterview(){
 	$('.interPop').scrollTop(0);
@@ -574,6 +535,7 @@ function openInterview(){
 	});
 	noScrollRun();
 }
+
 //유투브 영상
 function youtubeOpen(src){
 	var playBgm = document.getElementById("bgmAudio");
@@ -597,6 +559,7 @@ function videoClose(src){
 	noScrollClear();
 	$('body').removeClass('showYoutube');
 }
+
 var posY;
 function noScrollRun() {
 	posY = $(window).scrollTop();
@@ -609,6 +572,73 @@ function noScrollClear() {
     $(".wrap").attr("style","");
 }
 
+// 다디단
+var DADIDAN = (function(){
+  var $wrap = $('.wrap'),
+      controller,
+      moveFlag = false;
+
+  var posx;
+  var posy;
+  var pos_val1= 0, pos_val2= 0, pos_val3= 0,
+       wH = $(window).height();
+
+  var random = function random(min, max){
+      return Math.round(min + Math.random()*(max-min));
+  };
+  var posXArr=[],
+       posYArr=[];
+  var myTimer;
+
+  function init(){
+      setTimerMot(pos_val1,0,1.2,10600);
+      setTimerMot(pos_val2,1,1.5,20600);
+      setTimerMot(pos_val3,2,0.9,200);
+  }
+  
+  function setTimerMot(pos_val,i,time1,time2){
+  myTimer = setTimeout(function() {
+      randomPos();
+        posXArr.push(posx);
+        posYArr.push(posy);
+        var ranNum = random(0,5);
+         $('.leafOb').eq(i).css({'top':posy});
+        TweenMax.fromTo($('.leafOb').eq(i).find('.leaf'),10,{x:-50,rotation:-6*ranNum},{x:50,delay:0.2*i,rotation:6*ranNum,repeat: -1,yoyo: true,ease: Power2.easeInOut},{delay:220*i});
+        TweenMax.to($('.leafOb').eq(i),0.8,{autoAlpha:1,delay:0.4*i});
+        
+        setIntervalMot(pos_val,i,time1);
+        clearTimeout(myTimer);
+  }, time2);
+  }
+
+  function setIntervalMot(_val,_idx,time){
+      $('.leafOb').eq(_idx).hide();
+      setInterval(function(){
+          _val += 1;
+          $('.leafOb').eq(_idx).show();
+          if (_val >= wH){
+              _val = 0;
+
+              $('.leafOb').eq(_idx).hide();
+              randomPos();
+          }
+
+          $('.leafOb').eq(_idx).css({top:_val});
+      },time*100);
+  }
+
+  function randomPos(){
+      var divsize = (Math.random()*50).toFixed();
+
+      posx = Number((Math.random() * ($(window).width() - divsize)).toFixed());
+      posy = Number((Math.random() * ($(window).height() - divsize)).toFixed());
+  }
+
+  return {
+     init : init
+  }
+
+}());
 
 
 // var DADIDAN = (function(){
@@ -642,7 +672,7 @@ function noScrollClear() {
 //         setTimerMot(pos_val5,4,1.9,900);
 //          * */
 //     }
-
+    
 //     function setTimerMot(pos_val,i,time1,time2){
 // 		myTimer = setTimeout(function() {
 // 		  	randomPos();
@@ -652,7 +682,7 @@ function noScrollClear() {
 // 	       	$('.fixPetalWrap .obj').eq(i).css({'top':posy});
 // 	        TweenMax.fromTo($('.fixPetalWrap .obj').eq(i),10,{x:-20,rotation:-7*ranNum},{x:20,delay:0.2*i,rotation:7*ranNum,repeat: -1,yoyo: true,ease: Power2.easeInOut},{delay:220*i});
 // 	        TweenMax.to($('.fixPetalWrap .obj').eq(i),0.8,{autoAlpha:1,delay:0.4*i});
-
+	        
 // 	        setIntervalMot(pos_val,i,time1);
 // 	        //clearTimeout(myTimer);
 // 		}, time2);
