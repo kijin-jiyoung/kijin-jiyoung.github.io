@@ -101,7 +101,7 @@ p.photodescription {
 }
 
 
-p.address{font-size:15px;line-height: 1.8;}
+p.tit02{margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}	
 
 
 .map {
@@ -1268,7 +1268,7 @@ p.maincontent{font-size: 15px;}
 p.accordiondesc {font-size: 12px;}	
 .locationInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
 .guestBookInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
-	
+p.tit02{margin-bottom: 18px;font-size: 14px;line-height: 1.5;}	
 	
 	html {-webkit-text-size-adjust: none;}
 	.mob {display: inline-block;}
@@ -1438,6 +1438,7 @@ p.accordiondesc {font-size: 12px;}
 	.swiper-pagination-bullet{width: 7px;height: 7px}
 	
 	.guestBookWrap .guestBookInner{padding: 64px 33px 66px;}
+	.guestBookInner .tit02 {margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
 	.guestBookWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 26px}
 	.guestBookWrap .waveText{margin-left: -33px;margin-right: -33px;}
 	.guestBookWrap .wave .txt{font-size: 26px;margin-left: 8px}
