@@ -768,7 +768,8 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .inviteBox .stamp {position: absolute; top:-5px;; left:0; width: 100%; text-align: center; z-index:1;  }
 .inviteBox .stamp .text {display: block; height:18px; background:url('../images/stampTit.png') center top no-repeat; margin-bottom:8px;; transition: 3.2s opacity;opacity: 0;transition-delay: 1600ms;}
 .inviteBox .stamp .img {display: inline-block; vertical-align: top; width:12px; height:21px; background:url('../images/stampTree.png') no-repeat; transition: 3.2s opacity;opacity: 0;transition-delay: 1200ms;}
-.inviteBox .secTitleWrap{overflow: hidden}	
+.inviteBox .secTitleWrap{overflow: hidden}
+.inviteBox .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
 	
 .mainLoad .inviteBox .mainText p {opacity:1;}
 .mainLoad .inviteBox .stamp .text {opacity:1;}
@@ -851,6 +852,9 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .galleryWrap .galWrap .galList .pop{opacity: 0;transition: all 0.5s;position: absolute;top:0;left:0;width: 100%;height:100%;z-index: 1; background: center no-repeat; background-size:cover;}
 .galleryWrap .galWrap .galList .hover{opacity: 0;transition: all 0.4s 100ms;width: 106px;height:106px;position: absolute;top:50%;left:50%;margin: -53px 0 0 -53px;z-index: 2;background:url('/resources/gal_hover2_m.png') no-repeat 50% 50%;box-sizing: border-box;border: 2px solid #fff;border-radius: 100%;}
 .galleryWrap .galWrap.minititle{transition-delay: 900ms;transition-duration: 3s;transform:translateY(60px);}
+.galleryWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
+
+
 .hiddenList {display: none;}
 .more{text-align: center;}
 .more span{display: inline-block; vertical-align: top; font-size:19px; color:#646059; font-weight:500; padding-bottom:55px; background:url('/resources/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
@@ -899,11 +903,12 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoWrap .infoList .swiper-button-next, 
 .infoWrap .infoList .swiper-button-prev{z-index:50; position: absolute; left:50%; top:47px; margin-top: 0; margin-left:-250px; width:64px; height:64px; background:url('../images/btnSlidePrev.png') no-repeat; }
 .infoWrap .infoList .swiper-button-next{margin-left:190px;  background:url('/resources/btnSlideNext.png') no-repeat; }
-.infoWrap .secTitleWrap p {color:#000}	
+.infoWrap .secTitleWrap p {color:#000}
+.infoWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
 	
 .guestBookWrap{background: center no-repeat; background-size:cover;}
 .guestBookWrap .guestBookInner{padding-top: 97px;padding-bottom: 100px}
-.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #e0e0e0;}
+.guestBookWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
 .guestBookWrap .secTitleWrap p {letter-spacing:0;}
 .guestBookWrap .marqWrap{overflow:hidden;height: 63px; }
 .guestBookWrap .waveText {margin-bottom: 37px;position: relative;z-index: 1; transition:2s all; /*transform:translate(0,50px); opacity:0;*/  transition-delay:500ms;}
@@ -984,14 +989,14 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .contacName  a span{position: relative;font-weight: 500;color: #000000;padding-left: 27px;}
 .contacName  a span:before{display: block;content: '';width: 17px;height: 17px;background:url('../images/icon_tel.png') no-repeat 0 0;position: absolute;top:50%;left:0;margin-top: -8px;}
 .mindWrap .mindInner{padding-top: 97px;padding-bottom: 100px}
-.mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #e0e0e0;}
+.mindWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #646059;}
 .mindWrap .text{text-align: center;font-family: 'AritaBuri';font-size: 21px;color: #222222;line-height: 1.81;margin-bottom: 40px}
 .mindWrap .contBox{border:1px solid #e2e4ea;margin-bottom: 15px}
 .mindWrap .contBox .tit{padding:0 0 1px 24px; position: relative; cursor:pointer; height: 74px; background:#edeef1;box-sizing:border-box;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
     -webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;
 }
-.mindWrap .contBox.active .tit{border-bottom:1px dashed #dbddcf;}
+.mindWrap .contBox.active .tit{border-bottom:1px dashed #646059;}
 .mindWrap .contBox .tit span{font-size:19px;color:#262f3c; font-weight: 500; padding-left:27px; background:url(../images/mind/mind01_1.png) 0 50% no-repeat;background-size: 16px 16px }
 .mindWrap .contBox .tit:after{content:''; position: absolute; right:23px; top:50%; margin-top:-4px;width:12px; height:8px; background:url(../images/mind/mind02-1.png) 0 0 no-repeat;background-size: 12px auto}
 .mindWrap .contBox.active .tit:after{transform:rotate(180deg);}
@@ -1017,7 +1022,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mindWrap .contBox.bride .tit span {color:#734050; background:url(../images/mind/mind01-2.png) 0 50% no-repeat;background-size: 16px 16px;}
 .mindWrap .contBox.bride .tit:after {background-image:url(../images/mind/mind02-2.png);}
 .mindWrap .contBox.bride .toggle {background:#f2f0f0;border-bottom-color: #ddd6cd}
-.mindWrap .contBox.bride.active .tit{border-bottom:1px dashed #ddd6cd;}
+.mindWrap .contBox.bride.active .tit{border-bottom:1px solid #646059;}
 .locationWrap .locationInner{padding-top:97px;}
 .locationWrap .secTitleWrap{margin-bottom:44px;}
 .locationWrap .secTitleWrap p{margin-top: 8px;}
@@ -1478,7 +1483,7 @@ h3.maintitle {font-size:17px;letter-spacing: 1.5px;text-align: center;vertical-a
 	.mindWrap .contBox .toggle .btn button.no1 span{padding-left: 38px;}
 	.mindWrap .contBox .toggle .btn button.no2 span{padding-left: 18px;background-image: url(../images/mind/mind04_m.png);background-size: auto 15px}
 	
-	.locationWrap .locationInner{padding-top: 64px;}
+	.locationWrap .locationInner{padding-top: 65px;padding-bottom: 65px;}
 	.locationWrap .secTitleWrap{margin-bottom: 28px;}
 	.locationWrap .secTitleWrap p{margin-top: 5px;}
 	.locationWrap .mapWrap .root_daum_roughmap {width: 100% !important; height:300px !important;}
