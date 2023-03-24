@@ -1244,13 +1244,13 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .basePop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;  }
 .basePop * {font-family: 'AppleSD';}
 .basePop .bg{ position: fixed; left:0; top:0; width: 100%; height: 100%;  z-index: 1;}
-.basePop .in {position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);text-align: center;width:90%; max-width: 365px;  z-index: 100;background:#fff;padding-top: 43px;padding-bottom:33px; }
-.basePop .in .title{font-size: 15px;color:#000000;line-height: 1.3;}
+.basePop .in {position: fixed;left:50%;top:50%;transform:translate(-50%,-50%);text-align: center;width:90%; max-width: 365px;  z-index: 100;background:#fff;padding-top: 43px;padding-bottom:33px;border-radius: 10px; }
+.basePop .in .title{font-size: 14px;color:#000000;line-height: 1.3;}
 .basePop .in .input {text-align: center; margin:25px 0;}
-.basePop .in .input input {width:270px; height:48px; text-align: center; border:1px solid #eaeaea; font-size: 14px; color:#000000;}
+.basePop .in .input input {border-radius: 10px;width:270px; height:42px; text-align: center; border:1px solid #eaeaea; font-size: 13px; color:#000000;}
 .basePop .in .input ::-webkit-input-placeholder {font-size:14px; color:#888888; font-weight:300;}
 .basePop .in .btn a,
-.basePop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;border: 1px solid #eaeaea;background:#fff; font-size: 14px;font-weight: 500;color:#000; border-radius:10px;}
+.basePop .in .btn button{display: inline-block;width: 80px;height: 35px;border: 1px solid #eaeaea;background:#646059; font-size: 13px;font-weight: 500;color:#000; border-radius:10px;}
 
 
 /***************************************************************************************
