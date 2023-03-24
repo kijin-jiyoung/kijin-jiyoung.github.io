@@ -39,7 +39,7 @@ h3.accordion {
 p.accordiondesc {
 margin:20px 0px;
 padding: 50px 0px;
-font-size:12px;
+font-size:15px;
 font-family:'MapoFlowerIsland';
 cursor:pointer;		
 }
@@ -61,6 +61,7 @@ font-size: 20px;
 .Main-photo {
     width: 100%;
     max-width: 666px;
+border-radius:20px;	
    }
 
 
@@ -98,6 +99,10 @@ p.photodescription {
    margin: 50px 0 50px;
    color: #000;
 }
+
+
+p.address{font-size:15px;line-height: 1.8;}
+
 
 .map {
    font-size: 13px;
@@ -857,7 +862,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 
 .hiddenList {display: none;}
 .more{text-align: center;}
-.more span{display: inline-block; vertical-align: top; font-size:19px; color:#646059; font-weight:500; padding-bottom:55px; background:url('/resources/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
+.more span{display: inline-block; vertical-align: top; font-size:17px; color:#646059; font-weight:500; padding-bottom:55px; background:url('/resources/icon_more.png') 50% 100% no-repeat; cursor:pointer;}
 .tabIn{display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;width:100%;background:url(../images/bg_thx03.png) no-repeat 50% 0}
 .tabIn > a,
 .tabIn > button{position:relative;height:89px;text-align:center;vertical-align: middle;font-family: 'EB Garamond';font-size: 21px;color: #bf9f82;width: 100%;text-align: center;white-space: nowrap;box-sizing: border-box;padding-top: 2px;}
@@ -1258,8 +1263,8 @@ p.maincontent{font-size: 15px;}
 .Main-photo {padding: 0px 33px 0px;}    
 .payparents{font-size: 16px;}    
 .parents{font-size: 14px;}  
-	
-	
+p.accordiondesc {font-size: 12px;}	
+
 	
 	
 	
