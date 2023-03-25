@@ -368,6 +368,7 @@ ul{list-style:none;}
     background:#fff;
     border-radius: 10px;
     text-align: center;
+    overflow:auto; 
 }
 
 
