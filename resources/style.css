@@ -1581,6 +1581,7 @@ p.accordiondesc {font-size: 12px;}
 	.quickWrap .count .total,
 	.quickWrap .linkList ul li .ico,
 	.quickWrap .linkList ul li.kakao .ico{height: 50px}
+        .quickWrap .linkList ul li.kakao .ico,
 	.quickWrap .linkList ul li.sound .ico,
 	.quickWrap .linkList ul li.link .ico{background-position: 50% 50%}
 	.quickWrap .linkList .pop{display: none;}
