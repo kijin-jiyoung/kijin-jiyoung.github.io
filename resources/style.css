@@ -1302,6 +1302,11 @@ p.accordiondesc {font-size: 12px;}
 	    -o-filter: blur(6px);
 	    -ms-filter: blur(6px);
 	    filter: blur(6px);
+	$('.wrap').on('scroll touchmove mousewheel', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+		});	
 	}
 	
 	.btnMenuClose,
