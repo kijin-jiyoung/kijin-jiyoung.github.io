@@ -430,9 +430,9 @@ ul{list-style:none;}
 
 
 .surveymodal-con{
+    z-index: 1000;
     display:none;
     position:fixed;
-    z-index: 1000;
     width:250px; height:520px;
     min-height:50%;
     top:50%; left:50%;
