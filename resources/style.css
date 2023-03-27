@@ -1221,7 +1221,7 @@ body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide .swiper-button-prev,
 .popSlide .swiper-button-next{dislay:block;width: 64px;height: 64px;position: absolute;top:95%;left:50px;margin-top: -32px;background:url('/resources/btnGalBigLeft.png') 0 0 no-repeat;}
 .popSlide .swiper-button-next{background-image:url('/resources/btnGalBigRight.png');left: auto;right: 50px}
-.popSlide .swiper-pagination-fraction{font-family: 'AritaBuri';font-style: italic;font-size: 22px;font-weight: 700;color: rgba(255,255,255,.5);position: absolute;bottom: 43px;width: auto;left:auto;right: 50%;}
+.popSlide .swiper-pagination-fraction{font-family: 'AritaBuri';font-style: italic;font-size: 22px;font-weight: 700;color: rgba(255,255,255,.5);position: absolute;bottom: 43px;width: auto;left:auto;right: 50px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current,
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{font-family: 'EB Garamond';font-size: 28px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top:1px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current{color: #fff;font-weight: 700;margin-right: 5px;}
