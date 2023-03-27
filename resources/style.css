@@ -370,6 +370,8 @@ ul{list-style:none;}
     background:#fff;
     border-radius: 10px;
     text-align: center;
+    border: 3px #646059;
+    border-style: solid;
 }
 
 
@@ -397,12 +399,12 @@ ul{list-style:none;}
 .modal-con .close{
     display:block;
     position:absolute;
-    width:125.5px; height:40px;
+    width:125.5px; height:60px;
     border-radius: 0 0 10px 0px;	
     border: 0.2px solid #646059;
     text-align: center;
     vertical-align: middle;
-    line-height: 39px;	
+    line-height: 36px;	
     text-decoration:none;
     background-color:#FFF;
     color:#000; font-size:14px;
@@ -413,12 +415,12 @@ ul{list-style:none;}
 .modal-con .copypay{
     display:block;
     position:absolute;
-    width:125.5px; height:40px;
+    width:125.5px; height:60px;
     border-radius: 0 0 0px 10px;
     border: 0.2px solid #646059;
     text-align: center;
     vertical-align: middle;
-    line-height: 39px;
+    line-height: 36px;
     text-decoration:none;
     background-color:#646059;
     color:#FFF; font-size:14px;	
