@@ -1587,9 +1587,19 @@ function openInterview(){
 </script>
 <!-- 복사 -->	     
 	     
+<!-- 모달 스크롤 -->	     	     
+function Modal(props) {
+  useEffect(() => {
+    // modal이 떠 있을 땐 스크롤 막음
+    disableScroll();
+    // modal 닫히면 다시 스크롤 가능하도록 함
+    return () => enableScroll();
+  }, []);
+ 
+  // 생략
+}
 	     
-	     
-	     
+<!-- 모달 스크롤 -->	     
 	     
 	
 	
