@@ -360,7 +360,6 @@ ul{list-style:none;}
 }
 .modal-con{
     z-index: 1000;
-    opacity:0
     display:none;
     position:fixed;
     width:250px; height:200px;
