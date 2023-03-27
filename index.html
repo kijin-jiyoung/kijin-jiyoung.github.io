@@ -1113,8 +1113,12 @@ function openModal(modalname){
   $("#modal").fadeIn(100);
   $("."+modalname).fadeIn(100);
   $("body").addClass('notScroll');
+  noScrollRun();
+  $('body').on('scroll touchmove mousewheel', function(event) {
+  event.preventDefault();        
+  return false; 
+  });		
 }
-
 	
 
 $("#modal, .close").on('click',function(){
@@ -1125,68 +1129,15 @@ $("#surveymodal").fadeOut(100);
 $("#commentmodal").fadeOut(100);
   $(".commentmodal-con").fadeOut(100);
 $("#commentlistmodal").fadeOut(100);
-  $(".commentlistmodal-con").fadeOut(100);	
+  $(".commentlistmodal-con").fadeOut(100);
+noScrollClear();
+  $('body').off('scroll touchmove mousewheel');		
 });
-
-	
 	
 
 $("h3.accordion,.accordiondesc").on('click',function(){
   $(this).next(".accordioncon").slideToggle(100);
 });
-
-	
-export const lockModalScrollPropagation = (OS, lockRef) => {
-document.body.style.pointerEvents = 'none';
-
-if (OS !== 'ios') {
-document.body.style.overflow = 'hidden';
-} else {
-const scrollY = -(window?.scrollY || 0);
-
-lockRef.current.timer = setTimeout(() => {
-document.body.style.position = 'fixed';
-document.body.style.top = `${scrollY}px`;
-lockRef.current.locked = true;
-}, 100);
-}
-};
-
-export const unlockModalScrollPropagation = (OS, lockTimerRef) => {
-document.body.style.pointerEvents = 'auto';
-
-if (OS !== 'ios') {
-document.body.style.overflow = 'auto';
-} else {
-const { timer, locked } = lockTimerRef.current;
-
-clearTimeout(timer);
-if (locked) {
-const scrollY = document.body.style.top;
-document.body.style.position = '';
-document.body.style.top = '';
-window.scrollTo(0, parseInt(scrollY || '0') * -1);
-}
-}
-};
-
-export const usePreventScrollPropagation = () => {
-const { OS } = useContext(AppContext);
-const lockRef = useRef({ timer: null, locked: false });
-
-useEffect(() => {
-lockModalScrollPropagation(OS, lockRef);
-
-return () => {
-unlockModalScrollPropagation(OS, lockRef);
-};
-}, []);
-};	
-	
-	
-	
-	
-	
 	
 	
 </script>
