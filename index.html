@@ -1112,7 +1112,6 @@ function openModal(modalname){
   document.get
   $("#modal").fadeIn(100);
   $("."+modalname).fadeIn(100);
-  $("body").addClass('notScroll');
 }
 	
 
@@ -1125,8 +1124,6 @@ $("#commentmodal").fadeOut(100);
   $(".commentmodal-con").fadeOut(100);
 $("#commentlistmodal").fadeOut(100);
   $(".commentlistmodal-con").fadeOut(100);
-noScrollClear();
-  $('body').off('scroll touchmove mousewheel');		
 });
 	
 
