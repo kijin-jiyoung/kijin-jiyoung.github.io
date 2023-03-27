@@ -1113,11 +1113,6 @@ function openModal(modalname){
   $("#modal").fadeIn(100);
   $("."+modalname).fadeIn(100);
   $("body").addClass('notScroll');
-  noScrollRun();
-  $('body').on('scroll touchmove mousewheel', function(event) {
-  event.preventDefault();        
-  return false; 
-  });		
 }
 	
 
