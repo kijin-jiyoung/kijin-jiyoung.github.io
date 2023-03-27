@@ -1618,7 +1618,7 @@ p.accordiondesc {font-size: 12px;}
 	.popSlide .swiper-button-prev,
 	.popSlide .swiper-button-next{position: absolute;width: 32px;height: 32px;background-size: cover;margin-top: -16px;left:17px;z-index: 100;cursor: pointer;}
 	.popSlide .swiper-button-next{left:auto;right:17px;}
-	.popSlide .swiper-pagination-fraction{font-size: 9px;right: 50%;left:0;bottom: 30px;width: 100%;text-align: center;}
+	.popSlide .swiper-pagination-fraction{font-size: 9px;right: auto;left:0;bottom: 30px;width: 100%;text-align: center;}
 	.popSlide .swiper-pagination-fraction .swiper-pagination-current, 
 	.popSlide .swiper-pagination-fraction .swiper-pagination-total{font-size: 15px}
 	
