@@ -705,7 +705,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 아버지 <b>윤병태</b></div>
 
-<div class="l_wrap">
+
 <div id="wrap">
 <a href="javascript:openModal('modal1');" class="button modal-open" style="line-height: 2;font-family:'AppleSD';border-radius:40px;font-size:12px;display:inline-block; padding: 3px 15px; text-decoration:none; color:#fff; background:#646059; margin:3px;">계좌번호</a>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -734,7 +734,7 @@
 <a href="javascript:;" class="close">닫기</a>
 </div>
 </div>	    
-</div>
+
 
 <div class="parents" style="font-family:'MapoFlowerIsland';text-align:center;line-height:2.5;">어머니 <b>이숙현</b>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -1099,6 +1099,7 @@ function openModal(modalname){
   document.get
   $("#modal").fadeIn(100);
   $("."+modalname).fadeIn(100);
+  $("body").addClass('notScroll');
 }
 
 
@@ -1587,21 +1588,7 @@ function openInterview(){
 </script>
 <!-- 복사 -->	     
 	     
-<!-- 모달 스크롤 -->	  
-<script>
-function Modal(props) {
-  useEffect(() => {
-    // modal이 떠 있을 땐 스크롤 막음
-    disableScroll();
-    // modal 닫히면 다시 스크롤 가능하도록 함
-    return () => enableScroll();
-  }, []);
- 
-  // 생략
-}
-</script>	     
-<!-- 모달 스크롤 -->	     
-	     
+   
 	
 	
 	
