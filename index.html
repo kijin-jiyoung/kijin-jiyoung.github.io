@@ -1134,6 +1134,60 @@ $("#commentlistmodal").fadeOut(100);
 $("h3.accordion,.accordiondesc").on('click',function(){
   $(this).next(".accordioncon").slideToggle(100);
 });
+
+	
+export const lockModalScrollPropagation = (OS, lockRef) => {
+document.body.style.pointerEvents = 'none';
+
+if (OS !== 'ios') {
+document.body.style.overflow = 'hidden';
+} else {
+const scrollY = -(window?.scrollY || 0);
+
+lockRef.current.timer = setTimeout(() => {
+document.body.style.position = 'fixed';
+document.body.style.top = `${scrollY}px`;
+lockRef.current.locked = true;
+}, 100);
+}
+};
+
+export const unlockModalScrollPropagation = (OS, lockTimerRef) => {
+document.body.style.pointerEvents = 'auto';
+
+if (OS !== 'ios') {
+document.body.style.overflow = 'auto';
+} else {
+const { timer, locked } = lockTimerRef.current;
+
+clearTimeout(timer);
+if (locked) {
+const scrollY = document.body.style.top;
+document.body.style.position = '';
+document.body.style.top = '';
+window.scrollTo(0, parseInt(scrollY || '0') * -1);
+}
+}
+};
+
+export const usePreventScrollPropagation = () => {
+const { OS } = useContext(AppContext);
+const lockRef = useRef({ timer: null, locked: false });
+
+useEffect(() => {
+lockModalScrollPropagation(OS, lockRef);
+
+return () => {
+unlockModalScrollPropagation(OS, lockRef);
+};
+}, []);
+};	
+	
+	
+	
+	
+	
+	
 	
 </script>
 <!------------ 모달 . 아코디언 ------------>
