@@ -1219,9 +1219,9 @@ body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide .slideList .swiper-slide .slide:after {content:''; position: absolute; left:0; top:0; width: 100%; height: 100%;}
 .popSlide .slideList .swiper-slide .slide img { vertical-align: middle; display: inline-block;height: 100%;object-fit: cover;object-position: 50% 50%;}
 .popSlide .swiper-button-prev,
-.popSlide .swiper-button-next{dislay:block;width: 64px;height: 64px;position: absolute;top:50%;left:50px;margin-top: -32px;background:url('/resources/btnGalBigLeft.png') 0 0 no-repeat;}
+.popSlide .swiper-button-next{dislay:block;width: 64px;height: 64px;position: absolute;top:95%;left:50px;margin-top: -32px;background:url('/resources/btnGalBigLeft.png') 0 0 no-repeat;}
 .popSlide .swiper-button-next{background-image:url('/resources/btnGalBigRight.png');left: auto;right: 50px}
-.popSlide .swiper-pagination-fraction{font-family: 'AritaBuri';font-style: italic;font-size: 22px;font-weight: 700;color: rgba(255,255,255,.5);position: absolute;bottom: 43px;width: auto;left:auto;right:50px}
+.popSlide .swiper-pagination-fraction{font-family: 'AritaBuri';font-style: italic;font-size: 22px;font-weight: 700;color: rgba(255,255,255,.5);position: absolute;bottom: 43px;width: auto;left:auto;right: 50%;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current,
 .popSlide .swiper-pagination-fraction .swiper-pagination-total{font-family: 'EB Garamond';font-size: 28px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top:1px;}
 .popSlide .swiper-pagination-fraction .swiper-pagination-current{color: #fff;font-weight: 700;margin-right: 5px;}
@@ -1618,7 +1618,7 @@ p.accordiondesc {font-size: 12px;}
 	.popSlide .swiper-button-prev,
 	.popSlide .swiper-button-next{position: absolute;width: 32px;height: 32px;background-size: cover;margin-top: -16px;left:17px;z-index: 100;cursor: pointer;}
 	.popSlide .swiper-button-next{left:auto;right:17px;}
-	.popSlide .swiper-pagination-fraction{font-size: 9px;right: auto;left:0;bottom: 27px;width: 100%;text-align: center;}
+	.popSlide .swiper-pagination-fraction{font-size: 9px;right: 50%;left:0;bottom: 30px;width: 100%;text-align: center;}
 	.popSlide .swiper-pagination-fraction .swiper-pagination-current, 
 	.popSlide .swiper-pagination-fraction .swiper-pagination-total{font-size: 15px}
 	
