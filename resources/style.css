@@ -356,7 +356,8 @@ ul{list-style:none;}
     position:fixed;
     width:100%; height:100%;
     top:0; left:0; 
-    background:rgba(0,0,0,0.3);
+    background:rgba(0,0,0,0.6);
+    overflow-y:hidden;	
 }
 .modal-con{
     z-index: 1000;
@@ -1125,7 +1126,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .quickWrap .linkList ul li.mail{display: none;}
 .quickWrap .linkList ul li.mail .ico {background:url('/resources/btnMail.png') 50% 50% no-repeat;}
 .quickWrap .linkList ul li.mail .ico:hover {background:url('/resources/btnMail_hover.png') 50% 50% no-repeat;}
-.quickWrap .linkList ul li.kakao .ico{height:60px;background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #fae100;background-size: 24px auto}
+.quickWrap .linkList ul li.kakao .ico{background:url('/resources/ico_kakao.png') 50% 50% no-repeat;background-color: #fae100;background-size: 24px auto}
 .quickWrap .linkList ul li .pop {position: absolute; right:65px; top:50%; transform:translate(-10px,-50%); transition:.3s all; white-space:nowrap; background:#fff; opacity:0; visibility:hidden;}
 .quickWrap .linkList ul li .pop a {display: block; color:#222222; padding:9px 15px;}
 .quickWrap .linkList ul li .pop:after {content:''; position: absolute; right:-5px; top:50%; width: 5px; height:10px; margin-top:-5px; background:url('/resources/ico_hover.png') center center no-repeat;}
