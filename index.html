@@ -1465,10 +1465,11 @@ $(function(){
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script>
     var swiper = new Swiper(".mySwiper", {
+      cssMode: true,    
       loop: true,
       spaceBetween: 2,
-      effect: "fade",
-	    on: {
+      effect: fade,
+  },
     init: function () {
       $('.swiper-slide').addClass('changed');
     },
@@ -1479,7 +1480,6 @@ $(function(){
     slideChangeTransitionEnd : function() {
       $(".swiper-slide").removeClass("changing");
       $(".swiper-slide").addClass("changed");
-    }  
 },
       pagination: {
         el: ".swiper-pagination",
@@ -1488,12 +1488,9 @@ $(function(){
 },
       navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-});	    
-  </script>
-
-
+        prevEl: ".swiper-button-prev",	      
+});
+</script>
 <!------------ 갤러리 스와이프 ------------>
 	
 <script>	
