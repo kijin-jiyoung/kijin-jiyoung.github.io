@@ -57,12 +57,13 @@ font-size: 20px;
 }
 
 
-
 .Main-photo {
-    width: 100%;
-    max-width: 666px;
+width: 100%;
+max-width: 666px;
 border-radius:20px;	
    }
+
+
 
 
 p.invitation  {
@@ -1275,7 +1276,7 @@ p.invitation  {font-size:14px;padding: 0px 33px 0px;}
 .swiper-slide{padding: 0px 33px 0px;}
 p.maincontentname{font-size: 25px;}	
 p.maincontent{font-size: 15px;}     
-.Main-photo {padding: 0px 33px 0px;}    
+.mainWrap {padding: 0 33px 0;width: 100%;}
 .payparents{font-size: 16px;}    
 .parents{font-size: 14px;}  
 p.accordiondesc {font-size: 12px;}	
