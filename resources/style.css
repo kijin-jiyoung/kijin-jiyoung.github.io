@@ -247,9 +247,6 @@ img.kakotalk {
 
  <!------------ 아이콘 ------------>	
 
-
-
-
 .swiper-container {
     margin: 0 auto;
     position: relative;
@@ -294,15 +291,6 @@ img.kakotalk {
     transition-property: transform;
     transition-property: transform,-webkit-transform;
 }
-.swiper-container {
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    list-style: none;
-    padding: 0;
-    z-index: 1;
-}
-
 
 .swiper-pagination
 
@@ -1214,6 +1202,7 @@ body.gnbOpen .popGnb{opacity:1; visibility:visible;}
 body.showSlide{overflow-y:hidden;}
 body.showSlide .popSlide{opacity:1; visibility:visible;}
 .popSlide{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 999;background:rgba(51,39,42,.6);border:none; margin:0;opacity:0; visibility:hidden;transition:1.5s opacity;}
+.popSlide .swiper-slide .slide:after {content:''; position: absolute; left:0; top:0; width: 100%; height: 100%;}
 .popSlide .slideList{height:100vh;}
 .popSlide .slideList .swiper-slide{height:100vh; text-align: center; font-size: 0;margin:0;}
 .popSlide .slideList .swiper-slide .slide{position: relative; height: 100%;}
