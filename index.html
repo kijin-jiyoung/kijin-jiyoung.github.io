@@ -1439,7 +1439,7 @@ $(function(){
 <script>
     var swiper = new Swiper(".mySwiper", {
       loop: true,
-      spaceBetween: 2,
+      spaceBetween: 0,
       effect: "fade",
 	    on: {
     init: function () {
@@ -1451,17 +1451,19 @@ $(function(){
     },
     slideChangeTransitionEnd : function() {
       $(".swiper-slide").removeClass("changing");
-      $(".swiper-slide").addClass("changed");}
-}
-       pagination: {
-      	el: ".popSlide .swiper-pagination",
-        type: "fraction",
-      },
+      $(".swiper-slide").addClass("changed");
+    }  
+},
+      pagination: {
+        el: ".swiper-pagination",
+	type: "bullets",      
+        clickable : true,
+},
       navigation: {
-      	nextEl: ".popSlide .swiper-button-next",
-      	prevEl: ".popSlide .swiper-button-prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
       },
-})    
+});	    
   </script>
 <!------------ 갤러리 스와이프 ------------>
 <script>	
