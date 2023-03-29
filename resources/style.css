@@ -588,15 +588,7 @@ option {
       justify-content: center; 
       align-items: center; 
   }  
-.swiper-wrapper {
-  display: flex;
-  position: relative;
-  z-index: 0;
-}
-/* (1) */
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 6px;
-}
+
 .swiper-pagination-bullet {
   width: 30px;
   height: 4px;
@@ -606,6 +598,7 @@ option {
   transition: width .9s;
   border: 1px solid #fffafa transparent;
  }
+
  .swiper-pagination-bullet-active {
       color: #CFCFCF !important;
       background: #E8E8E8 !important;
@@ -669,10 +662,6 @@ option {
 @media screen and (max-width: 768px) {
   .swiper-container::after,
   .swiper-container::before {
-    display: none;
-  }
-  .swiper-button-next,
-  .swiper-button-prev {
     display: none;
   }
  <!------------ 스와이프 ------------>
