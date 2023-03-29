@@ -570,62 +570,7 @@ option {
  
  <!------------ 스와이프 ------------>
    
-    .swiper {
-      width: 100%;
-      height: 100%;
-    }
-  
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fff;
-      justify-content: center; 
-      align-items: center; 
-  }  
-
-.swiper-pagination-bullet {
-  width: 30px;
-  height: 4px;
-  border-radius: 5px;
-  color: #696969 !important;
-  background-color: rgba(255, 255, 255, 0.5);
-  transition: width .9s;
-  border: 1px solid #fffafa transparent;
- }
-
- .swiper-pagination-bullet-active {
-      color: #CFCFCF !important;
-      background: #E8E8E8 !important;
-}
-  /* (2) */
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  left: 0;
-}
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: 0;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  top: 0;
-  margin-top: 0;
-  width: 33.33%;
-  height: 100%;
-}
-.swiper-button-prev:after,
-.swiper-container-rtl .swiper-button-next:after,
-.swiper-button-next:after,
-.swiper-container-rtl .swiper-button-prev:after {
-  content: '';
-}
-.changing,
+   .changing,
 .changed {  
   transform:translateX(-80px);
   -ms-user-select: none; 
@@ -659,11 +604,6 @@ option {
 .changed.swiper-slide-active .img-wrap {
   transform:scale(1.2);
 }
-@media screen and (max-width: 768px) {
-  .swiper-container::after,
-  .swiper-container::before {
-    display: none;
-  }
  <!------------ 스와이프 ------------>
 
 
