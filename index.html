@@ -1475,7 +1475,64 @@ $(function(){
 });
 </script>
 <!------------ 갤러리 스와이프 ------------>
-	
+<script>	
+
+//갤러리팝업 - 슬라이드
+	var popSlide = new Swiper('.popSlide .swiper-container', {
+	  slidesPerView: 1,
+	  spaceBetween: 0,
+	  loop: true,
+	  speed:1100,
+	  pagination: {
+      	el: ".popSlide .swiper-pagination",
+        type: "fraction",
+      },
+	  navigation: {
+      	nextEl: ".popSlide .swiper-button-next",
+      	prevEl: ".popSlide .swiper-button-prev",
+     }
+	});
+	// 갤러리팝업 - 열기
+	$(".galWrap .galList li").on('click', function(e){
+		noScrollRun();
+		$('body').addClass('showSlide');
+		$('body').on('scroll touchmove mousewheel', function(event) {
+			event.preventDefault();     
+			event.stopPropagation();     
+			return false; 
+		});
+		var slideActive = $(this).attr("slide-num");
+		popSlide.update();
+		popSlide.slideTo(slideActive, 0);
+	});
+	// 갤러리팝업 -  닫기
+	$(".popSlide .closeSlide").click(function(){
+		noScrollClear();
+		$('body').removeClass('showSlide');
+		$('body').off('scroll touchmove mousewheel');
+	});	     
+
+
+// 갤러리 더보기
+function morePic(){
+	$('.hiddenList').show();
+	$('.galleryWrap .more').hide();
+}
+
+//인터뷰 열기
+function openInterview(){
+	$('.interPop').scrollTop(0);
+	$('body').addClass('interOpen');
+	$('body').on('scroll touchmove mousewheel', function(event) { // 터치무브와 마우스휠 스크롤 방지     
+		event.preventDefault();     
+		event.stopPropagation();     
+		return false; 
+	});
+	noScrollRun();
+}	     
+
+
+  </script>	  	
      
 <script src='https://www.dddproject.com/plugin/tpl/js/utils.js?t=1678934723'></script>	     
 	     
