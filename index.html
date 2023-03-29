@@ -1451,19 +1451,17 @@ $(function(){
     },
     slideChangeTransitionEnd : function() {
       $(".swiper-slide").removeClass("changing");
-      $(".swiper-slide").addClass("changed");
-    }  
-},
-      pagination: {
-        el: ".swiper-pagination",
-	type: "bullets",      
-        clickable : true,
-},
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+      $(".swiper-slide").addClass("changed");}
+}
+       pagination: {
+      	el: ".popSlide .swiper-pagination",
+        type: "fraction",
       },
-});	    
+      navigation: {
+      	nextEl: ".popSlide .swiper-button-next",
+      	prevEl: ".popSlide .swiper-button-prev",
+      },
+})    
   </script>
 <!------------ 갤러리 스와이프 ------------>
 <script>	
