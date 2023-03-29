@@ -292,13 +292,13 @@ img.kakotalk {
     transition-property: transform,-webkit-transform;
 }
 
-.swiper .swiper-pagination-fraction {font-family: 'AritaBuri';font-style: italic;font-size: 16px;font-weight: 700;color:(255,255,255,.5);position: absolute;bottom: 50%;width: auto;left: auto;right: 50px;}
-.swiper .swiper-pagination-fraction .swiper-pagination-current {color: #fff;font-weight: 700;margin-right: 5px;}
-.swiper .swiper-pagination-fraction .swiper-pagination-current, 
-.swiper .swiper-pagination-fraction .swiper-pagination-total {font-family: 'EB Garamond';font-size: 16px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top: 1px;}
-.swiper .swiper-button-prev, 
-.swiper .swiper-button-next {dislay: block;width: 64px;height: 64px;position: absolute;top: 90%;left: 50px;margin-top: -32px;    background: url(/resources/btnGalBigLeft.png) 0 0 no-repeat;cursor: pointer;z-index: 100;}
-.swiper .swiper-button-next {background-image: url(/resources/btnGalBigRight.png);left: auto;right: 50px;}
+.swiper-pagination {font-family: 'AritaBuri';font-style: italic;font-size: 16px;font-weight: 700;color:(255,255,255,.5);position: absolute;bottom: 50%;width: auto;left: auto;right: 50px;}
+.swiper-pagination .swiper-pagination-current {color: #fff;font-weight: 700;margin-right: 5px;}
+.swiper-pagination .swiper-pagination-current, 
+.swiper-pagination .swiper-pagination-total {font-family: 'EB Garamond';font-size: 16px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top: 1px;}
+.swiper-button-prev, 
+.swiper-button-next {dislay: block;width: 64px;height: 64px;position: absolute;top: 90%;left: 50px;margin-top: -32px;    background: url(/resources/btnGalBigLeft.png) 0 0 no-repeat;cursor: pointer;z-index: 100;}
+.swiper-button-next {background-image: url(/resources/btnGalBigRight.png);left: auto;right: 50px;}
 
 
 
