@@ -292,13 +292,13 @@ img.kakotalk {
     transition-property: transform,-webkit-transform;
 }
 
-.galWrap .swiper-pagination-fraction {font-family: 'AritaBuri';font-style: italic;font-size: 16px;font-weight: 700;color:(255,255,255,.5);position: absolute;bottom: 50%;width: auto;left: auto;right: 50px;}
-.galWrap .swiper-pagination-fraction .swiper-pagination-current {color: #fff;font-weight: 700;margin-right: 5px;}
-.galWrap .swiper-pagination-fraction .swiper-pagination-current, 
-.galWrap .swiper-pagination-fraction .swiper-pagination-total {font-family: 'EB Garamond';font-size: 16px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top: 1px;}
-.galWrap .swiper-button-prev, 
-.galWrap .swiper-button-next {dislay: block;width: 64px;height: 64px;position: absolute;top: 90%;left: 50px;margin-top: -32px;    background: url(/resources/btnGalBigLeft.png) 0 0 no-repeat;cursor: pointer;z-index: 100;}
-.galWrap .swiper-button-next {background-image: url(/resources/btnGalBigRight.png);left: auto;right: 50px;}
+.swiper .swiper-pagination-fraction {font-family: 'AritaBuri';font-style: italic;font-size: 16px;font-weight: 700;color:(255,255,255,.5);position: absolute;bottom: 50%;width: auto;left: auto;right: 50px;}
+.swiper .swiper-pagination-fraction .swiper-pagination-current {color: #fff;font-weight: 700;margin-right: 5px;}
+.swiper .swiper-pagination-fraction .swiper-pagination-current, 
+.swiper .swiper-pagination-fraction .swiper-pagination-total {font-family: 'EB Garamond';font-size: 16px;font-weight: 300;color: rgba(255,255,255,.5);font-style: normal;position: relative;top: 1px;}
+.swiper .swiper-button-prev, 
+.swiper .swiper-button-next {dislay: block;width: 64px;height: 64px;position: absolute;top: 90%;left: 50px;margin-top: -32px;    background: url(/resources/btnGalBigLeft.png) 0 0 no-repeat;cursor: pointer;z-index: 100;}
+.swiper .swiper-button-next {background-image: url(/resources/btnGalBigRight.png);left: auto;right: 50px;}
 
 
 
@@ -1273,13 +1273,13 @@ p.maincontent{font-size: 15px;}
 .parents{font-size: 14px;}  
 p.accordiondesc {font-size: 12px;}	
 .locationInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
-.galWrap .swiper-pagination-fraction .swiper-pagination-total {margin-left: 8px;}
-.galWrap .swiper-pagination-fraction {font-size: 9px;right: auto;left: 0;bottom: 0;top: 15px;width: 100%;text-align: center;}
-.galWrap .swiper-button-prev, 
-.galWrap .swiper-button-next {position: absolute;width: 32px;height: 32px;top: 87%;    background-size: cover;bottom: 14px;left: 17px;z-index: 100;cursor: pointer;}
-.galWrap .swiper-pagination-fraction .swiper-pagination-current, 
-.galWrap .swiper-pagination-fraction .swiper-pagination-total { font-size: 15px;}
-.galWrap .swiper-button-next {left: auto;right: 17px;}
+.swiper .swiper-pagination-fraction .swiper-pagination-total {margin-left: 8px;}
+.swiper .swiper-pagination-fraction {font-size: 9px;right: auto;left: 0;bottom: 0;top: 15px;width: 100%;text-align: center;}
+.swiper .swiper-button-prev, 
+.swiper .swiper-button-next {position: absolute;width: 32px;height: 32px;top: 87%;    background-size: cover;bottom: 14px;left: 17px;z-index: 100;cursor: pointer;}
+.swiper .swiper-pagination-fraction .swiper-pagination-current, 
+.swiper .swiper-pagination-fraction .swiper-pagination-total { font-size: 15px;}
+.swiper .swiper-button-next {left: auto;right: 17px;}
 	
 	
 	
