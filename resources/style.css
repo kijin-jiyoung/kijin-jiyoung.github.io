@@ -1613,7 +1613,7 @@ p.accordiondesc {font-size: 12px;}
 	
 	.popSlide .slideList .swiper-slide .slide img{height: auto;width: 100%;}
 	.popSlide .swiper-button-prev,
-	.popSlide .swiper-button-next{position: absolute;width: 32px;height: 32px;top: 97%;background-size: cover;bottom: 14px;left:17px;z-index: 100;cursor: pointer;}
+	.popSlide .swiper-button-next{position: absolute;width: 32px;height: 32px;top: 98%;background-size: cover;bottom: 14px;left:17px;z-index: 100;cursor: pointer;}
 	.popSlide .swiper-button-next{left:auto;right:17px;}
 	.popSlide .swiper-pagination-fraction{font-size: 9px;right: auto;left:0;bottom: 0;top: 15px;width: 100%;text-align: center;}
 	.popSlide .swiper-pagination-fraction .swiper-pagination-current, 
