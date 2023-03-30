@@ -892,8 +892,8 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .infoWrap .infoList .slideList ul li.swiper-slide-active .textWrap {display: block;}
 .infoWrap .infoList .slideList ul li.swiper-slide-active a {display: flex;}
 .infoWrap .infoList .swiper-button-next, 
-.infoWrap .infoList .swiper-button-prev{dislay:block;width: 64px;height: 64px;position: absolute;left:50px;margin-top: -32px;top:auto;margin-top: 2%;margin-left:auto; width:64px; height:64px; background:url('/resources/btngalBigLeft.png') no-repeat;cursor:pointer; }
-.infoWrap .infoList .swiper-button-next{background:url('/resources/btnGalBigRight.png') no-repeat; left: auto;right: 50px}
+.infoWrap .infoList .swiper-button-prev{dislay:block;width: 64px;height: 64px;position: absolute;left:50px;margin-top: -32px;top:auto;margin-top: 2%;margin-left:auto; width:64px; height:64px; background:url('/resources/btnSlidePrev.png') no-repeat;cursor:pointer; }
+.infoWrap .infoList .swiper-button-next{background:url('/resources/btnSlideNext.png') no-repeat; left: auto;right: 50px}
 .infoWrap .secTitleWrap p {color:#000}
 .infoWrap .secTitleWrap{max-width: 1280px;margin: 0 auto 38px;padding-bottom: 0;border-bottom: 1px solid #646059;}
 	
