@@ -28,11 +28,11 @@ h3.accordion {
    }
 
 .accordioncon {
+  padding: 0 30px;
    display:none;
   text-align: center;	
   vertical-align: middle;
   line-height: 1.8;
-  margin: 50px 0 30px;
 }
 
 p.accordiondesc {
@@ -1015,7 +1015,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .mindWrap .contBox.bride .tit:after {background-image:url(../images/mind/mind02-2.png);}
 .mindWrap .contBox.bride .toggle {background:#f2f0f0;border-bottom-color: #ddd6cd}
 .mindWrap .contBox.bride.active .tit{border-bottom:1px solid #646059;}
-.locationWrap .locationInner{padding-top:97px;}
+.locationWrap .locationInner{padding-top:0px;}
 .locationInner .tit02 {margin-bottom: 28px;font-size: 17px;line-height: 1.4;color: #555;}
 .locationWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 41px;border-bottom: 1px solid #646059;}
 .locationWrap .secTitleWrap p{margin-top: 8px;}
