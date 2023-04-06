@@ -1185,7 +1185,7 @@ body.gnbOpen .popGnb{opacity:1; visibility:visible;}
 .popGnb .inner .gnbList ul li .ko:before{display: block;content: '';width: 1px;height: 12px;background-color: #908685;position: absolute;top:50%;left:0;margin-top: -6px;}
 body.showSlide{overflow-y:hidden;}
 body.showSlide .popSlide{opacity:1; visibility:visible;}
-.popSlide{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 999;background:rgba(51,39,42,.6);border:none; margin:0;opacity:0; visibility:hidden;transition:1.5s opacity;}
+.popSlide{position: fixed;left:0;top:0;width: 100%;height: 100%;z-index: 999;background:rgba(47,39,33,.9);border:none; margin:0;opacity:0; visibility:hidden;transition:1.5s opacity;}
 
 .popSlide .swiper-slide{height:100vh; text-align: center; font-size: 0;margin:0;}
 .popSlide .swiper-slide .slide:after {content:''; position: absolute; left:0; top:0; width: 100%; height: 100%;}
