@@ -796,7 +796,7 @@ function guest_book_write(ci) {
 
   $.ajax({
     type: "post",
-    url: "/storefarm/card/skin/guest_book_proc.php",
+    url: "/resources/guest_book_proc.php",
     data: {
       mode: 'add',
       card_id: ci,
