@@ -797,14 +797,17 @@
 
 
 <form action="/send" id="guestBookForm">
-  <input type="text" name="username" placeholder="이름"/>
-  <input type="text" name="comment" placeholder="축하메시지를 작성해주세요"/>
-  <button>전송</button>
+  <input type="text" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;"><br>
+  <input type="textarea" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;"><br>
+  <button style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
 </form>
 	
 <br>
-<br>	
-<ul id="comments"></ul>	
+<br>
+	
+<div>
+<p>메시지 보기</p>
+<ul id="comments"></ul>	</div>
 <br>
 <br>	
 	
