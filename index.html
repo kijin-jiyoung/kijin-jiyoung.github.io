@@ -1314,7 +1314,6 @@ $(function(){
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !g5_url || !site_name || !is_offical){
-		    //alertOpen_skin('미리보기에서는 사용하실 수 없습니다.')
 		    //return false;
 		    site_name = "test";
 		    fingerprint = new Date().getTime();
@@ -1441,18 +1440,6 @@ $(function() {
 	
 	
 	
-	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
 
 <!-- Start Open Web Analytics Tracker -->
 <script type="text/javascript">
@@ -1488,31 +1475,6 @@ $(function(){
         return false;
     });
     
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
     
     $("a").on("contextmenu", (e) => {
         e.preventDefault();
@@ -1602,7 +1564,7 @@ $(function(){
 		});
 		var slideActive = $(this).attr("slide-num");
 		popSlide.update();
-		popSlide.slideTo(slideActive, 0);
+		popSlide.slideTo(slideActive, 1);
 	});
 	// 갤러리팝업 -  닫기
 	$(".popSlide .closeSlide").click(function(){
