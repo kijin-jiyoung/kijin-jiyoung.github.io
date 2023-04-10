@@ -809,19 +809,17 @@
 <!------------ 방명록 구글스프레드시트 ------------>
 
 <script>
-   const form = document.querySelector("#guestBookForm")
-   const submitButton = document.querySelector("#submit")
+   const form = document.querySelector("#fguest_book")
+   const btnGuestBookSubmit = document.querySelector("#btnGuestBookSubmit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbwl4ybGwYqv7eTEzK-YLr5lqRWTlq3iWP_92S0jbYhZC-iW_GQbUcurbHPFLMQxhjCLrA/exec'
 
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
+   form.addEventListener('btnGuestBookSubmit', e => {
+     btnGuestBookSubmit.disabled = true
      e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#guestBookForm"));	   
-    	function submitguestBookForm() {
-            alertOpen_skin(__('축하메시지를 작성해 주세요.'));	   	   
+     let requestBody = new FormData(document.querySelector("#fguest_book"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
-             submitButton.disabled = false
+             btnGuestBookSubmit.disabled = false
          });
    })
 
@@ -1113,21 +1111,7 @@ commentsContainer.append(newComment);
 	
 	
 <!------------ 메시지 팝업 ------------>
-	
-	
-    <!-- fixPetalWrap 
-    <div class="fixPetalWrap">
-        <div class="obj no1"></div>
-        <div class="obj no2"></div>
-        <div class="obj no3"></div>
-        <div class="obj no4"></div>
-        <div class="obj no5"></div>
-    </div>
-    //fixPetalWrap -->
-	
-	
-	
-	
+		
 <div id="popupGuestBookName" class="basePop" style="display: none;">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
 	<div class="in">
