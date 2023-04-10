@@ -829,7 +829,7 @@ $.getJSON(GSSurl,function(data){
 <script>
    const form = document.querySelector("#fguest_book")
    const btnGuestBookSubmit = document.querySelector("#btnGuestBookSubmit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbwl4ybGwYqv7eTEzK-YLr5lqRWTlq3iWP_92S0jbYhZC-iW_GQbUcurbHPFLMQxhjCLrA/exec'
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiccy4HcImxLrX1Yh4WDacgV0FuAt0aQjUodsjzVEA4ZLvDTLVk_GfWazUJyAqW7iG-Q/exec'
 
    form.addEventListener('btnGuestBookSubmit', e => {
      btnGuestBookSubmit.disabled = true
@@ -854,9 +854,6 @@ $.getJSON(GSSurl,function(data){
 <br>
 <br>	
 
-	
-	
-	
 	
 	
 	
@@ -919,15 +916,6 @@ commentsContainer.append(newComment);
 </div>
 </div></div>
 </div>	
-
-<script>
-            $(".marqWrap").liMarquee({
-                  removeContentFadeDuration:0,
-                  scrollAmount: 6,
-                  circular:true,
-                  startShow:true,
-          	});
-          	</script>
 </div>
                     <!-- //waveText -->
                     <!-- comWrap -->
@@ -956,10 +944,9 @@ commentsContainer.append(newComment);
                       </div>
 				
 				
-                  <div class="inputBox" style="margin: 5px 5px;">
-             <input type="text" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요. (최대 40자)" maxlength="40">
-                                        <div class="btnComment">
-                                            <a href="javascript:;" class="any">전송</a>
+          <div class="inputBox" style="margin: 5px 5px;">
+             <input type="textarea" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요.">
+            <div class="btnComment"><a href="javascript:;" class="any">전송</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1307,9 +1294,6 @@ $(function(){
 		}		
 		$popupGuestBookName = document.querySelector('#popupGuestBookName');		
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
-		
-		//$marquee.liMarquee('stop');
-		//$marquee.liMarquee('resetPosition');
 	});
 	
 	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
@@ -1341,7 +1325,7 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    scripturl: 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec',
+		    scripturl: 'https://script.google.com/macros/s/AKfycbxiccy4HcImxLrX1Yh4WDacgV0FuAt0aQjUodsjzVEA4ZLvDTLVk_GfWazUJyAqW7iG-Q/exec',
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
@@ -1352,11 +1336,15 @@ $(function(){
 			        alertOpen_skin(__('등록되었습니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-                    const $marquee =  $('.marqWrap');
-                    if( data.prev_cnt == 0 ) {
-                        $marquee.liMarquee('removeContent');
-                    }
-                    $marquee.liMarquee('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const addContent = ('<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>') => {
+const newComment = document.createElement("li");
+const bTag = document.createElement("b");
+bTag.append(gb_name);
+newComment.append(bTag);
+newComment.append(`  ${gb_comment}`);
+commentsContainer.append(newComment);
+};	
+    
                     $("#gb_comment").val("");
                 }
 		    },
