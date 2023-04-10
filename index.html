@@ -799,17 +799,50 @@
 <form action="/send" id="guestBookForm">
   <input type="text" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;"><br>
   <input type="textarea" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;"><br>
-  <button style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
+  <button id="send" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'" >전송</button>
 </form>
 	
 <br>
 <br>
+
+	
+<!------------ 방명록 구글스프레드시트 ------------>
+
+<script>
+   const form = document.querySelector("#guestBookForm")
+   const sendButton = document.querySelector("#send")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbwRbsGgghuCuQHkM0p8P9h3_ifatI3BuJ1Xt0zDjJAqFGXXCfj68JbSTDlmqGg4xJXBQw/exec'
+
+   form.addEventListener('send', e => {
+     sendButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(document.querySelector("#guestBookForm"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             sendButton.disabled = false
+         });
+   })
+
+</script>
+<!------------ 방명록 구글스프레드시트 ------------>	
+	
+	
+	
+	
 	
 <div>
 <p>메시지 보기</p>
 <ul id="comments"></ul>	</div>
 <br>
 <br>	
+
+	
+	
+	
+	
+	
+	
+	
 	
 <script>
 const guestBookForm = document.querySelector("#guestBookForm");
