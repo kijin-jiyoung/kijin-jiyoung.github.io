@@ -796,6 +796,24 @@
 </div>	
 
 
+	
+	
+<script>
+var GSSurl = "http://spreadsheets.google.com/tq?key=1vtaUL4I0dEHsKPVFb2OyygCiGeejgQNAossluxnStm4&pub=1callback=?";
+$.getJSON(GSSurl,function(data){
+	var entry=data.feed.entry;//구글 스프레드 시트의 모든 내용은 feed.entry에 담겨있습니다.
+	for(var i in entry){ // 각 행에대해 아래 스크립트를 실행합니다.
+		$("body").append(entry[i].timestamp.$t);
+		$("body").append(entry[i].gb_name.$t);
+		$("body").append(entry[i].gb_content.$t);
+	} 
+});
+
+</script>	
+	
+	
+	
+
 <form action="" id="guestBookForm">
   <input type="text" id="username" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
   <input type="textarea" id="comment" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
@@ -1212,71 +1230,21 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 </script>
 <!------------ 모달 . 아코디언 ------------>
 
-<!------------ 참석조사 구글스프레드시트 ------------>
 
-<script>
-   const form = document.querySelector("#survey-form")
-   const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
-
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-     $("#modal").fadeOut(100)  
-     $("#surveymodal").fadeOut(100)
-     $(".surveymodal-con").fadeOut(100)
-     let requestBody = new FormData(document.querySelector("#survey-form"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-         .then(() => {
-             submitButton.disabled = false
-         });
-   })
-
-</script>
-<!------------ 참석조사 구글스프레드시트 ------------>
-
+	
 <script>
 $(function(){
-    /*$("img").each( function(){
-        $(this).attr({"oncontextmenu":"return false"});
-    });*/
     // For Android
     $(document).bind("contextmenu", function (e) {
         return false;
-    });
-    
-    /*$("img").on("touchstart",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("aa");
-            eventStop = false;
-        }
-        
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchend",function(e){
-        let eventStop = true;
-        if( $(this).closest(".swiper-button-next").length || $(this).hasClass("zoomImg") ) {
-            console.log("bb");
-            eventStop = false;
-        }
-        
-        eventStop ? e.preventDefault() : ""
-    }).on("touchmove",function(e){
-        //e.preventDefault(); 
-    });*/
-    
-    /*$("a").on("click", function(e) {
-        if( !this.attr("href").indexOf("tel") )
-            e.preventDefault();
-    })*/
+    })
     
     $("a").on("contextmenu", (e) => {
         e.preventDefault();
         return false;
     })
     
-    //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
+   //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
     
     setTimeout(function(){
         try{
