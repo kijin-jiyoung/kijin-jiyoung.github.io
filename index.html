@@ -797,9 +797,9 @@
 
 
 <form action="" id="guestBookForm">
-  <input type="text" id="username" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;"><br>
-  <input type="textarea" id="comment" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;"><br>
-  <button id="send" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'" >전송</button>
+  <input type="text" id="username" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
+  <input type="textarea" id="comment" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
+  <button type="submit" id="send" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
 </form>
 	
 <br>
@@ -810,16 +810,18 @@
 
 <script>
    const form = document.querySelector("#guestBookForm")
-   const sendButton = document.querySelector("#send")
+   const submitButton = document.querySelector("#submit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbwRbsGgghuCuQHkM0p8P9h3_ifatI3BuJ1Xt0zDjJAqFGXXCfj68JbSTDlmqGg4xJXBQw/exec'
 
-   form.addEventListener('send', e => {
-     sendButton.disabled = true
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
      e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#guestBookForm"));
+     let requestBody = new FormData(document.querySelector("#guestBookForm"));	   
+    	function submitguestBookForm() {
+            alertOpen_skin(__('축하메시지를 작성해 주세요.'));	   	   
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
-             sendButton.disabled = false
+             submitButton.disabled = false
          });
    })
 
