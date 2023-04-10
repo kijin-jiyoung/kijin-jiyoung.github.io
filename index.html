@@ -1332,24 +1332,16 @@ $(function(){
   
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
-		if( !g5_url || !site_name || !is_offical){
+		if( !'https://kijin-jiyoung.github.io' || !'kjjy_0624' || !''){
 		    //return false;
-		    site_name = "test";
+		    site_name = 'kjjy_0624';
 		    fingerprint = new Date().getTime();
-		}
-		
-		if( !fingerprint ) {
-		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
-		    return false;
-		}
-		
-		$popupGuestBookName = document.querySelector('#popupGuestBookName');
-		
+		}		
+		$popupGuestBookName = document.querySelector('#popupGuestBookName');		
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
 		
 		//$marquee.liMarquee('stop');
 		//$marquee.liMarquee('resetPosition');
-
 	});
 	
 	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
@@ -1381,7 +1373,7 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: g5_url+'/plugin/ajax.guest_book_update.php',
+		    scripturl: 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec',
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
