@@ -1336,15 +1336,7 @@ $(function(){
 			        alertOpen_skin(__('등록되었습니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-			const addContent = ('<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>') => {
-const newComment = document.createElement("li");
-const bTag = document.createElement("b");
-bTag.append(gb_name);
-newComment.append(bTag);
-newComment.append(`  ${gb_comment}`);
-commentsContainer.append(newComment);
-};	
-    
+			const addContent = ('<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
                     $("#gb_comment").val("");
                 }
 		    },
