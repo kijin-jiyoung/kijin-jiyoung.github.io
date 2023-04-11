@@ -815,9 +815,9 @@ $.getJSON(GSSurl,function(data){
 	
 
 <form action="" id="guestBookForm">
-  <input type="text" id="username" name="username" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
-  <input type="textarea" id="comment" name="comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
-  <button type="submit" id="send" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
+  <input type="text" id="gb_name" name="gb_name" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
+  <input type="textarea" id="gb_comment" name="gb_comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
+  <button type="button" id="btnGuestBookSubmit" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
 </form>
 	
 <br>
@@ -825,9 +825,52 @@ $.getJSON(GSSurl,function(data){
 
 	
 <!------------ 방명록 구글스프레드시트 ------------>
-
 <script>
-   const form = document.querySelector("#fguest_book")
+window.addEventListener('DOMContentLoaded', main);
+
+async function main(){
+	const TARGET={
+		name : document.getElementsByClassName('gb_name'),
+		region : document.getElementsByClassName('gb_content'),
+		phone : document.getElementsByClassName('gb_timestamp')
+	};
+	const SOURCE = 'https://spreadsheets.google.com/feeds/list/1vtaUL4I0dEHsKPVFb2OyygCiGeejgQNAossluxnStm4/1/public/full?alt=json';
+	const COLUMNS = ['작성자', '내용', '작성시간'];
+	
+	const DATA = await separateRowFromJson(SOURCE, COLUMNS);
+
+	for(let i=0; i<DATA.length; i++){
+		TARGET['gb_name'][i].textContent = DATA[i]['작성자'];
+		TARGET['gb_content'][i].textContent = DATA[i]['내용'];
+		TARGET['gb_timestamp'][i].textContent = DATA[i]['작성시간'];
+	}
+}
+
+async function separateRowFromJson(SOURCE, COLUMNS){
+	const FETCHED_SOURCE = await fetch(SOURCE);
+  	let temp = await FETCHED_SOURCE.json();
+ 	temp = temp['feed']['entry'];
+
+	let _DATA = [];
+	for(var i=0; i<Object.keys(temp).length; i++){
+		_DATA[i]={};
+		for(var k=0; k<Object.keys(COLUMNS).length; k++){;
+			_DATA[i][COLUMNS[k]] = temp[i]['gsx$'+COLUMNS[k]]['$t'];
+		}
+	}
+	
+	return _DATA;
+}
+							    
+							    
+</script>							    
+
+	
+<!------------ 방명록 구글스프레드시트 ------------>	
+	
+	
+<script>
+   const form = document.querySelector("#guestBookForm")
    const btnGuestBookSubmit = document.querySelector("#btnGuestBookSubmit")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxiccy4HcImxLrX1Yh4WDacgV0FuAt0aQjUodsjzVEA4ZLvDTLVk_GfWazUJyAqW7iG-Q/exec'
 
@@ -844,6 +887,27 @@ $.getJSON(GSSurl,function(data){
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>	
 	
+ <article>
+    <hr>
+
+    <h1 class="gb_name">작성자</h1>
+    <p class="gb_content">내용</p>
+    <p class="gb_timestamp">작성시간</p>
+
+    <hr>	
+	 
+    <h1 class="gb_name">작성자</h1>
+    <p class="gb_content">내용</p>
+    <p class="gb_timestamp">작성시간</p>
+
+    <hr>
+  </article>	
+
+
+	
+	
+	
+	<!------------ 방명록 구글스프레드시트 ------------>
 	
 	
 	
@@ -860,6 +924,21 @@ $.getJSON(GSSurl,function(data){
 	
 	
 <script>
+const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
+	const $gb_name = document.querySelector('#gb_name');
+	
+	if( $btnGuestBookSubmit ) {
+	    $btnGuestBookSubmit.addEventListener('click', () => {
+	        if( !$gb_name.value ) {
+	            $gb_name.classList.add("gb_name_error");
+	            return false;
+	        }
+	        basePopClose('.basePop')
+	        submitGuestBook();
+	    });
+	}	
+
+	
 const guestBookForm = document.querySelector("#guestBookForm");
 const commentsContainer = document.querySelector("#comments");
 guestBookForm.addEventListener("submit", function (e) {
@@ -1336,7 +1415,7 @@ $(function(){
 			        alertOpen_skin(__('등록되었습니다.<br>새로고침하여 등록된 메시지를<br>확인해보세요.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-			const addContent = ('<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const addContent = ('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
                     $("#gb_comment").val("");
                 }
 		    },
