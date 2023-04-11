@@ -794,22 +794,6 @@
 <h2 class="ht minititle"><span><span class="mini r6">G</span><span class="mini r4">U</span><span class="mini r1">E</span><span class="mini r9">S</span><span class="mini r3">T</span><span class="mini r2">B</span><span class="mini r8">O</span><span class="mini r3">O</span><span class="mini r5">K</span></span></h2>
 <h3 class="maintitle">축하메시지 남기기</h3>
 </div>	
-
-
-	
-	
-<script>
-var GSSurl = "http://spreadsheets.google.com/tq?key=1vtaUL4I0dEHsKPVFb2OyygCiGeejgQNAossluxnStm4&pub=1callback=?";
-$.getJSON(GSSurl,function(data){
-	var entry=data.feed.entry;//구글 스프레드 시트의 모든 내용은 feed.entry에 담겨있습니다.
-	for(var i in entry){ // 각 행에대해 아래 스크립트를 실행합니다.
-		$("body").append(entry[i].timestamp.$t);
-		$("body").append(entry[i].gb_name.$t);
-		$("body").append(entry[i].gb_content.$t);
-	} 
-});
-
-</script>	
 	
 	
 	
@@ -826,9 +810,9 @@ $.getJSON(GSSurl,function(data){
 	
 <!------------ 방명록 구글스프레드시트 ------------>	
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
-$items = [];
-    $items[0] = array("NO_1" => "1", "gb_name" => 이름, "gb_content" => 내용);
-    $items[1] = array("NO_2" => "2", "gb_name" => 김땡땡, "gb_content" => 축하합니다.);
+$guestBookForm = [];
+    $guestBookForm[0] = array("NO_1" => "1", "gb_name" => 이름, "gb_content" => 내용);
+    $guestBookForm[1] = array("NO_2" => "2", "gb_name" => 김땡땡, "gb_content" => 축하합니다.);
 </script>							    
 
 	
@@ -853,7 +837,7 @@ $items = [];
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>	
 	
-<table id="gb" style="width:100%">
+<table id="guestBookForm" style="width:100%;font-size:12px;">
 <thead>
 <tr>
 <th>글번호</th>
@@ -873,8 +857,9 @@ $items = [];
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-	
-	
+<script>
+$('#guestBookForm').DataTable();	
+</script>	
 	
 	
 	
