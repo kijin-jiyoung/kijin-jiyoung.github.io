@@ -824,13 +824,11 @@ $.getJSON(GSSurl,function(data){
 <br>
 
 	
-<!------------ 방명록 구글스프레드시트 ------------>
-<script>	
-$.ajax({
-  url: "https://script.google.com/macros/s/AKfycbz1oBSloNLA0u0ITlYF9zjfmShLkq562SGQQUABH-kMgVId4_tLHIq1dXCWTgYz5ZgYnw/exec",
-  data: {이름:"gb_name", 내용:"gb_comment"},
-  type: "POST"
-});								    
+<!------------ 방명록 구글스프레드시트 ------------>	
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+$items = [];
+    $items[0] = array("NO_1" => "1", "gb_name" => 이름, "gb_content" => 내용);
+    $items[1] = array("NO_2" => "2", "gb_name" => 김땡땡, "gb_content" => 축하합니다.);
 </script>							    
 
 	
@@ -855,8 +853,27 @@ $.ajax({
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>	
 	
+<table id="gb" style="width:100%">
+<thead>
+<tr>
+<th>글번호</th>
+<th>이름</th>
+<th>내용</th>
+<th>작성날짜</th>
+</tr>
+</thead>
+<tbody>
+<!-- 임의의 5개의 리스트를 만듭니다. -->
+<?php for($i=1; $i <= 5; $i++){ ?>
+<?php } ?>
+</tbody>
+</table>
 
-
+	
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+	
 	
 	
 	
