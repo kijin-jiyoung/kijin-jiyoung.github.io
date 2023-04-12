@@ -799,8 +799,8 @@
 	
 
 <form action="" id="guestBookForm">
-  <input type="text" id="gb_name" name="gb_name" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
-  <input type="textarea" id="gb_comment" name="gb_comment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
+  <input type="text" id="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
+  <input type="textarea" id="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
   <button type="button" id="btnGuestBookSubmit" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
 </form>
 	
@@ -809,16 +809,6 @@
 
 	
 <!------------ 방명록 구글스프레드시트 ------------>	
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
-$guestBookForm = [];
-    $guestBookForm[0] = array("NO_1" => "1", "gb_name" => 이름, "gb_content" => 내용);
-    $guestBookForm[1] = array("NO_2" => "2", "gb_name" => 김땡땡, "gb_content" => 축하합니다.);
-</script>							    
-
-	
-<!------------ 방명록 구글스프레드시트 ------------>	
-	
-	
 <script>
    const form = document.querySelector("#guestBookForm")
    const btnGuestBookSubmit = document.querySelector("#btnGuestBookSubmit")
@@ -837,6 +827,8 @@ $guestBookForm = [];
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>		
 <div id="guestBookFormtable" class="display" style="width:100%;font-size:12px;">
+<p>축하메시지 보기</p>
+<ul id="comments"></ul>	</div>	
 <thead>
 <tr>
 <th>글번호</th>
@@ -855,8 +847,7 @@ $guestBookForm = [];
 	
 	
 <div>
-<p>메시지 보기</p>
-<ul id="comments"></ul>	</div>
+
 <br>
 <br>	
 
@@ -867,16 +858,16 @@ $guestBookForm = [];
 	
 <script>
 const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
-	const $gb_name = document.querySelector('#gb_name');
+	const $gbname = document.querySelector('#gbname');
 	
 	if( $btnGuestBookSubmit ) {
 	    $btnGuestBookSubmit.addEventListener('click', () => {
-	        if( !$gb_name.value ) {
-	            $gb_name.classList.add("gb_name_error");
+	        if( !$gbname.value ) {
+	            $gbname.classList.add("gbname_error");
 	            return false;
 	        }
 	        basePopClose('.basePop')
-	        submitGuestBook();
+	        btnGuestBookSubmit();
 	    });
 	}	
 
@@ -885,19 +876,19 @@ const guestBookForm = document.querySelector("#guestBookForm");
 const commentsContainer = document.querySelector("#comments");
 guestBookForm.addEventListener("submit", function (e) {
   e.preventDefault();
-  const usernameInput = guestBookForm.elements.username;
-  const commentInput = guestBookForm.elements.comment;
-  addComment(usernameInput.value, commentInput.value);
-  usernameInput.value = "";
-  commentInput.value = "";
+  const gbnameInput = guestBookForm.elements.gbname;
+  const gbcommentInput = guestBookForm.elements.gbcomment;
+  addComment(gbnameInput.value, gbcommentInput.value);
+  gbusernameInput.value = "";
+  gbcommentInput.value = "";
 });
 
-const addComment = (username, comment) => {
+const addComment = (gbname, gbcomment) => {
 const newComment = document.createElement("li");
 const bTag = document.createElement("b");
-bTag.append(username);
+bTag.append(gbname);
 newComment.append(bTag);
-newComment.append(`  ${comment}`);
+newComment.append(`  ${gbcomment}`);
 commentsContainer.append(newComment);
 };	
 	
@@ -972,7 +963,7 @@ $('#guestBookFormtable').Datatable();	//데이터테이블 하나 추가
 				
 				
           <div class="inputBox" style="margin: 5px 5px;">
-             <input type="textarea" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요.">
+             <input type="textarea" name="gbcomment" id="gbcomment" class="ipText" placeholder="축하메시지를 입력해주세요.">
             <div class="btnComment"><a href="javascript:;" class="any">전송</a>
                                         </div>
                                     </div>
@@ -1144,14 +1135,14 @@ $('#guestBookFormtable').Datatable();	//데이터테이블 하나 추가
 	
 <!------------ 메시지 팝업 ------------>
 		
-<div id="popupGuestBookName" class="basePop" style="display: none;">
+<div id="basePop" class="basePop" style="display: none;">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
 	<div class="in">
-		<div class="title">한 줄 메시지 전송하기</div>
+		<div class="title">메시지 등록하기</div>
 		<div class="input">
-			<input type="text" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
+			<input type="name" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
 		</div>
-		<div class="btn"><button type="button" id="btnGuestBookSubmit">전송</button></div>
+		<div class="btn"><button type="submit" id="btnGuestBookSubmit">전송</button></div>
 	</div>
 </div>
 	
