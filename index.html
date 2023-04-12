@@ -811,24 +811,24 @@
 <!------------ 방명록 구글스프레드시트 ------------>	
 <script>
    const form = document.querySelector("#guestBookForm")
-   const btnGuestBookSubmit = document.querySelector("#btnGuestBookSubmit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxiccy4HcImxLrX1Yh4WDacgV0FuAt0aQjUodsjzVEA4ZLvDTLVk_GfWazUJyAqW7iG-Q/exec'
-
+   const submitButton = document.querySelector("#btnGuestBookSubmit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxV-hN4K0iKl75K9NgdgUSh3u3gy0hNTsb9NYtSffrWw6fEcvkNbgnWDHCM5CeZGzaxvA/exec'
    form.addEventListener('btnGuestBookSubmit', e => {
-     btnGuestBookSubmit.disabled = true
+     submitButton.disabled = true
      e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#fguest_book"));
+     let requestBody = new FormData(document.querySelector("#guestBookForm"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
-             btnGuestBookSubmit.disabled = false
+             submitButton.disabled = false
          });
-   })
-
+   }) 
 </script>
+	
+	
 <!------------ 방명록 구글스프레드시트 ------------>		
-<div id="guestBookFormtable" class="display" style="width:100%;font-size:12px;">
+<div id="guestBookForm" class="display" style="width:100%;font-size:12px;">
 <p>축하메시지 보기</p>
-<ul id="comments"></ul>	</div>	
+<ul id="guestBookForm"></ul>	
 <thead>
 <tr>
 <th>글번호</th>
@@ -840,13 +840,6 @@
 </div>
 
 	
-	
-
-
-	
-	
-	
-<div>
 
 <br>
 <br>	
@@ -855,42 +848,7 @@
 	
 	
 	
-	
-<script>
-const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
-	const $gbname = document.querySelector('#gbname');
-	
-	if( $btnGuestBookSubmit ) {
-	    $btnGuestBookSubmit.addEventListener('click', () => {
-	        if( !$gbname.value ) {
-	            $gbname.classList.add("gbname_error");
-	            return false;
-	        }
-	        basePopClose('.basePop')
-	        btnGuestBookSubmit();
-	    });
-	}	
 
-	
-const guestBookForm = document.querySelector("#guestBookForm");
-const commentsContainer = document.querySelector("#comments");
-guestBookForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  const gbnameInput = guestBookForm.elements.gbname;
-  const gbcommentInput = guestBookForm.elements.gbcomment;
-  addComment(gbnameInput.value, gbcommentInput.value);
-  gbusernameInput.value = "";
-  gbcommentInput.value = "";
-});
-
-const addComment = (gbname, gbcomment) => {
-const newComment = document.createElement("li");
-const bTag = document.createElement("b");
-bTag.append(gbname);
-newComment.append(bTag);
-newComment.append(`  ${gbcomment}`);
-commentsContainer.append(newComment);
-};	
 	
 	
 	
@@ -898,7 +856,7 @@ $('#guestBookFormtable').Datatable();	//데이터테이블 하나 추가
 	
 	
 	
-</script>	
+	
 	
 	
 	
@@ -1234,7 +1192,25 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 	
 </script>
 <!------------ 모달 . 아코디언 ------------>
-
+<!------------ 참석조사 구글스프레드시트 ------------>
+<script>
+   const form = document.querySelector("#survey-form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxygeoW_M1-59Br5MQkRLdcG20yG1ZoJ0YkaLiEjAXODjQBDYgEVEJDwE8i0NpCE3AypQ/exec'
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     $("#modal").fadeOut(100)  
+     $("#surveymodal").fadeOut(100)
+     $(".surveymodal-con").fadeOut(100)
+     let requestBody = new FormData(document.querySelector("#survey-form"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             submitButton.disabled = false
+         });
+   })
+</script>
+<!------------ 참석조사 구글스프레드시트 ------------>
 
 	
 <script>
