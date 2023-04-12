@@ -1261,78 +1261,7 @@ submitButton.disabled = false
 });
 </script>
 
-	
-<script>	  
-	//메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
-	$(document).on('click', '.any', function() {
-		if( !'https://kijin-jiyoung.github.io' || !'kjjy_0624' || !''){
-		    //return false;
-		    site_name = 'kjjy_0624';
-		    fingerprint = new Date().getTime();
-		}		
-		$popupGuestBookName = document.querySelector('#popupGuestBookName');		
-		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
-	});
-	
-	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
-	const $gbname = document.querySelector('#gbname');
-	
-	if( $btnGuestBookSubmit ) {
-	    $btnGuestBookSubmit.addEventListener('click', () => {
-	        if( !$gbname.value ) {
-	            $gbname.classList.add("gbname_error");
-	            return false;
-	        }
-	        basePopClose('.basePop')
-	        submitGuestBook();
-	    });
-	}
-	if( $gbname ) {
-	    $gbname.addEventListener('input', () => {
-	        $gbname.classList.remove("gbname_error");
-	    });
-	}
-	function submitGuestBook() {
-	    if( !document.fguest_book.gbcomment.value ) {
-            alertOpen_skin(__('축하메시지를 작성해 주세요.'))
-		    return false;
-		}
-		var data = $('#fguest_book').serialize();
-		data+="&fingerprint="+fingerprint;
-		
-		$gbname ? data += "&gbname="+$gbname.value : "";
-		$.ajax({
-		    method:'POST',
-		    url: 'https://kijin-jiyoung.github.io',
-		    data: data,
-		    dataType : 'json',
-		    contentType: false,
-		    processData: false,	
-		    success: function(data){
-                if(data.error && !data.count) {
-			        alertOpen_skin(data.error)
-                    return false;
-                } else {
-			        alertOpen_skin(__('등록되었습니다.'));
-                    var idx = data.error;//$('.Text').val();
-                    var selFace = $("input[name='send']:checked").val();
-		     const $ =  $('');
-			const addContent = ('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-                    $("#gbcomment").val("");
-                }
-		    },
-		    error: function(req){
-		        console.log('error', req);
-		    }
-		});
-	}
-	function basePopOpen(idx){
-    	$(idx).fadeIn('fast');
-    }
-    function basePopClose(idx){
-    	$(idx).fadeOut('fast');
-    }
-</script>
+
 	
 	
 	
