@@ -836,7 +836,7 @@ $guestBookForm = [];
 
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>		
-<table id="guestBookFormtable" class="display" style="width:100%;font-size:12px;">
+<div id="guestBookFormtable" class="display" style="width:100%;font-size:12px;">
 <thead>
 <tr>
 <th>글번호</th>
@@ -845,7 +845,7 @@ $guestBookForm = [];
 <th>작성날짜</th>
 </tr>
 </thead>
-</table>
+</div>
 
 	
 	
@@ -903,7 +903,7 @@ commentsContainer.append(newComment);
 	
 	
 	
-$('#guestBookFormtable').DataTable();	//데이터테이블 하나 추가
+$('#guestBookFormtable').Data();	//데이터테이블 하나 추가
 	
 	
 	
