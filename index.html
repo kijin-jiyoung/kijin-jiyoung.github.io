@@ -1253,6 +1253,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbwBdwx95s3SrWww-I7E4p
 form.addEventListener('btnGuestBookSubmit', e => {
 submitButton.disabled = true
 e.preventDefault()
+$("basepop").fadeOut(100)  
 let requestBody = new FormData(document.querySelector("#guestBookForm"));
 fetch(scriptURL, { method: 'POST', body: requestBody})
 .then(() => {
