@@ -809,20 +809,7 @@
 
 	
 <!------------ 방명록 구글스프레드시트 ------------>	
-<script>
-   const form = document.querySelector("#guestBookForm")
-   const btnGuestBookSubmitbutton = document.querySelector("#btnGuestBookSubmitbutton")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxV-hN4K0iKl75K9NgdgUSh3u3gy0hNTsb9NYtSffrWw6fEcvkNbgnWDHCM5CeZGzaxvA/exec'
-   form.addEventListener('btnGuestBookSubmitbutton', e => {
-     btnGuestBookSubmitbutton.disabled = true
-     e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#guestBookForm"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-         .then(() => {
-             btnGuestBookSubmitbutton.disabled = false
-         });
-   }) 
-</script>
+
 	
 	
 <!------------ 방명록 구글스프레드시트 ------------>		
@@ -843,27 +830,8 @@
 
 <br>
 <br>	
-
-	
-	
-	
 	
 
-	
-	
-	
-$('#guestBookFormtable').Datatable();	//데이터테이블 하나 추가
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
