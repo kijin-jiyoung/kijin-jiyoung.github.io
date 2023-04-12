@@ -811,15 +811,15 @@
 <!------------ 방명록 구글스프레드시트 ------------>	
 <script>
    const form = document.querySelector("#guestBookForm")
-   const btnGuestBookSubmitbutton = document.querySelector("#btnGuestBookSubmit")
+   const btnGuestBookSubmitbutton = document.querySelector("#btnGuestBookSubmitbutton")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxV-hN4K0iKl75K9NgdgUSh3u3gy0hNTsb9NYtSffrWw6fEcvkNbgnWDHCM5CeZGzaxvA/exec'
-   form.addEventListener('btnGuestBookSubmit', e => {
+   form.addEventListener('btnGuestBookSubmitbutton', e => {
      btnGuestBookSubmitbutton.disabled = true
      e.preventDefault()
      let requestBody = new FormData(document.querySelector("#guestBookForm"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
-             submitButton.disabled = false
+             btnGuestBookSubmitbutton.disabled = false
          });
    }) 
 </script>
@@ -1331,7 +1331,7 @@ $(function(){
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
 			const addContent = ('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-                    $("#gb_comment").val("");
+                    $("#gbcomment").val("");
                 }
 		    },
 		    error: function(req){
