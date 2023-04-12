@@ -1066,7 +1066,7 @@
 	<div class="in">
 		<div class="title">메시지 등록하기</div>
 		<div class="input">
-			<input type="name" name="gbname" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
+			<input type="name" name="gbname" id="gbname" placeholder="작성자 성함을 입력해 주세요.">
 		</div>
 		<div class="btn"><button type="button" id="btnGuestBookSubmit">전송</button></div>
 	</div>
@@ -1246,19 +1246,22 @@ $(function(){
 
 	
 <script>
-	
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwBdwx95s3SrWww-I7E4pXU6Lhwp36leelstIDXIFg9_dXWNuJIC5IPKt5Lowx2CN0tKg/exec' 
-  form.addEventListener('btnGuestBookSubmit', e => {
-     btnGuestBookSubmit.disabled = true
-     e.preventDefault()
-	  let requestBody = new FormData(document.querySelector("#guestBookForm"));
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-         .then(() => {
-             btnGuestBookSubmit.disabled = false
-         });
-	
+const form = document.querySelector("#guestBookForm")
+const submitButton = document.querySelector("#btnGuestBookSubmit")	
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwBdwx95s3SrWww-I7E4pXU6Lhwp36leelstIDXIFg9_dXWNuJIC5IPKt5Lowx2CN0tKg/exec'
 
-	  
+form.addEventListener('btnGuestBookSubmit', e => {
+submitButton.disabled = true
+e.preventDefault()
+let requestBody = new FormData(document.querySelector("#guestBookForm"));
+fetch(scriptURL, { method: 'POST', body: requestBody})
+.then(() => {
+submitButton.disabled = false
+});
+</script>
+
+	
+<script>	  
 	//메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !'https://kijin-jiyoung.github.io' || !'kjjy_0624' || !''){
