@@ -1246,8 +1246,20 @@ $(function(){
 
 	
 <script>
-  
-  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
+	
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwBdwx95s3SrWww-I7E4pXU6Lhwp36leelstIDXIFg9_dXWNuJIC5IPKt5Lowx2CN0tKg/exec' 
+  form.addEventListener('btnGuestBookSubmit', e => {
+     btnGuestBookSubmit.disabled = true
+     e.preventDefault()
+	  let requestBody = new FormData(document.querySelector("#guestBookForm"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             btnGuestBookSubmit.disabled = false
+         });
+	
+
+	  
+	//메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !'https://kijin-jiyoung.github.io' || !'kjjy_0624' || !''){
 		    //return false;
@@ -1287,9 +1299,11 @@ $(function(){
 		$gbname ? data += "&gbname="+$gbname.value : "";
 		$.ajax({
 		    method:'POST',
-		    scripturl: 'https://script.google.com/macros/s/AKfycbwBdwx95s3SrWww-I7E4pXU6Lhwp36leelstIDXIFg9_dXWNuJIC5IPKt5Lowx2CN0tKg/exec',
+		    url: g5_url,
 		    data: data,
 		    dataType : 'json',
+		    contentType: false,
+		    processData: false,	
 		    success: function(data){
                 if(data.error && !data.count) {
 			        alertOpen_skin(data.error)
