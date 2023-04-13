@@ -797,13 +797,14 @@
 	
 	
 	
-<div class="guestBooksend">
-<form action="" id="guestBookForm">
+<div class="sendComment">
+<div>	
   <input type="text" id="gbname" for="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family:'CaveatBrush';margin-bottom:5px;" required><br>
   <input type="textarea" id="gbcomment" for="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
-  <button id="Submit" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush';">전송</button>
-</form>
+  <input type="button" value="전송" onclick="sendComment();" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush';">
+</div>
 </div>	
+<div style="clear:both"/>	
 <br>
 <br>
 
@@ -1247,27 +1248,31 @@ $(function(){
 <!------------ 방명록 구글스프레드시트 ------------>
 	
 <script>
-   const form = document.querySelector("#guestBookForm")
-   const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbxpgotUMCE383MFzxU4v6xx36cA0AeCuBUNSpUrARm8FoxXNe_1puZbLZ3PglnVBjI84g/exec'
-
-   form.addEventListener('submit', e => {
-     submitButton.disabled = true
-     e.preventDefault()
-	$("#guestBookForm").remove()   
-     let requestBody = new FormData(form)
-     fetch(scriptURL, { method: 'POST', body: requestBody})
-       .then(response => {
-          alert('등록되었습니다!', response)
-          submitButton.disabled = false
-         })
-       .catch(error => {
-       alert('에러!', error.message)
-         submitButton.disabled = false
-       })
-   })
+$("#sendComment>p").click(function(){
+  $("#sendComment>div").toggle(300);
+});
+function sendComment (){
+  $("#sendComment *").attr("disabled","");
+  var errors = []
+  $("#sendComment :checkbox:checked").each(function(i){
+    errors[i] = $(this).val();
+  });
+  var comment = $("#sendComment textarea").val();
+  $.ajax({
+    url: "https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec",
+    data: {
+      path: decodeURIComponent(location.pathname),
+      memo: errors+" / "+comment
+    },
+    type: "POST",
+    success:function(){
+      alert("등록되었습니다.\n감사합니다.");
+      $("#sendComment :disabled").removeAttr("disabled");
+      $("#sendComment text").val('');	    
+      $("#sendComment textarea").val('');
+    }  }); 
+}
 </script>	
-
 <!------------ 방명록 구글스프레드시트 ------------>	
 
 	
