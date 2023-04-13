@@ -801,7 +801,7 @@
 <form action="" id="guestBookForm">
   <input type="text" id="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family: 'CaveatBrush';margin-bottom:5px;" required><br>
   <input type="textarea" id="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
-  <button type="button" id="btnGuestBookSubmit" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
+  <button id="Submit" value="send2" style="width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush'">전송</button>
 </form>
 	
 <br>
@@ -1247,13 +1247,14 @@ $(function(){
 	
 <script>
 const form = document.querySelector("#guestBookForm")
-const submitButton = document.querySelector("#btnGuestBookSubmit")	
+const submitButton = document.querySelector("#Submit")	
 const scriptURL = 'https://script.google.com/macros/s/AKfycby6nZKjhW075bUd_vckT3wO73a0t5TS-mFmEiN4guowGojPVr8OMcs-hFl1s1lN8w4zJQ/exec'
 
-form.addEventListener('btnGuestBookSubmit', e => {
+form.addEventListener('Submit', e => {
 submitButton.disabled = true
 e.preventDefault()
-$("basepop").fadeOut(100)  
+$("#guestBookForm").remove()  	
+$(".basepop").fadeOut(100)  
 let requestBody = new FormData(document.querySelector("#guestBookForm"));
 fetch(scriptURL, { method: 'POST', body: requestBody})
 .then(() => {
