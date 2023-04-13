@@ -1255,7 +1255,6 @@ $(function(){
      submitButton.disabled = true
      event.preventDefault()
      let requestBody = new FormData(document.querySelector("#guest-form"));
-     $("#guest-form").delete()
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
              submitButton.disabled = false
