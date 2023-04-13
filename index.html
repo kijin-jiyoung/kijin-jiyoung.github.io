@@ -1255,15 +1255,12 @@ $("#sendComment>p").click(function(){
 });
 function sendComment (){
  $("#sendComment *").attr("disabled","");	
-  var gbguest = []
-  $("#sendComment :checkbox:checked").each(function(i){
+$("#sendComment :checkbox:checked").each(function(i){
     gbguest[i] = $(this).val();
   });
-  var gbname = []
   $("#sendComment :text").each(function(i){
     gbname[i] = $(this).val();
   });
-  var gbcomment = []	
 $("#sendComment :textarea").each(function(i){
     gbcomment[i] = $(this).val();
   });		
@@ -1274,8 +1271,7 @@ $("#sendComment :textarea").each(function(i){
     data: { 
     gbguest : decodeURIComponent(location.gbguestname),
     gbname: "",
-    gbcomment "" 
-    },
+    gbcomment "" },
     type: "POST",
     success:function(){
       alert("등록되었습니다.\n감사합니다.");
