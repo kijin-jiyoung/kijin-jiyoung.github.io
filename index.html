@@ -1244,22 +1244,30 @@ $(function(){
 </style>	
 
 
-<!------------ 방명록 구글스프레드시트 ------------>	
+<!------------ 방명록 구글스프레드시트 ------------>
+	
 <script>
-const form = document.querySelector("#guestBookForm")
-const submitButton = document.querySelector("#Submit")	
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwRUvbsTik8SalCU020Qq24wRWpqA8QREreTq4hHpwSIU-ftHazCGnznKr1EhYZaRjFdw/exec'
-form.addEventListener('Submit', e => {
-submitButton.disabled = true
-e.preventDefault()
-$("#guestBookForm").remove()
-let requestBody = new FormData(document.querySelector("#guestBookForm"));
-fetch(scriptURL, { method: 'POST', body: requestBody})
-.then(() => {
-       submitButton.disabled = false
-});
-   })	
-</script>
+   const form = document.querySelector("#guestBookForm")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzgfOt-T4QNx95ijAqe-ghA9d_nU0neSiq4MrkyjVin1FnUc9VIhTgL5p2QCwef8usVvg/exec'
+
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+	$("#guestBookForm").remove()   
+     let requestBody = new FormData(form)
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+       .then(response => {
+          alert('등록되었습니다!', response)
+          submitButton.disabled = false
+         })
+       .catch(error => {
+       alert('에러!', error.message)
+         submitButton.disabled = false
+       })
+   })
+</script>	
+
 <!------------ 방명록 구글스프레드시트 ------------>	
 
 	
