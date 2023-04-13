@@ -1244,24 +1244,24 @@ $(function(){
 </style>	
 
 
-	
+<!------------ 방명록 구글스프레드시트 ------------>	
 <script>
 const form = document.querySelector("#guestBookForm")
 const submitButton = document.querySelector("#Submit")	
 const scriptURL = 'https://script.google.com/macros/s/AKfycby6nZKjhW075bUd_vckT3wO73a0t5TS-mFmEiN4guowGojPVr8OMcs-hFl1s1lN8w4zJQ/exec'
-
 form.addEventListener('Submit', e => {
 submitButton.disabled = true
 e.preventDefault()
-$("#guestBookForm").remove()  	
+$("#guestBookForm").remove()	
 $(".basepop").fadeOut(100)  
 let requestBody = new FormData(document.querySelector("#guestBookForm"));
 fetch(scriptURL, { method: 'POST', body: requestBody})
 .then(() => {
-submitButton.disabled = false
+       submitButton.disabled = false
 });
+   })	
 </script>
-
+<!------------ 방명록 구글스프레드시트 ------------>	
 
 	
 	
