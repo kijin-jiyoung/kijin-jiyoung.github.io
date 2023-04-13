@@ -1258,9 +1258,10 @@ $(function(){
    const scriptURL = 'https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec'
    form.addEventListener('submit', e => {
      submitButton.disabled = true
-     e.preventDefault()
+     event.preventDefault()
      $("#guest-form").forceRefreshData();
      let requestBody = new FormData(document.querySelector("#guest-form"));
+     $("#guest-form").delete()  	   
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
              submitButton.disabled = false
