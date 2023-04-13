@@ -1249,7 +1249,86 @@ $(function(){
 
 <!------------ 방명록 구글스프레드시트 ------------>
 	
+	
+<script>	
+	
+private class HttpTask extends AsyncTask<String, Void, Integer> {
+
+    @Override
+    protected void onPreExecute() {
+        super.onPreExecute();
+
+        mDialog = new ProgressDialog(BapStarActivity.this);
+        mDialog.setIndeterminate(true);
+        mDialog.setMessage(getString(R.string.post_bap_star_posting));
+        mDialog.setCanceledOnTouchOutside(false);
+        mDialog.show();
+    }	
+	
+    @Override
+    protected Integer doInBackground(String... params) {
+        try {	
+	
+HttpPost postRequest = new HttpPost("https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec");
+
+//전달할 값들
+Vector<NameValuePair> nameValue = new Vector<>();
+nameValue.add(new BasicNameValuePair("sheet_name", "시트1"));
+nameValue.add(new BasicNameValuePair("gbguest", params[0]));
+nameValue.add(new BasicNameValuePair("gbname", params[1]));
+nameValue.add(new BasicNameValuePair("gbcomment", params[2]));
+
+//웹 접속 - UTF-8으로
+HttpEntity Entity = new UrlEncodedFormEntity(nameValue, "UTF-8");
+postRequest.setEntity(Entity);
+
+HttpClient mClient = new DefaultHttpClient();
+mClient.execute(postRequest);	
+ return Integer.parseInt(params[0]);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return -1;
+    }
+
+    protected void onPostExecute(Integer value) {
+        super.onPostExecute(value);
+
+        if (mDialog != null) {
+            mDialog.dismiss();
+            mDialog = null;
+        }
+
+        if (value == -1) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(BapStarActivity.this, R.style.AppCompatErrorAlertDialogStyle);
+            builder.setTitle(R.string.post_bap_star_title);
+            builder.setMessage(R.string.post_bap_star_failed);
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.show();
+
+        } else {
+            AlertDialog.Builder builder = new AlertDialog.Builder(BapStarActivity.this, R.style.AppCompatAlertDialogStyle);
+            builder.setTitle(R.string.post_bap_star_title);
+            builder.setMessage(R.string.post_bap_star_success);
+            builder.setPositiveButton(android.R.string.ok, null);
+            builder.show();
+
+            BapTool.todayPostStar(getApplicationContext(), value);
+        }
+    }
+}	
+</script>	
+	
+	
+	
+	
+	
+	
+	
+	
 <script>
+	
 $("#sendComment>p").click(function(){
   $("#sendComment>div").toggle(300);
 });
