@@ -798,15 +798,19 @@
 	
 	
 <div class="sendComment">
-<div>
-    <input type="checkbox" value="신랑"/>신랑측<br/>
-    <input type="checkbox" value="신부"/>신부측<br/>	
-  <input type="text" id="gbname" for="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family:'CaveatBrush';margin-bottom:5px;" required><br>
-  <input type="textarea" id="gbcomment" for="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
-  <input type="button" value="전송" onclick="sendComment();" style="cursor:pointer;width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush';">
+<form action="" id="guest-form">
+<div class="checkbox-select">
+<input type="checkbox" value="신랑"/>신랑측&nbsp;&nbsp;<input type="checkbox" value="신부"/>신부측</div>
+<div class="gbname-select">
+<input type="text" id="gbname" for="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family:'CaveatBrush';margin-bottom:5px;" required></div>
+<div class="gbcomment-select">
+<input type="textarea" id="gbcomment" for="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required></div>
+
+<button id="submit" value="send2" style="cursor:pointer;width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush';">등록하기</button>
+</form>	
 </div>
+	
 </div>	
-<div style="clear:both"/>	
 <br>
 <br>
 
@@ -1248,56 +1252,20 @@ $(function(){
 
 
 <!------------ 방명록 구글스프레드시트 ------------>	
-<script>		
- if (!sendComment.Comment) {
-    var Comment = 1;
-    sendComment.Comment = Comment
-  } else {
-    var Comment = sendComment.Comment;
-    Comment++;
-    sendComment.Comment = Comment
-  }
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec",
-    data: {
-gbguest : document.getElementsByTagName("gbguest")[0].checkbox,
-gbname : document.getElementsByTagName("gbname")[0].text,
-gbcomment : document.getElementsByTagName("gbcomment")[0].textarea, 
-    },
-    type: "POST"
-  });
-</script>	
-	
-	
-
-	
 <script>
-	
-$("#sendComment>p").click(function(){
-  $("#sendComment>div").toggle(300);
-});
-function sendComment (){
-  $("#sendComment *").attr("disabled","");
-  var errors = []
-  $("#sendComment :checkbox:checked").each(function(i){
-    errors[i] = $(this).val();
-  });
-  var comment = $("#sendComment textarea").val();
-  $.ajax({
-    url: "https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec",
-    data: {
-      path: decodeURIComponent(location.pathname),
-      memo: errors+" / "+comment
-    },
-    type: "POST",
-    success:function(){
-      alert("등록되었습니다.\n감사합니다.");
-      $("#sendComment :disabled").removeAttr("disabled");
-      $("#sendComment textarea").val('');
-      $("#sendComment :checkbox").prop("checked",false);
-    }
-  });
-}
+   const form = document.querySelector("#guest-form")
+   const submitButton = document.querySelector("#submit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec'
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     $("#guest-form").removeAttr("disabled");
+     let requestBody = new FormData(document.querySelector("#guest-form"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             submitButton.disabled = false
+         });
+   })
 </script>
 <!------------ 방명록 구글스프레드시트 ------------>	
 
