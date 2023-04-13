@@ -1250,10 +1250,10 @@ $(function(){
 <script>
    const form = document.querySelector("#guest-form")
    const submitButton = document.querySelector("#submit")
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec'
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec'
    form.addEventListener('submit', e => {
      submitButton.disabled = true
-     event.preventDefault()
+     e.preventDefault()
      let requestBody = new FormData(document.querySelector("#guest-form"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
