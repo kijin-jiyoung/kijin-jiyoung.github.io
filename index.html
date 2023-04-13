@@ -1254,9 +1254,8 @@ $(function(){
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      event.preventDefault()
-     $("#guest-form").forceRefreshData();
      let requestBody = new FormData(document.querySelector("#guest-form"));
-     $("#guest-form").delete()  	   
+     $("#guest-form").delete()
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
              submitButton.disabled = false
