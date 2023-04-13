@@ -1259,7 +1259,7 @@ $(function(){
    form.addEventListener('submit', e => {
      submitButton.disabled = true
      e.preventDefault()
-     $("#guest-form").removeAttr("disabled");
+     $("#guest-form").forceRefreshData();
      let requestBody = new FormData(document.querySelector("#guest-form"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
