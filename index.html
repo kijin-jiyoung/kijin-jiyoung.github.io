@@ -1254,34 +1254,28 @@ $("#sendComment>p").click(function(){
   $("#sendComment>div").toggle(300);
 });
 function sendComment (){
- $("#sendComment *").attr("disabled","");	
-$("#sendComment :checkbox:checked").each(function(i){
-    gbguest[i] = $(this).val();
+  $("#sendComment *").attr("disabled","");
+  var errors = []
+  $("#sendComment :checkbox:checked").each(function(i){
+    errors[i] = $(this).val();
   });
-  $("#sendComment :text").each(function(i){
-    gbname[i] = $(this).val();
-  });
-$("#sendComment :textarea").each(function(i){
-    gbcomment[i] = $(this).val();
-  });		
-  var comment = $("#sendComment text").val();	
   var comment = $("#sendComment textarea").val();
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec",
-    data: { 
-    gbguest : decodeURIComponent(location.gbguestname),
-    gbname: "",
-    gbcomment "" },
+    data: {
+      path: decodeURIComponent(location.pathname),
+      memo: errors+" / "+comment
+    },
     type: "POST",
     success:function(){
       alert("등록되었습니다.\n감사합니다.");
       $("#sendComment :disabled").removeAttr("disabled");
-      $("#sendComment text").val('');	    
       $("#sendComment textarea").val('');
-      $("#sendComment :checkbox").prop("checked",false);	    
-    }  }); 
+      $("#sendComment :checkbox").prop("checked",false);
+    }
+  });
 }
-</script>	
+</script>
 <!------------ 방명록 구글스프레드시트 ------------>	
 
 	
