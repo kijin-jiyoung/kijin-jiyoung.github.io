@@ -798,7 +798,9 @@
 	
 	
 <div class="sendComment">
-<div>	
+<div>
+    <input type="checkbox" value="신랑"/>신랑측<br/>
+    <input type="checkbox" value="신부"/>신부측<br/>	
   <input type="text" id="gbname" for="gbname" name="gbname" placeholder="이름" style="width:250px;height: 30px;font-size:10px;font-family:'CaveatBrush';margin-bottom:5px;" required><br>
   <input type="textarea" id="gbcomment" for="gbcomment" name="gbcomment" placeholder="축하메시지를 작성해주세요" style="width: 250px;height: 100px;font-size:10px;font-family:'CaveatBrush';margin-bottom:10px;" required><br>
   <input type="button" value="전송" onclick="sendComment();" style="cursor:pointer;width:150px;height:25px;border-radius:5px;font-size:12px;font-family:'CaveatBrush';">
@@ -1252,22 +1254,35 @@ $("#sendComment>p").click(function(){
   $("#sendComment>div").toggle(300);
 });
 function sendComment (){
-  $("#sendComment *").attr("disabled","");
-  var errors = []
-  $("#sendComment :text").each(function(i){
-    errors[i] = $(this).val();
+ $("#sendComment *").attr("disabled","");	
+  var gbguest = []
+  $("#sendComment :checkbox:checked").each(function(i){
+    gbguest[i] = $(this).val();
   });
+  var gbname = []
+  $("#sendComment :text").each(function(i){
+    gbname[i] = $(this).val();
+  });
+  var gbcomment = []	
+$("#sendComment :textarea").each(function(i){
+    gbcomment[i] = $(this).val();
+  });		
   var comment = $("#sendComment text").val();	
   var comment = $("#sendComment textarea").val();
   $.ajax({
     url: "https://script.google.com/macros/s/AKfycbzfp2tV272NFqX_eTKOtfMhCs9jiAONCnp_xhIACIaWiB72XtHsOnrAfP16NeS3kZTIKQ/exec",
-    data: { gbname, gbcomment },
+    data: { 
+    gbguest : decodeURIComponent(location.gbguestname),
+    gbname: "",
+    gbcomment "" 
+    },
     type: "POST",
     success:function(){
       alert("등록되었습니다.\n감사합니다.");
       $("#sendComment :disabled").removeAttr("disabled");
       $("#sendComment text").val('');	    
       $("#sendComment textarea").val('');
+      $("#sendComment :checkbox").prop("checked",false);	    
     }  }); 
 }
 </script>	
