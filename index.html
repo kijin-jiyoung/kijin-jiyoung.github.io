@@ -1247,19 +1247,19 @@ $(function(){
     $('.comWrap .list label').on('click', function(){
     	
     	const selIdx = $(this).parents('li').index() + 1;
-    	const selText = $(this).html();
+    	const selTextarea = $(this).html();
     	const selFace = $(this).siblings('input').val();
     	$('#gb_to').val( $(this).siblings('input').data('gb_to') );
     
     	if( $('.selBox .tit').length ) {
         	if( !selFace )  {
-        	    $('.user .img img').attr('src','./images/text_img'+selIdx+'.png');
+        	    $('.user .img img').attr('src','./images/textarea_img'+selIdx+'.png');
         	} else {
         	    $('.user .img img').attr('src',selFace);
         	}
         	
         	$(this).parents('li').addClass('hidden').siblings().removeClass('hidden');
-        	$('.selBox .tit span').html(selText);
+        	$('.selBox .tit span').html(selTextarea);
         
         	$('.selBox .list').slideToggle('fast');
         	
