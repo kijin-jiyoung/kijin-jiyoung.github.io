@@ -1339,13 +1339,12 @@ $(function(){
 			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-			const $newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-			const $newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');			
-		if( data.prev_cnt == 0 ) { $('removeContent');
-			 }   
-		$('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');	
-		$("#gb_comment").val("");		
- 
+			 const $marquee =  $('.marqWrap');
+                    if( data.prev_cnt == 0 ) {
+                        $marquee.liMarquee('removeContent');
+                    }
+                    $marquee.liMarquee('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+                    $("#gb_comment").val(""); 
                 }
 		    },
 		
