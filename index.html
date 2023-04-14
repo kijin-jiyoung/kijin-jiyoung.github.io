@@ -864,7 +864,76 @@
 	
 	
 <!------------ 방명록 구글스프레드시트 ------------>		
+<script>
+  
+  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
+	$(document).on('click', '.any', function() {
+		if( !g5_url || !site_name || !is_offical){
+		    site_name = "kjjy_0624";
+		    fingerprint = new Date().getTime();
+		}
+		
+		$popupGuestBookName = document.querySelector('#popupGuestBookName');	
+		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
+	});
 	
+	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
+	const $gb_name = document.querySelector('#gb_name');
+	
+	if( $btnGuestBookSubmit ) {
+	    $btnGuestBookSubmit.addEventListener('click', () => {
+	        if( !$gb_name.value ) {
+	            $gb_name.classList.add("작성자 이름을 입력해주세요.");
+	            return false;
+	        }
+	        basePopClose('.basePop')
+	        submitGuestBook();
+	    });
+	}
+	if( $gb_name ) {
+	    $gb_name.addEventListener('input', () => {
+	        $gb_name.classList.remove("작성자 이름을 입력해주세요.");
+	    });
+	}
+	function submitGuestBook() {
+	    if( !document.fguest_book.gb_comment.value ) {
+            alertOpen_skin(__('축하메시지를 작성해주세요.'))
+		    return false;
+		}
+		var data = $('#fguest_book').serialize();
+		data+="&fingerprint="+fingerprint;
+		
+		$gb_name ? data += "&gb_name="+$gb_name.value : "";
+		$.ajax({
+		    method:'POST',
+		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
+		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
+		    data: data,
+		    dataType : 'json',
+		    success: function(data){
+                if(data.error && !data.count) {
+			        alertOpen_skin(data.error)
+                    return false;
+                } else {
+			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
+                    var idx = data.error;//$('.ipText').val();
+                    var selFace = $("input[name='send']:checked").val();
+					const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+					const newComment = document.createlist-item('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+					const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+		    },
+		    error: function(req){
+		        console.log('error', req);
+		    }
+		});
+	}
+	function basePopOpen(idx){
+    	$(idx).fadeIn('fast');
+    }
+    function basePopClose(idx){
+    	$(idx).fadeOut('fast');
+    }
+</script>	
 	
 	
 	
@@ -1043,9 +1112,9 @@
 	<div class="in">
 		<div class="title">메시지 등록하기</div>
 		<div class="input">
-			<input type="name" name="gb_name" id="gb_name" placeholder="작성자 성함을 입력해 주세요.">
+			<input type="name" name="gbname" id="gbname" placeholder="작성자 성함을 입력해 주세요.">
 		</div>
-		<div class="btn"><button type="button" id="btnGuestBook_Submit">전송</button></div>
+		<div class="btn"><button type="button" id="Submit">전송</button></div>
 	</div>
 </div>
 	
@@ -1221,15 +1290,31 @@ $(function(){
 </style>	
 
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 <!------------ 방명록 구글스프레드시트 ------------>	
 <script>
-   const form = document.querySelector("#guest-form")
-   const submitButton = document.querySelector("#submit")
+   const form = document.querySelector("#fguest_book")
+   const submitButton = document.querySelector("#any")
    const scriptURL = 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec'
-   form.addEventListener('submit', e => {
+   form.addEventListener('any', e => {   
      submitButton.disabled = true
      e.preventDefault()
-     let requestBody = new FormData(document.querySelector("#guest-form"));
+     $(".basePop").open()   
+     let requestBody = new FormData(document.querySelector("#popupGuestBookName"));
      fetch(scriptURL, { method: 'POST', body: requestBody})
          .then(() => {
              submitButton.disabled = false
