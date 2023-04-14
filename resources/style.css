@@ -949,7 +949,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .guestBookWrap .wave .img span:after{content:''; position: absolute; left:0; top:0; width:calc(100% - 4px); height:calc(100% - 4px);border-radius:50%; display: none; }
 .guestBookWrap .wave:hover .img span:after{display: block; }
 .guestBookWrap .wave .img img{width: 100%;vertical-align: top; display: block;  width:63px; height:63px; }
-.guestBookWrap .wave .txt{display: inline-block; vertical-align: text-top;font-family: 'MapoFlowerIsland';font-size: 20px;font-weight: 600;color:#222222;margin-left: 11px; white-space:nowrap;letter-spacing:-.05em;}
+.guestBookWrap .wave .txt{display: inline-block; vertical-align: initial;font-family: 'MapoFlowerIsland';font-size: 20px;font-weight: 600;color:#222222;margin-left: 11px; white-space:nowrap;letter-spacing:-.05em;}
 .atm .waveText {transform:translate(0,0) !important; opacity:1;}
 .atm .comWrap {transform:translate(0,0) !important; opacity:1;}
 .comWrap {max-width:540px; margin:0 auto; position: relative;z-index: 1;  transition:2s all; /*transform:translate(0,50px); opacity:0;*/  transition-delay:500ms;padding: 0 30px;box-sizing: content-box}
@@ -1287,7 +1287,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 .alertPop .in .title{font-size: 19px;color:#000;line-height: 1.3;margin-bottom: 20px;}
 .alertPop .in .btn a,
 .alertPop .in .btn button{display: inline-block;width: 110px;height: 48px;line-height: 48px;background:#646059; font-size: 16px;font-weight: 500;color:#000; border-radius:12px;}
-.guestName {font-family: 'Pretendard', serif; display: inline-block; vertical-align: middle; font-weight:500; margin-left: 14px; font-size:16px; line-height:16px; color:#2f1f12; padding-left:23px; background:url('/resources/ico_mHeart.png') left center no-repeat; background-size:18px auto;}
+.guestName {font-family: 'Pretendard', serif; display: inline-block; vertical-align: initial; font-weight:500; margin-left: 14px; font-size:16px; line-height:16px; color:#2f1f12; padding-left:23px; background:url('/resources/ico_mHeart.png') left center no-repeat; background-size:18px auto;}
 .basePop {position: fixed; left:0; top:0; width: 100%; height: 100%;display: none;z-index: 999;  }
 .basePop * {font-family: 'AppleSD';}
 .basePop .bg{ position: fixed; left:0; top:0; width: 100%; height: 100%;  z-index: 1;}
@@ -1522,12 +1522,12 @@ p.accordiondesc {font-size: 12px;}
 	.comWrap .inputWrap .in{display: block;}
 	.comWrap .inputWrap .in .user{width: 95%;margin-bottom: 0px;}
 	.comWrap .inputWrap .in .user .selBox .list li{margin: 0px;width: 50%}
-	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 0px;}
-	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 0px;}
+	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 5px;}
+	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 5px;}
 	.comWrap .inputWrap .in .user .selBox .list li label,
 	.comWrap .partyCheck .btn a,
 	.comWrap .partyCheck .thxBox{font-size: 13px;height: 45px;width: 150px;border-radius: 9px;}
-	.comWrap .inputWrap .in .inputBox {font-size: 13px;height: 100px;width: 300px;border-radius: 9px;}	
+	.comWrap .inputWrap .in .inputBox {font-size: 13px;height: 100px;border-radius: 9px;}	
 	.comWrap .inputWrap .in .inputBox{display: block;padding-right: 62px;}
 	.comWrap .inputWrap .in .user .selBox .list li .img{width: 30px;border-radius: 100%;overflow: hidden}
 	.comWrap .inputWrap .in .user .selBox .list li .img img {width: 30px; height:30px;}
