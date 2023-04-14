@@ -1359,6 +1359,35 @@ $(function(){
     function basePopClose(idx){
     	$(idx).fadeOut('fast');
     }
+	
+	
+	
+  const form = document.querySelector("#fguest_book")
+   const submitButton = document.querySelector("#btnGuestBookSubmit")
+   const scriptURL = 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec'
+   form.addEventListener('submit', e => {
+     submitButton.disabled = true
+     e.preventDefault()
+     let requestBody = new FormData(document.querySelector("#fguest_book"));
+     fetch(scriptURL, { method: 'POST', body: requestBody})
+         .then(() => {
+             submitButton.disabled = false
+         });
+   })	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 </script>
 
 	
