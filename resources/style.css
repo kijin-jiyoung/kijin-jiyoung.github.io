@@ -960,7 +960,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .comWrap .inputWrap .in .user .selBox { position: relative; z-index: 5;}
 .comWrap .inputWrap .in .user .selBox .list{ margin-bottom: 10px; }
 .comWrap .inputWrap .in .user .selBox .list:after {content:''; display: block; clear:both;}
-.comWrap .inputWrap .in .user .selBox .list li { position: relative; text-align: center; float:right; width:49%}
+.comWrap .inputWrap .in .user .selBox .list li { position: relative; text-align: center; float:right; width:50%}
 .comWrap .inputWrap .in .user .selBox .list li:first-child {float:left; }
 .comWrap .inputWrap .in .user .selBox .list li label{font-size:19px;font-weight:300;height:75px;color:#a49197;position: relative; cursor:pointer; background:rgba(255,255,255,.5);border-radius: 15px;
 	display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;
@@ -1520,10 +1520,10 @@ p.accordiondesc {font-size: 12px;}
 	.comWrap{padding: 0}
 	.comWrap .inputWrap{margin-bottom: 16px;}
 	.comWrap .inputWrap .in{display: block;}
-	.comWrap .inputWrap .in .user{width: 100%;margin-bottom: 6px;}
-	.comWrap .inputWrap .in .user .selBox .list li{margin: 0;width: 50%}
-	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 3px;}
-	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 3px;}
+	.comWrap .inputWrap .in .user{width: 95%;margin-bottom: 0px;}
+	.comWrap .inputWrap .in .user .selBox .list li{margin: 0px;width: 50%}
+	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 0px;}
+	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 0px;}
 	.comWrap .inputWrap .in .user .selBox .list li label,
 	.comWrap .partyCheck .btn a,
 	.comWrap .partyCheck .thxBox{font-size: 13px;height: 45px;width: 150px;border-radius: 9px;}
