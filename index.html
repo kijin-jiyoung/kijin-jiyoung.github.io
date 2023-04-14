@@ -1280,9 +1280,7 @@ $(function(){
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !g5_url || !site_name || !is_offical){
-		    //alertOpen_skin('미리보기에서는 사용하실 수 없습니다.')
-		    //return false;
-		    site_name = "test";
+		    site_name = "kjjy_0624";
 		    fingerprint = new Date().getTime();
 		}
 		
@@ -1330,6 +1328,7 @@ $(function(){
 		$.ajax({
 		    method:'POST',
 		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
+		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',			
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
