@@ -1279,9 +1279,9 @@ $(function(){
   
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
-		if( !g5_url || !site_name || !is_offical){
+		if( !https://kijin-jiyoung.github.io || !site_name || !is_offical){
 		    site_name = "kjjy_0624";
-		    fingerprint = new Date().getTime();
+		    fingerprint = new Date().getTimestamp();
 		}
 		if( !fingerprint ) {
 		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
@@ -1321,7 +1321,7 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
+		    url: 'https://kijin-jiyoung.github.io/'+'/plugin/tpl/ajax.guest_book_update.php',
 		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
 		    data: data,
 		    dataType : 'json',
