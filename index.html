@@ -1280,18 +1280,24 @@ $(function(){
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !g5_url || !site_name || !is_offical){
-		    site_name = "kjjy_0624";
+		    //alertOpen_skin('미리보기에서는 사용하실 수 없습니다.')
+		    //return false;
+		    site_name = "test";
 		    fingerprint = new Date().getTime();
 		}
-		       
+		
 		if( !fingerprint ) {
 		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
 		    return false;
 		}
-			
+		
 		$popupGuestBookName = document.querySelector('#popupGuestBookName');
-	
+		
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
+		
+		//$marquee.liMarquee('stop');
+		//$marquee.liMarquee('resetPosition');
+
 	});
 	
 	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
@@ -1309,12 +1315,12 @@ $(function(){
 	}
 	if( $gb_name ) {
 	    $gb_name.addEventListener('input', () => {
-	        $gb_name.classList.remove(gb_name_error");
+	        $gb_name.classList.remove("gb_name_error");
 	    });
 	}
 	function submitGuestBook() {
 	    if( !document.fguest_book.gb_comment.value ) {
-            alertOpen_skin(__('축하메시지를 작성해주세요.'))
+            alertOpen_skin(__('축하메시지를 작성해 주세요.'))
 		    return false;
 		}
 		var data = $('#fguest_book').serialize();
@@ -1324,27 +1330,26 @@ $(function(){
 		$.ajax({
 		    method:'POST',
 		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
-		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
                 if(data.error && !data.count) {
-			alertOpen_skin(data.error)
+			        alertOpen_skin(data.error)
                     return false;
                 } else {
-		alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
+			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-			const $newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-			const $newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-		if( data.prev_cnt == 0 ) { $('removeContent');
-			 }   
-		$('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');	
-		$("#gb_comment").val("");
-	}
-	},
-	 error: function(req){
-	   console.log('error', req);
+                    const $marquee =  $('.marqWrap');
+                    if( data.prev_cnt == 0 ) {
+                        $marquee.liMarquee('removeContent');
+                    }
+                    $marquee.liMarquee('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+                    $("#gb_comment").val("");
+                }
+		    },
+		    error: function(req){
+		        console.log('error', req);
 		    }
 		});
 	}
@@ -1354,7 +1359,7 @@ $(function(){
     function basePopClose(idx){
     	$(idx).fadeOut('fast');
     }
-</script>	
+</script>
 
 	
 	
