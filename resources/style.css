@@ -949,7 +949,7 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .guestBookWrap .wave .img span:after{content:''; position: absolute; left:0; top:0; width:calc(100% - 4px); height:calc(100% - 4px); border:2px solid #2f1f12;  border-radius:50%; display: none; }
 .guestBookWrap .wave:hover .img span:after{display: block; }
 .guestBookWrap .wave .img img{width: 100%;vertical-align: top; display: block;  width:63px; height:63px; }
-.guestBookWrap .wave .txt{display: inline-block; vertical-align: middle;font-family: 'AritaBuri';font-size: 38px;font-weight: 600;color:#222222;margin-left: 11px; white-space:nowrap;letter-spacing:-.05em;}
+.guestBookWrap .wave .txt{display: inline-block; vertical-align: middle;font-family: 'MapoFlowerIsland';font-size: 20px;font-weight: 600;color:#222222;margin-left: 11px; white-space:nowrap;letter-spacing:-.05em;}
 .atm .waveText {transform:translate(0,0) !important; opacity:1;}
 .atm .comWrap {transform:translate(0,0) !important; opacity:1;}
 .comWrap {max-width:540px; margin:0 auto; position: relative;z-index: 1;  transition:2s all; /*transform:translate(0,50px); opacity:0;*/  transition-delay:500ms;padding: 0 30px;box-sizing: content-box}
@@ -1513,7 +1513,7 @@ p.accordiondesc {font-size: 12px;}
 	.guestBookInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;color: #555;}
 	.guestBookWrap .secTitleWrap{padding-bottom: 0;margin-bottom: 26px}
 	.guestBookWrap .waveText{margin-left: -33px;margin-right: -33px;}
-	.guestBookWrap .wave .txt{font-size: 26px;margin-left: 8px}
+	.guestBookWrap .wave .txt{font-size: 16px;margin-left: 8px}
 	.guestBookWrap .wave .img{width: 42px;height: 42px}
 	.guestBookWrap .wave .img img{width: 42px;height: 42px}
 	.guestBookWrap .wave{padding-left:25px;}
