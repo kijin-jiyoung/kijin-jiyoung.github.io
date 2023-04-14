@@ -856,14 +856,11 @@
 	
 <!------------ 방명록 구글스프레드시트 ------------>		
 <script>
-  
-  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
 		if( !g5_url || !site_name || !is_offical){
 		    site_name = "kjjy_0624";
 		    fingerprint = new Date().getTime();
-		}
-		
+		}		
 		$popupGuestBookName = document.querySelector('#popupGuestBookName');	
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
 	});
@@ -1103,7 +1100,7 @@
 	<div class="in">
 		<div class="title">메시지 등록하기</div>
 		<div class="input">
-			<input type="name" name="gbname" id="gbname" placeholder="작성자 성함을 입력해 주세요.">
+			<input type="name" name="gb_name" id="gbname" placeholder="작성자 성함을 입력해 주세요.">
 		</div>
 		<div class="btn"><button type="button" id="Submit">전송</button></div>
 	</div>
