@@ -1285,7 +1285,11 @@ $(function(){
 		    site_name = "kjjy_0624";
 		    fingerprint = new Date().getTime();
 		}
-		
+		if( !fingerprint ) {
+		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
+		    return false;
+		}
+			
 		$popupGuestBookName = document.querySelector('#popupGuestBookName');	
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
 	});
@@ -1331,9 +1335,9 @@ $(function(){
 			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-					const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-					const newComment = document.createlist-item('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-					const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const newComment = document.createlist-item('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 		    },
 		    error: function(req){
 		        console.log('error', req);
