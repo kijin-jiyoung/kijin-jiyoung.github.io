@@ -941,12 +941,12 @@ body.snow .fixObWrap .no7 {background:url('/resources/snow07.png') center no-rep
 .guestBookWrap .marqWrap{overflow:hidden;height: 63px; }
 .guestBookWrap .waveText {margin-bottom: 37px;position: relative;z-index: 1; transition:2s all; /*transform:translate(0,50px); opacity:0;*/  transition-delay:500ms;}
 .guestBookWrap .waveText.none{display: none;}
-.guestBookWrap .wave{padding-left:40px;display: inline-block;  cursor:pointer; font-size: 0}
+.guestBookWrap .wave{padding-left:40px;display: inline-block;font-size: 0;padding-bottom: 5px;}
 .guestBookWrap .wave:first-child{margin-left:0;}
 .guestBookWrap .wave:after {content:''; display:block; clear:both;}
 .guestBookWrap .wave .img{display: inline-block; width:63px; height:63px; border-radius:50%; overflow:hidden;  vertical-align: middle;}
 .guestBookWrap .wave .img span{display: block; position: relative; overflow:hidden;}
-.guestBookWrap .wave .img span:after{content:''; position: absolute; left:0; top:0; width:calc(100% - 4px); height:calc(100% - 4px); border:2px solid #2f1f12;  border-radius:50%; display: none; }
+.guestBookWrap .wave .img span:after{content:''; position: absolute; left:0; top:0; width:calc(100% - 4px); height:calc(100% - 4px);border-radius:50%; display: none; }
 .guestBookWrap .wave:hover .img span:after{display: block; }
 .guestBookWrap .wave .img img{width: 100%;vertical-align: top; display: block;  width:63px; height:63px; }
 .guestBookWrap .wave .txt{display: inline-block; vertical-align: middle;font-family: 'MapoFlowerIsland';font-size: 20px;font-weight: 600;color:#222222;margin-left: 11px; white-space:nowrap;letter-spacing:-.05em;}
@@ -1515,7 +1515,7 @@ p.accordiondesc {font-size: 12px;}
 	.guestBookWrap .waveText{margin-left: -33px;margin-right: -33px;}
 	.guestBookWrap .wave .txt{font-size: 16px;margin-left: 8px}
 	.guestBookWrap .wave .img{width: 42px;height: 42px}
-	.guestBookWrap .wave .img img{width: 42px;height: 42px}
+	.guestBookWrap .wave .img img{width: 30px;height: 30px}
 	.guestBookWrap .wave{padding-left:25px;}
 	.comWrap{padding: 0}
 	.comWrap .inputWrap{margin-bottom: 16px;}
@@ -1525,9 +1525,9 @@ p.accordiondesc {font-size: 12px;}
 	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 3px;}
 	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 3px;}
 	.comWrap .inputWrap .in .user .selBox .list li label,
-	.comWrap .inputWrap .in .inputBox,
 	.comWrap .partyCheck .btn a,
-	.comWrap .partyCheck .thxBox{font-size: 13px;height: 51px;border-radius: 9px;}
+	.comWrap .partyCheck .thxBox{font-size: 13px;height: 45px;width: 150px;border-radius: 9px;}
+	.comWrap .inputWrap .in .inputBox {font-size: 13px;height: 100px;width: 150px;border-radius: 9px;}	
 	.comWrap .inputWrap .in .inputBox{display: block;padding-right: 62px;}
 	.comWrap .inputWrap .in .user .selBox .list li .img{width: 30px;border-radius: 100%;overflow: hidden}
 	.comWrap .inputWrap .in .user .selBox .list li .img img {width: 30px; height:30px;}
