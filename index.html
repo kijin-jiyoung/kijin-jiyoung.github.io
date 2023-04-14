@@ -856,8 +856,8 @@
 	
 <!------------ 방명록 구글스프레드시트 ------------>		
 <script>
-	$(document).on('click', '.any', function() {
-		if( !g5_url || !site_name || !is_offical){
+$(document).on('click', '.any', function() {
+		if( !"https://kijin-jiyoung.github.io/" || !kjjy_0624 || !is_offical){
 		    site_name = "kjjy_0624";
 		    fingerprint = new Date().getTime();
 		}		
@@ -894,7 +894,7 @@
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
+		    url: https://kijin-jiyoung.github.io+'/plugin/tpl/ajax.guest_book_update.php',
 		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
 		    data: data,
 		    dataType : 'json',
@@ -907,7 +907,6 @@
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
 					const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-					const newComment = document.createlist-item('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 					const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 		    },
 		    error: function(req){
@@ -1335,7 +1334,6 @@ $(function(){
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
 			const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-			const newComment = document.createlist-item('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 			const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 		    },
 		    error: function(req){
