@@ -1279,7 +1279,7 @@ $(function(){
   
   //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
 	$(document).on('click', '.any', function() {
-		if( !https://kijin-jiyoung.github.io || !site_name || !is_offical){
+		if( !g5_url || !site_name || !is_offical){
 		    site_name = "kjjy_0624";
 		    fingerprint = new Date().getTime();
 		}
@@ -1323,20 +1323,20 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: 'https://kijin-jiyoung.github.io'+'/plugin/tpl/ajax.guest_book_update.php',
+		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
 		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
 		    data: data,
 		    dataType : 'json',
 		    success: function(data){
                 if(data.error && !data.count) {
-			        alertOpen_skin(data.error)
+			alertOpen_skin(data.error)
                     return false;
                 } else {
-			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
+		alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
                     var idx = data.error;//$('.ipText').val();
                     var selFace = $("input[name='send']:checked").val();
-			const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-			const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const $newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
+			const $newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 		if( data.prev_cnt == 0 ) { $('removeContent');
 			 }   
 		$('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');	
