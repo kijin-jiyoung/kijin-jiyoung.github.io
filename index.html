@@ -1281,14 +1281,16 @@ $(function(){
 	$(document).on('click', '.any', function() {
 		if( !https://kijin-jiyoung.github.io || !site_name || !is_offical){
 		    site_name = "kjjy_0624";
-		    fingerprint = new Date().getTimestamp();
+		    fingerprint = new Date().getTime();
 		}
+		       
 		if( !fingerprint ) {
 		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
 		    return false;
 		}
 			
-		$popupGuestBookName = document.querySelector('#popupGuestBookName');	
+		$popupGuestBookName = document.querySelector('#popupGuestBookName');
+	
 		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
 	});
 	
@@ -1298,7 +1300,7 @@ $(function(){
 	if( $btnGuestBookSubmit ) {
 	    $btnGuestBookSubmit.addEventListener('click', () => {
 	        if( !$gb_name.value ) {
-	            $gb_name.classList.add("작성자 이름을 입력해주세요.");
+	            $gb_name.classList.add("gb_name_error");
 	            return false;
 	        }
 	        basePopClose('.basePop')
@@ -1307,7 +1309,7 @@ $(function(){
 	}
 	if( $gb_name ) {
 	    $gb_name.addEventListener('input', () => {
-	        $gb_name.classList.remove("작성자 이름을 입력해주세요.");
+	        $gb_name.classList.remove(gb_name_error");
 	    });
 	}
 	function submitGuestBook() {
@@ -1321,7 +1323,7 @@ $(function(){
 		$gb_name ? data += "&gb_name="+$gb_name.value : "";
 		$.ajax({
 		    method:'POST',
-		    url: 'https://kijin-jiyoung.github.io/'+'/plugin/tpl/ajax.guest_book_update.php',
+		    url: 'https://kijin-jiyoung.github.io'+'/plugin/tpl/ajax.guest_book_update.php',
 		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
 		    data: data,
 		    dataType : 'json',
@@ -1335,9 +1337,14 @@ $(function(){
                     var selFace = $("input[name='send']:checked").val();
 			const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
 			const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-		    },
-		    error: function(req){
-		        console.log('error', req);
+		if( data.prev_cnt == 0 ) { $('removeContent');
+			 }   
+		$('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');	
+		$("#gb_comment").val("");
+	}
+	},
+	 error: function(req){
+	   console.log('error', req);
 		    }
 		});
 	}
