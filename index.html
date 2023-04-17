@@ -188,7 +188,7 @@
                         <div class="pop"><a href="javascript:;" onclick="copy_to_clipboard('https://kijin-jiyoung.github.io')">홈페이지 주소 복사</a></div>
                     </li>				
 	
-                    <li class="kakao" id="kakao-link-btn">
+                    <li class="kakao" id="kakaotalk-sharing-btn">
                         <a class="ico" href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오</a>
                         <div class="pop">
 			<a href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
@@ -967,14 +967,6 @@ $(document).on('click', '.any', function() {
 <br>
 <br>
 
-<!------------ 알럿 팝업------------>
-<div class="alertPop">
-        <div class="bg" onclick="alertClose_skin()"></div>
-        <div class="in">
-            <div class="title">복사되었습니다.</div>
-            <div class="btn"><button type="button" onclick="alertClose_skin()">확인</button></div>
-        </div>
-    </div>
 
 <!------------ 갤러리슬라이드 팝업------------>
 <div class="popSlide">
@@ -1108,9 +1100,22 @@ $(document).on('click', '.any', function() {
         <button type="button" class="btnClose" onclick="imgPopClose();">닫기</button>
     </div>
     <!-- //popImg -->
-	
+
+								       
+
+<!------------ 알럿 팝업------------>
+<div class="alertPop">
+        <div class="bg" onclick="alertClose_skin()"></div>
+        <div class="in">
+            <div class="title">URL이 복사되었습니다.</div>
+            <div class="btn"><button type="button" onclick="alertClose_skin()">확인</button></div>
+        </div>
+    </div>								       
+					       
+								       
 	
 <!------------ 메시지 팝업 ------------>
+		   
 		
 <div id="popupGuestBookName" class="basePop">
 	<div class="bg" onclick="basePopClose('.basePop')"></div>
