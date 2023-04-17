@@ -1610,6 +1610,23 @@ function openInterview(){
 }	     
 
 
+// 버튼 클릭 시 맨 위로 이동
+const $topBtn = document.querySelector(".btnTop");
+$topBtn.onclick = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });  
+}
+
+// 버튼 클릭 시 페이지 하단으로 이동
+const $bottomBtn = document.querySelector(".btnDown");
+$bottomBtn.onclick = () => {
+  window.scrollTo({ 
+    top: document.body.scrollHeight, // <- 페이지 총 Height
+    behavior: "smooth" 
+  });
+};
+
+	
+	
   </script>	  	
      
 <script src='https://www.dddproject.com/plugin/tpl/js/utils.js?t=1678934723'></script>	     
