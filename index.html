@@ -174,9 +174,9 @@
 </div>
 </div>	
  </li>		
-  <li class="sound btnControl on">
+  <li class="sound btnControl">
     <a class="ico" href="javascript:;">사운드</a>
-       <div class="pop"><a href="javascript:;">BGM on</a></div>
+       <div class="pop"><a href="javascript:;">BGM off</a></div>
          <div class="audioWrap">
          <audio id="bgmAudio" autoplay="autoplay" loop="loop" preload="auto">	 
 	 <source src="https://kijin-jiyoung.github.io/resources/bgm.mp3" type="audio/mp3">
@@ -1627,35 +1627,28 @@ $bottomBtn.onclick = () => {
   
 				
 				
-<!------------------------ 복사 ------------------------>					
+<!------------------------ bgm ------------------------>					
 
 <script>
-    // Audio 객체 설정
-    const myAudio = new Audio();
-    myAudio.src = "./resources/bgm.mp3";
-
-    // 오디오 재생: 크롬브라우저에서 작동 안함
-    myAudio.play();
-
-    // 버튼 취득
-    const soundon = document.getElementById("soundon");
-    const soundoff = document.getElementById("soundoff");
-
-    // 재생 버튼
-    soundon.onclick = function () {
-        myAudio.play();
-    }
-
-
-    // 정지 버튼
-    soundoff.onclick = function () {
-        myAudio.pause();
-        myAudio.currentTime = 0; // 재생시간을 처음으로 설정
-    }
+   var playBgm = document.getElementById("bgmAudio");
+	//playBgm.play();
+	//playBgm ? playBgm.pause() : "";
+	$('.btnControl a').on('click', function(e){
+		e.preventDefault();
+		$('.btnControl').toggleClass('on');
+		if($('.btnControl').hasClass('on')){
+			playBgm.play();
+			$('.btnControl .pop a').text('BGM on');
+		} else {
+			playBgm.pause();
+			playBgm.currentTime = 0;
+			$('.btnControl .pop a').text('BGM off');
+		}
+	});
 
 </script>			
 				
-<!------------------------ 복사 ------------------------>					
+<!------------------------ bgm  ------------------------>					
 				
 	
  <!-- 카카오내비 -->
