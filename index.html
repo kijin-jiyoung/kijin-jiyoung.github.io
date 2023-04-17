@@ -188,9 +188,10 @@
                         <div class="pop"><a href="javascript:;" onclick="copy_to_clipboard('https://kijin-jiyoung.github.io')">홈페이지 주소 복사</a></div>
                     </li>				
 	
-                    <li class="kakao" id="kakaotalk-sharing-btn">
+                    <li class="kakao" id="kakao-link-btn">
                         <a class="ico" href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오</a>
-                        <div class="pop"><a href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
+                        <div class="pop">
+			<a href="javascript:;" onclick="kakaolink_send('이기진❤️윤지영의 결혼식에 초대합니다.','2023년 6월 24일 11시 30분\세빛섬 플로팅아일랜드','https://kijin-jiyoung.github.io/photo/Main_1.jpg')">카카오톡로 보내기</a></div>
                     </li>
                 </ul>
             </div>
@@ -1738,7 +1739,21 @@ function smsSend(idx){ //Android, IOS, 자동분기
     description: '6월 24일 11시30분 세빛섬 플로팅아일랜드',
     },
 });
-		
+
+	
+<script>
+window.addEventListener("DOMContentLoaded", () => {
+    addScript('head','//t1.kakaocdn.net/kakao_js_sdk/v1/kakao.min.js', () => {
+        window.kakaoShareLoaded = true;
+        Kakao.init('a1065c1dcc6c5f9c31db033eb0ba55c4');
+    })
+});
+
+</script>	
+	
+	
+	
+	
 </script>						
 <!-- 카카오톡 공유 -->	
 
