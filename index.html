@@ -1237,30 +1237,7 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 </script>
 <!------------ 참석조사 구글스프레드시트 ------------>
 
-	
-<script>
-$(function(){
-    // For Android
-    $(document).bind("contextmenu", function (e) {
-        return false;
-    })
-    
-    $("a").on("contextmenu", (e) => {
-        e.preventDefault();
-        return false;
-    })
-    
-   //$("img").attr("oncontextmenu","return false").attr("style","-webkit-touch-callout:none");
-    
-    setTimeout(function(){
-        try{
-            var map_level = map.getLevel();
-            map.setLevel(map_level + 1);
-            map.setLevel(map_level);
-        } catch(e){}
-    },1000);
-});
-</script>
+
 	
 	
 
@@ -1525,7 +1502,7 @@ $(function(){
 <script>
     var swiper = new Swiper(".mySwiper", {
       loop: true,
-      freeMode: true,
+      slidesPerView: 1,
       spaceBetween: 0,
       effect: "fade",
 	    on: {
@@ -1609,7 +1586,7 @@ function openInterview(){
 	noScrollRun();
 }	     
 
-
+<!------------------------ 스크롤 ------------------------>	
 // 버튼 클릭 시 맨 위로 이동
 const $topBtn = document.querySelector(".btnTop");
 $topBtn.onclick = () => {
@@ -1626,9 +1603,13 @@ $bottomBtn.onclick = () => {
 };
 
 	
-	
   </script>	  	
-     
+<!------------------------ 스크롤 ------------------------>		
+				
+				
+				
+				
+				
 <script src='https://www.dddproject.com/plugin/tpl/js/utils.js?t=1678934723'></script>	     
 	     
 	     
