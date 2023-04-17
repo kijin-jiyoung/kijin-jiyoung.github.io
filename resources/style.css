@@ -1521,7 +1521,7 @@ p.accordiondesc {font-size: 12px;}
 	.comWrap{padding: 0}
 	.comWrap .inputWrap{margin-bottom: 16px;}
 	.comWrap .inputWrap .in{display: block;}
-	.comWrap .inputWrap .in .user{width: 95%;margin-bottom: 0px;}
+	.comWrap .inputWrap .in .user{width: 100%;margin-bottom: 0px;}
 	.comWrap .inputWrap .in .user .selBox .list li{margin: 0px;width: 50%}
 	.comWrap .inputWrap .in .user .selBox .list li:first-child{padding-right: 5px;}
 	.comWrap .inputWrap .in .user .selBox .list li:last-child{padding-left: 5px;}
