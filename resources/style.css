@@ -1310,7 +1310,7 @@ body.showImg .popImg{visibility: visible;opacity: 1}
 
     
 h3.maintitle {font-size:18px;letter-spacing: 1.5px;text-align: center;vertical-align: middle;justify-content: center;margin: 0px 0 30px;color: #000;}             
-p.invitation  {font-size:14px;padding: 0px 33px 0px;}
+p.invitation  {font-size:14px;padding: 0px 0px 0px;}
 .swiper-slide{padding: 0px 33px 0px;}
 p.maincontentname{font-size: 25px;}	
 p.maincontent{font-size: 15px;}     
