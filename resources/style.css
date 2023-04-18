@@ -295,12 +295,12 @@ img.kakotalk {
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnGalBigLeft.png) 50% 50% repeat;
-height: 32px;
-width: 32px;
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat saddlebrown;
+height: 36px;
+width: 36px;
 cursor: pointer;
-top: -162px;
-left: -5px;	
+top: -166px;
+left: -10px;	
 z-index: 1;
 position: relative;	
 border-radius: 50px;	
@@ -308,13 +308,13 @@ border-radius: 50px;
 	
 .swiper-button-next {
 padding: 5px 0px 5px 0px;
-height: 32px;
-width: 32px;	
-background: url(/resources/btnGalBigRight.png) 50% 50% repeat;	
+height: 36px;
+width: 36px;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat saddlebrown;	
 cursor: pointer;
 top: -130px;
 z-index: 1;	
-left: 300px;	
+left: 305px;	
 position: relative;
 border-radius: 50px;	
 }
