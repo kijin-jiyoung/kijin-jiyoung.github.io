@@ -296,11 +296,11 @@ img.kakotalk {
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
 background: url(/resources/btnGalBigLeft.png) 50% 50% repeat saddlebrown;
-height: 36px;
-width: 36px;
+height: 45px;
+width: 45px;
 cursor: pointer;
-top: -166px;
-left: -10px;	
+top: -325px;
+left: -45px;	
 z-index: 1;
 position: relative;	
 border-radius: 50px;	
@@ -308,13 +308,13 @@ border-radius: 50px;
 	
 .swiper-button-next {
 padding: 5px 0px 5px 0px;
-height: 36px;
-width: 36px;	
+height: 45px;
+width: 45px;	
 background: url(/resources/btnGalBigRight.png) 50% 50% repeat saddlebrown;	
 cursor: pointer;
-top: -130px;
-z-index: 1;	
-left: 305px;	
+    top: -280px;
+    z-index: 1;
+    left: 540px;
 position: relative;
 border-radius: 50px;	
 }
@@ -1356,12 +1356,33 @@ p.maincontent{font-size: 15px;}
 p.accordiondesc {font-size: 12px;}	
 .locationInner .tit02 {margin-bottom: 18px;font-size: 14px;line-height: 1.5;}
 
+
+.swiper-button-prev {
+padding: 5px 0px 5px 0px;	
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat saddlebrown;
+height: 36px;
+width: 36px;
+cursor: pointer;
+top: -166px;
+left: -10px;	
+z-index: 1;
+position: relative;	
+border-radius: 50px;	
+}	
 	
-	
-	
-	
-	
-	
+.swiper-button-next {
+padding: 5px 0px 5px 0px;
+height: 36px;
+width: 36px;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat saddlebrown;	
+cursor: pointer;
+top: -130px;
+z-index: 1;	
+left: 305px;	
+position: relative;
+border-radius: 50px;	
+}
+
 	
 
 
