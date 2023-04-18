@@ -293,13 +293,24 @@ img.kakotalk {
     transition-property: transform,-webkit-transform;
 }
 
-.swiper-button-prev,
+.swiper-button-prev {
+  padding: 5px 0px 5px 0px;	
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat;
+height: 32px;
+width: 32px;
+cursor: pointer;
+top: -130px;	
+z-index: 1;	
+}	
+	
 .swiper-button-next {
-  background-color: #fff;
-  opacity: 0.5;
-  padding: 15px 5px;
-  border-radius: 20px;
-  color: black !important;
+  padding: 5px 0px 5px 0px;
+height: 32px;
+    width: 32px;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat;	
+cursor: pointer;
+top: -130px;
+z-index: 1;	
 }
 
 .swiper-button-prev:after,
