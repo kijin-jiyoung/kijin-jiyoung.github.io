@@ -1069,7 +1069,11 @@ $(document).on('click', '.any', function() {
 <div class="swiper-slide swiper-slide-duplicate swiper-slide-prev swiper-slide-duplicate-next" data-swiper-slide-index="23" style="width: 348px;">
 <div class="slide"><img src="https://kijin-jiyoung.github.io/photo/noma23.jpg" alt="슬라이드"></div>
 </div>		
-	
+
+<div class="swiper-slide swiper-slide-duplicate swiper-slide-active" data-swiper-slide-index="24" style="width: 348px;">
+<div class="slide"><img src="https://kijin-jiyoung.github.io/photo/noma24.jpg" alt="슬라이드"></div>
+</div>												 								 
+											 
 </div>
 </div> 
 	
@@ -1538,7 +1542,7 @@ $(function(){
 		});
 		var slideActive = $(this).attr("slide-num");
 		popSlide.update();
-		popSlide.slideTo(slideActive, 1);
+		popSlide.slideTo(slideActive-1, 1);
 	});
 	// 갤러리팝업 -  닫기
 	$(".popSlide .closeSlide").click(function(){
