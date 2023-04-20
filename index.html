@@ -812,16 +812,10 @@
 </td>
 </tr>
 </table>
+<ol id="comment-list" class="layout"></ol>
 </div>	
-
-<script type="text/javascript" src="/js/guestbook.js"></script>
-	
 <br>	
 <br>	
-<ol id="comment-list" class="layout"></ol>	
-
-
-	
 <!------------ 방명록 구글스프레드시트 ------------>		
 </div>	
 </section>	
@@ -1113,134 +1107,10 @@ $("h3.accordion,.accordiondesc").on('click',function(){
 
 
 	
+<!------------ 방명록 자바 ------------>	
+<script type="text/javascript" src="/js/guestbook.js"></script>	
 	
-
-	
-<!------------ 방명록 구글스프레드시트 ------------>	
-	
-<script>
-    //사람 바꾸기
-    $('.comWrap .list label').on('click', function(){
-    	
-    	const selIdx = $(this).parents('li').index() + 1;
-    	const selTextarea = $(this).html();
-    	const selFace = $(this).siblings('input').val();
-    	$('#gb_to').val( $(this).siblings('input').data('gb_to') );
-    
-    	if( $('.selBox .tit').length ) {
-        	if( !selFace )  {
-        	    $('.user .img img').attr('src','./images/textarea_img'+selIdx+'.png');
-        	} else {
-        	    $('.user .img img').attr('src',selFace);
-        	}
-        	
-        	$(this).parents('li').addClass('hidden').siblings().removeClass('hidden');
-        	$('.selBox .tit span').html(selTextarea);
-        
-        	$('.selBox .list').slideToggle('fast');
-        	
-        	$('.selBox').toggleClass('active');
-        }
-      
-    });
-    
-    </script>	
-<style>
-.gb_name_error {
-    border:1px solid #f76868 !important;
-}
-</style>	
-
-<script>
-  
-  //메시지 삽입 ( 임시로 배열에 푸쉬하게 해놓음 )
-	$(document).on('click', '.any', function() {
-		if( !g5_url || !site_name || !is_offical){
-		    site_name = "kjjy_0624";
-		    fingerprint = new Date().getTime();
-		}
-		
-		if( !fingerprint ) {
-		    alertOpen_skin(__('광고차단 프로그램을 종료해주세요.'))
-		    return false;
-		}
-		
-		$popupGuestBookName = document.querySelector('#popupGuestBookName');
-		
-		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
-		
-		//$marquee.liMarquee('stop');
-		//$marquee.liMarquee('resetPosition');
-
-	});
-	
-	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
-	const $gb_name = document.querySelector('#gb_name');
-	
-	if( $btnGuestBookSubmit ) {
-	    $btnGuestBookSubmit.addEventListener('click', () => {
-	        if( !$gb_name.value ) {
-	            $gb_name.classList.add("gb_name_error");
-	            return false;
-	        }
-	        basePopClose('.basePop')
-	        submitGuestBook();
-	    });
-	}
-	if( $gb_name ) {
-	    $gb_name.addEventListener('input', () => {
-	        $gb_name.classList.remove("gb_name_error");
-	    });
-	}
-	function submitGuestBook() {
-	    if( !document.fguest_book.gb_comment.value ) {
-            alertOpen_skin(__('축하메시지를 작성해 주세요.'))
-		    return false;
-		}
-		var data = $('#fguest_book').serialize();
-		data+="&fingerprint="+fingerprint;
-		
-		$gb_name ? data += "&gb_name="+$gb_name.value : "";
-		$.ajax({
-		    method:'POST',
-		    url: g5_url+'/plugin/tpl/ajax.guest_book_update.php',
-		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',			
-		    data: data,
-		    dataType : 'json',
-		    success: function(data){
-                if(data.error && !data.count) {
-			        alertOpen_skin(data.error)
-                    return false;
-                } else {
-			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
-                    var idx = data.error;//$('.ipText').val();
-                    var selFace = $("input[name='send']:checked").val();
-			 const $marquee =  $('.marqWrap');
-                    if( data.prev_cnt == 0 ) {
-                        $marquee.liMarquee('removeContent');
-                    }
-                    $marquee.liMarquee('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-                    $("#gb_comment").val(""); 
-                }
-		    },
-		
-		    error: function(req){
-		        console.log('error', req);
-		    }
-		});
-	}
-	function basePopOpen(idx){
-    	$(idx).fadeIn('fast');
-    }
-    function basePopClose(idx){
-    	$(idx).fadeOut('fast');
-    }
-</script>
-	
-<!------------ 방명록 구글스프레드시트 ------------>	
-	
-	
-	
+<!------------ 방명록 자바 ------------>	
 	
 	
 	
