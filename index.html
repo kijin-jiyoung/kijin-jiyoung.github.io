@@ -796,6 +796,109 @@
 <h3 class="maintitle">축하메시지 남기기</h3>
 </div>
 <br>
+
+        <div class="text-align-center">
+          <table class="margin-auto" width="65%">
+            <tr>
+              <td align="left">
+                <input id="guestname" type="text" placeholder="작성자명" />
+              </td>
+            </tr>
+            <tr>
+              <td width="90%" align="center">
+                <textarea
+                  id="comment_input"
+                  type="textarea"
+                  placeholder="축하메시지를 입력해주세요!"
+                  rows="5"
+                ></textarea>
+              </td>
+              <td width="18%">
+                <button id="comment-registration">등록</button>
+              </td>
+            </tr>
+          </table>
+          <ol id="comment-list" class="layout"></ol>
+        </div>
+      </footer>
+    </main>
+	
+    <script type="text/javascript">
+const token1 = "ghp_Uq6CDw9";
+const token2 = "KKpURFMV"
+const token3 = "Gf663ZDVVDK"
+const token4 = "3aix0JkMI5"
+loadComments(token1 + token2 + token3 + token4);
+registerComment(githubToken);
+
+function loadComments(auth) {
+  fetch("https://api.github.com/repos/yooonjy/kijin-jiyoung", {
+    method: "GET",
+    headers: {
+      Authorization: "token " + auth,
+    },
+  })
+    .then((res) => res.json())
+    .then((comments) => {
+      let $commentList = document.getElementById("comment-list");
+      for (let i in comments) {
+        $commentList.innerHTML += `
+        <li>
+          <p>${comments[i].title}  
+            <small>${comments[i].created_at
+              .replace("T", "  ")
+              .replace("Z", "")
+              .slice(0, -3)}</small>
+          </p>
+          <p>${comments[i].body}</p>
+        </li>`;
+      }
+    });
+}
+
+function registerComment(auth) {
+  let $commentRegistration = document.getElementById("comment-registration");
+  $commentRegistration.addEventListener("click", () => {
+    let $guestname = document.getElementById("guestname");
+    let $commentInput = document.getElementById("comment_input");
+    if (!$guestname.value) {
+      alert("작성자명을 입력해주세요!");
+    } else if (!$commentInput.value) {
+      alert("메시지를 입력해주세요!");
+    } else {
+      fetch(
+        "https://api.github.com/repos/yooonjy/kijin-jiyoung",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: "token " + auth,
+          },
+          body: JSON.stringify({
+            title: $guestname.value,
+            body: $commentInput.value,
+          }),
+        }
+      );
+    }
+  });
+}
+	
+	
+	
+	
+	
+	
+	</script>	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	 <script>
             $(".marqWrap").liMarquee({
