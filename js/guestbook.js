@@ -1,12 +1,14 @@
-const token1 = "ghp_Uq6CDw9";
-const token2 = "KKpURFMV"
-const token3 = "Gf663ZDVVDK"
-const token4 = "3aix0JkMI5"
+
+
+const token1 = "ghp_1K9GR7j";
+const token2 = "8zLyotbD"
+const token3 = "90ZkFh92EaJ"
+const token4 = "7Glu3ebF4n"
 loadComments(token1 + token2 + token3 + token4);
 registerComment(githubToken);
 
 function loadComments(auth) {
-  fetch("https://api.github.com/repos/yooonjy/kijin-jiyoung/issues", {
+  fetch("https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung/issues", {
     method: "GET",
     headers: {
       Authorization: "token " + auth,
@@ -41,7 +43,7 @@ function registerComment(auth) {
       alert("메시지를 입력해주세요!");
     } else {
       fetch(
-        "https://api.github.com/repos/yooonjy/kijin-jiyoung/issues",
+        "https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung/issues",
         {
           method: "POST",
           headers: {
