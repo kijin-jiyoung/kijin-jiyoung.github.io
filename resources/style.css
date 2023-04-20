@@ -1704,8 +1704,8 @@ border-radius: 50px;
 	.quickWrap .linkList ul li.sound .ico,
 	.quickWrap .linkList ul li.link .ico{background-position: 50% 50%}
 	.quickWrap .linkList .pop{display: none;}
-	.quickWrap .linkList ul li.sound .ico {background:url('/resources/btnSoundOn.png') 50% 55% no-repeat;background-size: 20px auto}
-        .quickWrap .linkList ul li.sound.on .ico {background-image: url('/resources/btnSoundOff.png');}
+	.quickWrap .linkList ul li.sound .ico {background:url('/resources/btnSoundOff.png') 50% 55% no-repeat;background-size: 20px auto}
+        .quickWrap .linkList ul li.sound.on .ico {background-image: url('/resources/btnSoundOn.png');}
 	
 	
 	
