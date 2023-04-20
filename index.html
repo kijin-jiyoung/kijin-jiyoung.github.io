@@ -818,12 +818,10 @@
               </td>
             </tr>
           </table>
-          <ol id="comment-list" class="layout"></ol>
-        </div>
-      </footer>
-    </main>
-	
-    <script type="text/javascript">
+        </div>	
+
+<script type="text/javascript">
+	    
 const token1 = "ghp_Uq6CDw9";
 const token2 = "KKpURFMV"
 const token3 = "Gf663ZDVVDK"
@@ -832,7 +830,7 @@ loadComments(token1 + token2 + token3 + token4);
 registerComment(githubToken);
 
 function loadComments(auth) {
-  fetch("https://api.github.com/repos/yooonjy/kijin-jiyoung", {
+  fetch("https://api.github.com/repos/yooonjy/kijin-jiyoung/issues", {
     method: "GET",
     headers: {
       Authorization: "token " + auth,
@@ -867,7 +865,7 @@ function registerComment(auth) {
       alert("메시지를 입력해주세요!");
     } else {
       fetch(
-        "https://api.github.com/repos/yooonjy/kijin-jiyoung",
+        "https://api.github.com/repos/yooonjy/kijin-jiyoung/issues",
         {
           method: "POST",
           headers: {
@@ -884,173 +882,34 @@ function registerComment(auth) {
   });
 }
 	
+let $time = document.getElementById("time");
+let $date = document.getElementById("date");
+
+function getTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const date = now.getDate();
+  $date.innerText = year + "-" + month + "-" + date;
+
+  let hour = now.getHours();
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+  let amOrPm = (hour < 12) ? "오전" : "오후";
+  hour = (hour === 12) ? hour : hour % 12;
+  $time.innerText = amOrPm + " " + hour + ":" + minute + ":" + second;
+}
+setInterval(getTime, 1000);	
+	    
+</script>
 	
-	
-	
-	
-	
-	</script>	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	 <script>
-            $(".marqWrap").liMarquee({
-                  removeContentFadeDuration:0,
-                  scrollAmount: 6,
-                  circular:true,
-                  startShow:true,
-          	});
-          	</script>
-	
-	
-	
-	
-	
-	
-	
-                    <!-- comWrap -->
-                    <div class="comWrap">
-                        <!-- inputWrap -->
-                        <div class="inputWrap">
-                            <form name="fguest_book" id="fguest_book" onsubmit="return false">
-                         <input type="hidden" name="gb_to" id="gb_to" value="tpl_maleface">
-			 <input type="hidden" name="ca_name" value="청첩장">
-			 <input type="hidden" name="site_name" value="kjjy_0624">
-			<div class="in">
-                     <div class="user">
-                    <div class="selBox">
-                      <ul class="list">
-                         <li>
-                            <input type="radio" checked name="send" id="h02" value="https://kijin-jiyoung.github.io/photo/kj.png" data-gb_to="tpl_maleface">
-                            <label for="h02"><div class="img"><img src="https://kijin-jiyoung.github.io/photo/kj.png" alt></div>신랑에게</label>
-                         </li>		    
-                          <li>
-                            <input type="radio" name="send" id="h01" value="https://kijin-jiyoung.github.io/photo/jy.png" data-gb_to="tpl_femaleface">
-                            <label for="h01"><div class="img"><img src="https://kijin-jiyoung.github.io/photo/jy.png" alt></div>신부에게</label>
-                           </li>   
-                       </ul>
-                       </div>
-                      </div>
-          <div class="inputBox"">
-             <input type="textarea" name="gb_comment" id="gb_comment" class="ipText" placeholder="축하메시지를 입력해주세요.">
-            <div class="btnComment"><a href="javascript:;" class="any">등록</a></div>
-                                    </div>
-                                </div>
-                            </form>	
-                        </div>
-                      <!-- //inputWrap -->    
-                  </div>
-                <!-- //comWrap -->
+<br>	
+<br>	
+<ol id="comment-list" class="layout"></ol>	
 
 
 	
-	
-	
-<div class="mt">
-<!-- waveText -->	
-<div class="waveText">		
-<div class="wave">
-<div class="img"><span><img src="https://kijin-jiyoung.github.io/photo/kj.png" alt="얼굴"></span></div>
-<div class="txt">축하합니다</div>
-<div class="guestName">미녀</div>
-</div>
-<div class="wave">
-<div class="img"><span><img src="https://kijin-jiyoung.github.io/photo/jy.png" alt="얼굴"></span></div>
-<div class="txt">축하합니다</div>
-<div class="guestName">후추</div>
-</div>	
-</div>		
-<!-- //waveText -->
-</div>	
-	
-	
-	
 <!------------ 방명록 구글스프레드시트 ------------>		
-<script>
-$(document).on('click', '.any', function() {
-		if( !"https://kijin-jiyoung.github.io/" || !kjjy_0624 || !is_offical){
-		    site_name = "kjjy_0624";
-		    fingerprint = new Date().getTime();
-		}		
-		$popupGuestBookName = document.querySelector('#popupGuestBookName');	
-		$popupGuestBookName ? basePopOpen('.basePop') : submitGuestBook();
-	});
-	
-	const $btnGuestBookSubmit = document.querySelector('#btnGuestBookSubmit');
-	const $gb_name = document.querySelector('#gb_name');
-	
-	if( $btnGuestBookSubmit ) {
-	    $btnGuestBookSubmit.addEventListener('click', () => {
-	        if( !$gb_name.value ) {
-	            $gb_name.classList.add("작성자 이름을 입력해주세요.");
-	            return false;
-	        }
-	        basePopClose('.basePop')
-	        submitGuestBook();
-	    });
-	}
-	if( $gb_name ) {
-	    $gb_name.addEventListener('input', () => {
-	        $gb_name.classList.remove("작성자 이름을 입력해주세요.");
-	    });
-	}
-	function submitGuestBook() {
-	    if( !document.fguest_book.gb_comment.value ) {
-            alertOpen_skin(__('축하메시지를 작성해주세요.'))
-		    return false;
-		}
-		var data = $('#fguest_book').serialize();
-		data+="&fingerprint="+fingerprint;
-		
-		$gb_name ? data += "&gb_name="+$gb_name.value : "";
-		$.ajax({
-		    method:'POST',
-		    url: https://kijin-jiyoung.github.io+'/plugin/tpl/ajax.guest_book_update.php',
-		    scripturl: 'https://script.google.com/macros/s/AKfycbxGza59iCJOjsBqlMucSOb79SerIH-ZDnkuGAtxTkM4Q_FL3B9MjnkjOhnpKQBRQjMMVg/exec',
-		    data: data,
-		    dataType : 'json',
-		    success: function(data){
-                if(data.error && !data.count) {
-			        alertOpen_skin(data.error)
-                    return false;
-                } else {
-			        alertOpen_skin(__('축하메시지를 남겨주셔서 감사합니다.'));
-                    var idx = data.error;//$('.ipText').val();
-                    var selFace = $("input[name='send']:checked").val();
-					const newComment = document.createContent('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-					const newComment.append('addContent','<div class="wave"><div class="img"><span><img src="'+selFace+'" alt="얼굴"></span></div><div class="txt">'+idx+'</div></div>');
-		    },
-		    error: function(req){
-		        console.log('error', req);
-		    }
-		});
-	}
-	function basePopOpen(idx){
-    	$(idx).fadeIn('fast');
-    }
-    function basePopClose(idx){
-    	$(idx).fadeOut('fast');
-    }
-</script>	
-	
-	
-	
-	
-	
-	
-	
-<!------------ 방명록 구글스프레드시트 ------------>		
-	
-	
-	
-	
 </div>	
 </section>	
 								     
@@ -1059,7 +918,7 @@ $(document).on('click', '.any', function() {
 
 
 
-<br>
+
 <br>
 <br>
 <br>
