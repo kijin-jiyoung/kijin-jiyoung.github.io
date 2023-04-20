@@ -1359,7 +1359,7 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnGalBigLeft.png) 50% 50% repeat saddlebrown;
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat #FEF7EE;
 height: 36px;
 width: 36px;
 cursor: pointer;
@@ -1374,7 +1374,7 @@ border-radius: 50px;
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-background: url(/resources/btnGalBigRight.png) 50% 50% repeat saddlebrown;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat #FEF7EE;
 cursor: pointer;
 top: -130px;
 z-index: 1;	
