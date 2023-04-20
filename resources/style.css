@@ -295,7 +295,7 @@ img.kakotalk {
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnGalBigLeft.png) 50% 50% repeat saddlebrown;
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat #FEF7EE;
 height: 45px;
 width: 45px;
 cursor: pointer;
@@ -310,7 +310,7 @@ border-radius: 50px;
 padding: 5px 0px 5px 0px;
 height: 45px;
 width: 45px;	
-background: url(/resources/btnGalBigRight.png) 50% 50% repeat saddlebrown;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat #FEF7EE;	
 cursor: pointer;
     top: -280px;
     z-index: 1;
@@ -1378,7 +1378,7 @@ background: url(/resources/btnGalBigRight.png) 50% 50% repeat #FEF7EE;
 cursor: pointer;
 top: -130px;
 z-index: 1;	
-left: 300px;	
+left: 290px;	
 position: relative;
 border-radius: 50px;	
 }
