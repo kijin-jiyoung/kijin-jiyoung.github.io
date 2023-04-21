@@ -1364,7 +1364,7 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-image: url(/resources/prev.png) #FEF7EE;
+background: url(/resources/prev.png) #FEF7EE;
 height: 36px;
 width: 36px;
 cursor: pointer;
@@ -1379,7 +1379,7 @@ border-radius: 50px;
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-image: url(/resources/next.png) #FEF7EE;
+background: url(/resources/next.png) #FEF7EE;
 cursor: pointer;
 top: -130px;
 z-index: 1;	
