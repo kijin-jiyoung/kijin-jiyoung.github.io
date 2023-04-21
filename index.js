@@ -6,7 +6,7 @@ loadComments(token1 + token2 + token3 + token4);
 registerComment(githubToken);
 
 function loadComments(auth) {
-  fetch("https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung.github.io/issues", {
+  fetch("https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung/issues", {
     method: "GET",
     headers: {
       Authorization: "token " + auth,
@@ -41,7 +41,7 @@ function registerComment(auth) {
       alert("축하메시지를 입력해주세요!");
     } else {
       fetch(
-        "https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung.github.io/issues",
+        "https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung/issues",
         {
           method: "POST",
           headers: {
