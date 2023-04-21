@@ -1,10 +1,9 @@
-const token1 = "ghp_1K9GR7j"
-const token2 = "8zLyotbD"
-const token3 = "90ZkFh92EaJ"
+const token1 = "ghp_1K9GR7j";
+const token2 = "8zLyotbD";
+const token3 = "90ZkFh92EaJ";
 const token4 = "7Glu3ebF4n";
-
-loadComments(auth);
-registerComment(auth);
+loadComments(token1 + token2 + token3 + token4);
+registerComment(githubToken);
 
 function loadComments(auth) {
   fetch("https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung.github.io/issues", {
