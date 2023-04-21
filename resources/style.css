@@ -294,7 +294,7 @@ img.kakotalk {
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnSlidePrev.png);
+background: url(/resources/btnGalBigLeft.png);
 height: 45px;
 width: 45px;
 cursor: pointer;
@@ -309,7 +309,7 @@ border-radius: 50px;
 padding: 5px 0px 5px 0px;
 height: 45px;
 width: 45px;	
-background: url(/resources/btnSlideNext.png);
+background: url(/resources/btnGalBigRight.png);
 cursor: pointer;
     top: -280px;
     z-index: 1;
@@ -1364,14 +1364,14 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnSlidePrev.png');
+background: url(/resources/btnSlidePrev.png') 50% 50% repeat;
 height: 36px;
 width: 36px;
 cursor: pointer;
 top: -166px;
 left: -10px;	
 z-index: 1;
-position: absolute;	
+position: relative;	
 border-radius: 5px;	
 }	
 	
@@ -1379,12 +1379,12 @@ border-radius: 5px;
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-background: url(/resources/btnSlideNext.png');
+background: url(/resources/btnSlideNext.png') 50% 50% repeat;
 cursor: pointer;
 top: -130px;
 z-index: 1;	
 left: 290px;	
-position: absolute;
+position: relative;
 border-radius: 5px;	
 }
 
