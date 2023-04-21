@@ -680,7 +680,13 @@ option {
 					
 					
 					
-					
+button:hover {
+  background-color: red;
+}
+
+#comment-list {
+  text-align: left;
+}					
 					
 					
 					
