@@ -1364,28 +1364,28 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/prev.png) #FEF7EE;
+background: url(/resources/btnGalBigRight.png') 0 0 no-repeat;left: 50px;right: auto;}
 height: 36px;
 width: 36px;
 cursor: pointer;
 top: -166px;
 left: -10px;	
 z-index: 1;
-position: relative;	
-border-radius: 50px;	
+position: absolute;	
+border-radius: 5px;	
 }	
 	
 .swiper-button-next {
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-background: url(/resources/next.png) #FEF7EE;
+background: url(/resources/btnGalBigRight.png');left: auto;right: 50px}
 cursor: pointer;
 top: -130px;
 z-index: 1;	
 left: 290px;	
-position: relative;
-border-radius: 50px;	
+position: absolute;
+border-radius: 5px;	
 }
 
 	
