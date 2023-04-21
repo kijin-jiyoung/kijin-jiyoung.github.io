@@ -1364,11 +1364,11 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnGalBigRight.png') 0 0 no-repeat;
+background: url(/resources/btnSlidePrev.png');
 height: 36px;
 width: 36px;
 cursor: pointer;
-top: -186px;
+top: -166px;
 left: -10px;	
 z-index: 1;
 position: absolute;	
@@ -1379,7 +1379,7 @@ border-radius: 5px;
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-background: url(/resources/btnGalBigRight.png');
+background: url(/resources/btnSlideNext.png');
 cursor: pointer;
 top: -130px;
 z-index: 1;	
