@@ -294,7 +294,7 @@ img.kakotalk {
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/prev.png) 50% 50% repeat #FEF7EE;
+background: url(/resources/btnSlidePrev.png);
 height: 45px;
 width: 45px;
 cursor: pointer;
@@ -309,7 +309,7 @@ border-radius: 50px;
 padding: 5px 0px 5px 0px;
 height: 45px;
 width: 45px;	
-background: url(/resources/next.png) 50% 50% repeat #FEF7EE;	
+background: url(/resources/btnSlideNext.png);
 cursor: pointer;
     top: -280px;
     z-index: 1;
