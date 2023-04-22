@@ -312,7 +312,7 @@ background: url(/resources/btnSlideNext.png) 50% 50% repeat;
 cursor: pointer;
 z-index: 1;
 top:45px;	
-left: 76%;
+left: 88%;
 position: relative;
 border-radius: 5px;	
 }
@@ -1373,8 +1373,7 @@ padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
 background: url(/resources/btnSlideNext.png) 50% 50% repeat;
-top:36px;
-left:80%;	
+top:36px;	
 }
 
 	
