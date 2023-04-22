@@ -298,11 +298,10 @@ background: url(/resources/btnGalBigLeft.png);
 height: 45px;
 width: 45px;
 cursor: pointer;
-top: -325px;
-left: -45px;	
+left: 12%;	
 z-index: 1;
 position: relative;	
-border-radius: 50px;	
+border-radius: 5px;	
 }	
 	
 .swiper-button-next {
@@ -311,11 +310,11 @@ height: 45px;
 width: 45px;	
 background: url(/resources/btnGalBigRight.png);
 cursor: pointer;
-    top: -280px;
-    z-index: 1;
-    left: 540px;
+z-index: 1;
+top:36px;	
+left: 80%;
 position: relative;
-border-radius: 50px;	
+border-radius: 5px;	
 }
 
 .swiper-button-prev:after,
@@ -1364,28 +1363,16 @@ p.accordiondesc {font-size: 12px;}
 
 .swiper-button-prev {
 padding: 5px 0px 5px 0px;	
-background: url(/resources/btnSlidePrev.png') 50% 50% repeat;
 height: 36px;
 width: 36px;
-cursor: pointer;
-top: -166px;
-left: -10px;	
-z-index: 1;
-position: relative;	
-border-radius: 5px;	
+background: url(/resources/btnGalBigLeft.png) 50% 50% repeat;	
 }	
 	
 .swiper-button-next {
 padding: 5px 0px 5px 0px;
 height: 36px;
 width: 36px;	
-background: url(/resources/btnSlideNext.png') 50% 50% repeat;
-cursor: pointer;
-top: -130px;
-z-index: 1;	
-left: 290px;	
-position: relative;
-border-radius: 5px;	
+background: url(/resources/btnGalBigRight.png) 50% 50% repeat;	
 }
 
 	
