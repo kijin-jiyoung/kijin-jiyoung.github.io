@@ -21,8 +21,8 @@ function loadComments(auth) {
         <li>
           <p style="font size="16px;"><b>${comments[i].title}</b>
             <small>${moment(comments[i].created_at
-                  .toDate();
-                  .toLocaleString();}
+                  .toDate()
+                  .toLocaleString()}
                   </small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
