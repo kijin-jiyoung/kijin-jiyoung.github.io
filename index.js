@@ -18,6 +18,7 @@ function loadComments(auth) {
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
+          <p>${comments[i].id}.</p>
           <p style="font size="16px;"><b>${comments[i].title}</b>
             <small>${comments[i].created_at
               .replace("T", "  ")
