@@ -20,7 +20,10 @@ function loadComments(auth) {
          $commentList.innerHTML += `
         <li>
           <p style="font size="16px;"><b>${comments[i].title}</b>
-            <small>${moment(comments[i].created_at).toDate().toLocaleString()}</small>
+            <small>
+            .replace("T", "  ")
+              .replace("Z", "")
+              .slice(0, -3)}</small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
         </li><hr>`;
