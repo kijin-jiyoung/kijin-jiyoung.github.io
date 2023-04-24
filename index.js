@@ -28,7 +28,19 @@ function loadComments(auth) {
         </li>`;
       }
     });
+exampleArray.sort(function(a, b){
+  return a.id - b.id
+})  
+  
+  
+  
 }
+
+
+
+
+
+
 
 function registerComment(auth) {
   let $commentRegistration = document.getElementById("comment-registration");
