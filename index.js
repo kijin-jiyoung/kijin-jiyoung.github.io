@@ -89,3 +89,15 @@ function getTime() {
   $time.innerText = amOrPm + " " + hour + ":" + minute + ":" + second;
 }
 setInterval(getTime, 1000);
+
+sortBy(data, {
+    prop: "date",
+    parser: function (item) {
+        return new Date(item);
+    }
+});
+
+
+
+
+
