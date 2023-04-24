@@ -28,7 +28,8 @@ function loadComments(auth) {
         </li>`;
       }
     });
-exampleArray.sort(function(a, b){
+
+Array.sort(function(a, b){
   return a.id - b.id
 })  
   
