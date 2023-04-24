@@ -24,8 +24,8 @@ function loadComments(auth) {
               .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
-          <p>${comments[i].body}</p>
-        </li><hr>`;
+          <p>${comments[i].body}</p><hr>
+        </li>`;
       }
     });
 
