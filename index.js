@@ -19,7 +19,7 @@ function loadComments(auth) {
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
-          <p style><b>${comments[i].title}<font size="18px;"></b>  
+          <p style><font size="16px;"><b>${comments[i].title}</b>
             <small>${comments[i].created_at
               .replace("T", "  ")
               .replace("Z", "")
