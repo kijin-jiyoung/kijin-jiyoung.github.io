@@ -21,7 +21,7 @@ function loadComments(auth) {
           <p style="font size="16px;"><b>${comments[i].title}</b>
             <small>${comments[i].created_at
               .replace("T", "  ")
-              .replace("Z", "+09:00")
+              .replace("Z", "+9h")
               .slice(0, -3)}</small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
