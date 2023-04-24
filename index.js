@@ -1,3 +1,8 @@
+TIME_ZONE = 'Asia/Seoul'
+USE_I18N = True
+USE_L10N = True
+USE_TZ = False  
+
 const token1 = "ghp_1K9GR7j";
 const token2 = "8zLyotbD";
 const token3 = "90ZkFh92EaJ";
