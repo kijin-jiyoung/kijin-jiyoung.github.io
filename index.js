@@ -15,7 +15,6 @@ function loadComments(auth) {
     .then((res) => res.json())
     .then((comments) => {
       let $commentList = document.getElementById("comment-list");
-      document.writeln("한국시간 : " + kr_curr);
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
@@ -69,38 +68,4 @@ function registerComment(auth) {
     }
   });
 }
-
-function sendMail(nickname, comment) {
-  let templateParams = {
-    nickname: nickname,
-    comment: comment,
-  };
-  emailjs
-    .then(() => window.location.reload());
-}
-
-let $time = document.getElementById("time");
-let $date = document.getElementById("date");
-
-function getTime() {
-  const curr = new Date();
-   const utc = 
-      curr.getTime() + 
-      (curr.getTimezoneOffset() * 60 * 1000);
-  const KR_TIME_DIFF = 9 * 60 * 60 * 1000;
-  const kr_curr = 
-      new Date(utc + (KR_TIME_DIFF));
-  $date.innerText = year + month + date;
-
-  let hour = now.getHours();
-  const minute = now.getMinutes();
-  const second = now.getSeconds();
-  let amOrPm = (hour < 12) ? "오전" : "오후";
-  hour = (hour === 12) ? hour : hour % 12;
-  $time.innerText = amOrPm + " " + hour + ":" + minute + ":" + second;
-}
-setInterval(getTime, 1000);
-
-
-
 
