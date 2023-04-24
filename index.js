@@ -20,10 +20,7 @@ function loadComments(auth) {
          $commentList.innerHTML += `
         <li>
           <p style="font size="16px;"><b>${comments[i].title}</b>
-            <small>${comments[i].created_at
-              .replace("T", "  ")
-              .replace("Z", "")
-              .slice(0, -3)}</small>
+            <small>${moment(comments[i].created_at).toDate().toLocaleString();}</small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
         </li><hr>`;
@@ -68,7 +65,7 @@ let $time = document.getElementById("time");
 let $date = document.getElementById("date");
 
 function getTime() {
-  const now = new Date('2023-03-09 00:00:00');
+  const now = new Date();
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
   const date = now.getDate();
