@@ -1,14 +1,3 @@
-# internationalization.py
-
-# Internationalization
-# https://docs.djangoproject.com/en/1.9/topics/i18n/
-
-TIME_ZONE = 'Asia/Seoul'
-USE_I18N = True
-USE_L10N = True
-USE_TZ = False  
-
- 
 const token1 = "ghp_1K9GR7j";
 const token2 = "8zLyotbD";
 const token3 = "90ZkFh92EaJ";
@@ -79,7 +68,7 @@ let $time = document.getElementById("time");
 let $date = document.getElementById("date");
 
 function getTime() {
-  const now = new Date();
+  const now = new Date('2023-04-24 00:00:00');
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
   const date = now.getDate();
