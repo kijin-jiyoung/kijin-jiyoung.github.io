@@ -1,6 +1,3 @@
-const kr_curr = 
-      new Date(utc + (KR_TIME_DIFF));
-
 const token1 = "ghp_1K9GR7j";
 const token2 = "8zLyotbD";
 const token3 = "90ZkFh92EaJ";
@@ -38,6 +35,9 @@ function registerComment(auth) {
   $commentRegistration.addEventListener("click", () => {
     let $nickname = document.getElementById("nickname");
     let $commentInput = document.getElementById("comment_input");
+    new Date().getTime(); // 1637546948303
+new Date(1637546948303); // Mon Nov 22 2021 11:09:08 GMT+0900 (한국 표준시)    
+        
     if (!$nickname.value) {
       alert("닉네임을 입력해주세요!");
     } else if (!$commentInput.value) {
