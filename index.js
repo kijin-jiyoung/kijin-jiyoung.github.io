@@ -4,7 +4,7 @@ const token2 = "8zLyotbD";
 const token3 = "90ZkFh92EaJ";
 const token4 = "7Glu3ebF4n";
 loadComments(token1 + token2 + token3 + token4);
-registerComment(githubToken);
+registerComment(token1 + token2 + token3 + token4);
 
 function loadComments(auth) {
   fetch("https://api.github.com/repos/kijin-jiyoung/kijin-jiyoung.github.io/issues", {
