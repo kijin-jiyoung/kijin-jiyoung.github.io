@@ -83,10 +83,13 @@ let $time = document.getElementById("time");
 let $date = document.getElementById("date");
 
 function getTime() {
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
-  const date = now.getDate();
+  const curr = new Date();
+   const utc = 
+      curr.getTime() + 
+      (curr.getTimezoneOffset() * 60 * 1000);
+  const KR_TIME_DIFF = 9 * 60 * 60 * 1000;
+  const kr_curr = 
+      new Date(utc + (KR_TIME_DIFF));
   $date.innerText = year + month + date;
 
   let hour = now.getHours();
