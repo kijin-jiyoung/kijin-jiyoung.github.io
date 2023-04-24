@@ -96,14 +96,6 @@ function getTime() {
 }
 setInterval(getTime, 1000);
 
-sortBy(data, {
-    prop: "date",
-    parser: function (item) {
-        return new Date(item);
-    }
-});
-
-
 
 
 
