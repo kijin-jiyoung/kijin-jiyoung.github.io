@@ -14,6 +14,7 @@ function loadComments(auth) {
   })
     .then((res) => res.json())
     .then((comments) => {
+    console.log(comments)
       let $commentList = document.getElementById("comment-list"); 
       for (let i in comments) {
          $commentList.innerHTML += `
@@ -21,7 +22,7 @@ function loadComments(auth) {
           <p style="font size="16px;"><b>${comments[i].title}</b>
             <small>${comments[i].created_at
               .replace("T", "  ")
-              .replace("Z", "+9h")
+              .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
@@ -62,6 +63,21 @@ function registerComment(auth) {
     }
 
   });
+}
+
+function getTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const date = now.getDate();
+  $date.innerText = year + "-" + month + "-" + date;
+
+  let hour = now.getHours();
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+  let amOrPm = (hour < 12) ? "오전" : "오후";
+  hour = (hour === 12) ? hour : hour % 12;
+  $time.innerText = amOrPm + " " + hour + ":" + minute + ":" + second;
 }
 
 
