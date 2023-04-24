@@ -61,13 +61,14 @@ function registerComment(auth) {
           }),
         }
       ).then(() => {
-        sendMail($nickname.value, $commentInput.value);
         $nickname.value = "";
         $commentInput.value = "";
+        window.location.reload();
       });
     }
   });
 }
+
 function sendMail(nickname, comment) {
   let templateParams = {
     nickname: nickname,
