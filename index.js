@@ -30,7 +30,6 @@ function loadComments(auth) {
     });
 }
 
-
 function registerComment(auth) {
   let $commentRegistration = document.getElementById("comment-registration"); 
   $commentRegistration.addEventListener("click", () => {
