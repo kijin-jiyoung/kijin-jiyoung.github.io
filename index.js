@@ -25,7 +25,7 @@ function loadComments(auth) {
               .slice(0, -3)}</small>
           </p>
           <p>${comments[i].body}</p>
-        </li>`;
+        </li><hr>`;
       }
     });
 
