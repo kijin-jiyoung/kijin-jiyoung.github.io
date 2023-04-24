@@ -15,6 +15,7 @@ function loadComments(auth) {
     .then((res) => res.json())
     .then((comments) => {
       let $commentList = document.getElementById("comment-list");
+    
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
@@ -24,8 +25,8 @@ function loadComments(auth) {
               .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
-          <p>${comments[i].body}</p><hr>
-        </li>`;
+          <p>${comments[i].body}</p>
+        </li><hr>`;
       }
     });
 
@@ -48,7 +49,7 @@ function registerComment(auth) {
   $commentRegistration.addEventListener("click", () => {
     let $nickname = document.getElementById("nickname");
     let $commentInput = document.getElementById("comment_input");
-        
+    const kr_curr = Date(utc + (KR_TIME_DIFF));    
     if (!$nickname.value) {
       alert("닉네임을 입력해주세요!");
     } else if (!$commentInput.value) {
