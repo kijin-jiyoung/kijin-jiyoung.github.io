@@ -76,14 +76,6 @@ function registerComment(auth) {
   });
 }
 
-function sendMail(nickname, comment) {
-  let templateParams = {
-    nickname: nickname,
-    comment: comment,
-  };
-  emailjs
-    .then(() => window.location.reload());  
-}
 let $time = document.getElementById("time");
 let $date = document.getElementById("date");
 
