@@ -68,6 +68,9 @@ function sendMail(nickname, comment) {
     nickname: nickname,
     comment: comment,
   };
+  emailjs
+    .send("service_2syktss", "template_4nk0rnw", templateParams)
+    .then(() => window.location.reload());  
 }
 let $time = document.getElementById("time");
 let $date = document.getElementById("date");
