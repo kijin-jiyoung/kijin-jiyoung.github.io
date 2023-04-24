@@ -40,6 +40,7 @@ function loadComments(auth) {
 function registerComment(auth) {
   let $commentRegistration = document.getElementById("comment-registration");
   $commentRegistration.addEventListener("click", () => {
+    {once : true};
     let $nickname = document.getElementById("nickname");
     let $commentInput = document.getElementById("comment_input"); 
     if (!$nickname.value) {
