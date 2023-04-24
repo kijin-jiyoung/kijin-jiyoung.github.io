@@ -14,16 +14,12 @@ function loadComments(auth) {
   })
     .then((res) => res.json())
     .then((comments) => {
-    console.log(comments)
       let $commentList = document.getElementById("comment-list"); 
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
           <p style="font size="16px;"><b>${comments[i].title}</b>
-            <small>
-            .replace("T", "  ")
-              .replace("Z", "")
-              .slice(0, -3)}</small>
+            <small>${moment(comments[i].created_at).toDate().toLocaleString()}</small>
           </p>
           <p style="text-indent: 10px;font-size:14px;">${comments[i].body}</p>
         </li><hr>`;
