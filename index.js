@@ -14,7 +14,7 @@ function loadComments(auth) {
     },
   })
     .then((res) => res.json())
-    .then((issues) => {
+    .then((comments) => {
       let $commentList = document.getElementById("comment-list");
       for (let i in comments) {
         $commentList.innerHTML += `
