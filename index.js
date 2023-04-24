@@ -68,7 +68,7 @@ let $time = document.getElementById("time");
 let $date = document.getElementById("date");
 
 function getTime() {
-  const now = new Date('2023-04-24T00:00:00Z');
+  const now = new Date('2023-03-09 00:00:00');
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
   const date = now.getDate();
