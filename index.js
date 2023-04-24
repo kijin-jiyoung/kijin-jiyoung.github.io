@@ -38,7 +38,7 @@ function registerComment(auth) {
     let $nickname = document.getElementById("nickname");
     let $commentInput = document.getElementById("comment_input");    
     if (!$nickname.value) {
-      alert("닉네임을 입력해주세요!");
+      alert("작성자명을 입력해주세요!");
     } else if (!$commentInput.value) {
       alert("축하메시지를 입력해주세요!");
     } else {
