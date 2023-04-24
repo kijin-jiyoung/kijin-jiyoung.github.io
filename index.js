@@ -25,7 +25,7 @@ function loadComments(auth) {
               .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
-          <p style="text-indent: 20px;">${comments[i].body}</p>
+          <p style="text-indent:10px;">${comments[i].body}</p>
         </li><hr>`;
       }
     });
