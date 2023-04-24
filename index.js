@@ -25,7 +25,7 @@ function loadComments(auth) {
               .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
-          <p style="text-indent:10px;">${comments[i].body}</p>
+          <p style="text-indent: 10px;">${comments[i].body}</p>
         </li><hr>`;
       }
     });
@@ -41,8 +41,7 @@ function registerComment(auth) {
   let $commentRegistration = document.getElementById("comment-registration");
   $commentRegistration.addEventListener("click", () => {
     let $nickname = document.getElementById("nickname");
-    let $commentInput = document.getElementById("comment_input");
-    const kr_curr = Date(utc + (KR_TIME_DIFF));    
+    let $commentInput = document.getElementById("comment_input"); 
     if (!$nickname.value) {
       alert("닉네임을 입력해주세요!");
     } else if (!$commentInput.value) {
