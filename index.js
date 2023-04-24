@@ -1,3 +1,5 @@
+const kr_curr = 
+      new Date(utc + (KR_TIME_DIFF));
 
 const token1 = "ghp_1K9GR7j";
 const token2 = "8zLyotbD";
@@ -26,7 +28,7 @@ function loadComments(auth) {
         .slice(0, -3)}</small>
           </p>
           <p>${comments[i].body}</p>
-        </li>`;
+        </li><hr>`;
       }  
     });
 }
