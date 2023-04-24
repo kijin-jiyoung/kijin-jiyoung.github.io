@@ -85,7 +85,7 @@ function getTime() {
   const year = now.getFullYear();
   const month = now.getMonth() + 1;
   const date = now.getDate();
-  $date.innerText = year + "-" + month + "-" + date;
+  $date.innerText = year + month + date;
 
   let hour = now.getHours();
   const minute = now.getMinutes();
