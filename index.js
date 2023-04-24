@@ -21,9 +21,7 @@ function loadComments(auth) {
         <li>
           <p>${comments[i].title}  
             <small>${comments[i].created_at
-          .replace("T", "  ")
-          .replace("Z", "")
-          .slice(0, -3)}</small>
+       }</small>
           </p>
           <p>${comments[i].body}</p>
         </li>`;
