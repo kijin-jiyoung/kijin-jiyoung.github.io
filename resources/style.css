@@ -711,7 +711,6 @@ img{vertical-align:top; max-width:100%;border-radius:20px; }
 label,button{cursor:pointer}
 a{color:#000;text-decoration:none;}
 a:hover{}
-hr{display:none}
 legend{*width:0}	
 button{outline: none;border: 0;background: none;}
 table{border-collapse:collapse;border-spacing:0;border-radius: 20px;}
