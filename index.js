@@ -19,13 +19,13 @@ function loadComments(auth) {
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
-          <p><b>${comments[i].title}</b>  
+          <p style><b>${comments[i].title}</b>  
             <small>${comments[i].created_at
               .replace("T", "  ")
               .replace("Z", "")
               .slice(0, -3)}</small>
           </p>
-          <p style="margin=20px 0px 0px 0px;">${comments[i].body}</p>
+          <p style="text-indent: 20px;">${comments[i].body}</p>
         </li><hr>`;
       }
     });
