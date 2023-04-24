@@ -15,7 +15,7 @@ function loadComments(auth) {
     .then((res) => res.json())
     .then((comments) => {
       let $commentList = document.getElementById("comment-list");
-    
+      document.writeln("한국시간 : " + kr_curr);
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
