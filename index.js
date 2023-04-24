@@ -29,13 +29,6 @@ function loadComments(auth) {
         </li><hr>`;
       }
     });
-
-Array.sort(function(a, b){
-  return a.id - b.id
-})  
-  
-  
-  
 }
 
 
