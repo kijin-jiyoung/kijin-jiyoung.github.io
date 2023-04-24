@@ -20,7 +20,7 @@ function loadComments(auth) {
         <li>
           <p>${comments[i].title}  
             <small>${comments[i].created_at
-        .replace("T", "  ")
+        .replace("T", " ")
         .replace("Z", "")
         .slice(0, -3)}</small>
           </p>
@@ -35,8 +35,6 @@ function registerComment(auth) {
   $commentRegistration.addEventListener("click", () => {
     let $nickname = document.getElementById("nickname");
     let $commentInput = document.getElementById("comment_input");
-    new Date().getTime(); // 1637546948303
-new Date(1637546948303); // Mon Nov 22 2021 11:09:08 GMT+0900 (한국 표준시)    
         
     if (!$nickname.value) {
       alert("닉네임을 입력해주세요!");
