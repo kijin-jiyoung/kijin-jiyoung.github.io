@@ -14,18 +14,7 @@ function loadComments(auth) {
   })
     .then((res) => res.json())
     .then((comments) => {
-      let $commentList = document.getElementById("comment-list");
-    
-    function autoIncrement(startnum){
-    var init = startnum;
-    var td_list = document.getElementsByClassName("autoInc");
-    for(var i=0; i<td_list.length; i++){
-        init++;
-        td_list[i].innerHTML= "&nbsp"+init;
-    }
-}
-autoIncrement(0);
-    
+      let $commentList = document.getElementById("comment-list"); 
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
@@ -42,17 +31,12 @@ autoIncrement(0);
 }
 
 
-
-
-
-
-
 function registerComment(auth) {
-  let $commentRegistration = document.getElementById("comment-registration");
+  let $commentRegistration = document.getElementById("comment-registration"); 
   $commentRegistration.addEventListener("click", () => {
     {once : true};
     let $nickname = document.getElementById("nickname");
-    let $commentInput = document.getElementById("comment_input"); 
+    let $commentInput = document.getElementById("comment_input");    
     if (!$nickname.value) {
       alert("닉네임을 입력해주세요!");
     } else if (!$commentInput.value) {
@@ -70,20 +54,14 @@ function registerComment(auth) {
             title: $nickname.value,
             body: $commentInput.value,
           }),
-              function getTime() {
-const now = new Date(); // 현재 시간
-const utcNow = now.getTime() + (now.getTimezoneOffset() * 60 * 1000); // 현재 시간을 utc로 변환한 밀리세컨드값
-const koreaTimeDiff = 9 * 60 * 60 * 1000; // 한국 시간은 UTC보다 9시간 빠름(9시간의 밀리세컨드 표현)
-const koreaNow = new Date(utcNow + koreaTimeDiff); // utc로 변환된 값을 한국 시간으로 변환시키기 위해 9시간(밀리세컨드)를 더함
-$date.innerText = year + month + date + amOrPm + " " + hour + ":" + minute + ":" + second;
         }
       ).then(() => {
         $nickname.value = "";
         $commentInput.value = "";
         window.location.reload();
-}
       });
     }
+
   });
 }
 
