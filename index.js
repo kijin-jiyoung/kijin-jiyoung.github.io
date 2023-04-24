@@ -55,11 +55,35 @@ function registerComment(auth) {
           }),
         }
       ).then(() => {
+        sendMail($nickname.value, $commentInput.value);
         $nickname.value = "";
         $commentInput.value = "";
-        window.location.reload();
       });
     }
   });
 }
 
+function sendMail(nickname, comment) {
+  let templateParams = {
+    nickname: nickname,
+    comment: comment,
+  };
+}
+let $time = document.getElementById("time");
+let $date = document.getElementById("date");
+
+function getTime() {
+  const now = new Date();
+  const year = now.getFullYear();
+  const month = now.getMonth() + 1;
+  const date = now.getDate();
+  $date.innerText = year + "-" + month + "-" + date;
+
+  let hour = now.getHours();
+  const minute = now.getMinutes();
+  const second = now.getSeconds();
+  let amOrPm = (hour < 12) ? "오전" : "오후";
+  hour = (hour === 12) ? hour : hour % 12;
+  $time.innerText = amOrPm + " " + hour + ":" + minute + ":" + second;
+}
+setInterval(getTime, 1000);
