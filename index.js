@@ -15,6 +15,17 @@ function loadComments(auth) {
     .then((res) => res.json())
     .then((comments) => {
       let $commentList = document.getElementById("comment-list");
+    
+    function autoIncrement(startnum){
+    var init = startnum;
+    var td_list = document.getElementsByClassName("autoInc");
+    for(var i=0; i<td_list.length; i++){
+        init++;
+        td_list[i].innerHTML= "&nbsp"+init;
+    }
+}
+autoIncrement(0);
+    
       for (let i in comments) {
          $commentList.innerHTML += `
         <li>
