@@ -93,122 +93,6 @@ function alertClose_skin(){
 	$('.alertPop').fadeOut('fast');
 }
 
-// 카운트다운
-var today = new Date();
-function CountDownTimer(dt, id){
-	showRemaining();
-
-	var end = moment(dt).toDate();
-	var _second = 1000;
-	var _minute = _second * 60;
-	var _hour = _minute * 60;
-	var _day = _hour * 24;
-	var timer;
-
-	function showRemaining() {
-		var now = moment(new Date()).toDate();
-
-		var distance = end - now;
-		var t1 = moment(new Date());
-		var t2 = moment(dt);
-		
-		if (distance < 0) {
-			 clearInterval(timer);
-
-			$('.dayFull').text(0);
-			$('.day1').text(0);
-			$('.day2').text(0);
-			$('.hour1').text(0);
-			$('.hour2').text(0);
-			$('.minutes1').text(0);
-			$('.minutes2').text(0);
-			$('.seconds1').text(0);
-			$('.seconds2').text(0);
-			 return;
-        }
-
-    	var days = Math.floor(distance / _day);
-    	var hours = Math.floor((distance % _day) / _hour);
-    	var minutes = Math.floor((distance % _hour) / _minute);
-    	var seconds = Math.floor((distance % _minute) / _second);
-	    var dayfull = days;
-
-        if(parseInt(days) < 10){ 
-		    days = "0" + days; 
-        } 
-        if(parseInt(hours) < 10){ 
-            hours = '0' + hours; 
-        }
-        if(parseInt(minutes) < 10){ 
-            minutes = '0' + minutes; 
-        }
-        if(parseInt(seconds) < 10){ 
-            seconds = '0' + seconds; 
-        } 
-	
-        var day1 = String(days).substring(0, 1);
-        var day2 = String(days).substring(1, 2);
-        var day3 = String(days).substring(2, 3);
-        var hour1 = String(hours).substring(0, 1);
-        var hour2 = String(hours).substring(1, 2);
-        var minutes1 = String(minutes).substring(0, 1);
-        var minutes2 = String(minutes).substring(1, 2);
-        var seconds1 = String(seconds).substring(0, 1);
-        var seconds2 = String(seconds).substring(1, 2);
-
-		$('.day1').text(day1);
-		$('.day2').text(day2);
-		if( dayfull.toString().length > 2 ) {
-		    $('.day3').text(day3);
-		} else {
-		    $('.day3').text("");
-		}
-		$('.hour1').text(hour1);
-		$('.hour2').text(hour2);
-		$('.minutes1').text(minutes1);
-		$('.minutes2').text(minutes2);
-		$('.seconds1').text(seconds1);
-		$('.seconds2').text(seconds2);
-	}
-
-	timer = setInterval(showRemaining, 1000);
-}
-
-$(window).on('beforeunload', function() {
-	$(window).scrollTop(0); 
-});
-
-
-var maxDuration = 2000;
-var maxDelay = 500;
-var minDuration = maxDuration - maxDelay;
-$(document).ready(function(){
-    DADIDAN.init();
-    
-    hauntedText($('.mainVisual .tit01 .blast'), 2000);
-    hauntedText($('.mainVisual .tit02 .blast'), 2000);
-    hauntedText($('.mainVisual .name .blast'), 3800);
-    
-});
-var getRandomValue = function (min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-};
-var hauntedText = function (obj, time) {
-	setTimeout(function () {
-		obj.each(function (i, el) {
-	    	var $el = $(el);
-	    	var duration = getRandomValue(minDuration, maxDuration);
-	    	var delay = maxDuration - duration;
-	    	var blur = getRandomValue(2, 10);
-	
-		    // From
-		    $el.animate({opacity: 0, blur: blur}, {duration: 0});
-	
-		    // To
-		    $el.delay(delay).animate({opacity: 1, blur: 0}, {duration: duration,ease: [250, 0] });
-	  	});
-	}, time);
-};
 
 
 
@@ -221,19 +105,7 @@ $(function(){
 		});
 	});
 	
-	//경험하기 iframe 대응
-	var offsetArray = [];
-	$(window).load(function(){
-		offsetArray[0] = $('.greetingWrap').length > 0 ? $('.greetingWrap').offset().top : 0;
-		offsetArray[1] = $('.dayWrap').length > 0 ? $('.dayWrap').offset().top : 0;
-		offsetArray[2] = $('.galleryWrap').length > 0 ? $('.galleryWrap').offset().top : 0;
-		offsetArray[3] = $('.infoWrap').length > 0 ? $('.infoWrap').offset().top : 0;
-		offsetArray[4] = $('.guestBookWrap').length > 0 ? $('.guestBookWrap').offset().top : 0;
-		offsetArray[5] = $('.contactWrap').length > 0 ? $('.contactWrap').offset().top : 0; 
-		offsetArray[6] = $('.mindWrap').length > 0 ? $('.mindWrap').offset().top : 0;
-		offsetArray[7] = $('.locationWrap').length > 0 ? $('.locationWrap').offset().top : 0;
-		offsetArray[8] = $('.thanksWrap').length > 0 ? $('.thanksWrap').offset().top : 0;
-	});
+
 	//메뉴이동
     $('.gnbList ul li a').on('click', function(e) {
         e.preventDefault();
